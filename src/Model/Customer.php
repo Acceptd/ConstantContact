@@ -691,7 +691,7 @@ class Customer implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets physical_address
      *
-     * @param 'ConstantContact\Client\Model\CustomerPhysicalAddress|null $physical_address physical_address
+     * @param ConstantContact\Client\Model\CustomerPhysicalAddress|null $physical_address physical_address
      *
      * @return self
      */
@@ -718,7 +718,7 @@ class Customer implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets company_logo
      *
-     * @param 'ConstantContact\Client\Model\CompanyLogo|null $company_logo company_logo
+     * @param ConstantContact\Client\Model\CompanyLogo|null $company_logo company_logo
      *
      * @return self
      */

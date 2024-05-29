@@ -305,7 +305,7 @@ class LpreportingLinks implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets next
      *
-     * @param 'ConstantContact\Client\Model\LpreportingNext $next next
+     * @param ConstantContact\Client\Model\LpreportingNext $next next
      *
      * @return self
      */

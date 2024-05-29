@@ -507,7 +507,7 @@ class ContactResourceSmsChannel implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets sms_channel_consents
      *
-     * @param 'ConstantContact\Client\Model\SmsChannelConsentDetails[]|null $sms_channel_consents Identifies SMS channel consent details such as the current permission status for the SMS channel and opt-in date.
+     * @param ConstantContact\Client\Model\SmsChannelConsentDetails[]|null $sms_channel_consents Identifies SMS channel consent details such as the current permission status for the SMS channel and opt-in date.
      *
      * @return self
      */

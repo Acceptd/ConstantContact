@@ -326,7 +326,7 @@ class TagAddRemoveContacts implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets source
      *
-     * @param 'ConstantContact\Client\Model\TagAddRemoveContactsSource $source source
+     * @param ConstantContact\Client\Model\TagAddRemoveContactsSource $source source
      *
      * @return self
      */
@@ -353,7 +353,7 @@ class TagAddRemoveContacts implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets exclude
      *
-     * @param 'ConstantContact\Client\Model\TagAddRemoveContactsExclude|null $exclude exclude
+     * @param ConstantContact\Client\Model\TagAddRemoveContactsExclude|null $exclude exclude
      *
      * @return self
      */

@@ -315,7 +315,7 @@ class PContactSMSOptInTrackingActivitiesPage implements ModelInterface, ArrayAcc
     /**
      * Sets tracking_activities
      *
-     * @param 'ConstantContact\Client\Model\PContactSMSOptInTrackingActivity[] $tracking_activities The list of landing page contact opt in tracking activities.
+     * @param ConstantContact\Client\Model\PContactSMSOptInTrackingActivity[] $tracking_activities The list of landing page contact opt in tracking activities.
      *
      * @return self
      */
@@ -342,7 +342,7 @@ class PContactSMSOptInTrackingActivitiesPage implements ModelInterface, ArrayAcc
     /**
      * Sets _links
      *
-     * @param 'ConstantContact\Client\Model\LpreportingLinks $_links _links
+     * @param ConstantContact\Client\Model\LpreportingLinks $_links _links
      *
      * @return self
      */

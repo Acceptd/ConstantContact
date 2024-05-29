@@ -314,7 +314,7 @@ class CustomFields implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets custom_fields
      *
-     * @param 'ConstantContact\Client\Model\CustomFieldResource[]|null $custom_fields custom_fields
+     * @param ConstantContact\Client\Model\CustomFieldResource[]|null $custom_fields custom_fields
      *
      * @return self
      */
@@ -345,7 +345,7 @@ class CustomFields implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets _links
      *
-     * @param 'ConstantContact\Client\Model\PagingLinks|null $_links _links
+     * @param ConstantContact\Client\Model\PagingLinks|null $_links _links
      *
      * @return self
      */

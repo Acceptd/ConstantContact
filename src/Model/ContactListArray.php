@@ -316,7 +316,7 @@ class ContactListArray implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets lists
      *
-     * @param 'ConstantContact\Client\Model\ContactList[]|null $lists lists
+     * @param ConstantContact\Client\Model\ContactList[]|null $lists lists
      *
      * @return self
      */
@@ -370,7 +370,7 @@ class ContactListArray implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets _links
      *
-     * @param 'ConstantContact\Client\Model\PagingLinks|null $_links _links
+     * @param ConstantContact\Client\Model\PagingLinks|null $_links _links
      *
      * @return self
      */

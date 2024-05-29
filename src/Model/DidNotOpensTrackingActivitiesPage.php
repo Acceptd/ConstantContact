@@ -312,7 +312,7 @@ class DidNotOpensTrackingActivitiesPage implements ModelInterface, ArrayAccess, 
     /**
      * Sets tracking_activities
      *
-     * @param 'ConstantContact\Client\Model\DidNotOpensTrackingActivity[] $tracking_activities Lists contacts that did not open the specified <code>campaign_activity_id</code>.
+     * @param ConstantContact\Client\Model\DidNotOpensTrackingActivity[] $tracking_activities Lists contacts that did not open the specified <code>campaign_activity_id</code>.
      *
      * @return self
      */
@@ -339,7 +339,7 @@ class DidNotOpensTrackingActivitiesPage implements ModelInterface, ArrayAccess, 
     /**
      * Sets _links
      *
-     * @param 'ConstantContact\Client\Model\ReportingLinks|null $_links _links
+     * @param ConstantContact\Client\Model\ReportingLinks|null $_links _links
      *
      * @return self
      */

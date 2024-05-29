@@ -439,7 +439,7 @@ class SmsEngagementHistoryInner implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets history_details
      *
-     * @param 'ConstantContact\Client\Model\HistoryDetails|null $history_details history_details
+     * @param ConstantContact\Client\Model\HistoryDetails|null $history_details history_details
      *
      * @return self
      */

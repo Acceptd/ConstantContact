@@ -302,7 +302,7 @@ class TagsActivityLinks implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Sets self
      *
-     * @param 'ConstantContact\Client\Model\TagsActivityLinksSelf|null $self self
+     * @param ConstantContact\Client\Model\TagsActivityLinksSelf|null $self self
      *
      * @return self
      */

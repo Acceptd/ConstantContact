@@ -302,7 +302,7 @@ class ActivityStatusLink implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets self
      *
-     * @param 'ConstantContact\Client\Model\ActivityStatusExportLinkSelf|null $self self
+     * @param ConstantContact\Client\Model\ActivityStatusExportLinkSelf|null $self self
      *
      * @return self
      */

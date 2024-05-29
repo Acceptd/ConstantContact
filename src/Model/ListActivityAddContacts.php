@@ -319,7 +319,7 @@ class ListActivityAddContacts implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Sets source
      *
-     * @param 'ConstantContact\Client\Model\ListActivityAddContactsSource $source source
+     * @param ConstantContact\Client\Model\ListActivityAddContactsSource $source source
      *
      * @return self
      */

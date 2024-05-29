@@ -581,7 +581,7 @@ class ActivityListsMembership implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Sets status
      *
-     * @param 'ConstantContact\Client\Model\ActivityListsMembershipStatus|null $status status
+     * @param ConstantContact\Client\Model\ActivityListsMembershipStatus|null $status status
      *
      * @return self
      */
@@ -608,7 +608,7 @@ class ActivityListsMembership implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Sets _links
      *
-     * @param 'ConstantContact\Client\Model\ActivityStatusLink|null $_links _links
+     * @param ConstantContact\Client\Model\ActivityStatusLink|null $_links _links
      *
      * @return self
      */

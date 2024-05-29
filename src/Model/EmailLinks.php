@@ -336,7 +336,7 @@ class EmailLinks implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets link_click_counts
      *
-     * @param 'ConstantContact\Client\Model\EmailLinkClickCount[]|null $link_click_counts An array of objects that contain the contact click count and link metadata for each unique link URL in an email campaign activity. By default, this method combines results for duplicate link URLs.
+     * @param ConstantContact\Client\Model\EmailLinkClickCount[]|null $link_click_counts An array of objects that contain the contact click count and link metadata for each unique link URL in an email campaign activity. By default, this method combines results for duplicate link URLs.
      *
      * @return self
      */

@@ -447,7 +447,7 @@ class ContactPutRequest implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Sets email_address
      *
-     * @param 'ConstantContact\Client\Model\EmailAddressPut|null $email_address email_address
+     * @param ConstantContact\Client\Model\EmailAddressPut|null $email_address email_address
      *
      * @return self
      */
@@ -710,7 +710,7 @@ class ContactPutRequest implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Sets custom_fields
      *
-     * @param 'ConstantContact\Client\Model\ContactCustomField[]|null $custom_fields Array of up to 25 <code>custom_field</code> subresources.
+     * @param ConstantContact\Client\Model\ContactCustomField[]|null $custom_fields Array of up to 25 <code>custom_field</code> subresources.
      *
      * @return self
      */
@@ -741,7 +741,7 @@ class ContactPutRequest implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Sets phone_numbers
      *
-     * @param 'ConstantContact\Client\Model\PhoneNumberPut[]|null $phone_numbers Array of up to 3 <code>phone_numbers</code> subresources.
+     * @param ConstantContact\Client\Model\PhoneNumberPut[]|null $phone_numbers Array of up to 3 <code>phone_numbers</code> subresources.
      *
      * @return self
      */
@@ -772,7 +772,7 @@ class ContactPutRequest implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Sets street_addresses
      *
-     * @param 'ConstantContact\Client\Model\StreetAddressPut[]|null $street_addresses Array of up to 3 <code>street_addresses</code> subresources.
+     * @param ConstantContact\Client\Model\StreetAddressPut[]|null $street_addresses Array of up to 3 <code>street_addresses</code> subresources.
      *
      * @return self
      */
@@ -865,7 +865,7 @@ class ContactPutRequest implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Sets notes
      *
-     * @param 'ConstantContact\Client\Model\Note[]|null $notes An array of notes about the contact listed by most recent note first.
+     * @param ConstantContact\Client\Model\Note[]|null $notes An array of notes about the contact listed by most recent note first.
      *
      * @return self
      */

@@ -831,7 +831,7 @@ class EmailCampaignActivity implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Sets physical_address_in_footer
      *
-     * @param 'ConstantContact\Client\Model\EmailPhysicalAddress|null $physical_address_in_footer physical_address_in_footer
+     * @param ConstantContact\Client\Model\EmailPhysicalAddress|null $physical_address_in_footer physical_address_in_footer
      *
      * @return self
      */
@@ -858,7 +858,7 @@ class EmailCampaignActivity implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Sets document_properties
      *
-     * @param 'ConstantContact\Client\Model\EmailCampaignActivityDocumentProperties|null $document_properties document_properties
+     * @param ConstantContact\Client\Model\EmailCampaignActivityDocumentProperties|null $document_properties document_properties
      *
      * @return self
      */

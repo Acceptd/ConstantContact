@@ -309,7 +309,7 @@ class Activities implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets activities
      *
-     * @param 'ConstantContact\Client\Model\ActivitiesActivitiesInner[]|null $activities A list of bulk activity jobs and status submitted by the account over the past 10 days.
+     * @param ConstantContact\Client\Model\ActivitiesActivitiesInner[]|null $activities A list of bulk activity jobs and status submitted by the account over the past 10 days.
      *
      * @return self
      */
@@ -336,7 +336,7 @@ class Activities implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets _links
      *
-     * @param 'ConstantContact\Client\Model\PagingLinks|null $_links _links
+     * @param ConstantContact\Client\Model\PagingLinks|null $_links _links
      *
      * @return self
      */

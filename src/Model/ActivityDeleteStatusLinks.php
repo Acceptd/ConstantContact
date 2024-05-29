@@ -302,7 +302,7 @@ class ActivityDeleteStatusLinks implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets self
      *
-     * @param 'ConstantContact\Client\Model\ActivityDeleteStatusLinksSelf|null $self self
+     * @param ConstantContact\Client\Model\ActivityDeleteStatusLinksSelf|null $self self
      *
      * @return self
      */

@@ -302,7 +302,7 @@ class PagingLinks implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets next
      *
-     * @param 'ConstantContact\Client\Model\Link|null $next next
+     * @param ConstantContact\Client\Model\Link|null $next next
      *
      * @return self
      */

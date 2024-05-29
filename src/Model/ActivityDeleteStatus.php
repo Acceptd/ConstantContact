@@ -582,7 +582,7 @@ class ActivityDeleteStatus implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets status
      *
-     * @param 'ConstantContact\Client\Model\ActivityDeleteStatusStatus|null $status status
+     * @param ConstantContact\Client\Model\ActivityDeleteStatusStatus|null $status status
      *
      * @return self
      */
@@ -609,7 +609,7 @@ class ActivityDeleteStatus implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets _links
      *
-     * @param 'ConstantContact\Client\Model\ActivityDeleteStatusLinks|null $_links _links
+     * @param ConstantContact\Client\Model\ActivityDeleteStatusLinks|null $_links _links
      *
      * @return self
      */

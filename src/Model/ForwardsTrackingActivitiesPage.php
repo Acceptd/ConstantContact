@@ -312,7 +312,7 @@ class ForwardsTrackingActivitiesPage implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets tracking_activities
      *
-     * @param 'ConstantContact\Client\Model\ForwardsTrackingActivity[] $tracking_activities The list of contacts that forwarded the specified email campaign activity.
+     * @param ConstantContact\Client\Model\ForwardsTrackingActivity[] $tracking_activities The list of contacts that forwarded the specified email campaign activity.
      *
      * @return self
      */
@@ -339,7 +339,7 @@ class ForwardsTrackingActivitiesPage implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets _links
      *
-     * @param 'ConstantContact\Client\Model\ReportingLinks|null $_links _links
+     * @param ConstantContact\Client\Model\ReportingLinks|null $_links _links
      *
      * @return self
      */

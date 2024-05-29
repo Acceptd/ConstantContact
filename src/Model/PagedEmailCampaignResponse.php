@@ -309,7 +309,7 @@ class PagedEmailCampaignResponse implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets _links
      *
-     * @param 'ConstantContact\Client\Model\EmailsPagingLinks|null $_links _links
+     * @param ConstantContact\Client\Model\EmailsPagingLinks|null $_links _links
      *
      * @return self
      */
@@ -336,7 +336,7 @@ class PagedEmailCampaignResponse implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets campaigns
      *
-     * @param 'ConstantContact\Client\Model\EmailCampaigns[]|null $campaigns campaigns
+     * @param ConstantContact\Client\Model\EmailCampaigns[]|null $campaigns campaigns
      *
      * @return self
      */

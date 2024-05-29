@@ -718,7 +718,7 @@ class FileObject implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets thumbnail
      *
-     * @param 'ConstantContact\Client\Model\MyLibraryFileCollectionInnerThumbnail|null $thumbnail thumbnail
+     * @param ConstantContact\Client\Model\MyLibraryFileCollectionInnerThumbnail|null $thumbnail thumbnail
      *
      * @return self
      */

@@ -302,7 +302,7 @@ class CrossReferenceResponse implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets xrefs
      *
-     * @param 'ConstantContact\Client\Model\CrossReference[]|null $xrefs An array of objects that contain a <code>v2_email_campaign_id</code> cross-referenced with a V3 <code>campaign_id</code> and a V3 <code>campaign_activity_id</code> value.
+     * @param ConstantContact\Client\Model\CrossReference[]|null $xrefs An array of objects that contain a <code>v2_email_campaign_id</code> cross-referenced with a V3 <code>campaign_id</code> and a V3 <code>campaign_activity_id</code> value.
      *
      * @return self
      */

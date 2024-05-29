@@ -718,7 +718,7 @@ class MyLibraryFileCollectionInner implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets thumbnail
      *
-     * @param 'ConstantContact\Client\Model\MyLibraryFileCollectionInnerThumbnail|null $thumbnail thumbnail
+     * @param ConstantContact\Client\Model\MyLibraryFileCollectionInnerThumbnail|null $thumbnail thumbnail
      *
      * @return self
      */

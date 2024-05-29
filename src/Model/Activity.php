@@ -616,7 +616,7 @@ class Activity implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets status
      *
-     * @param 'ConstantContact\Client\Model\ActivityStatus|null $status status
+     * @param ConstantContact\Client\Model\ActivityStatus|null $status status
      *
      * @return self
      */
@@ -643,7 +643,7 @@ class Activity implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets _links
      *
-     * @param 'ConstantContact\Client\Model\ActivityStatusExportLink|null $_links _links
+     * @param ConstantContact\Client\Model\ActivityStatusExportLink|null $_links _links
      *
      * @return self
      */

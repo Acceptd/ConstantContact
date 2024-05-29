@@ -312,7 +312,7 @@ class PartnerAccount implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets site_owner_list
      *
-     * @param 'ConstantContact\Client\Model\PartnerAccountSiteOwnerListInner[] $site_owner_list Lists all Constant Contact client accounts that are managed under a partner account.
+     * @param ConstantContact\Client\Model\PartnerAccountSiteOwnerListInner[] $site_owner_list Lists all Constant Contact client accounts that are managed under a partner account.
      *
      * @return self
      */
@@ -339,7 +339,7 @@ class PartnerAccount implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets _links
      *
-     * @param 'ConstantContact\Client\Model\PaginationLinks|null $_links _links
+     * @param ConstantContact\Client\Model\PaginationLinks|null $_links _links
      *
      * @return self
      */

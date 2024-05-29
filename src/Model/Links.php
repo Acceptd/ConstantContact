@@ -305,7 +305,7 @@ class Links implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets next
      *
-     * @param 'ConstantContact\Client\Model\Next $next next
+     * @param ConstantContact\Client\Model\Next $next next
      *
      * @return self
      */

@@ -319,7 +319,7 @@ class ListActivityRemoveContacts implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets source
      *
-     * @param 'ConstantContact\Client\Model\ListActivityRemoveContactsSource $source source
+     * @param ConstantContact\Client\Model\ListActivityRemoveContactsSource $source source
      *
      * @return self
      */

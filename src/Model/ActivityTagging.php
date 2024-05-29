@@ -587,7 +587,7 @@ class ActivityTagging implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets status
      *
-     * @param 'ConstantContact\Client\Model\ActivityTaggingStatus|null $status status
+     * @param ConstantContact\Client\Model\ActivityTaggingStatus|null $status status
      *
      * @return self
      */
@@ -614,7 +614,7 @@ class ActivityTagging implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets _links
      *
-     * @param 'ConstantContact\Client\Model\ActivityLinks|null $_links _links
+     * @param ConstantContact\Client\Model\ActivityLinks|null $_links _links
      *
      * @return self
      */

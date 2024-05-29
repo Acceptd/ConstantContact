@@ -425,7 +425,7 @@ class PartnerAccountOperationsRequest implements ModelInterface, ArrayAccess, \J
     /**
      * Sets account_operation_query_parameters
      *
-     * @param 'ConstantContact\Client\Model\QueryParamObject[]|null $account_operation_query_parameters An array containing the query parameters for the request you are sending on behalf of a managed child account.
+     * @param ConstantContact\Client\Model\QueryParamObject[]|null $account_operation_query_parameters An array containing the query parameters for the request you are sending on behalf of a managed child account.
      *
      * @return self
      */
@@ -452,7 +452,7 @@ class PartnerAccountOperationsRequest implements ModelInterface, ArrayAccess, \J
     /**
      * Sets account_operation_path_parameters
      *
-     * @param 'ConstantContact\Client\Model\PathParamObject[]|null $account_operation_path_parameters An array containing the path parameters for the request you are sending on behalf of a managed child account.
+     * @param ConstantContact\Client\Model\PathParamObject[]|null $account_operation_path_parameters An array containing the path parameters for the request you are sending on behalf of a managed child account.
      *
      * @return self
      */
@@ -479,7 +479,7 @@ class PartnerAccountOperationsRequest implements ModelInterface, ArrayAccess, \J
     /**
      * Sets account_operation_headers
      *
-     * @param 'ConstantContact\Client\Model\HeadersObject[]|null $account_operation_headers An array containing the headers for the request you are sending on behalf of a managed child account.
+     * @param ConstantContact\Client\Model\HeadersObject[]|null $account_operation_headers An array containing the headers for the request you are sending on behalf of a managed child account.
      *
      * @return self
      */

@@ -309,7 +309,7 @@ class Tags implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets tags
      *
-     * @param 'ConstantContact\Client\Model\Tag[]|null $tags Lists all tags and provides tag details.
+     * @param ConstantContact\Client\Model\Tag[]|null $tags Lists all tags and provides tag details.
      *
      * @return self
      */
@@ -336,7 +336,7 @@ class Tags implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets _links
      *
-     * @param 'ConstantContact\Client\Model\TagsPagingLinks|null $_links _links
+     * @param ConstantContact\Client\Model\TagsPagingLinks|null $_links _links
      *
      * @return self
      */

@@ -350,7 +350,7 @@ class EmailCampaignComplete implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Sets email_campaign_activities
      *
-     * @param 'ConstantContact\Client\Model\EmailCampaignActivityInput[] $email_campaign_activities The content of the email campaign as an array that contains a single email campaign activity object.
+     * @param ConstantContact\Client\Model\EmailCampaignActivityInput[] $email_campaign_activities The content of the email campaign as an array that contains a single email campaign activity object.
      *
      * @return self
      */

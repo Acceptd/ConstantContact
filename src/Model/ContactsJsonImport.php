@@ -323,7 +323,7 @@ class ContactsJsonImport implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets import_data
      *
-     * @param 'ConstantContact\Client\Model\JsonImportContact[] $import_data An array containing the contacts to import.
+     * @param ConstantContact\Client\Model\JsonImportContact[] $import_data An array containing the contacts to import.
      *
      * @return self
      */

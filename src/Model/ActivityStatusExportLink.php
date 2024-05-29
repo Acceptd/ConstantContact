@@ -309,7 +309,7 @@ class ActivityStatusExportLink implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets self
      *
-     * @param 'ConstantContact\Client\Model\ActivityStatusExportLinkSelf|null $self self
+     * @param ConstantContact\Client\Model\ActivityStatusExportLinkSelf|null $self self
      *
      * @return self
      */
@@ -336,7 +336,7 @@ class ActivityStatusExportLink implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets results
      *
-     * @param 'ConstantContact\Client\Model\ActivityStatusExportLinkResults|null $results results
+     * @param ConstantContact\Client\Model\ActivityStatusExportLinkResults|null $results results
      *
      * @return self
      */

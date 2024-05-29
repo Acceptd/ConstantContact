@@ -616,7 +616,7 @@ class ActivitiesActivitiesInner implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets status
      *
-     * @param 'ConstantContact\Client\Model\ActivityStatus|null $status status
+     * @param ConstantContact\Client\Model\ActivityStatus|null $status status
      *
      * @return self
      */
@@ -643,7 +643,7 @@ class ActivitiesActivitiesInner implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets _links
      *
-     * @param 'ConstantContact\Client\Model\ActivityStatusExportLink|null $_links _links
+     * @param ConstantContact\Client\Model\ActivityStatusExportLink|null $_links _links
      *
      * @return self
      */

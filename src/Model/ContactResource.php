@@ -514,7 +514,7 @@ class ContactResource implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets email_address
      *
-     * @param 'ConstantContact\Client\Model\EmailAddress|null $email_address email_address
+     * @param ConstantContact\Client\Model\EmailAddress|null $email_address email_address
      *
      * @return self
      */
@@ -885,7 +885,7 @@ class ContactResource implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets custom_fields
      *
-     * @param 'ConstantContact\Client\Model\ContactCustomField[]|null $custom_fields Array of up to 25 <code>custom_field</code> subresources.
+     * @param ConstantContact\Client\Model\ContactCustomField[]|null $custom_fields Array of up to 25 <code>custom_field</code> subresources.
      *
      * @return self
      */
@@ -916,7 +916,7 @@ class ContactResource implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets phone_numbers
      *
-     * @param 'ConstantContact\Client\Model\PhoneNumber[]|null $phone_numbers Array of up to 3 <code>phone_numbers</code> subresources.
+     * @param ConstantContact\Client\Model\PhoneNumber[]|null $phone_numbers Array of up to 3 <code>phone_numbers</code> subresources.
      *
      * @return self
      */
@@ -947,7 +947,7 @@ class ContactResource implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets street_addresses
      *
-     * @param 'ConstantContact\Client\Model\StreetAddress[]|null $street_addresses Array of up to 3 <code>street_addresses</code> subresources.
+     * @param ConstantContact\Client\Model\StreetAddress[]|null $street_addresses Array of up to 3 <code>street_addresses</code> subresources.
      *
      * @return self
      */
@@ -1040,7 +1040,7 @@ class ContactResource implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets notes
      *
-     * @param 'ConstantContact\Client\Model\Note[]|null $notes An array of notes about the contact listed by most recent note first.
+     * @param ConstantContact\Client\Model\Note[]|null $notes An array of notes about the contact listed by most recent note first.
      *
      * @return self
      */
@@ -1071,7 +1071,7 @@ class ContactResource implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets sms_channel
      *
-     * @param 'ConstantContact\Client\Model\ContactResourceSmsChannel|null $sms_channel sms_channel
+     * @param ConstantContact\Client\Model\ContactResourceSmsChannel|null $sms_channel sms_channel
      *
      * @return self
      */

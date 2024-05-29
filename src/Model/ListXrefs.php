@@ -306,7 +306,7 @@ class ListXrefs implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets xrefs
      *
-     * @param 'ConstantContact\Client\Model\ListXref[]|null $xrefs An array of cross-referenced V3 API <code>list_id</code> and V2 API <code>sequence_id</code> properties. Response is sorted ascending by <code>sequence_id</code>.
+     * @param ConstantContact\Client\Model\ListXref[]|null $xrefs An array of cross-referenced V3 API <code>list_id</code> and V2 API <code>sequence_id</code> properties. Response is sorted ascending by <code>sequence_id</code>.
      *
      * @return self
      */

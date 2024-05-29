@@ -426,7 +426,7 @@ class BulkCampaignSummary implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets unique_counts
      *
-     * @param 'ConstantContact\Client\Model\UniqueSmsCounts $unique_counts unique_counts
+     * @param ConstantContact\Client\Model\UniqueSmsCounts $unique_counts unique_counts
      *
      * @return self
      */

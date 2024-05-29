@@ -315,7 +315,7 @@ class BouncesTrackingActivitiesPage implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets tracking_activities
      *
-     * @param 'ConstantContact\Client\Model\BouncesTrackingActivity[] $tracking_activities The list of email bounce tracking activities associated with a given `campaign_activity_id'.
+     * @param ConstantContact\Client\Model\BouncesTrackingActivity[] $tracking_activities The list of email bounce tracking activities associated with a given `campaign_activity_id'.
      *
      * @return self
      */
@@ -342,7 +342,7 @@ class BouncesTrackingActivitiesPage implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets _links
      *
-     * @param 'ConstantContact\Client\Model\ReportingLinks $_links _links
+     * @param ConstantContact\Client\Model\ReportingLinks $_links _links
      *
      * @return self
      */

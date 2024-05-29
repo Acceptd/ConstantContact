@@ -322,7 +322,7 @@ class BulkEmailCampaignSummariesPage implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets bulk_email_campaign_summaries
      *
-     * @param 'ConstantContact\Client\Model\BulkEmailCampaignSummary[] $bulk_email_campaign_summaries Lists and provides details about each bulk email campaign activity including total unique counts for tracked activities.
+     * @param ConstantContact\Client\Model\BulkEmailCampaignSummary[] $bulk_email_campaign_summaries Lists and provides details about each bulk email campaign activity including total unique counts for tracked activities.
      *
      * @return self
      */
@@ -349,7 +349,7 @@ class BulkEmailCampaignSummariesPage implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets aggregate_percents
      *
-     * @param 'ConstantContact\Client\Model\BulkEmailCampaignSummariesPercents|null $aggregate_percents aggregate_percents
+     * @param ConstantContact\Client\Model\BulkEmailCampaignSummariesPercents|null $aggregate_percents aggregate_percents
      *
      * @return self
      */
@@ -376,7 +376,7 @@ class BulkEmailCampaignSummariesPage implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets _links
      *
-     * @param 'ConstantContact\Client\Model\ReportingLinks $_links _links
+     * @param ConstantContact\Client\Model\ReportingLinks $_links _links
      *
      * @return self
      */

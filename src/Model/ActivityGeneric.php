@@ -492,7 +492,7 @@ class ActivityGeneric implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets activity_errors
      *
-     * @param 'ConstantContact\Client\Model\ActivityErrors[]|null $activity_errors An array of error messages if errors occurred for a specified activity. The system returns an empty array if no errors occur.
+     * @param ConstantContact\Client\Model\ActivityErrors[]|null $activity_errors An array of error messages if errors occurred for a specified activity. The system returns an empty array if no errors occur.
      *
      * @return self
      */
@@ -519,7 +519,7 @@ class ActivityGeneric implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets status
      *
-     * @param 'ConstantContact\Client\Model\ActivityGenericStatus|null $status status
+     * @param ConstantContact\Client\Model\ActivityGenericStatus|null $status status
      *
      * @return self
      */
@@ -546,7 +546,7 @@ class ActivityGeneric implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets _links
      *
-     * @param 'ConstantContact\Client\Model\TagsActivityLinks|null $_links _links
+     * @param ConstantContact\Client\Model\TagsActivityLinks|null $_links _links
      *
      * @return self
      */

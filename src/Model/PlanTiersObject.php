@@ -351,7 +351,7 @@ class PlanTiersObject implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets current_tiers
      *
-     * @param 'ConstantContact\Client\Model\TierObject[]|null $current_tiers Lists the billing plan tiers that are currently associated with a client account.
+     * @param ConstantContact\Client\Model\TierObject[]|null $current_tiers Lists the billing plan tiers that are currently associated with a client account.
      *
      * @return self
      */

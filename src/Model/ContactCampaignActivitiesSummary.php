@@ -349,7 +349,7 @@ class ContactCampaignActivitiesSummary implements ModelInterface, ArrayAccess, \
     /**
      * Sets campaign_activities
      *
-     * @param 'ConstantContact\Client\Model\CampaignActivitySummary[] $campaign_activities A summary of all the actions for a contact.
+     * @param ConstantContact\Client\Model\CampaignActivitySummary[] $campaign_activities A summary of all the actions for a contact.
      *
      * @return self
      */
@@ -376,7 +376,7 @@ class ContactCampaignActivitiesSummary implements ModelInterface, ArrayAccess, \
     /**
      * Sets _links
      *
-     * @param 'ConstantContact\Client\Model\ReportingLinks|null $_links _links
+     * @param ConstantContact\Client\Model\ReportingLinks|null $_links _links
      *
      * @return self
      */

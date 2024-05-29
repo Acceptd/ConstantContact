@@ -312,7 +312,7 @@ class SegmentsDTO implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets segments
      *
-     * @param 'ConstantContact\Client\Model\SegmentMaster[] $segments Lists all segments for the account.
+     * @param ConstantContact\Client\Model\SegmentMaster[] $segments Lists all segments for the account.
      *
      * @return self
      */
@@ -339,7 +339,7 @@ class SegmentsDTO implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets _links
      *
-     * @param 'ConstantContact\Client\Model\Links|null $_links _links
+     * @param ConstantContact\Client\Model\Links|null $_links _links
      *
      * @return self
      */

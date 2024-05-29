@@ -316,7 +316,7 @@ class SmsCampaignSummariesPage implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets bulk_sms_campaign_summaries
      *
-     * @param 'ConstantContact\Client\Model\BulkCampaignSummary[]|null $bulk_sms_campaign_summaries Provides details about each SMS campaign, including the total unique counts for each tracked campaign activity.
+     * @param ConstantContact\Client\Model\BulkCampaignSummary[]|null $bulk_sms_campaign_summaries Provides details about each SMS campaign, including the total unique counts for each tracked campaign activity.
      *
      * @return self
      */
@@ -343,7 +343,7 @@ class SmsCampaignSummariesPage implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets aggregate_percents
      *
-     * @param 'ConstantContact\Client\Model\BulkSmsCampaignSummariesPercents|null $aggregate_percents aggregate_percents
+     * @param ConstantContact\Client\Model\BulkSmsCampaignSummariesPercents|null $aggregate_percents aggregate_percents
      *
      * @return self
      */
@@ -370,7 +370,7 @@ class SmsCampaignSummariesPage implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets _links
      *
-     * @param 'ConstantContact\Client\Model\ReportingsmsLinks|null $_links _links
+     * @param ConstantContact\Client\Model\ReportingsmsLinks|null $_links _links
      *
      * @return self
      */

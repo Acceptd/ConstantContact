@@ -305,7 +305,7 @@ class ReportingLinks implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets next
      *
-     * @param 'ConstantContact\Client\Model\ReportingNext $next next
+     * @param ConstantContact\Client\Model\ReportingNext $next next
      *
      * @return self
      */

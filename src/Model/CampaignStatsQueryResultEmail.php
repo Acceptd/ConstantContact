@@ -309,7 +309,7 @@ class CampaignStatsQueryResultEmail implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets errors
      *
-     * @param 'ConstantContact\Client\Model\StatsError[]|null $errors An array of errors indicating any partial failures in the query.
+     * @param ConstantContact\Client\Model\StatsError[]|null $errors An array of errors indicating any partial failures in the query.
      *
      * @return self
      */
@@ -336,7 +336,7 @@ class CampaignStatsQueryResultEmail implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets results
      *
-     * @param 'ConstantContact\Client\Model\CampaignStatsResultGenericStatsEmailPercentsEmail[]|null $results An array of results listing statistics for each requested <code>campaign_id</code>.
+     * @param ConstantContact\Client\Model\CampaignStatsResultGenericStatsEmailPercentsEmail[]|null $results An array of results listing statistics for each requested <code>campaign_id</code>.
      *
      * @return self
      */

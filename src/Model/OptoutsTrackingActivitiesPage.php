@@ -315,7 +315,7 @@ class OptoutsTrackingActivitiesPage implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets tracking_activities
      *
-     * @param 'ConstantContact\Client\Model\OptoutsTrackingActivity[] $tracking_activities The list of opt-out tracking activities
+     * @param ConstantContact\Client\Model\OptoutsTrackingActivity[] $tracking_activities The list of opt-out tracking activities
      *
      * @return self
      */
@@ -342,7 +342,7 @@ class OptoutsTrackingActivitiesPage implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets _links
      *
-     * @param 'ConstantContact\Client\Model\ReportingLinks $_links _links
+     * @param ConstantContact\Client\Model\ReportingLinks $_links _links
      *
      * @return self
      */

@@ -302,7 +302,7 @@ class ActivityDeleteListsResponseLinks implements ModelInterface, ArrayAccess, \
     /**
      * Sets self
      *
-     * @param 'ConstantContact\Client\Model\ActivityDeleteListsResponseLinksSelf|null $self self
+     * @param ConstantContact\Client\Model\ActivityDeleteListsResponseLinksSelf|null $self self
      *
      * @return self
      */

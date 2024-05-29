@@ -444,7 +444,7 @@ class ContactPostRequest implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets email_address
      *
-     * @param 'ConstantContact\Client\Model\EmailAddressPost|null $email_address email_address
+     * @param ConstantContact\Client\Model\EmailAddressPost|null $email_address email_address
      *
      * @return self
      */
@@ -707,7 +707,7 @@ class ContactPostRequest implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets custom_fields
      *
-     * @param 'ConstantContact\Client\Model\ContactCustomField[]|null $custom_fields Array of up to 25 <code>custom_field</code> key value pairs.
+     * @param ConstantContact\Client\Model\ContactCustomField[]|null $custom_fields Array of up to 25 <code>custom_field</code> key value pairs.
      *
      * @return self
      */
@@ -738,7 +738,7 @@ class ContactPostRequest implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets phone_numbers
      *
-     * @param 'ConstantContact\Client\Model\PhoneNumberPut[]|null $phone_numbers Array of up to 3 phone numbers subresources.
+     * @param ConstantContact\Client\Model\PhoneNumberPut[]|null $phone_numbers Array of up to 3 phone numbers subresources.
      *
      * @return self
      */
@@ -769,7 +769,7 @@ class ContactPostRequest implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets street_addresses
      *
-     * @param 'ConstantContact\Client\Model\StreetAddressPut[]|null $street_addresses Array of up to 3 street address subresources.
+     * @param ConstantContact\Client\Model\StreetAddressPut[]|null $street_addresses Array of up to 3 street address subresources.
      *
      * @return self
      */
@@ -862,7 +862,7 @@ class ContactPostRequest implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets notes
      *
-     * @param 'ConstantContact\Client\Model\Note[]|null $notes An array of notes about the contact.
+     * @param ConstantContact\Client\Model\Note[]|null $notes An array of notes about the contact.
      *
      * @return self
      */

@@ -312,7 +312,7 @@ class OpensTrackingActivitiesPage implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets tracking_activities
      *
-     * @param 'ConstantContact\Client\Model\OpensTrackingActivity[] $tracking_activities Lists contacts that opened the specified <code>campaign_activity_id</code>.
+     * @param ConstantContact\Client\Model\OpensTrackingActivity[] $tracking_activities Lists contacts that opened the specified <code>campaign_activity_id</code>.
      *
      * @return self
      */
@@ -339,7 +339,7 @@ class OpensTrackingActivitiesPage implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets _links
      *
-     * @param 'ConstantContact\Client\Model\ReportingLinks|null $_links _links
+     * @param ConstantContact\Client\Model\ReportingLinks|null $_links _links
      *
      * @return self
      */

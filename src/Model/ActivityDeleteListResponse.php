@@ -506,7 +506,7 @@ class ActivityDeleteListResponse implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets _links
      *
-     * @param 'ConstantContact\Client\Model\ActivityDeleteListsResponseLinks|null $_links _links
+     * @param ConstantContact\Client\Model\ActivityDeleteListsResponseLinks|null $_links _links
      *
      * @return self
      */

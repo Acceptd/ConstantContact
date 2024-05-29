@@ -324,7 +324,7 @@ class Contacts implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets contacts
      *
-     * @param 'ConstantContact\Client\Model\ContactResource[]|null $contacts contacts
+     * @param ConstantContact\Client\Model\ContactResource[]|null $contacts contacts
      *
      * @return self
      */
@@ -378,7 +378,7 @@ class Contacts implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets _links
      *
-     * @param 'ConstantContact\Client\Model\PagingLinks|null $_links _links
+     * @param ConstantContact\Client\Model\PagingLinks|null $_links _links
      *
      * @return self
      */

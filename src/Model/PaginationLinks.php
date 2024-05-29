@@ -302,7 +302,7 @@ class PaginationLinks implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets next
      *
-     * @param 'ConstantContact\Client\Model\PartnersLink|null $next next
+     * @param ConstantContact\Client\Model\PartnersLink|null $next next
      *
      * @return self
      */

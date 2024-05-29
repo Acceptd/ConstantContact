@@ -641,7 +641,7 @@ class ContactCreateOrUpdateInput implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets custom_fields
      *
-     * @param 'ConstantContact\Client\Model\CreateOrUpdateContactCustomField[]|null $custom_fields The custom fields you want to add to the contact as an array of up to 50 custom field objects.
+     * @param ConstantContact\Client\Model\CreateOrUpdateContactCustomField[]|null $custom_fields The custom fields you want to add to the contact as an array of up to 50 custom field objects.
      *
      * @return self
      */
@@ -753,7 +753,7 @@ class ContactCreateOrUpdateInput implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets street_address
      *
-     * @param 'ConstantContact\Client\Model\ContactCreateOrUpdateInputStreetAddress|null $street_address street_address
+     * @param ConstantContact\Client\Model\ContactCreateOrUpdateInputStreetAddress|null $street_address street_address
      *
      * @return self
      */

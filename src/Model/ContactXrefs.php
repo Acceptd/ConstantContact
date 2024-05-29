@@ -306,7 +306,7 @@ class ContactXrefs implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets xrefs
      *
-     * @param 'ConstantContact\Client\Model\ContactXref[]|null $xrefs An array of cross-referenced V3 API <code>contact_id</code> and V2 API <code>sequence_id</code> values. Response is sorted ascending by <code>sequence_id</code>.
+     * @param ConstantContact\Client\Model\ContactXref[]|null $xrefs An array of cross-referenced V3 API <code>contact_id</code> and V2 API <code>sequence_id</code> values. Response is sorted ascending by <code>sequence_id</code>.
      *
      * @return self
      */

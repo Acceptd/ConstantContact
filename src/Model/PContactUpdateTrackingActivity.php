@@ -589,7 +589,7 @@ class PContactUpdateTrackingActivity implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets sms_channel
      *
-     * @param 'ConstantContact\Client\Model\TrackingActivitySmsChannelDTO|null $sms_channel sms_channel
+     * @param ConstantContact\Client\Model\TrackingActivitySmsChannelDTO|null $sms_channel sms_channel
      *
      * @return self
      */

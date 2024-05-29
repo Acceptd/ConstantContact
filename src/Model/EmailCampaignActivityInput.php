@@ -590,7 +590,7 @@ class EmailCampaignActivityInput implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets physical_address_in_footer
      *
-     * @param 'ConstantContact\Client\Model\EmailPhysicalAddress|null $physical_address_in_footer physical_address_in_footer
+     * @param ConstantContact\Client\Model\EmailPhysicalAddress|null $physical_address_in_footer physical_address_in_footer
      *
      * @return self
      */

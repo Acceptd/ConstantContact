@@ -312,7 +312,7 @@ class SendsTrackingActivitiesPage implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets tracking_activities
      *
-     * @param 'ConstantContact\Client\Model\SendsTrackingActivity[] $tracking_activities Lists the contacts to which the email campaign activity (<code>campaign_activity_id</code>) was sent.
+     * @param ConstantContact\Client\Model\SendsTrackingActivity[] $tracking_activities Lists the contacts to which the email campaign activity (<code>campaign_activity_id</code>) was sent.
      *
      * @return self
      */
@@ -339,7 +339,7 @@ class SendsTrackingActivitiesPage implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets _links
      *
-     * @param 'ConstantContact\Client\Model\ReportingLinks|null $_links _links
+     * @param ConstantContact\Client\Model\ReportingLinks|null $_links _links
      *
      * @return self
      */

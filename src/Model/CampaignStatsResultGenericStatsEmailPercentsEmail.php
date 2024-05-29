@@ -350,7 +350,7 @@ class CampaignStatsResultGenericStatsEmailPercentsEmail implements ModelInterfac
     /**
      * Sets stats
      *
-     * @param 'ConstantContact\Client\Model\StatsEmail|null $stats stats
+     * @param ConstantContact\Client\Model\StatsEmail|null $stats stats
      *
      * @return self
      */
@@ -377,7 +377,7 @@ class CampaignStatsResultGenericStatsEmailPercentsEmail implements ModelInterfac
     /**
      * Sets percents
      *
-     * @param 'ConstantContact\Client\Model\PercentsEmail|null $percents percents
+     * @param ConstantContact\Client\Model\PercentsEmail|null $percents percents
      *
      * @return self
      */

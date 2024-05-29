@@ -302,7 +302,7 @@ class EmailsPagingLinks implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Sets next
      *
-     * @param 'ConstantContact\Client\Model\EmailsLink|null $next next
+     * @param ConstantContact\Client\Model\EmailsLink|null $next next
      *
      * @return self
      */

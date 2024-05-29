@@ -355,7 +355,7 @@ class EmailCampaign implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets campaign_activities
      *
-     * @param 'ConstantContact\Client\Model\ActivityReference[]|null $campaign_activities Lists the role and unique activity ID of each campaign activity that is associated with an Email Campaign.
+     * @param ConstantContact\Client\Model\ActivityReference[]|null $campaign_activities Lists the role and unique activity ID of each campaign activity that is associated with an Email Campaign.
      *
      * @return self
      */

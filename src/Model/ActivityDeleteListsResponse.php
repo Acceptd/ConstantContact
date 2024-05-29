@@ -581,7 +581,7 @@ class ActivityDeleteListsResponse implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets status
      *
-     * @param 'ConstantContact\Client\Model\ActivityDeleteListsResponseStatus|null $status status
+     * @param ConstantContact\Client\Model\ActivityDeleteListsResponseStatus|null $status status
      *
      * @return self
      */
@@ -608,7 +608,7 @@ class ActivityDeleteListsResponse implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets _links
      *
-     * @param 'ConstantContact\Client\Model\ActivityDeleteListsResponseLinks|null $_links _links
+     * @param ConstantContact\Client\Model\ActivityDeleteListsResponseLinks|null $_links _links
      *
      * @return self
      */

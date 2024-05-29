@@ -302,7 +302,7 @@ class TagsPagingLinks implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets next
      *
-     * @param 'ConstantContact\Client\Model\TagsLinks|null $next next
+     * @param ConstantContact\Client\Model\TagsLinks|null $next next
      *
      * @return self
      */

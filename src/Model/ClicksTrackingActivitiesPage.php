@@ -312,7 +312,7 @@ class ClicksTrackingActivitiesPage implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets tracking_activities
      *
-     * @param 'ConstantContact\Client\Model\ClicksTrackingActivity[] $tracking_activities The list of click tracking activities
+     * @param ConstantContact\Client\Model\ClicksTrackingActivity[] $tracking_activities The list of click tracking activities
      *
      * @return self
      */
@@ -339,7 +339,7 @@ class ClicksTrackingActivitiesPage implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets _links
      *
-     * @param 'ConstantContact\Client\Model\ReportingLinks|null $_links _links
+     * @param ConstantContact\Client\Model\ReportingLinks|null $_links _links
      *
      * @return self
      */

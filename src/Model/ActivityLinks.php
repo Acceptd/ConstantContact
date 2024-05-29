@@ -309,7 +309,7 @@ class ActivityLinks implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets self
      *
-     * @param 'ConstantContact\Client\Model\ActivityLinksSelf|null $self self
+     * @param ConstantContact\Client\Model\ActivityLinksSelf|null $self self
      *
      * @return self
      */
@@ -336,7 +336,7 @@ class ActivityLinks implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets results
      *
-     * @param 'ConstantContact\Client\Model\ActivityLinksResults|null $results results
+     * @param ConstantContact\Client\Model\ActivityLinksResults|null $results results
      *
      * @return self
      */

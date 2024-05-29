@@ -377,7 +377,7 @@ class CampaignActivityStatsResultGenericStatsEmailActivity implements ModelInter
     /**
      * Sets stats
      *
-     * @param 'ConstantContact\Client\Model\StatsEmailActivity|null $stats stats
+     * @param ConstantContact\Client\Model\StatsEmailActivity|null $stats stats
      *
      * @return self
      */

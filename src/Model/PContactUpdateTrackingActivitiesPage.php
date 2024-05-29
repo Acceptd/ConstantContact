@@ -315,7 +315,7 @@ class PContactUpdateTrackingActivitiesPage implements ModelInterface, ArrayAcces
     /**
      * Sets tracking_activities
      *
-     * @param 'ConstantContact\Client\Model\PContactUpdateTrackingActivity[] $tracking_activities The list of landing page contact update tracking activities.
+     * @param ConstantContact\Client\Model\PContactUpdateTrackingActivity[] $tracking_activities The list of landing page contact update tracking activities.
      *
      * @return self
      */
@@ -342,7 +342,7 @@ class PContactUpdateTrackingActivitiesPage implements ModelInterface, ArrayAcces
     /**
      * Sets _links
      *
-     * @param 'ConstantContact\Client\Model\LpreportingLinks $_links _links
+     * @param ConstantContact\Client\Model\LpreportingLinks $_links _links
      *
      * @return self
      */

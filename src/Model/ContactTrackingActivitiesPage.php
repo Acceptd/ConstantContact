@@ -310,7 +310,7 @@ class ContactTrackingActivitiesPage implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets tracking_activities
      *
-     * @param 'ConstantContact\Client\Model\ContactTrackingActivity[]|null $tracking_activities The list of contact tracking activities in descending date order.
+     * @param ConstantContact\Client\Model\ContactTrackingActivity[]|null $tracking_activities The list of contact tracking activities in descending date order.
      *
      * @return self
      */
@@ -337,7 +337,7 @@ class ContactTrackingActivitiesPage implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets _links
      *
-     * @param 'ConstantContact\Client\Model\ReportingLinks|null $_links _links
+     * @param ConstantContact\Client\Model\ReportingLinks|null $_links _links
      *
      * @return self
      */
