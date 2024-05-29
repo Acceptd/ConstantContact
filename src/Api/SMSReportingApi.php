@@ -34,10 +34,10 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use ConstantContact\Client\ApiException;
+use ConstantContact\Client\Configuration;
+use ConstantContact\Client\HeaderSelector;
+use ConstantContact\Client\ObjectSerializer;
 
 /**
  * SMSReportingApi Class Doc Comment
