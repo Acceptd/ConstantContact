@@ -1,0 +1,11 @@
+# # FileStatusArrayInner
+
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**status** | **string** | The upload status. | [optional]
+**description** | **string** | File description. | [optional]
+**file_id** | **int** | Identifies the file in MyLibrary. | [optional]
+
+[[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)
