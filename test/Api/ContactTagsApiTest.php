@@ -27,9 +27,9 @@
 
 namespace ConstantContact\Client\Test\Api;
 
-use 'ConstantContact\Client\Configuration;
-use 'ConstantContact\Client\ApiException;
-use 'ConstantContact\Client\ObjectSerializer;
+use ConstantContact\Client\Configuration;
+use ConstantContact\Client\ApiException;
+use ConstantContact\Client\ObjectSerializer;
 use PHPUnit\Framework\TestCase;
 
 /**

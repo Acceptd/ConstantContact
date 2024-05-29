@@ -29,7 +29,7 @@
 namespace ConstantContact\Client\Model;
 
 use \ArrayAccess;
-use 'ConstantContact\Client\ObjectSerializer;
+use ConstantContact\Client\ObjectSerializer;
 
 /**
  * TagPost Class Doc Comment
