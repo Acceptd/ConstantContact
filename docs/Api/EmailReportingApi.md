@@ -21,7 +21,7 @@ All URIs are relative to https://api.cc.email/v3, except if the operation define
 ## `getAllBulkEmailCampaignSummaries()`
 
 ```php
-getAllBulkEmailCampaignSummaries($limit): \OpenAPI\Client\Model\BulkEmailCampaignSummariesPage
+getAllBulkEmailCampaignSummaries($limit): 'ConstantContact\Client\Model\BulkEmailCampaignSummariesPage
 ```
 
 GET an Email Campaigns Summary Report
@@ -89,7 +89,7 @@ try {
 ## `getBounces()`
 
 ```php
-getBounces($campaign_activity_id, $bounce_code, $limit): \OpenAPI\Client\Model\BouncesTrackingActivitiesPage
+getBounces($campaign_activity_id, $bounce_code, $limit): 'ConstantContact\Client\Model\BouncesTrackingActivitiesPage
 ```
 
 GET an Email Bounces Report
@@ -161,7 +161,7 @@ try {
 ## `getCampaignActivityLinkStats()`
 
 ```php
-getCampaignActivityLinkStats($campaign_activity_id, $no_clicks): \OpenAPI\Client\Model\EmailLinks
+getCampaignActivityLinkStats($campaign_activity_id, $no_clicks): 'ConstantContact\Client\Model\EmailLinks
 ```
 
 GET an Email Links Report
@@ -231,7 +231,7 @@ try {
 ## `getClicks()`
 
 ```php
-getClicks($campaign_activity_id, $url_id, $limit): \OpenAPI\Client\Model\ClicksTrackingActivitiesPage
+getClicks($campaign_activity_id, $url_id, $limit): 'ConstantContact\Client\Model\ClicksTrackingActivitiesPage
 ```
 
 GET an Email Clicks Report
@@ -303,7 +303,7 @@ try {
 ## `getDidNotOpens()`
 
 ```php
-getDidNotOpens($campaign_activity_id, $limit): \OpenAPI\Client\Model\DidNotOpensTrackingActivitiesPage
+getDidNotOpens($campaign_activity_id, $limit): 'ConstantContact\Client\Model\DidNotOpensTrackingActivitiesPage
 ```
 
 GET an Email Did Not Opens Report
@@ -373,7 +373,7 @@ try {
 ## `getEmailCampaignActivitySummary()`
 
 ```php
-getEmailCampaignActivitySummary($campaign_activity_ids): \OpenAPI\Client\Model\CampaignActivityStatsQueryResultEmail
+getEmailCampaignActivitySummary($campaign_activity_ids): 'ConstantContact\Client\Model\CampaignActivityStatsQueryResultEmail
 ```
 
 GET an Email Campaign Activity Stats Report
@@ -441,7 +441,7 @@ try {
 ## `getEmailSummary()`
 
 ```php
-getEmailSummary($campaign_ids): \OpenAPI\Client\Model\CampaignStatsQueryResultEmail
+getEmailSummary($campaign_ids): 'ConstantContact\Client\Model\CampaignStatsQueryResultEmail
 ```
 
 GET an Email Campaign Stats Report
@@ -509,7 +509,7 @@ try {
 ## `getForwards()`
 
 ```php
-getForwards($campaign_activity_id, $limit): \OpenAPI\Client\Model\ForwardsTrackingActivitiesPage
+getForwards($campaign_activity_id, $limit): 'ConstantContact\Client\Model\ForwardsTrackingActivitiesPage
 ```
 
 GET an Email Forwards Report
@@ -579,7 +579,7 @@ try {
 ## `getOpens()`
 
 ```php
-getOpens($campaign_activity_id, $limit): \OpenAPI\Client\Model\OpensTrackingActivitiesPage
+getOpens($campaign_activity_id, $limit): 'ConstantContact\Client\Model\OpensTrackingActivitiesPage
 ```
 
 GET an Email Opens Report
@@ -649,7 +649,7 @@ try {
 ## `getOptouts()`
 
 ```php
-getOptouts($campaign_activity_id, $limit): \OpenAPI\Client\Model\OptoutsTrackingActivitiesPage
+getOptouts($campaign_activity_id, $limit): 'ConstantContact\Client\Model\OptoutsTrackingActivitiesPage
 ```
 
 GET an Email Opt-outs Report
@@ -719,7 +719,7 @@ try {
 ## `getSends()`
 
 ```php
-getSends($campaign_activity_id, $limit): \OpenAPI\Client\Model\SendsTrackingActivitiesPage
+getSends($campaign_activity_id, $limit): 'ConstantContact\Client\Model\SendsTrackingActivitiesPage
 ```
 
 GET an Email Sends Report
@@ -789,7 +789,7 @@ try {
 ## `getUniqueOpens()`
 
 ```php
-getUniqueOpens($campaign_activity_id, $limit): \OpenAPI\Client\Model\OpensTrackingActivitiesPage
+getUniqueOpens($campaign_activity_id, $limit): 'ConstantContact\Client\Model\OpensTrackingActivitiesPage
 ```
 
 GET an Email Unique Opens Report

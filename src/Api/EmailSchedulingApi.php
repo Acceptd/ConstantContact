@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -43,7 +43,7 @@ use ConstantContact\Client\ObjectSerializer;
  * EmailSchedulingApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -145,9 +145,9 @@ class EmailSchedulingApi
      * @param  string $campaign_activity_id The unique ID for an email campaign activity. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['retrieveEmailCampaignActivityPreviewUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\EmailCampaignActivityPreview
+     * @return 'ConstantContact\Client\Model\EmailCampaignActivityPreview
      */
     public function retrieveEmailCampaignActivityPreviewUsingGET($campaign_activity_id, string $contentType = self::contentTypes['retrieveEmailCampaignActivityPreviewUsingGET'][0])
     {
@@ -163,9 +163,9 @@ class EmailSchedulingApi
      * @param  string $campaign_activity_id The unique ID for an email campaign activity. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['retrieveEmailCampaignActivityPreviewUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\EmailCampaignActivityPreview, HTTP status code, HTTP response headers (array of strings)
+     * @return array of 'ConstantContact\Client\Model\EmailCampaignActivityPreview, HTTP status code, HTTP response headers (array of strings)
      */
     public function retrieveEmailCampaignActivityPreviewUsingGETWithHttpInfo($campaign_activity_id, string $contentType = self::contentTypes['retrieveEmailCampaignActivityPreviewUsingGET'][0])
     {
@@ -208,11 +208,11 @@ class EmailSchedulingApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\EmailCampaignActivityPreview' === '\SplFileObject') {
+                    if ('\ConstantContact\Client\Model\EmailCampaignActivityPreview' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\EmailCampaignActivityPreview' !== 'string') {
+                        if ('\ConstantContact\Client\Model\EmailCampaignActivityPreview' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -230,13 +230,13 @@ class EmailSchedulingApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\EmailCampaignActivityPreview', []),
+                        ObjectSerializer::deserialize($content, '\ConstantContact\Client\Model\EmailCampaignActivityPreview', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\EmailCampaignActivityPreview';
+            $returnType = '\ConstantContact\Client\Model\EmailCampaignActivityPreview';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -269,7 +269,7 @@ class EmailSchedulingApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\EmailCampaignActivityPreview',
+                        '\ConstantContact\Client\Model\EmailCampaignActivityPreview',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -313,7 +313,7 @@ class EmailSchedulingApi
      */
     public function retrieveEmailCampaignActivityPreviewUsingGETAsyncWithHttpInfo($campaign_activity_id, string $contentType = self::contentTypes['retrieveEmailCampaignActivityPreviewUsingGET'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\EmailCampaignActivityPreview';
+        $returnType = '\ConstantContact\Client\Model\EmailCampaignActivityPreview';
         $request = $this->retrieveEmailCampaignActivityPreviewUsingGETRequest($campaign_activity_id, $contentType);
 
         return $this->client
@@ -465,9 +465,9 @@ class EmailSchedulingApi
      * @param  string $campaign_activity_id The unique ID for an email campaign activity. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['retrieveEmailSchedulesUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\EmailScheduleResponseInner[]
+     * @return 'ConstantContact\Client\Model\EmailScheduleResponseInner[]
      */
     public function retrieveEmailSchedulesUsingGET($campaign_activity_id, string $contentType = self::contentTypes['retrieveEmailSchedulesUsingGET'][0])
     {
@@ -483,9 +483,9 @@ class EmailSchedulingApi
      * @param  string $campaign_activity_id The unique ID for an email campaign activity. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['retrieveEmailSchedulesUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\EmailScheduleResponseInner[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of 'ConstantContact\Client\Model\EmailScheduleResponseInner[], HTTP status code, HTTP response headers (array of strings)
      */
     public function retrieveEmailSchedulesUsingGETWithHttpInfo($campaign_activity_id, string $contentType = self::contentTypes['retrieveEmailSchedulesUsingGET'][0])
     {
@@ -528,11 +528,11 @@ class EmailSchedulingApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\EmailScheduleResponseInner[]' === '\SplFileObject') {
+                    if ('\ConstantContact\Client\Model\EmailScheduleResponseInner[]' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\EmailScheduleResponseInner[]' !== 'string') {
+                        if ('\ConstantContact\Client\Model\EmailScheduleResponseInner[]' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -550,13 +550,13 @@ class EmailSchedulingApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\EmailScheduleResponseInner[]', []),
+                        ObjectSerializer::deserialize($content, '\ConstantContact\Client\Model\EmailScheduleResponseInner[]', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\EmailScheduleResponseInner[]';
+            $returnType = '\ConstantContact\Client\Model\EmailScheduleResponseInner[]';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -589,7 +589,7 @@ class EmailSchedulingApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\EmailScheduleResponseInner[]',
+                        '\ConstantContact\Client\Model\EmailScheduleResponseInner[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -633,7 +633,7 @@ class EmailSchedulingApi
      */
     public function retrieveEmailSchedulesUsingGETAsyncWithHttpInfo($campaign_activity_id, string $contentType = self::contentTypes['retrieveEmailSchedulesUsingGET'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\EmailScheduleResponseInner[]';
+        $returnType = '\ConstantContact\Client\Model\EmailScheduleResponseInner[]';
         $request = $this->retrieveEmailSchedulesUsingGETRequest($campaign_activity_id, $contentType);
 
         return $this->client
@@ -785,9 +785,9 @@ class EmailSchedulingApi
      * @param  string $campaign_activity_id The unique ID for an email campaign activity. You can return the send history for &#x60;primary_email&#x60; and &#x60;resend&#x60; role email campaign activities. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['retrieveEmailSendHistoryUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\EmailSendHistoryInner[]
+     * @return 'ConstantContact\Client\Model\EmailSendHistoryInner[]
      */
     public function retrieveEmailSendHistoryUsingGET($campaign_activity_id, string $contentType = self::contentTypes['retrieveEmailSendHistoryUsingGET'][0])
     {
@@ -803,9 +803,9 @@ class EmailSchedulingApi
      * @param  string $campaign_activity_id The unique ID for an email campaign activity. You can return the send history for &#x60;primary_email&#x60; and &#x60;resend&#x60; role email campaign activities. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['retrieveEmailSendHistoryUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\EmailSendHistoryInner[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of 'ConstantContact\Client\Model\EmailSendHistoryInner[], HTTP status code, HTTP response headers (array of strings)
      */
     public function retrieveEmailSendHistoryUsingGETWithHttpInfo($campaign_activity_id, string $contentType = self::contentTypes['retrieveEmailSendHistoryUsingGET'][0])
     {
@@ -848,11 +848,11 @@ class EmailSchedulingApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\EmailSendHistoryInner[]' === '\SplFileObject') {
+                    if ('\ConstantContact\Client\Model\EmailSendHistoryInner[]' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\EmailSendHistoryInner[]' !== 'string') {
+                        if ('\ConstantContact\Client\Model\EmailSendHistoryInner[]' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -870,13 +870,13 @@ class EmailSchedulingApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\EmailSendHistoryInner[]', []),
+                        ObjectSerializer::deserialize($content, '\ConstantContact\Client\Model\EmailSendHistoryInner[]', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\EmailSendHistoryInner[]';
+            $returnType = '\ConstantContact\Client\Model\EmailSendHistoryInner[]';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -909,7 +909,7 @@ class EmailSchedulingApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\EmailSendHistoryInner[]',
+                        '\ConstantContact\Client\Model\EmailSendHistoryInner[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -953,7 +953,7 @@ class EmailSchedulingApi
      */
     public function retrieveEmailSendHistoryUsingGETAsyncWithHttpInfo($campaign_activity_id, string $contentType = self::contentTypes['retrieveEmailSendHistoryUsingGET'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\EmailSendHistoryInner[]';
+        $returnType = '\ConstantContact\Client\Model\EmailSendHistoryInner[]';
         $request = $this->retrieveEmailSendHistoryUsingGETRequest($campaign_activity_id, $contentType);
 
         return $this->client
@@ -1103,12 +1103,12 @@ class EmailSchedulingApi
      * POST (Create) an Email Campaign Activity Schedule
      *
      * @param  string $campaign_activity_id The unique ID for an email campaign activity. You can only schedule email campaign activities that have the &#x60;primary_email&#x60; role. (required)
-     * @param  \OpenAPI\Client\Model\EmailScheduleInput $body A request body payload that contains the date that you want Constant Contact to send your email campaign activity on. Use &#x60;\&quot;0\&quot;&#x60; as the date to have Constant Contact immediately send the email campaign activity. (required)
+     * @param  'ConstantContact\Client\Model\EmailScheduleInput $body A request body payload that contains the date that you want Constant Contact to send your email campaign activity on. Use &#x60;\&quot;0\&quot;&#x60; as the date to have Constant Contact immediately send the email campaign activity. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['scheduleEmailCampaignActivityUsingPOST'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\EmailScheduleResponseInner[]
+     * @return 'ConstantContact\Client\Model\EmailScheduleResponseInner[]
      */
     public function scheduleEmailCampaignActivityUsingPOST($campaign_activity_id, $body, string $contentType = self::contentTypes['scheduleEmailCampaignActivityUsingPOST'][0])
     {
@@ -1122,12 +1122,12 @@ class EmailSchedulingApi
      * POST (Create) an Email Campaign Activity Schedule
      *
      * @param  string $campaign_activity_id The unique ID for an email campaign activity. You can only schedule email campaign activities that have the &#x60;primary_email&#x60; role. (required)
-     * @param  \OpenAPI\Client\Model\EmailScheduleInput $body A request body payload that contains the date that you want Constant Contact to send your email campaign activity on. Use &#x60;\&quot;0\&quot;&#x60; as the date to have Constant Contact immediately send the email campaign activity. (required)
+     * @param  'ConstantContact\Client\Model\EmailScheduleInput $body A request body payload that contains the date that you want Constant Contact to send your email campaign activity on. Use &#x60;\&quot;0\&quot;&#x60; as the date to have Constant Contact immediately send the email campaign activity. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['scheduleEmailCampaignActivityUsingPOST'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\EmailScheduleResponseInner[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of 'ConstantContact\Client\Model\EmailScheduleResponseInner[], HTTP status code, HTTP response headers (array of strings)
      */
     public function scheduleEmailCampaignActivityUsingPOSTWithHttpInfo($campaign_activity_id, $body, string $contentType = self::contentTypes['scheduleEmailCampaignActivityUsingPOST'][0])
     {
@@ -1170,11 +1170,11 @@ class EmailSchedulingApi
 
             switch($statusCode) {
                 case 201:
-                    if ('\OpenAPI\Client\Model\EmailScheduleResponseInner[]' === '\SplFileObject') {
+                    if ('\ConstantContact\Client\Model\EmailScheduleResponseInner[]' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\EmailScheduleResponseInner[]' !== 'string') {
+                        if ('\ConstantContact\Client\Model\EmailScheduleResponseInner[]' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1192,13 +1192,13 @@ class EmailSchedulingApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\EmailScheduleResponseInner[]', []),
+                        ObjectSerializer::deserialize($content, '\ConstantContact\Client\Model\EmailScheduleResponseInner[]', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\EmailScheduleResponseInner[]';
+            $returnType = '\ConstantContact\Client\Model\EmailScheduleResponseInner[]';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1231,7 +1231,7 @@ class EmailSchedulingApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\EmailScheduleResponseInner[]',
+                        '\ConstantContact\Client\Model\EmailScheduleResponseInner[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1247,7 +1247,7 @@ class EmailSchedulingApi
      * POST (Create) an Email Campaign Activity Schedule
      *
      * @param  string $campaign_activity_id The unique ID for an email campaign activity. You can only schedule email campaign activities that have the &#x60;primary_email&#x60; role. (required)
-     * @param  \OpenAPI\Client\Model\EmailScheduleInput $body A request body payload that contains the date that you want Constant Contact to send your email campaign activity on. Use &#x60;\&quot;0\&quot;&#x60; as the date to have Constant Contact immediately send the email campaign activity. (required)
+     * @param  'ConstantContact\Client\Model\EmailScheduleInput $body A request body payload that contains the date that you want Constant Contact to send your email campaign activity on. Use &#x60;\&quot;0\&quot;&#x60; as the date to have Constant Contact immediately send the email campaign activity. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['scheduleEmailCampaignActivityUsingPOST'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1269,7 +1269,7 @@ class EmailSchedulingApi
      * POST (Create) an Email Campaign Activity Schedule
      *
      * @param  string $campaign_activity_id The unique ID for an email campaign activity. You can only schedule email campaign activities that have the &#x60;primary_email&#x60; role. (required)
-     * @param  \OpenAPI\Client\Model\EmailScheduleInput $body A request body payload that contains the date that you want Constant Contact to send your email campaign activity on. Use &#x60;\&quot;0\&quot;&#x60; as the date to have Constant Contact immediately send the email campaign activity. (required)
+     * @param  'ConstantContact\Client\Model\EmailScheduleInput $body A request body payload that contains the date that you want Constant Contact to send your email campaign activity on. Use &#x60;\&quot;0\&quot;&#x60; as the date to have Constant Contact immediately send the email campaign activity. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['scheduleEmailCampaignActivityUsingPOST'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1277,7 +1277,7 @@ class EmailSchedulingApi
      */
     public function scheduleEmailCampaignActivityUsingPOSTAsyncWithHttpInfo($campaign_activity_id, $body, string $contentType = self::contentTypes['scheduleEmailCampaignActivityUsingPOST'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\EmailScheduleResponseInner[]';
+        $returnType = '\ConstantContact\Client\Model\EmailScheduleResponseInner[]';
         $request = $this->scheduleEmailCampaignActivityUsingPOSTRequest($campaign_activity_id, $body, $contentType);
 
         return $this->client
@@ -1320,7 +1320,7 @@ class EmailSchedulingApi
      * Create request for operation 'scheduleEmailCampaignActivityUsingPOST'
      *
      * @param  string $campaign_activity_id The unique ID for an email campaign activity. You can only schedule email campaign activities that have the &#x60;primary_email&#x60; role. (required)
-     * @param  \OpenAPI\Client\Model\EmailScheduleInput $body A request body payload that contains the date that you want Constant Contact to send your email campaign activity on. Use &#x60;\&quot;0\&quot;&#x60; as the date to have Constant Contact immediately send the email campaign activity. (required)
+     * @param  'ConstantContact\Client\Model\EmailScheduleInput $body A request body payload that contains the date that you want Constant Contact to send your email campaign activity on. Use &#x60;\&quot;0\&quot;&#x60; as the date to have Constant Contact immediately send the email campaign activity. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['scheduleEmailCampaignActivityUsingPOST'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1442,10 +1442,10 @@ class EmailSchedulingApi
      * POST Test Send an Email Campaign Activity
      *
      * @param  string $campaign_activity_id The unique ID for an email campaign activity. You can only test send email campaign activities that have the &#x60;primary_email&#x60; role. (required)
-     * @param  \OpenAPI\Client\Model\EmailTestSendInput $email_test_send_input A JSON request body that contains the recipients of the test email and an optional personal message. (required)
+     * @param  'ConstantContact\Client\Model\EmailTestSendInput $email_test_send_input A JSON request body that contains the recipients of the test email and an optional personal message. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['testSendCampaignActivityUsingPOST'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -1460,10 +1460,10 @@ class EmailSchedulingApi
      * POST Test Send an Email Campaign Activity
      *
      * @param  string $campaign_activity_id The unique ID for an email campaign activity. You can only test send email campaign activities that have the &#x60;primary_email&#x60; role. (required)
-     * @param  \OpenAPI\Client\Model\EmailTestSendInput $email_test_send_input A JSON request body that contains the recipients of the test email and an optional personal message. (required)
+     * @param  'ConstantContact\Client\Model\EmailTestSendInput $email_test_send_input A JSON request body that contains the recipients of the test email and an optional personal message. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['testSendCampaignActivityUsingPOST'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1521,7 +1521,7 @@ class EmailSchedulingApi
      * POST Test Send an Email Campaign Activity
      *
      * @param  string $campaign_activity_id The unique ID for an email campaign activity. You can only test send email campaign activities that have the &#x60;primary_email&#x60; role. (required)
-     * @param  \OpenAPI\Client\Model\EmailTestSendInput $email_test_send_input A JSON request body that contains the recipients of the test email and an optional personal message. (required)
+     * @param  'ConstantContact\Client\Model\EmailTestSendInput $email_test_send_input A JSON request body that contains the recipients of the test email and an optional personal message. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['testSendCampaignActivityUsingPOST'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1543,7 +1543,7 @@ class EmailSchedulingApi
      * POST Test Send an Email Campaign Activity
      *
      * @param  string $campaign_activity_id The unique ID for an email campaign activity. You can only test send email campaign activities that have the &#x60;primary_email&#x60; role. (required)
-     * @param  \OpenAPI\Client\Model\EmailTestSendInput $email_test_send_input A JSON request body that contains the recipients of the test email and an optional personal message. (required)
+     * @param  'ConstantContact\Client\Model\EmailTestSendInput $email_test_send_input A JSON request body that contains the recipients of the test email and an optional personal message. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['testSendCampaignActivityUsingPOST'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1581,7 +1581,7 @@ class EmailSchedulingApi
      * Create request for operation 'testSendCampaignActivityUsingPOST'
      *
      * @param  string $campaign_activity_id The unique ID for an email campaign activity. You can only test send email campaign activities that have the &#x60;primary_email&#x60; role. (required)
-     * @param  \OpenAPI\Client\Model\EmailTestSendInput $email_test_send_input A JSON request body that contains the recipients of the test email and an optional personal message. (required)
+     * @param  'ConstantContact\Client\Model\EmailTestSendInput $email_test_send_input A JSON request body that contains the recipients of the test email and an optional personal message. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['testSendCampaignActivityUsingPOST'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1705,7 +1705,7 @@ class EmailSchedulingApi
      * @param  string $campaign_activity_id The unique ID for an email campaign activity. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['unscheduleEmailCampaignActivityUsingDELETE'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -1722,7 +1722,7 @@ class EmailSchedulingApi
      * @param  string $campaign_activity_id The unique ID for an email campaign activity. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['unscheduleEmailCampaignActivityUsingDELETE'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */

@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -43,7 +43,7 @@ use ConstantContact\Client\ObjectSerializer;
  * AccountServicesApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -145,12 +145,12 @@ class AccountServicesApi
      *
      * POST Add an Account Email Address
      *
-     * @param  \OpenAPI\Client\Model\AccountEmailInput $body A JSON request payload containing the new email address you want to add to the Constant Contact account. (required)
+     * @param  'ConstantContact\Client\Model\AccountEmailInput $body A JSON request payload containing the new email address you want to add to the Constant Contact account. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['addAccountEmailAddress'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\AccountEmailCreateResponse
+     * @return 'ConstantContact\Client\Model\AccountEmailCreateResponse
      */
     public function addAccountEmailAddress($body, string $contentType = self::contentTypes['addAccountEmailAddress'][0])
     {
@@ -163,12 +163,12 @@ class AccountServicesApi
      *
      * POST Add an Account Email Address
      *
-     * @param  \OpenAPI\Client\Model\AccountEmailInput $body A JSON request payload containing the new email address you want to add to the Constant Contact account. (required)
+     * @param  'ConstantContact\Client\Model\AccountEmailInput $body A JSON request payload containing the new email address you want to add to the Constant Contact account. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['addAccountEmailAddress'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\AccountEmailCreateResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of 'ConstantContact\Client\Model\AccountEmailCreateResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function addAccountEmailAddressWithHttpInfo($body, string $contentType = self::contentTypes['addAccountEmailAddress'][0])
     {
@@ -211,11 +211,11 @@ class AccountServicesApi
 
             switch($statusCode) {
                 case 201:
-                    if ('\OpenAPI\Client\Model\AccountEmailCreateResponse' === '\SplFileObject') {
+                    if ('\ConstantContact\Client\Model\AccountEmailCreateResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\AccountEmailCreateResponse' !== 'string') {
+                        if ('\ConstantContact\Client\Model\AccountEmailCreateResponse' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -233,13 +233,13 @@ class AccountServicesApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\AccountEmailCreateResponse', []),
+                        ObjectSerializer::deserialize($content, '\ConstantContact\Client\Model\AccountEmailCreateResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\AccountEmailCreateResponse';
+            $returnType = '\ConstantContact\Client\Model\AccountEmailCreateResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -272,7 +272,7 @@ class AccountServicesApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\AccountEmailCreateResponse',
+                        '\ConstantContact\Client\Model\AccountEmailCreateResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -287,7 +287,7 @@ class AccountServicesApi
      *
      * POST Add an Account Email Address
      *
-     * @param  \OpenAPI\Client\Model\AccountEmailInput $body A JSON request payload containing the new email address you want to add to the Constant Contact account. (required)
+     * @param  'ConstantContact\Client\Model\AccountEmailInput $body A JSON request payload containing the new email address you want to add to the Constant Contact account. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['addAccountEmailAddress'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -308,7 +308,7 @@ class AccountServicesApi
      *
      * POST Add an Account Email Address
      *
-     * @param  \OpenAPI\Client\Model\AccountEmailInput $body A JSON request payload containing the new email address you want to add to the Constant Contact account. (required)
+     * @param  'ConstantContact\Client\Model\AccountEmailInput $body A JSON request payload containing the new email address you want to add to the Constant Contact account. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['addAccountEmailAddress'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -316,7 +316,7 @@ class AccountServicesApi
      */
     public function addAccountEmailAddressAsyncWithHttpInfo($body, string $contentType = self::contentTypes['addAccountEmailAddress'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\AccountEmailCreateResponse';
+        $returnType = '\ConstantContact\Client\Model\AccountEmailCreateResponse';
         $request = $this->addAccountEmailAddressRequest($body, $contentType);
 
         return $this->client
@@ -358,7 +358,7 @@ class AccountServicesApi
     /**
      * Create request for operation 'addAccountEmailAddress'
      *
-     * @param  \OpenAPI\Client\Model\AccountEmailInput $body A JSON request payload containing the new email address you want to add to the Constant Contact account. (required)
+     * @param  'ConstantContact\Client\Model\AccountEmailInput $body A JSON request payload containing the new email address you want to add to the Constant Contact account. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['addAccountEmailAddress'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -467,9 +467,9 @@ class AccountServicesApi
      * @param  string $extra_fields Use the &#x60;extra_fields&#x60; query parameter to include the &#x60;physical_address&#x60; and/or &#x60;company_logo&#x60; details in the response body. Use a comma separated list to include both (physical_address, company logo). (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getAccountById'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\Customer
+     * @return 'ConstantContact\Client\Model\Customer
      */
     public function getAccountById($extra_fields = null, string $contentType = self::contentTypes['getAccountById'][0])
     {
@@ -485,9 +485,9 @@ class AccountServicesApi
      * @param  string $extra_fields Use the &#x60;extra_fields&#x60; query parameter to include the &#x60;physical_address&#x60; and/or &#x60;company_logo&#x60; details in the response body. Use a comma separated list to include both (physical_address, company logo). (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getAccountById'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\Customer, HTTP status code, HTTP response headers (array of strings)
+     * @return array of 'ConstantContact\Client\Model\Customer, HTTP status code, HTTP response headers (array of strings)
      */
     public function getAccountByIdWithHttpInfo($extra_fields = null, string $contentType = self::contentTypes['getAccountById'][0])
     {
@@ -530,11 +530,11 @@ class AccountServicesApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\Customer' === '\SplFileObject') {
+                    if ('\ConstantContact\Client\Model\Customer' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\Customer' !== 'string') {
+                        if ('\ConstantContact\Client\Model\Customer' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -552,13 +552,13 @@ class AccountServicesApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Customer', []),
+                        ObjectSerializer::deserialize($content, '\ConstantContact\Client\Model\Customer', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\Customer';
+            $returnType = '\ConstantContact\Client\Model\Customer';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -591,7 +591,7 @@ class AccountServicesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Customer',
+                        '\ConstantContact\Client\Model\Customer',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -635,7 +635,7 @@ class AccountServicesApi
      */
     public function getAccountByIdAsyncWithHttpInfo($extra_fields = null, string $contentType = self::contentTypes['getAccountById'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\Customer';
+        $returnType = '\ConstantContact\Client\Model\Customer';
         $request = $this->getAccountByIdRequest($extra_fields, $contentType);
 
         return $this->client
@@ -781,9 +781,9 @@ class AccountServicesApi
      *
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getPhysicalAddress'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\AccountPhysicalAddress
+     * @return 'ConstantContact\Client\Model\AccountPhysicalAddress
      */
     public function getPhysicalAddress(string $contentType = self::contentTypes['getPhysicalAddress'][0])
     {
@@ -798,9 +798,9 @@ class AccountServicesApi
      *
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getPhysicalAddress'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\AccountPhysicalAddress, HTTP status code, HTTP response headers (array of strings)
+     * @return array of 'ConstantContact\Client\Model\AccountPhysicalAddress, HTTP status code, HTTP response headers (array of strings)
      */
     public function getPhysicalAddressWithHttpInfo(string $contentType = self::contentTypes['getPhysicalAddress'][0])
     {
@@ -843,11 +843,11 @@ class AccountServicesApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\AccountPhysicalAddress' === '\SplFileObject') {
+                    if ('\ConstantContact\Client\Model\AccountPhysicalAddress' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\AccountPhysicalAddress' !== 'string') {
+                        if ('\ConstantContact\Client\Model\AccountPhysicalAddress' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -865,13 +865,13 @@ class AccountServicesApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\AccountPhysicalAddress', []),
+                        ObjectSerializer::deserialize($content, '\ConstantContact\Client\Model\AccountPhysicalAddress', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\AccountPhysicalAddress';
+            $returnType = '\ConstantContact\Client\Model\AccountPhysicalAddress';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -904,7 +904,7 @@ class AccountServicesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\AccountPhysicalAddress',
+                        '\ConstantContact\Client\Model\AccountPhysicalAddress',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -946,7 +946,7 @@ class AccountServicesApi
      */
     public function getPhysicalAddressAsyncWithHttpInfo(string $contentType = self::contentTypes['getPhysicalAddress'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\AccountPhysicalAddress';
+        $returnType = '\ConstantContact\Client\Model\AccountPhysicalAddress';
         $request = $this->getPhysicalAddressRequest($contentType);
 
         return $this->client
@@ -1081,9 +1081,9 @@ class AccountServicesApi
      *
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getUserPrivileges'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\UserPrivilegesResourceInner[]
+     * @return 'ConstantContact\Client\Model\UserPrivilegesResourceInner[]
      */
     public function getUserPrivileges(string $contentType = self::contentTypes['getUserPrivileges'][0])
     {
@@ -1098,9 +1098,9 @@ class AccountServicesApi
      *
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getUserPrivileges'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\UserPrivilegesResourceInner[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of 'ConstantContact\Client\Model\UserPrivilegesResourceInner[], HTTP status code, HTTP response headers (array of strings)
      */
     public function getUserPrivilegesWithHttpInfo(string $contentType = self::contentTypes['getUserPrivileges'][0])
     {
@@ -1143,11 +1143,11 @@ class AccountServicesApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\UserPrivilegesResourceInner[]' === '\SplFileObject') {
+                    if ('\ConstantContact\Client\Model\UserPrivilegesResourceInner[]' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\UserPrivilegesResourceInner[]' !== 'string') {
+                        if ('\ConstantContact\Client\Model\UserPrivilegesResourceInner[]' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1165,13 +1165,13 @@ class AccountServicesApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\UserPrivilegesResourceInner[]', []),
+                        ObjectSerializer::deserialize($content, '\ConstantContact\Client\Model\UserPrivilegesResourceInner[]', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\UserPrivilegesResourceInner[]';
+            $returnType = '\ConstantContact\Client\Model\UserPrivilegesResourceInner[]';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1204,7 +1204,7 @@ class AccountServicesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\UserPrivilegesResourceInner[]',
+                        '\ConstantContact\Client\Model\UserPrivilegesResourceInner[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1246,7 +1246,7 @@ class AccountServicesApi
      */
     public function getUserPrivilegesAsyncWithHttpInfo(string $contentType = self::contentTypes['getUserPrivileges'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\UserPrivilegesResourceInner[]';
+        $returnType = '\ConstantContact\Client\Model\UserPrivilegesResourceInner[]';
         $request = $this->getUserPrivilegesRequest($contentType);
 
         return $this->client
@@ -1379,12 +1379,12 @@ class AccountServicesApi
      *
      * PUT (update) Account Details
      *
-     * @param  \OpenAPI\Client\Model\CustomerPut $body In the request body, specify changes to account details by including and modifying all or select &#x60;CustomerPut&#x60; properties. Changes to read-only fields (&#x60;encoded_account_id&#x60;) are ignored. (required)
+     * @param  'ConstantContact\Client\Model\CustomerPut $body In the request body, specify changes to account details by including and modifying all or select &#x60;CustomerPut&#x60; properties. Changes to read-only fields (&#x60;encoded_account_id&#x60;) are ignored. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putCustomerById'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\CustomerPut
+     * @return 'ConstantContact\Client\Model\CustomerPut
      */
     public function putCustomerById($body, string $contentType = self::contentTypes['putCustomerById'][0])
     {
@@ -1397,12 +1397,12 @@ class AccountServicesApi
      *
      * PUT (update) Account Details
      *
-     * @param  \OpenAPI\Client\Model\CustomerPut $body In the request body, specify changes to account details by including and modifying all or select &#x60;CustomerPut&#x60; properties. Changes to read-only fields (&#x60;encoded_account_id&#x60;) are ignored. (required)
+     * @param  'ConstantContact\Client\Model\CustomerPut $body In the request body, specify changes to account details by including and modifying all or select &#x60;CustomerPut&#x60; properties. Changes to read-only fields (&#x60;encoded_account_id&#x60;) are ignored. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putCustomerById'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\CustomerPut, HTTP status code, HTTP response headers (array of strings)
+     * @return array of 'ConstantContact\Client\Model\CustomerPut, HTTP status code, HTTP response headers (array of strings)
      */
     public function putCustomerByIdWithHttpInfo($body, string $contentType = self::contentTypes['putCustomerById'][0])
     {
@@ -1445,11 +1445,11 @@ class AccountServicesApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\CustomerPut' === '\SplFileObject') {
+                    if ('\ConstantContact\Client\Model\CustomerPut' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\CustomerPut' !== 'string') {
+                        if ('\ConstantContact\Client\Model\CustomerPut' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1467,13 +1467,13 @@ class AccountServicesApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\CustomerPut', []),
+                        ObjectSerializer::deserialize($content, '\ConstantContact\Client\Model\CustomerPut', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\CustomerPut';
+            $returnType = '\ConstantContact\Client\Model\CustomerPut';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1506,7 +1506,7 @@ class AccountServicesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\CustomerPut',
+                        '\ConstantContact\Client\Model\CustomerPut',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1521,7 +1521,7 @@ class AccountServicesApi
      *
      * PUT (update) Account Details
      *
-     * @param  \OpenAPI\Client\Model\CustomerPut $body In the request body, specify changes to account details by including and modifying all or select &#x60;CustomerPut&#x60; properties. Changes to read-only fields (&#x60;encoded_account_id&#x60;) are ignored. (required)
+     * @param  'ConstantContact\Client\Model\CustomerPut $body In the request body, specify changes to account details by including and modifying all or select &#x60;CustomerPut&#x60; properties. Changes to read-only fields (&#x60;encoded_account_id&#x60;) are ignored. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putCustomerById'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1542,7 +1542,7 @@ class AccountServicesApi
      *
      * PUT (update) Account Details
      *
-     * @param  \OpenAPI\Client\Model\CustomerPut $body In the request body, specify changes to account details by including and modifying all or select &#x60;CustomerPut&#x60; properties. Changes to read-only fields (&#x60;encoded_account_id&#x60;) are ignored. (required)
+     * @param  'ConstantContact\Client\Model\CustomerPut $body In the request body, specify changes to account details by including and modifying all or select &#x60;CustomerPut&#x60; properties. Changes to read-only fields (&#x60;encoded_account_id&#x60;) are ignored. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putCustomerById'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1550,7 +1550,7 @@ class AccountServicesApi
      */
     public function putCustomerByIdAsyncWithHttpInfo($body, string $contentType = self::contentTypes['putCustomerById'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\CustomerPut';
+        $returnType = '\ConstantContact\Client\Model\CustomerPut';
         $request = $this->putCustomerByIdRequest($body, $contentType);
 
         return $this->client
@@ -1592,7 +1592,7 @@ class AccountServicesApi
     /**
      * Create request for operation 'putCustomerById'
      *
-     * @param  \OpenAPI\Client\Model\CustomerPut $body In the request body, specify changes to account details by including and modifying all or select &#x60;CustomerPut&#x60; properties. Changes to read-only fields (&#x60;encoded_account_id&#x60;) are ignored. (required)
+     * @param  'ConstantContact\Client\Model\CustomerPut $body In the request body, specify changes to account details by including and modifying all or select &#x60;CustomerPut&#x60; properties. Changes to read-only fields (&#x60;encoded_account_id&#x60;) are ignored. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putCustomerById'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1698,12 +1698,12 @@ class AccountServicesApi
      *
      * PUT (update) the Physical Address for an Account
      *
-     * @param  \OpenAPI\Client\Model\AccountPhysicalAddress $body Include all &#x60;AccountPhysicalAddress&#x60; properties required for the specified &#x60;country_code&#x60; and then update only those properties that you want to change. Excluding a non-read only field from the request body removes it from the physical address. (required)
+     * @param  'ConstantContact\Client\Model\AccountPhysicalAddress $body Include all &#x60;AccountPhysicalAddress&#x60; properties required for the specified &#x60;country_code&#x60; and then update only those properties that you want to change. Excluding a non-read only field from the request body removes it from the physical address. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putPhysicalAddress'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\AccountPhysicalAddress
+     * @return 'ConstantContact\Client\Model\AccountPhysicalAddress
      */
     public function putPhysicalAddress($body, string $contentType = self::contentTypes['putPhysicalAddress'][0])
     {
@@ -1716,12 +1716,12 @@ class AccountServicesApi
      *
      * PUT (update) the Physical Address for an Account
      *
-     * @param  \OpenAPI\Client\Model\AccountPhysicalAddress $body Include all &#x60;AccountPhysicalAddress&#x60; properties required for the specified &#x60;country_code&#x60; and then update only those properties that you want to change. Excluding a non-read only field from the request body removes it from the physical address. (required)
+     * @param  'ConstantContact\Client\Model\AccountPhysicalAddress $body Include all &#x60;AccountPhysicalAddress&#x60; properties required for the specified &#x60;country_code&#x60; and then update only those properties that you want to change. Excluding a non-read only field from the request body removes it from the physical address. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putPhysicalAddress'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\AccountPhysicalAddress, HTTP status code, HTTP response headers (array of strings)
+     * @return array of 'ConstantContact\Client\Model\AccountPhysicalAddress, HTTP status code, HTTP response headers (array of strings)
      */
     public function putPhysicalAddressWithHttpInfo($body, string $contentType = self::contentTypes['putPhysicalAddress'][0])
     {
@@ -1764,11 +1764,11 @@ class AccountServicesApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\AccountPhysicalAddress' === '\SplFileObject') {
+                    if ('\ConstantContact\Client\Model\AccountPhysicalAddress' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\AccountPhysicalAddress' !== 'string') {
+                        if ('\ConstantContact\Client\Model\AccountPhysicalAddress' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1786,13 +1786,13 @@ class AccountServicesApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\AccountPhysicalAddress', []),
+                        ObjectSerializer::deserialize($content, '\ConstantContact\Client\Model\AccountPhysicalAddress', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\AccountPhysicalAddress';
+            $returnType = '\ConstantContact\Client\Model\AccountPhysicalAddress';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1825,7 +1825,7 @@ class AccountServicesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\AccountPhysicalAddress',
+                        '\ConstantContact\Client\Model\AccountPhysicalAddress',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1840,7 +1840,7 @@ class AccountServicesApi
      *
      * PUT (update) the Physical Address for an Account
      *
-     * @param  \OpenAPI\Client\Model\AccountPhysicalAddress $body Include all &#x60;AccountPhysicalAddress&#x60; properties required for the specified &#x60;country_code&#x60; and then update only those properties that you want to change. Excluding a non-read only field from the request body removes it from the physical address. (required)
+     * @param  'ConstantContact\Client\Model\AccountPhysicalAddress $body Include all &#x60;AccountPhysicalAddress&#x60; properties required for the specified &#x60;country_code&#x60; and then update only those properties that you want to change. Excluding a non-read only field from the request body removes it from the physical address. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putPhysicalAddress'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1861,7 +1861,7 @@ class AccountServicesApi
      *
      * PUT (update) the Physical Address for an Account
      *
-     * @param  \OpenAPI\Client\Model\AccountPhysicalAddress $body Include all &#x60;AccountPhysicalAddress&#x60; properties required for the specified &#x60;country_code&#x60; and then update only those properties that you want to change. Excluding a non-read only field from the request body removes it from the physical address. (required)
+     * @param  'ConstantContact\Client\Model\AccountPhysicalAddress $body Include all &#x60;AccountPhysicalAddress&#x60; properties required for the specified &#x60;country_code&#x60; and then update only those properties that you want to change. Excluding a non-read only field from the request body removes it from the physical address. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putPhysicalAddress'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1869,7 +1869,7 @@ class AccountServicesApi
      */
     public function putPhysicalAddressAsyncWithHttpInfo($body, string $contentType = self::contentTypes['putPhysicalAddress'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\AccountPhysicalAddress';
+        $returnType = '\ConstantContact\Client\Model\AccountPhysicalAddress';
         $request = $this->putPhysicalAddressRequest($body, $contentType);
 
         return $this->client
@@ -1911,7 +1911,7 @@ class AccountServicesApi
     /**
      * Create request for operation 'putPhysicalAddress'
      *
-     * @param  \OpenAPI\Client\Model\AccountPhysicalAddress $body Include all &#x60;AccountPhysicalAddress&#x60; properties required for the specified &#x60;country_code&#x60; and then update only those properties that you want to change. Excluding a non-read only field from the request body removes it from the physical address. (required)
+     * @param  'ConstantContact\Client\Model\AccountPhysicalAddress $body Include all &#x60;AccountPhysicalAddress&#x60; properties required for the specified &#x60;country_code&#x60; and then update only those properties that you want to change. Excluding a non-read only field from the request body removes it from the physical address. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putPhysicalAddress'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2022,9 +2022,9 @@ class AccountServicesApi
      * @param  string $email_address Use the &#x60;email_address&#x60; query parameter to search for a specific account email address. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['retrieveEmailAddresses'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\AccountEmailsInner[]
+     * @return 'ConstantContact\Client\Model\AccountEmailsInner[]
      */
     public function retrieveEmailAddresses($confirm_status = null, $role_code = null, $email_address = null, string $contentType = self::contentTypes['retrieveEmailAddresses'][0])
     {
@@ -2042,9 +2042,9 @@ class AccountServicesApi
      * @param  string $email_address Use the &#x60;email_address&#x60; query parameter to search for a specific account email address. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['retrieveEmailAddresses'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\AccountEmailsInner[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of 'ConstantContact\Client\Model\AccountEmailsInner[], HTTP status code, HTTP response headers (array of strings)
      */
     public function retrieveEmailAddressesWithHttpInfo($confirm_status = null, $role_code = null, $email_address = null, string $contentType = self::contentTypes['retrieveEmailAddresses'][0])
     {
@@ -2087,11 +2087,11 @@ class AccountServicesApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\AccountEmailsInner[]' === '\SplFileObject') {
+                    if ('\ConstantContact\Client\Model\AccountEmailsInner[]' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\AccountEmailsInner[]' !== 'string') {
+                        if ('\ConstantContact\Client\Model\AccountEmailsInner[]' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2109,13 +2109,13 @@ class AccountServicesApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\AccountEmailsInner[]', []),
+                        ObjectSerializer::deserialize($content, '\ConstantContact\Client\Model\AccountEmailsInner[]', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\AccountEmailsInner[]';
+            $returnType = '\ConstantContact\Client\Model\AccountEmailsInner[]';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -2148,7 +2148,7 @@ class AccountServicesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\AccountEmailsInner[]',
+                        '\ConstantContact\Client\Model\AccountEmailsInner[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2196,7 +2196,7 @@ class AccountServicesApi
      */
     public function retrieveEmailAddressesAsyncWithHttpInfo($confirm_status = null, $role_code = null, $email_address = null, string $contentType = self::contentTypes['retrieveEmailAddresses'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\AccountEmailsInner[]';
+        $returnType = '\ConstantContact\Client\Model\AccountEmailsInner[]';
         $request = $this->retrieveEmailAddressesRequest($confirm_status, $role_code, $email_address, $contentType);
 
         return $this->client

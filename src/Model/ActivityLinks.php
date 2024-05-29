@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace ConstantContact\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use 'ConstantContact\Client\ObjectSerializer;
 
 /**
  * ActivityLinks Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,8 +57,8 @@ class ActivityLinks implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'self' => '\OpenAPI\Client\Model\ActivityLinksSelf',
-        'results' => '\OpenAPI\Client\Model\ActivityLinksResults'
+        'self' => '\ConstantContact\Client\Model\ActivityLinksSelf',
+        'results' => '\ConstantContact\Client\Model\ActivityLinksResults'
     ];
 
     /**
@@ -299,7 +299,7 @@ class ActivityLinks implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets self
      *
-     * @return \OpenAPI\Client\Model\ActivityLinksSelf|null
+     * @return 'ConstantContact\Client\Model\ActivityLinksSelf|null
      */
     public function getSelf()
     {
@@ -309,7 +309,7 @@ class ActivityLinks implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets self
      *
-     * @param \OpenAPI\Client\Model\ActivityLinksSelf|null $self self
+     * @param 'ConstantContact\Client\Model\ActivityLinksSelf|null $self self
      *
      * @return self
      */
@@ -326,7 +326,7 @@ class ActivityLinks implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets results
      *
-     * @return \OpenAPI\Client\Model\ActivityLinksResults|null
+     * @return 'ConstantContact\Client\Model\ActivityLinksResults|null
      */
     public function getResults()
     {
@@ -336,7 +336,7 @@ class ActivityLinks implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets results
      *
-     * @param \OpenAPI\Client\Model\ActivityLinksResults|null $results results
+     * @param 'ConstantContact\Client\Model\ActivityLinksResults|null $results results
      *
      * @return self
      */

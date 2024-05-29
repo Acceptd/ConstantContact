@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,14 +29,14 @@
 namespace ConstantContact\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use 'ConstantContact\Client\ObjectSerializer;
 
 /**
  * ActivityStatusExportLinkSelf Class Doc Comment
  *
  * @category Class
  * @description HATEOS-style link to the activity status (this object).
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>

@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -43,7 +43,7 @@ use ConstantContact\Client\ObjectSerializer;
  * TechnologyPartnersWebhooksApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -142,7 +142,7 @@ class TechnologyPartnersWebhooksApi
      * @param  string $topic_id Identifies a webhook topic. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteWebhooksSubscriptions'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -159,7 +159,7 @@ class TechnologyPartnersWebhooksApi
      * @param  string $topic_id Identifies a webhook topic. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteWebhooksSubscriptions'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -380,9 +380,9 @@ class TechnologyPartnersWebhooksApi
      *
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getWebhooksCollection'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\WebhooksSubscriptionCollectionInner[]
+     * @return 'ConstantContact\Client\Model\WebhooksSubscriptionCollectionInner[]
      */
     public function getWebhooksCollection(string $contentType = self::contentTypes['getWebhooksCollection'][0])
     {
@@ -397,9 +397,9 @@ class TechnologyPartnersWebhooksApi
      *
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getWebhooksCollection'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\WebhooksSubscriptionCollectionInner[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of 'ConstantContact\Client\Model\WebhooksSubscriptionCollectionInner[], HTTP status code, HTTP response headers (array of strings)
      */
     public function getWebhooksCollectionWithHttpInfo(string $contentType = self::contentTypes['getWebhooksCollection'][0])
     {
@@ -442,11 +442,11 @@ class TechnologyPartnersWebhooksApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\WebhooksSubscriptionCollectionInner[]' === '\SplFileObject') {
+                    if ('\ConstantContact\Client\Model\WebhooksSubscriptionCollectionInner[]' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\WebhooksSubscriptionCollectionInner[]' !== 'string') {
+                        if ('\ConstantContact\Client\Model\WebhooksSubscriptionCollectionInner[]' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -464,13 +464,13 @@ class TechnologyPartnersWebhooksApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\WebhooksSubscriptionCollectionInner[]', []),
+                        ObjectSerializer::deserialize($content, '\ConstantContact\Client\Model\WebhooksSubscriptionCollectionInner[]', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\WebhooksSubscriptionCollectionInner[]';
+            $returnType = '\ConstantContact\Client\Model\WebhooksSubscriptionCollectionInner[]';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -503,7 +503,7 @@ class TechnologyPartnersWebhooksApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\WebhooksSubscriptionCollectionInner[]',
+                        '\ConstantContact\Client\Model\WebhooksSubscriptionCollectionInner[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -545,7 +545,7 @@ class TechnologyPartnersWebhooksApi
      */
     public function getWebhooksCollectionAsyncWithHttpInfo(string $contentType = self::contentTypes['getWebhooksCollection'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\WebhooksSubscriptionCollectionInner[]';
+        $returnType = '\ConstantContact\Client\Model\WebhooksSubscriptionCollectionInner[]';
         $request = $this->getWebhooksCollectionRequest($contentType);
 
         return $this->client
@@ -678,9 +678,9 @@ class TechnologyPartnersWebhooksApi
      * @param  string $topic_id Identifies a webhook topic. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getWebhooksTopic'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\WebhooksSubscriptionResponse
+     * @return 'ConstantContact\Client\Model\WebhooksSubscriptionResponse
      */
     public function getWebhooksTopic($topic_id, string $contentType = self::contentTypes['getWebhooksTopic'][0])
     {
@@ -696,9 +696,9 @@ class TechnologyPartnersWebhooksApi
      * @param  string $topic_id Identifies a webhook topic. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getWebhooksTopic'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\WebhooksSubscriptionResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of 'ConstantContact\Client\Model\WebhooksSubscriptionResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getWebhooksTopicWithHttpInfo($topic_id, string $contentType = self::contentTypes['getWebhooksTopic'][0])
     {
@@ -741,11 +741,11 @@ class TechnologyPartnersWebhooksApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\WebhooksSubscriptionResponse' === '\SplFileObject') {
+                    if ('\ConstantContact\Client\Model\WebhooksSubscriptionResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\WebhooksSubscriptionResponse' !== 'string') {
+                        if ('\ConstantContact\Client\Model\WebhooksSubscriptionResponse' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -763,13 +763,13 @@ class TechnologyPartnersWebhooksApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\WebhooksSubscriptionResponse', []),
+                        ObjectSerializer::deserialize($content, '\ConstantContact\Client\Model\WebhooksSubscriptionResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\WebhooksSubscriptionResponse';
+            $returnType = '\ConstantContact\Client\Model\WebhooksSubscriptionResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -802,7 +802,7 @@ class TechnologyPartnersWebhooksApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\WebhooksSubscriptionResponse',
+                        '\ConstantContact\Client\Model\WebhooksSubscriptionResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -846,7 +846,7 @@ class TechnologyPartnersWebhooksApi
      */
     public function getWebhooksTopicAsyncWithHttpInfo($topic_id, string $contentType = self::contentTypes['getWebhooksTopic'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\WebhooksSubscriptionResponse';
+        $returnType = '\ConstantContact\Client\Model\WebhooksSubscriptionResponse';
         $request = $this->getWebhooksTopicRequest($topic_id, $contentType);
 
         return $this->client
@@ -993,12 +993,12 @@ class TechnologyPartnersWebhooksApi
      * PUT Webhook Topic Subscription
      *
      * @param  string $topic_id Identifies a webhook topic. (required)
-     * @param  \OpenAPI\Client\Model\WebhooksSubscriptionBody $body A JSON payload containing a callback URI. Constant Contact uses this callback URI to notify you about your chosen topic. (required)
+     * @param  'ConstantContact\Client\Model\WebhooksSubscriptionBody $body A JSON payload containing a callback URI. Constant Contact uses this callback URI to notify you about your chosen topic. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putWebhooksTopic'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\WebhooksSubscriptionPutResp
+     * @return 'ConstantContact\Client\Model\WebhooksSubscriptionPutResp
      */
     public function putWebhooksTopic($topic_id, $body, string $contentType = self::contentTypes['putWebhooksTopic'][0])
     {
@@ -1012,12 +1012,12 @@ class TechnologyPartnersWebhooksApi
      * PUT Webhook Topic Subscription
      *
      * @param  string $topic_id Identifies a webhook topic. (required)
-     * @param  \OpenAPI\Client\Model\WebhooksSubscriptionBody $body A JSON payload containing a callback URI. Constant Contact uses this callback URI to notify you about your chosen topic. (required)
+     * @param  'ConstantContact\Client\Model\WebhooksSubscriptionBody $body A JSON payload containing a callback URI. Constant Contact uses this callback URI to notify you about your chosen topic. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putWebhooksTopic'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\WebhooksSubscriptionPutResp, HTTP status code, HTTP response headers (array of strings)
+     * @return array of 'ConstantContact\Client\Model\WebhooksSubscriptionPutResp, HTTP status code, HTTP response headers (array of strings)
      */
     public function putWebhooksTopicWithHttpInfo($topic_id, $body, string $contentType = self::contentTypes['putWebhooksTopic'][0])
     {
@@ -1060,11 +1060,11 @@ class TechnologyPartnersWebhooksApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\WebhooksSubscriptionPutResp' === '\SplFileObject') {
+                    if ('\ConstantContact\Client\Model\WebhooksSubscriptionPutResp' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\WebhooksSubscriptionPutResp' !== 'string') {
+                        if ('\ConstantContact\Client\Model\WebhooksSubscriptionPutResp' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1082,13 +1082,13 @@ class TechnologyPartnersWebhooksApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\WebhooksSubscriptionPutResp', []),
+                        ObjectSerializer::deserialize($content, '\ConstantContact\Client\Model\WebhooksSubscriptionPutResp', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\WebhooksSubscriptionPutResp';
+            $returnType = '\ConstantContact\Client\Model\WebhooksSubscriptionPutResp';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1121,7 +1121,7 @@ class TechnologyPartnersWebhooksApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\WebhooksSubscriptionPutResp',
+                        '\ConstantContact\Client\Model\WebhooksSubscriptionPutResp',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1137,7 +1137,7 @@ class TechnologyPartnersWebhooksApi
      * PUT Webhook Topic Subscription
      *
      * @param  string $topic_id Identifies a webhook topic. (required)
-     * @param  \OpenAPI\Client\Model\WebhooksSubscriptionBody $body A JSON payload containing a callback URI. Constant Contact uses this callback URI to notify you about your chosen topic. (required)
+     * @param  'ConstantContact\Client\Model\WebhooksSubscriptionBody $body A JSON payload containing a callback URI. Constant Contact uses this callback URI to notify you about your chosen topic. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putWebhooksTopic'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1159,7 +1159,7 @@ class TechnologyPartnersWebhooksApi
      * PUT Webhook Topic Subscription
      *
      * @param  string $topic_id Identifies a webhook topic. (required)
-     * @param  \OpenAPI\Client\Model\WebhooksSubscriptionBody $body A JSON payload containing a callback URI. Constant Contact uses this callback URI to notify you about your chosen topic. (required)
+     * @param  'ConstantContact\Client\Model\WebhooksSubscriptionBody $body A JSON payload containing a callback URI. Constant Contact uses this callback URI to notify you about your chosen topic. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putWebhooksTopic'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1167,7 +1167,7 @@ class TechnologyPartnersWebhooksApi
      */
     public function putWebhooksTopicAsyncWithHttpInfo($topic_id, $body, string $contentType = self::contentTypes['putWebhooksTopic'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\WebhooksSubscriptionPutResp';
+        $returnType = '\ConstantContact\Client\Model\WebhooksSubscriptionPutResp';
         $request = $this->putWebhooksTopicRequest($topic_id, $body, $contentType);
 
         return $this->client
@@ -1210,7 +1210,7 @@ class TechnologyPartnersWebhooksApi
      * Create request for operation 'putWebhooksTopic'
      *
      * @param  string $topic_id Identifies a webhook topic. (required)
-     * @param  \OpenAPI\Client\Model\WebhooksSubscriptionBody $body A JSON payload containing a callback URI. Constant Contact uses this callback URI to notify you about your chosen topic. (required)
+     * @param  'ConstantContact\Client\Model\WebhooksSubscriptionBody $body A JSON payload containing a callback URI. Constant Contact uses this callback URI to notify you about your chosen topic. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putWebhooksTopic'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1331,9 +1331,9 @@ class TechnologyPartnersWebhooksApi
      * @param  string $topic_id Identifies a webhook topic. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['testSendWebhooksTopic'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\WebhooksTestSend
+     * @return 'ConstantContact\Client\Model\WebhooksTestSend
      */
     public function testSendWebhooksTopic($topic_id, string $contentType = self::contentTypes['testSendWebhooksTopic'][0])
     {
@@ -1349,9 +1349,9 @@ class TechnologyPartnersWebhooksApi
      * @param  string $topic_id Identifies a webhook topic. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['testSendWebhooksTopic'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\WebhooksTestSend, HTTP status code, HTTP response headers (array of strings)
+     * @return array of 'ConstantContact\Client\Model\WebhooksTestSend, HTTP status code, HTTP response headers (array of strings)
      */
     public function testSendWebhooksTopicWithHttpInfo($topic_id, string $contentType = self::contentTypes['testSendWebhooksTopic'][0])
     {
@@ -1394,11 +1394,11 @@ class TechnologyPartnersWebhooksApi
 
             switch($statusCode) {
                 case 201:
-                    if ('\OpenAPI\Client\Model\WebhooksTestSend' === '\SplFileObject') {
+                    if ('\ConstantContact\Client\Model\WebhooksTestSend' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\WebhooksTestSend' !== 'string') {
+                        if ('\ConstantContact\Client\Model\WebhooksTestSend' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1416,13 +1416,13 @@ class TechnologyPartnersWebhooksApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\WebhooksTestSend', []),
+                        ObjectSerializer::deserialize($content, '\ConstantContact\Client\Model\WebhooksTestSend', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\WebhooksTestSend';
+            $returnType = '\ConstantContact\Client\Model\WebhooksTestSend';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1455,7 +1455,7 @@ class TechnologyPartnersWebhooksApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\WebhooksTestSend',
+                        '\ConstantContact\Client\Model\WebhooksTestSend',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1499,7 +1499,7 @@ class TechnologyPartnersWebhooksApi
      */
     public function testSendWebhooksTopicAsyncWithHttpInfo($topic_id, string $contentType = self::contentTypes['testSendWebhooksTopic'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\WebhooksTestSend';
+        $returnType = '\ConstantContact\Client\Model\WebhooksTestSend';
         $request = $this->testSendWebhooksTopicRequest($topic_id, $contentType);
 
         return $this->client

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,14 +29,14 @@
 namespace ConstantContact\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use 'ConstantContact\Client\ObjectSerializer;
 
 /**
  * ListXref Class Doc Comment
  *
  * @category Class
  * @description The cross-referenced pair of V3 API &lt;code&gt;list_id&lt;/code&gt; and V2 API &lt;code&gt;sequence_id&lt;/code&gt; for a list. Response is sorted ascending by &lt;code&gt;sequence_id&lt;/code&gt;.
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>

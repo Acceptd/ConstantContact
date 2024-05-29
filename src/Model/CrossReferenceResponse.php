@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace ConstantContact\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use 'ConstantContact\Client\ObjectSerializer;
 
 /**
  * CrossReferenceResponse Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class CrossReferenceResponse implements ModelInterface, ArrayAccess, \JsonSerial
       * @var string[]
       */
     protected static $openAPITypes = [
-        'xrefs' => '\OpenAPI\Client\Model\CrossReference[]'
+        'xrefs' => '\ConstantContact\Client\Model\CrossReference[]'
     ];
 
     /**
@@ -292,7 +292,7 @@ class CrossReferenceResponse implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets xrefs
      *
-     * @return \OpenAPI\Client\Model\CrossReference[]|null
+     * @return 'ConstantContact\Client\Model\CrossReference[]|null
      */
     public function getXrefs()
     {
@@ -302,7 +302,7 @@ class CrossReferenceResponse implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets xrefs
      *
-     * @param \OpenAPI\Client\Model\CrossReference[]|null $xrefs An array of objects that contain a <code>v2_email_campaign_id</code> cross-referenced with a V3 <code>campaign_id</code> and a V3 <code>campaign_activity_id</code> value.
+     * @param 'ConstantContact\Client\Model\CrossReference[]|null $xrefs An array of objects that contain a <code>v2_email_campaign_id</code> cross-referenced with a V3 <code>campaign_id</code> and a V3 <code>campaign_activity_id</code> value.
      *
      * @return self
      */

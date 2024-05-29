@@ -80,7 +80,7 @@ void (empty response body)
 ## `getWebhooksCollection()`
 
 ```php
-getWebhooksCollection(): \OpenAPI\Client\Model\WebhooksSubscriptionCollectionInner[]
+getWebhooksCollection(): 'ConstantContact\Client\Model\WebhooksSubscriptionCollectionInner[]
 ```
 
 GET a Collection of Webhook Topic Subscriptions
@@ -144,7 +144,7 @@ This endpoint does not need any parameter.
 ## `getWebhooksTopic()`
 
 ```php
-getWebhooksTopic($topic_id): \OpenAPI\Client\Model\WebhooksSubscriptionResponse
+getWebhooksTopic($topic_id): 'ConstantContact\Client\Model\WebhooksSubscriptionResponse
 ```
 
 GET Webhook Topic Subscription
@@ -211,7 +211,7 @@ try {
 ## `putWebhooksTopic()`
 
 ```php
-putWebhooksTopic($topic_id, $body): \OpenAPI\Client\Model\WebhooksSubscriptionPutResp
+putWebhooksTopic($topic_id, $body): 'ConstantContact\Client\Model\WebhooksSubscriptionPutResp
 ```
 
 PUT Webhook Topic Subscription
@@ -243,7 +243,7 @@ $apiInstance = new OpenAPI\Client\Api\TechnologyPartnersWebhooksApi(
     $config
 );
 $topic_id = 1; // string | Identifies a webhook topic.
-$body = new \OpenAPI\Client\Model\WebhooksSubscriptionBody(); // \OpenAPI\Client\Model\WebhooksSubscriptionBody | A JSON payload containing a callback URI. Constant Contact uses this callback URI to notify you about your chosen topic.
+$body = new 'ConstantContact\Client\Model\WebhooksSubscriptionBody(); // 'ConstantContact\Client\Model\WebhooksSubscriptionBody | A JSON payload containing a callback URI. Constant Contact uses this callback URI to notify you about your chosen topic.
 
 try {
     $result = $apiInstance->putWebhooksTopic($topic_id, $body);
@@ -280,7 +280,7 @@ try {
 ## `testSendWebhooksTopic()`
 
 ```php
-testSendWebhooksTopic($topic_id): \OpenAPI\Client\Model\WebhooksTestSend
+testSendWebhooksTopic($topic_id): 'ConstantContact\Client\Model\WebhooksTestSend
 ```
 
 POST Test Send Webhook Notification

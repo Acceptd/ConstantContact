@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,14 +29,14 @@
 namespace ConstantContact\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use 'ConstantContact\Client\ObjectSerializer;
 
 /**
  * Contacts Class Doc Comment
  *
  * @category Class
  * @description Use this endpoint to retrieve (GET) a collection of existing contacts, or to create (POST) a new contact.
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,9 +58,9 @@ class Contacts implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'contacts' => '\OpenAPI\Client\Model\ContactResource[]',
+        'contacts' => '\ConstantContact\Client\Model\ContactResource[]',
         'contacts_count' => 'int',
-        '_links' => '\OpenAPI\Client\Model\PagingLinks',
+        '_links' => '\ConstantContact\Client\Model\PagingLinks',
         'status' => 'string'
     ];
 
@@ -314,7 +314,7 @@ class Contacts implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets contacts
      *
-     * @return \OpenAPI\Client\Model\ContactResource[]|null
+     * @return 'ConstantContact\Client\Model\ContactResource[]|null
      */
     public function getContacts()
     {
@@ -324,7 +324,7 @@ class Contacts implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets contacts
      *
-     * @param \OpenAPI\Client\Model\ContactResource[]|null $contacts contacts
+     * @param 'ConstantContact\Client\Model\ContactResource[]|null $contacts contacts
      *
      * @return self
      */
@@ -368,7 +368,7 @@ class Contacts implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets _links
      *
-     * @return \OpenAPI\Client\Model\PagingLinks|null
+     * @return 'ConstantContact\Client\Model\PagingLinks|null
      */
     public function getLinks()
     {
@@ -378,7 +378,7 @@ class Contacts implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets _links
      *
-     * @param \OpenAPI\Client\Model\PagingLinks|null $_links _links
+     * @param 'ConstantContact\Client\Model\PagingLinks|null $_links _links
      *
      * @return self
      */

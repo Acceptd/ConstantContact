@@ -15,7 +15,7 @@ All URIs are relative to https://api.cc.email/v3, except if the operation define
 ## `retrieveEmailCampaignActivityPreviewUsingGET()`
 
 ```php
-retrieveEmailCampaignActivityPreviewUsingGET($campaign_activity_id): \OpenAPI\Client\Model\EmailCampaignActivityPreview
+retrieveEmailCampaignActivityPreviewUsingGET($campaign_activity_id): 'ConstantContact\Client\Model\EmailCampaignActivityPreview
 ```
 
 GET the HTML Preview of an Email Campaign Activity
@@ -83,7 +83,7 @@ try {
 ## `retrieveEmailSchedulesUsingGET()`
 
 ```php
-retrieveEmailSchedulesUsingGET($campaign_activity_id): \OpenAPI\Client\Model\EmailScheduleResponseInner[]
+retrieveEmailSchedulesUsingGET($campaign_activity_id): 'ConstantContact\Client\Model\EmailScheduleResponseInner[]
 ```
 
 GET an Email Campaign Activity Schedule
@@ -151,7 +151,7 @@ try {
 ## `retrieveEmailSendHistoryUsingGET()`
 
 ```php
-retrieveEmailSendHistoryUsingGET($campaign_activity_id): \OpenAPI\Client\Model\EmailSendHistoryInner[]
+retrieveEmailSendHistoryUsingGET($campaign_activity_id): 'ConstantContact\Client\Model\EmailSendHistoryInner[]
 ```
 
 GET the Send History of an Email Campaign Activity
@@ -219,7 +219,7 @@ try {
 ## `scheduleEmailCampaignActivityUsingPOST()`
 
 ```php
-scheduleEmailCampaignActivityUsingPOST($campaign_activity_id, $body): \OpenAPI\Client\Model\EmailScheduleResponseInner[]
+scheduleEmailCampaignActivityUsingPOST($campaign_activity_id, $body): 'ConstantContact\Client\Model\EmailScheduleResponseInner[]
 ```
 
 POST (Create) an Email Campaign Activity Schedule
@@ -252,7 +252,7 @@ $apiInstance = new OpenAPI\Client\Api\EmailSchedulingApi(
     $config
 );
 $campaign_activity_id = 91569d46-00e4-4a4d-9a4c-d17d98740d04; // string | The unique ID for an email campaign activity. You can only schedule email campaign activities that have the `primary_email` role.
-$body = new \OpenAPI\Client\Model\EmailScheduleInput(); // \OpenAPI\Client\Model\EmailScheduleInput | A request body payload that contains the date that you want Constant Contact to send your email campaign activity on. Use `\"0\"` as the date to have Constant Contact immediately send the email campaign activity.
+$body = new 'ConstantContact\Client\Model\EmailScheduleInput(); // 'ConstantContact\Client\Model\EmailScheduleInput | A request body payload that contains the date that you want Constant Contact to send your email campaign activity on. Use `\"0\"` as the date to have Constant Contact immediately send the email campaign activity.
 
 try {
     $result = $apiInstance->scheduleEmailCampaignActivityUsingPOST($campaign_activity_id, $body);
@@ -322,7 +322,7 @@ $apiInstance = new OpenAPI\Client\Api\EmailSchedulingApi(
     $config
 );
 $campaign_activity_id = 91569d46-00e4-4a4d-9a4c-d17d98740d04; // string | The unique ID for an email campaign activity. You can only test send email campaign activities that have the `primary_email` role.
-$email_test_send_input = new \OpenAPI\Client\Model\EmailTestSendInput(); // \OpenAPI\Client\Model\EmailTestSendInput | A JSON request body that contains the recipients of the test email and an optional personal message.
+$email_test_send_input = new 'ConstantContact\Client\Model\EmailTestSendInput(); // 'ConstantContact\Client\Model\EmailTestSendInput | A JSON request body that contains the recipients of the test email and an optional personal message.
 
 try {
     $apiInstance->testSendCampaignActivityUsingPOST($campaign_activity_id, $email_test_send_input);

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace ConstantContact\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use 'ConstantContact\Client\ObjectSerializer;
 
 /**
  * TagsActivityLinks Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class TagsActivityLinks implements ModelInterface, ArrayAccess, \JsonSerializabl
       * @var string[]
       */
     protected static $openAPITypes = [
-        'self' => '\OpenAPI\Client\Model\TagsActivityLinksSelf'
+        'self' => '\ConstantContact\Client\Model\TagsActivityLinksSelf'
     ];
 
     /**
@@ -292,7 +292,7 @@ class TagsActivityLinks implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Gets self
      *
-     * @return \OpenAPI\Client\Model\TagsActivityLinksSelf|null
+     * @return 'ConstantContact\Client\Model\TagsActivityLinksSelf|null
      */
     public function getSelf()
     {
@@ -302,7 +302,7 @@ class TagsActivityLinks implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Sets self
      *
-     * @param \OpenAPI\Client\Model\TagsActivityLinksSelf|null $self self
+     * @param 'ConstantContact\Client\Model\TagsActivityLinksSelf|null $self self
      *
      * @return self
      */

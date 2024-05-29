@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,14 +29,14 @@
 namespace ConstantContact\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use 'ConstantContact\Client\ObjectSerializer;
 
 /**
  * PlanTiersObject Class Doc Comment
  *
  * @category Class
  * @description Specifies client billing plan details including the type of plan, the plan tiers used, the current billing status, and the day of the month that the client is billed. When a client account is first provisioned, the &#x60;plan_type&#x60; defaults to a &#x60;Trial&#x60; account. After you change an account &#x60;billing_status&#x60; from &#x60;Trial&#x60; to any other &#x60;billing_status&#x60;, you cannot change it back to a &#x60;Trial&#x60; account.
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,7 +59,7 @@ class PlanTiersObject implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'plan_type' => 'string',
-        'current_tiers' => '\OpenAPI\Client\Model\TierObject[]',
+        'current_tiers' => '\ConstantContact\Client\Model\TierObject[]',
         'billing_status' => 'string',
         'billing_day_of_month' => 'int'
     ];
@@ -341,7 +341,7 @@ class PlanTiersObject implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets current_tiers
      *
-     * @return \OpenAPI\Client\Model\TierObject[]|null
+     * @return 'ConstantContact\Client\Model\TierObject[]|null
      */
     public function getCurrentTiers()
     {
@@ -351,7 +351,7 @@ class PlanTiersObject implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets current_tiers
      *
-     * @param \OpenAPI\Client\Model\TierObject[]|null $current_tiers Lists the billing plan tiers that are currently associated with a client account.
+     * @param 'ConstantContact\Client\Model\TierObject[]|null $current_tiers Lists the billing plan tiers that are currently associated with a client account.
      *
      * @return self
      */

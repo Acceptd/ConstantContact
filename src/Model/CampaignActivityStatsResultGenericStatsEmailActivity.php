@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace ConstantContact\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use 'ConstantContact\Client\ObjectSerializer;
 
 /**
  * CampaignActivityStatsResultGenericStatsEmailActivity Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,7 +59,7 @@ class CampaignActivityStatsResultGenericStatsEmailActivity implements ModelInter
     protected static $openAPITypes = [
         'campaign_id' => 'string',
         'campaign_activity_id' => 'string',
-        'stats' => '\OpenAPI\Client\Model\StatsEmailActivity',
+        'stats' => '\ConstantContact\Client\Model\StatsEmailActivity',
         'last_refresh_time' => 'string'
     ];
 
@@ -367,7 +367,7 @@ class CampaignActivityStatsResultGenericStatsEmailActivity implements ModelInter
     /**
      * Gets stats
      *
-     * @return \OpenAPI\Client\Model\StatsEmailActivity|null
+     * @return 'ConstantContact\Client\Model\StatsEmailActivity|null
      */
     public function getStats()
     {
@@ -377,7 +377,7 @@ class CampaignActivityStatsResultGenericStatsEmailActivity implements ModelInter
     /**
      * Sets stats
      *
-     * @param \OpenAPI\Client\Model\StatsEmailActivity|null $stats stats
+     * @param 'ConstantContact\Client\Model\StatsEmailActivity|null $stats stats
      *
      * @return self
      */

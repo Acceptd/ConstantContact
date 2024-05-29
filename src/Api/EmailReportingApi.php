@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -43,7 +43,7 @@ use ConstantContact\Client\ObjectSerializer;
  * EmailReportingApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -163,9 +163,9 @@ class EmailReportingApi
      * @param  string $limit Use the &#x60;limit&#x60; query parameter to limit the number of email campaign summaries to return on a single page. The default is &#x60;50&#x60; and the maximum is &#x60;500&#x60; per page. (optional, default to '50')
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getAllBulkEmailCampaignSummaries'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\BulkEmailCampaignSummariesPage
+     * @return 'ConstantContact\Client\Model\BulkEmailCampaignSummariesPage
      */
     public function getAllBulkEmailCampaignSummaries($limit = '50', string $contentType = self::contentTypes['getAllBulkEmailCampaignSummaries'][0])
     {
@@ -181,9 +181,9 @@ class EmailReportingApi
      * @param  string $limit Use the &#x60;limit&#x60; query parameter to limit the number of email campaign summaries to return on a single page. The default is &#x60;50&#x60; and the maximum is &#x60;500&#x60; per page. (optional, default to '50')
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getAllBulkEmailCampaignSummaries'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\BulkEmailCampaignSummariesPage, HTTP status code, HTTP response headers (array of strings)
+     * @return array of 'ConstantContact\Client\Model\BulkEmailCampaignSummariesPage, HTTP status code, HTTP response headers (array of strings)
      */
     public function getAllBulkEmailCampaignSummariesWithHttpInfo($limit = '50', string $contentType = self::contentTypes['getAllBulkEmailCampaignSummaries'][0])
     {
@@ -226,11 +226,11 @@ class EmailReportingApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\BulkEmailCampaignSummariesPage' === '\SplFileObject') {
+                    if ('\ConstantContact\Client\Model\BulkEmailCampaignSummariesPage' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\BulkEmailCampaignSummariesPage' !== 'string') {
+                        if ('\ConstantContact\Client\Model\BulkEmailCampaignSummariesPage' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -248,13 +248,13 @@ class EmailReportingApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\BulkEmailCampaignSummariesPage', []),
+                        ObjectSerializer::deserialize($content, '\ConstantContact\Client\Model\BulkEmailCampaignSummariesPage', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\BulkEmailCampaignSummariesPage';
+            $returnType = '\ConstantContact\Client\Model\BulkEmailCampaignSummariesPage';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -287,7 +287,7 @@ class EmailReportingApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\BulkEmailCampaignSummariesPage',
+                        '\ConstantContact\Client\Model\BulkEmailCampaignSummariesPage',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -331,7 +331,7 @@ class EmailReportingApi
      */
     public function getAllBulkEmailCampaignSummariesAsyncWithHttpInfo($limit = '50', string $contentType = self::contentTypes['getAllBulkEmailCampaignSummaries'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\BulkEmailCampaignSummariesPage';
+        $returnType = '\ConstantContact\Client\Model\BulkEmailCampaignSummariesPage';
         $request = $this->getAllBulkEmailCampaignSummariesRequest($limit, $contentType);
 
         return $this->client
@@ -480,9 +480,9 @@ class EmailReportingApi
      * @param  string $limit The number of tracking activities to return on a page. (optional, default to '500')
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getBounces'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\BouncesTrackingActivitiesPage
+     * @return 'ConstantContact\Client\Model\BouncesTrackingActivitiesPage
      */
     public function getBounces($campaign_activity_id, $bounce_code = null, $limit = '500', string $contentType = self::contentTypes['getBounces'][0])
     {
@@ -500,9 +500,9 @@ class EmailReportingApi
      * @param  string $limit The number of tracking activities to return on a page. (optional, default to '500')
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getBounces'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\BouncesTrackingActivitiesPage, HTTP status code, HTTP response headers (array of strings)
+     * @return array of 'ConstantContact\Client\Model\BouncesTrackingActivitiesPage, HTTP status code, HTTP response headers (array of strings)
      */
     public function getBouncesWithHttpInfo($campaign_activity_id, $bounce_code = null, $limit = '500', string $contentType = self::contentTypes['getBounces'][0])
     {
@@ -545,11 +545,11 @@ class EmailReportingApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\BouncesTrackingActivitiesPage' === '\SplFileObject') {
+                    if ('\ConstantContact\Client\Model\BouncesTrackingActivitiesPage' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\BouncesTrackingActivitiesPage' !== 'string') {
+                        if ('\ConstantContact\Client\Model\BouncesTrackingActivitiesPage' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -567,13 +567,13 @@ class EmailReportingApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\BouncesTrackingActivitiesPage', []),
+                        ObjectSerializer::deserialize($content, '\ConstantContact\Client\Model\BouncesTrackingActivitiesPage', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\BouncesTrackingActivitiesPage';
+            $returnType = '\ConstantContact\Client\Model\BouncesTrackingActivitiesPage';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -606,7 +606,7 @@ class EmailReportingApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\BouncesTrackingActivitiesPage',
+                        '\ConstantContact\Client\Model\BouncesTrackingActivitiesPage',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -654,7 +654,7 @@ class EmailReportingApi
      */
     public function getBouncesAsyncWithHttpInfo($campaign_activity_id, $bounce_code = null, $limit = '500', string $contentType = self::contentTypes['getBounces'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\BouncesTrackingActivitiesPage';
+        $returnType = '\ConstantContact\Client\Model\BouncesTrackingActivitiesPage';
         $request = $this->getBouncesRequest($campaign_activity_id, $bounce_code, $limit, $contentType);
 
         return $this->client
@@ -829,9 +829,9 @@ class EmailReportingApi
      * @param  bool $no_clicks Set this query parameter to &#x60;true&#x60; to  return details for links that were not clicked in the response results. (optional, default to false)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getCampaignActivityLinkStats'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\EmailLinks
+     * @return 'ConstantContact\Client\Model\EmailLinks
      */
     public function getCampaignActivityLinkStats($campaign_activity_id, $no_clicks = false, string $contentType = self::contentTypes['getCampaignActivityLinkStats'][0])
     {
@@ -848,9 +848,9 @@ class EmailReportingApi
      * @param  bool $no_clicks Set this query parameter to &#x60;true&#x60; to  return details for links that were not clicked in the response results. (optional, default to false)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getCampaignActivityLinkStats'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\EmailLinks, HTTP status code, HTTP response headers (array of strings)
+     * @return array of 'ConstantContact\Client\Model\EmailLinks, HTTP status code, HTTP response headers (array of strings)
      */
     public function getCampaignActivityLinkStatsWithHttpInfo($campaign_activity_id, $no_clicks = false, string $contentType = self::contentTypes['getCampaignActivityLinkStats'][0])
     {
@@ -893,11 +893,11 @@ class EmailReportingApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\EmailLinks' === '\SplFileObject') {
+                    if ('\ConstantContact\Client\Model\EmailLinks' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\EmailLinks' !== 'string') {
+                        if ('\ConstantContact\Client\Model\EmailLinks' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -915,13 +915,13 @@ class EmailReportingApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\EmailLinks', []),
+                        ObjectSerializer::deserialize($content, '\ConstantContact\Client\Model\EmailLinks', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\EmailLinks';
+            $returnType = '\ConstantContact\Client\Model\EmailLinks';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -954,7 +954,7 @@ class EmailReportingApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\EmailLinks',
+                        '\ConstantContact\Client\Model\EmailLinks',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1000,7 +1000,7 @@ class EmailReportingApi
      */
     public function getCampaignActivityLinkStatsAsyncWithHttpInfo($campaign_activity_id, $no_clicks = false, string $contentType = self::contentTypes['getCampaignActivityLinkStats'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\EmailLinks';
+        $returnType = '\ConstantContact\Client\Model\EmailLinks';
         $request = $this->getCampaignActivityLinkStatsRequest($campaign_activity_id, $no_clicks, $contentType);
 
         return $this->client
@@ -1165,9 +1165,9 @@ class EmailReportingApi
      * @param  string $limit The number of tracking activities to return on a page. (optional, default to '500')
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getClicks'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ClicksTrackingActivitiesPage
+     * @return 'ConstantContact\Client\Model\ClicksTrackingActivitiesPage
      */
     public function getClicks($campaign_activity_id, $url_id = null, $limit = '500', string $contentType = self::contentTypes['getClicks'][0])
     {
@@ -1185,9 +1185,9 @@ class EmailReportingApi
      * @param  string $limit The number of tracking activities to return on a page. (optional, default to '500')
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getClicks'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ClicksTrackingActivitiesPage, HTTP status code, HTTP response headers (array of strings)
+     * @return array of 'ConstantContact\Client\Model\ClicksTrackingActivitiesPage, HTTP status code, HTTP response headers (array of strings)
      */
     public function getClicksWithHttpInfo($campaign_activity_id, $url_id = null, $limit = '500', string $contentType = self::contentTypes['getClicks'][0])
     {
@@ -1230,11 +1230,11 @@ class EmailReportingApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ClicksTrackingActivitiesPage' === '\SplFileObject') {
+                    if ('\ConstantContact\Client\Model\ClicksTrackingActivitiesPage' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ClicksTrackingActivitiesPage' !== 'string') {
+                        if ('\ConstantContact\Client\Model\ClicksTrackingActivitiesPage' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1252,13 +1252,13 @@ class EmailReportingApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ClicksTrackingActivitiesPage', []),
+                        ObjectSerializer::deserialize($content, '\ConstantContact\Client\Model\ClicksTrackingActivitiesPage', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\ClicksTrackingActivitiesPage';
+            $returnType = '\ConstantContact\Client\Model\ClicksTrackingActivitiesPage';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1291,7 +1291,7 @@ class EmailReportingApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ClicksTrackingActivitiesPage',
+                        '\ConstantContact\Client\Model\ClicksTrackingActivitiesPage',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1339,7 +1339,7 @@ class EmailReportingApi
      */
     public function getClicksAsyncWithHttpInfo($campaign_activity_id, $url_id = null, $limit = '500', string $contentType = self::contentTypes['getClicks'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ClicksTrackingActivitiesPage';
+        $returnType = '\ConstantContact\Client\Model\ClicksTrackingActivitiesPage';
         $request = $this->getClicksRequest($campaign_activity_id, $url_id, $limit, $contentType);
 
         return $this->client
@@ -1514,9 +1514,9 @@ class EmailReportingApi
      * @param  string $limit The number of tracking activities to return on a page. (optional, default to '500')
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getDidNotOpens'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\DidNotOpensTrackingActivitiesPage
+     * @return 'ConstantContact\Client\Model\DidNotOpensTrackingActivitiesPage
      */
     public function getDidNotOpens($campaign_activity_id, $limit = '500', string $contentType = self::contentTypes['getDidNotOpens'][0])
     {
@@ -1533,9 +1533,9 @@ class EmailReportingApi
      * @param  string $limit The number of tracking activities to return on a page. (optional, default to '500')
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getDidNotOpens'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\DidNotOpensTrackingActivitiesPage, HTTP status code, HTTP response headers (array of strings)
+     * @return array of 'ConstantContact\Client\Model\DidNotOpensTrackingActivitiesPage, HTTP status code, HTTP response headers (array of strings)
      */
     public function getDidNotOpensWithHttpInfo($campaign_activity_id, $limit = '500', string $contentType = self::contentTypes['getDidNotOpens'][0])
     {
@@ -1578,11 +1578,11 @@ class EmailReportingApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\DidNotOpensTrackingActivitiesPage' === '\SplFileObject') {
+                    if ('\ConstantContact\Client\Model\DidNotOpensTrackingActivitiesPage' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\DidNotOpensTrackingActivitiesPage' !== 'string') {
+                        if ('\ConstantContact\Client\Model\DidNotOpensTrackingActivitiesPage' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1600,13 +1600,13 @@ class EmailReportingApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\DidNotOpensTrackingActivitiesPage', []),
+                        ObjectSerializer::deserialize($content, '\ConstantContact\Client\Model\DidNotOpensTrackingActivitiesPage', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\DidNotOpensTrackingActivitiesPage';
+            $returnType = '\ConstantContact\Client\Model\DidNotOpensTrackingActivitiesPage';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1639,7 +1639,7 @@ class EmailReportingApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\DidNotOpensTrackingActivitiesPage',
+                        '\ConstantContact\Client\Model\DidNotOpensTrackingActivitiesPage',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1685,7 +1685,7 @@ class EmailReportingApi
      */
     public function getDidNotOpensAsyncWithHttpInfo($campaign_activity_id, $limit = '500', string $contentType = self::contentTypes['getDidNotOpens'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\DidNotOpensTrackingActivitiesPage';
+        $returnType = '\ConstantContact\Client\Model\DidNotOpensTrackingActivitiesPage';
         $request = $this->getDidNotOpensRequest($campaign_activity_id, $limit, $contentType);
 
         return $this->client
@@ -1848,9 +1848,9 @@ class EmailReportingApi
      * @param  string $campaign_activity_ids A comma-separated list of &#x60;campaign_activity_id&#x60;s (UUID&#39;s). (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getEmailCampaignActivitySummary'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\CampaignActivityStatsQueryResultEmail
+     * @return 'ConstantContact\Client\Model\CampaignActivityStatsQueryResultEmail
      */
     public function getEmailCampaignActivitySummary($campaign_activity_ids, string $contentType = self::contentTypes['getEmailCampaignActivitySummary'][0])
     {
@@ -1866,9 +1866,9 @@ class EmailReportingApi
      * @param  string $campaign_activity_ids A comma-separated list of &#x60;campaign_activity_id&#x60;s (UUID&#39;s). (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getEmailCampaignActivitySummary'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\CampaignActivityStatsQueryResultEmail, HTTP status code, HTTP response headers (array of strings)
+     * @return array of 'ConstantContact\Client\Model\CampaignActivityStatsQueryResultEmail, HTTP status code, HTTP response headers (array of strings)
      */
     public function getEmailCampaignActivitySummaryWithHttpInfo($campaign_activity_ids, string $contentType = self::contentTypes['getEmailCampaignActivitySummary'][0])
     {
@@ -1911,11 +1911,11 @@ class EmailReportingApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\CampaignActivityStatsQueryResultEmail' === '\SplFileObject') {
+                    if ('\ConstantContact\Client\Model\CampaignActivityStatsQueryResultEmail' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\CampaignActivityStatsQueryResultEmail' !== 'string') {
+                        if ('\ConstantContact\Client\Model\CampaignActivityStatsQueryResultEmail' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1933,13 +1933,13 @@ class EmailReportingApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\CampaignActivityStatsQueryResultEmail', []),
+                        ObjectSerializer::deserialize($content, '\ConstantContact\Client\Model\CampaignActivityStatsQueryResultEmail', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\CampaignActivityStatsQueryResultEmail';
+            $returnType = '\ConstantContact\Client\Model\CampaignActivityStatsQueryResultEmail';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1972,7 +1972,7 @@ class EmailReportingApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\CampaignActivityStatsQueryResultEmail',
+                        '\ConstantContact\Client\Model\CampaignActivityStatsQueryResultEmail',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2016,7 +2016,7 @@ class EmailReportingApi
      */
     public function getEmailCampaignActivitySummaryAsyncWithHttpInfo($campaign_activity_ids, string $contentType = self::contentTypes['getEmailCampaignActivitySummary'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\CampaignActivityStatsQueryResultEmail';
+        $returnType = '\ConstantContact\Client\Model\CampaignActivityStatsQueryResultEmail';
         $request = $this->getEmailCampaignActivitySummaryRequest($campaign_activity_ids, $contentType);
 
         return $this->client
@@ -2168,9 +2168,9 @@ class EmailReportingApi
      * @param  string $campaign_ids A comma-separated list of &#x60;campaign_id&#x60;s (UUID&#39;s). (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getEmailSummary'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\CampaignStatsQueryResultEmail
+     * @return 'ConstantContact\Client\Model\CampaignStatsQueryResultEmail
      */
     public function getEmailSummary($campaign_ids, string $contentType = self::contentTypes['getEmailSummary'][0])
     {
@@ -2186,9 +2186,9 @@ class EmailReportingApi
      * @param  string $campaign_ids A comma-separated list of &#x60;campaign_id&#x60;s (UUID&#39;s). (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getEmailSummary'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\CampaignStatsQueryResultEmail, HTTP status code, HTTP response headers (array of strings)
+     * @return array of 'ConstantContact\Client\Model\CampaignStatsQueryResultEmail, HTTP status code, HTTP response headers (array of strings)
      */
     public function getEmailSummaryWithHttpInfo($campaign_ids, string $contentType = self::contentTypes['getEmailSummary'][0])
     {
@@ -2231,11 +2231,11 @@ class EmailReportingApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\CampaignStatsQueryResultEmail' === '\SplFileObject') {
+                    if ('\ConstantContact\Client\Model\CampaignStatsQueryResultEmail' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\CampaignStatsQueryResultEmail' !== 'string') {
+                        if ('\ConstantContact\Client\Model\CampaignStatsQueryResultEmail' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2253,13 +2253,13 @@ class EmailReportingApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\CampaignStatsQueryResultEmail', []),
+                        ObjectSerializer::deserialize($content, '\ConstantContact\Client\Model\CampaignStatsQueryResultEmail', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\CampaignStatsQueryResultEmail';
+            $returnType = '\ConstantContact\Client\Model\CampaignStatsQueryResultEmail';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -2292,7 +2292,7 @@ class EmailReportingApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\CampaignStatsQueryResultEmail',
+                        '\ConstantContact\Client\Model\CampaignStatsQueryResultEmail',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2336,7 +2336,7 @@ class EmailReportingApi
      */
     public function getEmailSummaryAsyncWithHttpInfo($campaign_ids, string $contentType = self::contentTypes['getEmailSummary'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\CampaignStatsQueryResultEmail';
+        $returnType = '\ConstantContact\Client\Model\CampaignStatsQueryResultEmail';
         $request = $this->getEmailSummaryRequest($campaign_ids, $contentType);
 
         return $this->client
@@ -2489,9 +2489,9 @@ class EmailReportingApi
      * @param  string $limit The number of tracking activities to return on a page. (optional, default to '500')
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getForwards'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ForwardsTrackingActivitiesPage
+     * @return 'ConstantContact\Client\Model\ForwardsTrackingActivitiesPage
      */
     public function getForwards($campaign_activity_id, $limit = '500', string $contentType = self::contentTypes['getForwards'][0])
     {
@@ -2508,9 +2508,9 @@ class EmailReportingApi
      * @param  string $limit The number of tracking activities to return on a page. (optional, default to '500')
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getForwards'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ForwardsTrackingActivitiesPage, HTTP status code, HTTP response headers (array of strings)
+     * @return array of 'ConstantContact\Client\Model\ForwardsTrackingActivitiesPage, HTTP status code, HTTP response headers (array of strings)
      */
     public function getForwardsWithHttpInfo($campaign_activity_id, $limit = '500', string $contentType = self::contentTypes['getForwards'][0])
     {
@@ -2553,11 +2553,11 @@ class EmailReportingApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ForwardsTrackingActivitiesPage' === '\SplFileObject') {
+                    if ('\ConstantContact\Client\Model\ForwardsTrackingActivitiesPage' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ForwardsTrackingActivitiesPage' !== 'string') {
+                        if ('\ConstantContact\Client\Model\ForwardsTrackingActivitiesPage' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2575,13 +2575,13 @@ class EmailReportingApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ForwardsTrackingActivitiesPage', []),
+                        ObjectSerializer::deserialize($content, '\ConstantContact\Client\Model\ForwardsTrackingActivitiesPage', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\ForwardsTrackingActivitiesPage';
+            $returnType = '\ConstantContact\Client\Model\ForwardsTrackingActivitiesPage';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -2614,7 +2614,7 @@ class EmailReportingApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ForwardsTrackingActivitiesPage',
+                        '\ConstantContact\Client\Model\ForwardsTrackingActivitiesPage',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2660,7 +2660,7 @@ class EmailReportingApi
      */
     public function getForwardsAsyncWithHttpInfo($campaign_activity_id, $limit = '500', string $contentType = self::contentTypes['getForwards'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ForwardsTrackingActivitiesPage';
+        $returnType = '\ConstantContact\Client\Model\ForwardsTrackingActivitiesPage';
         $request = $this->getForwardsRequest($campaign_activity_id, $limit, $contentType);
 
         return $this->client
@@ -2824,9 +2824,9 @@ class EmailReportingApi
      * @param  string $limit The number of tracking activities to return on a page. (optional, default to '500')
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getOpens'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\OpensTrackingActivitiesPage
+     * @return 'ConstantContact\Client\Model\OpensTrackingActivitiesPage
      */
     public function getOpens($campaign_activity_id, $limit = '500', string $contentType = self::contentTypes['getOpens'][0])
     {
@@ -2843,9 +2843,9 @@ class EmailReportingApi
      * @param  string $limit The number of tracking activities to return on a page. (optional, default to '500')
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getOpens'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\OpensTrackingActivitiesPage, HTTP status code, HTTP response headers (array of strings)
+     * @return array of 'ConstantContact\Client\Model\OpensTrackingActivitiesPage, HTTP status code, HTTP response headers (array of strings)
      */
     public function getOpensWithHttpInfo($campaign_activity_id, $limit = '500', string $contentType = self::contentTypes['getOpens'][0])
     {
@@ -2888,11 +2888,11 @@ class EmailReportingApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\OpensTrackingActivitiesPage' === '\SplFileObject') {
+                    if ('\ConstantContact\Client\Model\OpensTrackingActivitiesPage' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\OpensTrackingActivitiesPage' !== 'string') {
+                        if ('\ConstantContact\Client\Model\OpensTrackingActivitiesPage' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2910,13 +2910,13 @@ class EmailReportingApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\OpensTrackingActivitiesPage', []),
+                        ObjectSerializer::deserialize($content, '\ConstantContact\Client\Model\OpensTrackingActivitiesPage', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\OpensTrackingActivitiesPage';
+            $returnType = '\ConstantContact\Client\Model\OpensTrackingActivitiesPage';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -2949,7 +2949,7 @@ class EmailReportingApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\OpensTrackingActivitiesPage',
+                        '\ConstantContact\Client\Model\OpensTrackingActivitiesPage',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2995,7 +2995,7 @@ class EmailReportingApi
      */
     public function getOpensAsyncWithHttpInfo($campaign_activity_id, $limit = '500', string $contentType = self::contentTypes['getOpens'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\OpensTrackingActivitiesPage';
+        $returnType = '\ConstantContact\Client\Model\OpensTrackingActivitiesPage';
         $request = $this->getOpensRequest($campaign_activity_id, $limit, $contentType);
 
         return $this->client
@@ -3159,9 +3159,9 @@ class EmailReportingApi
      * @param  string $limit The number of tracking activities to return on a page. (optional, default to '500')
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getOptouts'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\OptoutsTrackingActivitiesPage
+     * @return 'ConstantContact\Client\Model\OptoutsTrackingActivitiesPage
      */
     public function getOptouts($campaign_activity_id, $limit = '500', string $contentType = self::contentTypes['getOptouts'][0])
     {
@@ -3178,9 +3178,9 @@ class EmailReportingApi
      * @param  string $limit The number of tracking activities to return on a page. (optional, default to '500')
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getOptouts'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\OptoutsTrackingActivitiesPage, HTTP status code, HTTP response headers (array of strings)
+     * @return array of 'ConstantContact\Client\Model\OptoutsTrackingActivitiesPage, HTTP status code, HTTP response headers (array of strings)
      */
     public function getOptoutsWithHttpInfo($campaign_activity_id, $limit = '500', string $contentType = self::contentTypes['getOptouts'][0])
     {
@@ -3223,11 +3223,11 @@ class EmailReportingApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\OptoutsTrackingActivitiesPage' === '\SplFileObject') {
+                    if ('\ConstantContact\Client\Model\OptoutsTrackingActivitiesPage' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\OptoutsTrackingActivitiesPage' !== 'string') {
+                        if ('\ConstantContact\Client\Model\OptoutsTrackingActivitiesPage' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -3245,13 +3245,13 @@ class EmailReportingApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\OptoutsTrackingActivitiesPage', []),
+                        ObjectSerializer::deserialize($content, '\ConstantContact\Client\Model\OptoutsTrackingActivitiesPage', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\OptoutsTrackingActivitiesPage';
+            $returnType = '\ConstantContact\Client\Model\OptoutsTrackingActivitiesPage';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -3284,7 +3284,7 @@ class EmailReportingApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\OptoutsTrackingActivitiesPage',
+                        '\ConstantContact\Client\Model\OptoutsTrackingActivitiesPage',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3330,7 +3330,7 @@ class EmailReportingApi
      */
     public function getOptoutsAsyncWithHttpInfo($campaign_activity_id, $limit = '500', string $contentType = self::contentTypes['getOptouts'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\OptoutsTrackingActivitiesPage';
+        $returnType = '\ConstantContact\Client\Model\OptoutsTrackingActivitiesPage';
         $request = $this->getOptoutsRequest($campaign_activity_id, $limit, $contentType);
 
         return $this->client
@@ -3494,9 +3494,9 @@ class EmailReportingApi
      * @param  string $limit The number of tracking activities to return on a page. (optional, default to '500')
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getSends'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\SendsTrackingActivitiesPage
+     * @return 'ConstantContact\Client\Model\SendsTrackingActivitiesPage
      */
     public function getSends($campaign_activity_id, $limit = '500', string $contentType = self::contentTypes['getSends'][0])
     {
@@ -3513,9 +3513,9 @@ class EmailReportingApi
      * @param  string $limit The number of tracking activities to return on a page. (optional, default to '500')
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getSends'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\SendsTrackingActivitiesPage, HTTP status code, HTTP response headers (array of strings)
+     * @return array of 'ConstantContact\Client\Model\SendsTrackingActivitiesPage, HTTP status code, HTTP response headers (array of strings)
      */
     public function getSendsWithHttpInfo($campaign_activity_id, $limit = '500', string $contentType = self::contentTypes['getSends'][0])
     {
@@ -3558,11 +3558,11 @@ class EmailReportingApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\SendsTrackingActivitiesPage' === '\SplFileObject') {
+                    if ('\ConstantContact\Client\Model\SendsTrackingActivitiesPage' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\SendsTrackingActivitiesPage' !== 'string') {
+                        if ('\ConstantContact\Client\Model\SendsTrackingActivitiesPage' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -3580,13 +3580,13 @@ class EmailReportingApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\SendsTrackingActivitiesPage', []),
+                        ObjectSerializer::deserialize($content, '\ConstantContact\Client\Model\SendsTrackingActivitiesPage', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\SendsTrackingActivitiesPage';
+            $returnType = '\ConstantContact\Client\Model\SendsTrackingActivitiesPage';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -3619,7 +3619,7 @@ class EmailReportingApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\SendsTrackingActivitiesPage',
+                        '\ConstantContact\Client\Model\SendsTrackingActivitiesPage',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3665,7 +3665,7 @@ class EmailReportingApi
      */
     public function getSendsAsyncWithHttpInfo($campaign_activity_id, $limit = '500', string $contentType = self::contentTypes['getSends'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\SendsTrackingActivitiesPage';
+        $returnType = '\ConstantContact\Client\Model\SendsTrackingActivitiesPage';
         $request = $this->getSendsRequest($campaign_activity_id, $limit, $contentType);
 
         return $this->client
@@ -3829,9 +3829,9 @@ class EmailReportingApi
      * @param  string $limit The number of tracking activities to return on a page. (optional, default to '500')
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getUniqueOpens'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\OpensTrackingActivitiesPage
+     * @return 'ConstantContact\Client\Model\OpensTrackingActivitiesPage
      */
     public function getUniqueOpens($campaign_activity_id, $limit = '500', string $contentType = self::contentTypes['getUniqueOpens'][0])
     {
@@ -3848,9 +3848,9 @@ class EmailReportingApi
      * @param  string $limit The number of tracking activities to return on a page. (optional, default to '500')
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getUniqueOpens'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\OpensTrackingActivitiesPage, HTTP status code, HTTP response headers (array of strings)
+     * @return array of 'ConstantContact\Client\Model\OpensTrackingActivitiesPage, HTTP status code, HTTP response headers (array of strings)
      */
     public function getUniqueOpensWithHttpInfo($campaign_activity_id, $limit = '500', string $contentType = self::contentTypes['getUniqueOpens'][0])
     {
@@ -3893,11 +3893,11 @@ class EmailReportingApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\OpensTrackingActivitiesPage' === '\SplFileObject') {
+                    if ('\ConstantContact\Client\Model\OpensTrackingActivitiesPage' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\OpensTrackingActivitiesPage' !== 'string') {
+                        if ('\ConstantContact\Client\Model\OpensTrackingActivitiesPage' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -3915,13 +3915,13 @@ class EmailReportingApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\OpensTrackingActivitiesPage', []),
+                        ObjectSerializer::deserialize($content, '\ConstantContact\Client\Model\OpensTrackingActivitiesPage', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\OpensTrackingActivitiesPage';
+            $returnType = '\ConstantContact\Client\Model\OpensTrackingActivitiesPage';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -3954,7 +3954,7 @@ class EmailReportingApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\OpensTrackingActivitiesPage',
+                        '\ConstantContact\Client\Model\OpensTrackingActivitiesPage',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4000,7 +4000,7 @@ class EmailReportingApi
      */
     public function getUniqueOpensAsyncWithHttpInfo($campaign_activity_id, $limit = '500', string $contentType = self::contentTypes['getUniqueOpens'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\OpensTrackingActivitiesPage';
+        $returnType = '\ConstantContact\Client\Model\OpensTrackingActivitiesPage';
         $request = $this->getUniqueOpensRequest($campaign_activity_id, $limit, $contentType);
 
         return $this->client

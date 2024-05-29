@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace ConstantContact\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use 'ConstantContact\Client\ObjectSerializer;
 
 /**
  * ContactCampaignActivitiesSummary Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,8 +58,8 @@ class ContactCampaignActivitiesSummary implements ModelInterface, ArrayAccess, \
       */
     protected static $openAPITypes = [
         'contact_id' => 'string',
-        'campaign_activities' => '\OpenAPI\Client\Model\CampaignActivitySummary[]',
-        '_links' => '\OpenAPI\Client\Model\ReportingLinks'
+        'campaign_activities' => '\ConstantContact\Client\Model\CampaignActivitySummary[]',
+        '_links' => '\ConstantContact\Client\Model\ReportingLinks'
     ];
 
     /**
@@ -339,7 +339,7 @@ class ContactCampaignActivitiesSummary implements ModelInterface, ArrayAccess, \
     /**
      * Gets campaign_activities
      *
-     * @return \OpenAPI\Client\Model\CampaignActivitySummary[]
+     * @return 'ConstantContact\Client\Model\CampaignActivitySummary[]
      */
     public function getCampaignActivities()
     {
@@ -349,7 +349,7 @@ class ContactCampaignActivitiesSummary implements ModelInterface, ArrayAccess, \
     /**
      * Sets campaign_activities
      *
-     * @param \OpenAPI\Client\Model\CampaignActivitySummary[] $campaign_activities A summary of all the actions for a contact.
+     * @param 'ConstantContact\Client\Model\CampaignActivitySummary[] $campaign_activities A summary of all the actions for a contact.
      *
      * @return self
      */
@@ -366,7 +366,7 @@ class ContactCampaignActivitiesSummary implements ModelInterface, ArrayAccess, \
     /**
      * Gets _links
      *
-     * @return \OpenAPI\Client\Model\ReportingLinks|null
+     * @return 'ConstantContact\Client\Model\ReportingLinks|null
      */
     public function getLinks()
     {
@@ -376,7 +376,7 @@ class ContactCampaignActivitiesSummary implements ModelInterface, ArrayAccess, \
     /**
      * Sets _links
      *
-     * @param \OpenAPI\Client\Model\ReportingLinks|null $_links _links
+     * @param 'ConstantContact\Client\Model\ReportingLinks|null $_links _links
      *
      * @return self
      */

@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -43,7 +43,7 @@ use ConstantContact\Client\ObjectSerializer;
  * ContactsCustomFieldsApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -142,7 +142,7 @@ class ContactsCustomFieldsApi
      * @param  string $custom_field_id Unique ID of the custom_field on which to operate. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteCustomField'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -159,7 +159,7 @@ class ContactsCustomFieldsApi
      * @param  string $custom_field_id Unique ID of the custom_field on which to operate. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteCustomField'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -384,9 +384,9 @@ class ContactsCustomFieldsApi
      * @param  string $custom_field_id Unique ID of the &#x60;custom_field&#x60; on which to operate. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getCustomField'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\CustomFieldResource
+     * @return 'ConstantContact\Client\Model\CustomFieldResource
      */
     public function getCustomField($custom_field_id, string $contentType = self::contentTypes['getCustomField'][0])
     {
@@ -402,9 +402,9 @@ class ContactsCustomFieldsApi
      * @param  string $custom_field_id Unique ID of the &#x60;custom_field&#x60; on which to operate. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getCustomField'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\CustomFieldResource, HTTP status code, HTTP response headers (array of strings)
+     * @return array of 'ConstantContact\Client\Model\CustomFieldResource, HTTP status code, HTTP response headers (array of strings)
      */
     public function getCustomFieldWithHttpInfo($custom_field_id, string $contentType = self::contentTypes['getCustomField'][0])
     {
@@ -447,11 +447,11 @@ class ContactsCustomFieldsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\CustomFieldResource' === '\SplFileObject') {
+                    if ('\ConstantContact\Client\Model\CustomFieldResource' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\CustomFieldResource' !== 'string') {
+                        if ('\ConstantContact\Client\Model\CustomFieldResource' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -469,13 +469,13 @@ class ContactsCustomFieldsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\CustomFieldResource', []),
+                        ObjectSerializer::deserialize($content, '\ConstantContact\Client\Model\CustomFieldResource', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\CustomFieldResource';
+            $returnType = '\ConstantContact\Client\Model\CustomFieldResource';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -508,7 +508,7 @@ class ContactsCustomFieldsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\CustomFieldResource',
+                        '\ConstantContact\Client\Model\CustomFieldResource',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -552,7 +552,7 @@ class ContactsCustomFieldsApi
      */
     public function getCustomFieldAsyncWithHttpInfo($custom_field_id, string $contentType = self::contentTypes['getCustomField'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\CustomFieldResource';
+        $returnType = '\ConstantContact\Client\Model\CustomFieldResource';
         $request = $this->getCustomFieldRequest($custom_field_id, $contentType);
 
         return $this->client
@@ -704,9 +704,9 @@ class ContactsCustomFieldsApi
      * @param  int $limit Specifies the number of results displayed per page of output, from 1 - 100, default &#x3D; 50. (optional, default to 50)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getCustomFields'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\CustomFields
+     * @return 'ConstantContact\Client\Model\CustomFields
      */
     public function getCustomFields($limit = 50, string $contentType = self::contentTypes['getCustomFields'][0])
     {
@@ -722,9 +722,9 @@ class ContactsCustomFieldsApi
      * @param  int $limit Specifies the number of results displayed per page of output, from 1 - 100, default &#x3D; 50. (optional, default to 50)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getCustomFields'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\CustomFields, HTTP status code, HTTP response headers (array of strings)
+     * @return array of 'ConstantContact\Client\Model\CustomFields, HTTP status code, HTTP response headers (array of strings)
      */
     public function getCustomFieldsWithHttpInfo($limit = 50, string $contentType = self::contentTypes['getCustomFields'][0])
     {
@@ -767,11 +767,11 @@ class ContactsCustomFieldsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\CustomFields' === '\SplFileObject') {
+                    if ('\ConstantContact\Client\Model\CustomFields' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\CustomFields' !== 'string') {
+                        if ('\ConstantContact\Client\Model\CustomFields' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -789,13 +789,13 @@ class ContactsCustomFieldsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\CustomFields', []),
+                        ObjectSerializer::deserialize($content, '\ConstantContact\Client\Model\CustomFields', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\CustomFields';
+            $returnType = '\ConstantContact\Client\Model\CustomFields';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -828,7 +828,7 @@ class ContactsCustomFieldsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\CustomFields',
+                        '\ConstantContact\Client\Model\CustomFields',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -872,7 +872,7 @@ class ContactsCustomFieldsApi
      */
     public function getCustomFieldsAsyncWithHttpInfo($limit = 50, string $contentType = self::contentTypes['getCustomFields'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\CustomFields';
+        $returnType = '\ConstantContact\Client\Model\CustomFields';
         $request = $this->getCustomFieldsRequest($limit, $contentType);
 
         return $this->client
@@ -1022,12 +1022,12 @@ class ContactsCustomFieldsApi
      *
      * POST (create) a custom_field
      *
-     * @param  \OpenAPI\Client\Model\CustomFieldInput $body The JSON payload required to create a new &#x60;custom_field&#x60; (required)
+     * @param  'ConstantContact\Client\Model\CustomFieldInput $body The JSON payload required to create a new &#x60;custom_field&#x60; (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postCustomFields'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\CustomFieldResource
+     * @return 'ConstantContact\Client\Model\CustomFieldResource
      */
     public function postCustomFields($body, string $contentType = self::contentTypes['postCustomFields'][0])
     {
@@ -1040,12 +1040,12 @@ class ContactsCustomFieldsApi
      *
      * POST (create) a custom_field
      *
-     * @param  \OpenAPI\Client\Model\CustomFieldInput $body The JSON payload required to create a new &#x60;custom_field&#x60; (required)
+     * @param  'ConstantContact\Client\Model\CustomFieldInput $body The JSON payload required to create a new &#x60;custom_field&#x60; (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postCustomFields'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\CustomFieldResource, HTTP status code, HTTP response headers (array of strings)
+     * @return array of 'ConstantContact\Client\Model\CustomFieldResource, HTTP status code, HTTP response headers (array of strings)
      */
     public function postCustomFieldsWithHttpInfo($body, string $contentType = self::contentTypes['postCustomFields'][0])
     {
@@ -1088,11 +1088,11 @@ class ContactsCustomFieldsApi
 
             switch($statusCode) {
                 case 201:
-                    if ('\OpenAPI\Client\Model\CustomFieldResource' === '\SplFileObject') {
+                    if ('\ConstantContact\Client\Model\CustomFieldResource' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\CustomFieldResource' !== 'string') {
+                        if ('\ConstantContact\Client\Model\CustomFieldResource' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1110,13 +1110,13 @@ class ContactsCustomFieldsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\CustomFieldResource', []),
+                        ObjectSerializer::deserialize($content, '\ConstantContact\Client\Model\CustomFieldResource', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\CustomFieldResource';
+            $returnType = '\ConstantContact\Client\Model\CustomFieldResource';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1149,7 +1149,7 @@ class ContactsCustomFieldsApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\CustomFieldResource',
+                        '\ConstantContact\Client\Model\CustomFieldResource',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1164,7 +1164,7 @@ class ContactsCustomFieldsApi
      *
      * POST (create) a custom_field
      *
-     * @param  \OpenAPI\Client\Model\CustomFieldInput $body The JSON payload required to create a new &#x60;custom_field&#x60; (required)
+     * @param  'ConstantContact\Client\Model\CustomFieldInput $body The JSON payload required to create a new &#x60;custom_field&#x60; (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postCustomFields'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1185,7 +1185,7 @@ class ContactsCustomFieldsApi
      *
      * POST (create) a custom_field
      *
-     * @param  \OpenAPI\Client\Model\CustomFieldInput $body The JSON payload required to create a new &#x60;custom_field&#x60; (required)
+     * @param  'ConstantContact\Client\Model\CustomFieldInput $body The JSON payload required to create a new &#x60;custom_field&#x60; (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postCustomFields'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1193,7 +1193,7 @@ class ContactsCustomFieldsApi
      */
     public function postCustomFieldsAsyncWithHttpInfo($body, string $contentType = self::contentTypes['postCustomFields'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\CustomFieldResource';
+        $returnType = '\ConstantContact\Client\Model\CustomFieldResource';
         $request = $this->postCustomFieldsRequest($body, $contentType);
 
         return $this->client
@@ -1235,7 +1235,7 @@ class ContactsCustomFieldsApi
     /**
      * Create request for operation 'postCustomFields'
      *
-     * @param  \OpenAPI\Client\Model\CustomFieldInput $body The JSON payload required to create a new &#x60;custom_field&#x60; (required)
+     * @param  'ConstantContact\Client\Model\CustomFieldInput $body The JSON payload required to create a new &#x60;custom_field&#x60; (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postCustomFields'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1342,12 +1342,12 @@ class ContactsCustomFieldsApi
      * PUT (update) a custom_field
      *
      * @param  string $custom_field_id Unique ID of the &#x60;custom_field&#x60; on which to operate. (required)
-     * @param  \OpenAPI\Client\Model\CustomFieldInput $body The JSON payload used to update an existing custom field. Any properties omitted in the PUT request are overwritten with a null value. (required)
+     * @param  'ConstantContact\Client\Model\CustomFieldInput $body The JSON payload used to update an existing custom field. Any properties omitted in the PUT request are overwritten with a null value. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putCustomField'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\CustomFieldResource
+     * @return 'ConstantContact\Client\Model\CustomFieldResource
      */
     public function putCustomField($custom_field_id, $body, string $contentType = self::contentTypes['putCustomField'][0])
     {
@@ -1361,12 +1361,12 @@ class ContactsCustomFieldsApi
      * PUT (update) a custom_field
      *
      * @param  string $custom_field_id Unique ID of the &#x60;custom_field&#x60; on which to operate. (required)
-     * @param  \OpenAPI\Client\Model\CustomFieldInput $body The JSON payload used to update an existing custom field. Any properties omitted in the PUT request are overwritten with a null value. (required)
+     * @param  'ConstantContact\Client\Model\CustomFieldInput $body The JSON payload used to update an existing custom field. Any properties omitted in the PUT request are overwritten with a null value. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putCustomField'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\CustomFieldResource, HTTP status code, HTTP response headers (array of strings)
+     * @return array of 'ConstantContact\Client\Model\CustomFieldResource, HTTP status code, HTTP response headers (array of strings)
      */
     public function putCustomFieldWithHttpInfo($custom_field_id, $body, string $contentType = self::contentTypes['putCustomField'][0])
     {
@@ -1409,11 +1409,11 @@ class ContactsCustomFieldsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\CustomFieldResource' === '\SplFileObject') {
+                    if ('\ConstantContact\Client\Model\CustomFieldResource' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\CustomFieldResource' !== 'string') {
+                        if ('\ConstantContact\Client\Model\CustomFieldResource' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1431,13 +1431,13 @@ class ContactsCustomFieldsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\CustomFieldResource', []),
+                        ObjectSerializer::deserialize($content, '\ConstantContact\Client\Model\CustomFieldResource', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\CustomFieldResource';
+            $returnType = '\ConstantContact\Client\Model\CustomFieldResource';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1470,7 +1470,7 @@ class ContactsCustomFieldsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\CustomFieldResource',
+                        '\ConstantContact\Client\Model\CustomFieldResource',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1486,7 +1486,7 @@ class ContactsCustomFieldsApi
      * PUT (update) a custom_field
      *
      * @param  string $custom_field_id Unique ID of the &#x60;custom_field&#x60; on which to operate. (required)
-     * @param  \OpenAPI\Client\Model\CustomFieldInput $body The JSON payload used to update an existing custom field. Any properties omitted in the PUT request are overwritten with a null value. (required)
+     * @param  'ConstantContact\Client\Model\CustomFieldInput $body The JSON payload used to update an existing custom field. Any properties omitted in the PUT request are overwritten with a null value. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putCustomField'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1508,7 +1508,7 @@ class ContactsCustomFieldsApi
      * PUT (update) a custom_field
      *
      * @param  string $custom_field_id Unique ID of the &#x60;custom_field&#x60; on which to operate. (required)
-     * @param  \OpenAPI\Client\Model\CustomFieldInput $body The JSON payload used to update an existing custom field. Any properties omitted in the PUT request are overwritten with a null value. (required)
+     * @param  'ConstantContact\Client\Model\CustomFieldInput $body The JSON payload used to update an existing custom field. Any properties omitted in the PUT request are overwritten with a null value. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putCustomField'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1516,7 +1516,7 @@ class ContactsCustomFieldsApi
      */
     public function putCustomFieldAsyncWithHttpInfo($custom_field_id, $body, string $contentType = self::contentTypes['putCustomField'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\CustomFieldResource';
+        $returnType = '\ConstantContact\Client\Model\CustomFieldResource';
         $request = $this->putCustomFieldRequest($custom_field_id, $body, $contentType);
 
         return $this->client
@@ -1559,7 +1559,7 @@ class ContactsCustomFieldsApi
      * Create request for operation 'putCustomField'
      *
      * @param  string $custom_field_id Unique ID of the &#x60;custom_field&#x60; on which to operate. (required)
-     * @param  \OpenAPI\Client\Model\CustomFieldInput $body The JSON payload used to update an existing custom field. Any properties omitted in the PUT request are overwritten with a null value. (required)
+     * @param  'ConstantContact\Client\Model\CustomFieldInput $body The JSON payload used to update an existing custom field. Any properties omitted in the PUT request are overwritten with a null value. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putCustomField'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

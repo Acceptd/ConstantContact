@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,14 +29,14 @@
 namespace ConstantContact\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use 'ConstantContact\Client\ObjectSerializer;
 
 /**
  * ContactResourceSmsChannel Class Doc Comment
  *
  * @category Class
  * @description Includes SMS channel and consent details.
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -64,7 +64,7 @@ class ContactResourceSmsChannel implements ModelInterface, ArrayAccess, \JsonSer
         'country_code' => 'string',
         'update_source' => 'string',
         'create_source' => 'string',
-        'sms_channel_consents' => '\OpenAPI\Client\Model\SmsChannelConsentDetails[]'
+        'sms_channel_consents' => '\ConstantContact\Client\Model\SmsChannelConsentDetails[]'
     ];
 
     /**
@@ -497,7 +497,7 @@ class ContactResourceSmsChannel implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets sms_channel_consents
      *
-     * @return \OpenAPI\Client\Model\SmsChannelConsentDetails[]|null
+     * @return 'ConstantContact\Client\Model\SmsChannelConsentDetails[]|null
      */
     public function getSmsChannelConsents()
     {
@@ -507,7 +507,7 @@ class ContactResourceSmsChannel implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets sms_channel_consents
      *
-     * @param \OpenAPI\Client\Model\SmsChannelConsentDetails[]|null $sms_channel_consents Identifies SMS channel consent details such as the current permission status for the SMS channel and opt-in date.
+     * @param 'ConstantContact\Client\Model\SmsChannelConsentDetails[]|null $sms_channel_consents Identifies SMS channel consent details such as the current permission status for the SMS channel and opt-in date.
      *
      * @return self
      */

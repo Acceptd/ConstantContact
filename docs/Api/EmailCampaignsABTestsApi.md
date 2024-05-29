@@ -12,7 +12,7 @@ All URIs are relative to https://api.cc.email/v3, except if the operation define
 ## `createEmailCampaignABTestUsingPOST()`
 
 ```php
-createEmailCampaignABTestUsingPOST($campaign_activity_id, $abtest): \OpenAPI\Client\Model\ABTestData
+createEmailCampaignABTestUsingPOST($campaign_activity_id, $abtest): 'ConstantContact\Client\Model\ABTestData
 ```
 
 POST (Create) an A/B Test for an Email Campaign Activity
@@ -45,7 +45,7 @@ $apiInstance = new OpenAPI\Client\Api\EmailCampaignsABTestsApi(
     $config
 );
 $campaign_activity_id = 91569d46-00e4-4a4d-9a4c-d17d98740d04; // string | The unique ID for the primary email campaign activity.
-$abtest = new \OpenAPI\Client\Model\ABTestData(); // \OpenAPI\Client\Model\ABTestData | Specify the `alternative_subject` line, `test_size` percentage of contacts (value must from `5` to `50` inclusively), and the `winner_wait_duration` (value must be `6`, `12`, `24`, or `48` hours).
+$abtest = new 'ConstantContact\Client\Model\ABTestData(); // 'ConstantContact\Client\Model\ABTestData | Specify the `alternative_subject` line, `test_size` percentage of contacts (value must from `5` to `50` inclusively), and the `winner_wait_duration` (value must be `6`, `12`, `24`, or `48` hours).
 
 try {
     $result = $apiInstance->createEmailCampaignABTestUsingPOST($campaign_activity_id, $abtest);
@@ -149,7 +149,7 @@ void (empty response body)
 ## `retrieveEmailCampaignABTestUsingGET()`
 
 ```php
-retrieveEmailCampaignABTestUsingGET($campaign_activity_id): \OpenAPI\Client\Model\ABTestData
+retrieveEmailCampaignABTestUsingGET($campaign_activity_id): 'ConstantContact\Client\Model\ABTestData
 ```
 
 GET A/B Test Details for an Email Campaign Activity

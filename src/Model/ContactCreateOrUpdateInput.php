@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace ConstantContact\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use 'ConstantContact\Client\ObjectSerializer;
 
 /**
  * ContactCreateOrUpdateInput Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -64,11 +64,11 @@ class ContactCreateOrUpdateInput implements ModelInterface, ArrayAccess, \JsonSe
         'company_name' => 'string',
         'phone_number' => 'string',
         'list_memberships' => 'string[]',
-        'custom_fields' => '\OpenAPI\Client\Model\CreateOrUpdateContactCustomField[]',
+        'custom_fields' => '\ConstantContact\Client\Model\CreateOrUpdateContactCustomField[]',
         'anniversary' => 'string',
         'birthday_month' => 'int',
         'birthday_day' => 'int',
-        'street_address' => '\OpenAPI\Client\Model\ContactCreateOrUpdateInputStreetAddress'
+        'street_address' => '\ConstantContact\Client\Model\ContactCreateOrUpdateInputStreetAddress'
     ];
 
     /**
@@ -631,7 +631,7 @@ class ContactCreateOrUpdateInput implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets custom_fields
      *
-     * @return \OpenAPI\Client\Model\CreateOrUpdateContactCustomField[]|null
+     * @return 'ConstantContact\Client\Model\CreateOrUpdateContactCustomField[]|null
      */
     public function getCustomFields()
     {
@@ -641,7 +641,7 @@ class ContactCreateOrUpdateInput implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets custom_fields
      *
-     * @param \OpenAPI\Client\Model\CreateOrUpdateContactCustomField[]|null $custom_fields The custom fields you want to add to the contact as an array of up to 50 custom field objects.
+     * @param 'ConstantContact\Client\Model\CreateOrUpdateContactCustomField[]|null $custom_fields The custom fields you want to add to the contact as an array of up to 50 custom field objects.
      *
      * @return self
      */
@@ -743,7 +743,7 @@ class ContactCreateOrUpdateInput implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets street_address
      *
-     * @return \OpenAPI\Client\Model\ContactCreateOrUpdateInputStreetAddress|null
+     * @return 'ConstantContact\Client\Model\ContactCreateOrUpdateInputStreetAddress|null
      */
     public function getStreetAddress()
     {
@@ -753,7 +753,7 @@ class ContactCreateOrUpdateInput implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets street_address
      *
-     * @param \OpenAPI\Client\Model\ContactCreateOrUpdateInputStreetAddress|null $street_address street_address
+     * @param 'ConstantContact\Client\Model\ContactCreateOrUpdateInputStreetAddress|null $street_address street_address
      *
      * @return self
      */

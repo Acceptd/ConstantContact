@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace ConstantContact\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use 'ConstantContact\Client\ObjectSerializer;
 
 /**
  * BulkEmailCampaignSummariesPage Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,9 +57,9 @@ class BulkEmailCampaignSummariesPage implements ModelInterface, ArrayAccess, \Js
       * @var string[]
       */
     protected static $openAPITypes = [
-        'bulk_email_campaign_summaries' => '\OpenAPI\Client\Model\BulkEmailCampaignSummary[]',
-        'aggregate_percents' => '\OpenAPI\Client\Model\BulkEmailCampaignSummariesPercents',
-        '_links' => '\OpenAPI\Client\Model\ReportingLinks'
+        'bulk_email_campaign_summaries' => '\ConstantContact\Client\Model\BulkEmailCampaignSummary[]',
+        'aggregate_percents' => '\ConstantContact\Client\Model\BulkEmailCampaignSummariesPercents',
+        '_links' => '\ConstantContact\Client\Model\ReportingLinks'
     ];
 
     /**
@@ -312,7 +312,7 @@ class BulkEmailCampaignSummariesPage implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets bulk_email_campaign_summaries
      *
-     * @return \OpenAPI\Client\Model\BulkEmailCampaignSummary[]
+     * @return 'ConstantContact\Client\Model\BulkEmailCampaignSummary[]
      */
     public function getBulkEmailCampaignSummaries()
     {
@@ -322,7 +322,7 @@ class BulkEmailCampaignSummariesPage implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets bulk_email_campaign_summaries
      *
-     * @param \OpenAPI\Client\Model\BulkEmailCampaignSummary[] $bulk_email_campaign_summaries Lists and provides details about each bulk email campaign activity including total unique counts for tracked activities.
+     * @param 'ConstantContact\Client\Model\BulkEmailCampaignSummary[] $bulk_email_campaign_summaries Lists and provides details about each bulk email campaign activity including total unique counts for tracked activities.
      *
      * @return self
      */
@@ -339,7 +339,7 @@ class BulkEmailCampaignSummariesPage implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets aggregate_percents
      *
-     * @return \OpenAPI\Client\Model\BulkEmailCampaignSummariesPercents|null
+     * @return 'ConstantContact\Client\Model\BulkEmailCampaignSummariesPercents|null
      */
     public function getAggregatePercents()
     {
@@ -349,7 +349,7 @@ class BulkEmailCampaignSummariesPage implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets aggregate_percents
      *
-     * @param \OpenAPI\Client\Model\BulkEmailCampaignSummariesPercents|null $aggregate_percents aggregate_percents
+     * @param 'ConstantContact\Client\Model\BulkEmailCampaignSummariesPercents|null $aggregate_percents aggregate_percents
      *
      * @return self
      */
@@ -366,7 +366,7 @@ class BulkEmailCampaignSummariesPage implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets _links
      *
-     * @return \OpenAPI\Client\Model\ReportingLinks
+     * @return 'ConstantContact\Client\Model\ReportingLinks
      */
     public function getLinks()
     {
@@ -376,7 +376,7 @@ class BulkEmailCampaignSummariesPage implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets _links
      *
-     * @param \OpenAPI\Client\Model\ReportingLinks $_links _links
+     * @param 'ConstantContact\Client\Model\ReportingLinks $_links _links
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace ConstantContact\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use 'ConstantContact\Client\ObjectSerializer;
 
 /**
  * EmailCampaignActivityInput Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -64,7 +64,7 @@ class EmailCampaignActivityInput implements ModelInterface, ArrayAccess, \JsonSe
         'subject' => 'string',
         'preheader' => 'string',
         'html_content' => 'string',
-        'physical_address_in_footer' => '\OpenAPI\Client\Model\EmailPhysicalAddress'
+        'physical_address_in_footer' => '\ConstantContact\Client\Model\EmailPhysicalAddress'
     ];
 
     /**
@@ -580,7 +580,7 @@ class EmailCampaignActivityInput implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets physical_address_in_footer
      *
-     * @return \OpenAPI\Client\Model\EmailPhysicalAddress|null
+     * @return 'ConstantContact\Client\Model\EmailPhysicalAddress|null
      */
     public function getPhysicalAddressInFooter()
     {
@@ -590,7 +590,7 @@ class EmailCampaignActivityInput implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets physical_address_in_footer
      *
-     * @param \OpenAPI\Client\Model\EmailPhysicalAddress|null $physical_address_in_footer physical_address_in_footer
+     * @param 'ConstantContact\Client\Model\EmailPhysicalAddress|null $physical_address_in_footer physical_address_in_footer
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace ConstantContact\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use 'ConstantContact\Client\ObjectSerializer;
 
 /**
  * EmailLinks Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class EmailLinks implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'campaign_activity_id' => 'string',
-        'link_click_counts' => '\OpenAPI\Client\Model\EmailLinkClickCount[]'
+        'link_click_counts' => '\ConstantContact\Client\Model\EmailLinkClickCount[]'
     ];
 
     /**
@@ -326,7 +326,7 @@ class EmailLinks implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets link_click_counts
      *
-     * @return \OpenAPI\Client\Model\EmailLinkClickCount[]|null
+     * @return 'ConstantContact\Client\Model\EmailLinkClickCount[]|null
      */
     public function getLinkClickCounts()
     {
@@ -336,7 +336,7 @@ class EmailLinks implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets link_click_counts
      *
-     * @param \OpenAPI\Client\Model\EmailLinkClickCount[]|null $link_click_counts An array of objects that contain the contact click count and link metadata for each unique link URL in an email campaign activity. By default, this method combines results for duplicate link URLs.
+     * @param 'ConstantContact\Client\Model\EmailLinkClickCount[]|null $link_click_counts An array of objects that contain the contact click count and link metadata for each unique link URL in an email campaign activity. By default, this method combines results for duplicate link URLs.
      *
      * @return self
      */

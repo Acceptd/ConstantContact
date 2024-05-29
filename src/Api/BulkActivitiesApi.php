@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -43,7 +43,7 @@ use ConstantContact\Client\ObjectSerializer;
  * BulkActivitiesApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -166,12 +166,12 @@ class BulkActivitiesApi
      *
      * Import Contacts using a JSON Payload
      *
-     * @param  \OpenAPI\Client\Model\ContactsJsonImport $body The JSON request payload that contains the contact data and contact lists for the import. (required)
+     * @param  'ConstantContact\Client\Model\ContactsJsonImport $body The JSON request payload that contains the contact data and contact lists for the import. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['bulkImportContactsJSON'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ActivityImport
+     * @return 'ConstantContact\Client\Model\ActivityImport
      */
     public function bulkImportContactsJSON($body, string $contentType = self::contentTypes['bulkImportContactsJSON'][0])
     {
@@ -184,12 +184,12 @@ class BulkActivitiesApi
      *
      * Import Contacts using a JSON Payload
      *
-     * @param  \OpenAPI\Client\Model\ContactsJsonImport $body The JSON request payload that contains the contact data and contact lists for the import. (required)
+     * @param  'ConstantContact\Client\Model\ContactsJsonImport $body The JSON request payload that contains the contact data and contact lists for the import. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['bulkImportContactsJSON'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ActivityImport, HTTP status code, HTTP response headers (array of strings)
+     * @return array of 'ConstantContact\Client\Model\ActivityImport, HTTP status code, HTTP response headers (array of strings)
      */
     public function bulkImportContactsJSONWithHttpInfo($body, string $contentType = self::contentTypes['bulkImportContactsJSON'][0])
     {
@@ -232,11 +232,11 @@ class BulkActivitiesApi
 
             switch($statusCode) {
                 case 201:
-                    if ('\OpenAPI\Client\Model\ActivityImport' === '\SplFileObject') {
+                    if ('\ConstantContact\Client\Model\ActivityImport' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ActivityImport' !== 'string') {
+                        if ('\ConstantContact\Client\Model\ActivityImport' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -254,13 +254,13 @@ class BulkActivitiesApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ActivityImport', []),
+                        ObjectSerializer::deserialize($content, '\ConstantContact\Client\Model\ActivityImport', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\ActivityImport';
+            $returnType = '\ConstantContact\Client\Model\ActivityImport';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -293,7 +293,7 @@ class BulkActivitiesApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ActivityImport',
+                        '\ConstantContact\Client\Model\ActivityImport',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -308,7 +308,7 @@ class BulkActivitiesApi
      *
      * Import Contacts using a JSON Payload
      *
-     * @param  \OpenAPI\Client\Model\ContactsJsonImport $body The JSON request payload that contains the contact data and contact lists for the import. (required)
+     * @param  'ConstantContact\Client\Model\ContactsJsonImport $body The JSON request payload that contains the contact data and contact lists for the import. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['bulkImportContactsJSON'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -329,7 +329,7 @@ class BulkActivitiesApi
      *
      * Import Contacts using a JSON Payload
      *
-     * @param  \OpenAPI\Client\Model\ContactsJsonImport $body The JSON request payload that contains the contact data and contact lists for the import. (required)
+     * @param  'ConstantContact\Client\Model\ContactsJsonImport $body The JSON request payload that contains the contact data and contact lists for the import. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['bulkImportContactsJSON'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -337,7 +337,7 @@ class BulkActivitiesApi
      */
     public function bulkImportContactsJSONAsyncWithHttpInfo($body, string $contentType = self::contentTypes['bulkImportContactsJSON'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ActivityImport';
+        $returnType = '\ConstantContact\Client\Model\ActivityImport';
         $request = $this->bulkImportContactsJSONRequest($body, $contentType);
 
         return $this->client
@@ -379,7 +379,7 @@ class BulkActivitiesApi
     /**
      * Create request for operation 'bulkImportContactsJSON'
      *
-     * @param  \OpenAPI\Client\Model\ContactsJsonImport $body The JSON request payload that contains the contact data and contact lists for the import. (required)
+     * @param  'ConstantContact\Client\Model\ContactsJsonImport $body The JSON request payload that contains the contact data and contact lists for the import. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['bulkImportContactsJSON'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -489,9 +489,9 @@ class BulkActivitiesApi
      * @param  string[] $list_ids Specify which contact lists you are adding all imported contacts to as an array of up to 50 contact &#x60;list_id&#x60; values. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['contactsCSVImport'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ActivityImport
+     * @return 'ConstantContact\Client\Model\ActivityImport
      */
     public function contactsCSVImport($file, $list_ids, string $contentType = self::contentTypes['contactsCSVImport'][0])
     {
@@ -508,9 +508,9 @@ class BulkActivitiesApi
      * @param  string[] $list_ids Specify which contact lists you are adding all imported contacts to as an array of up to 50 contact &#x60;list_id&#x60; values. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['contactsCSVImport'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ActivityImport, HTTP status code, HTTP response headers (array of strings)
+     * @return array of 'ConstantContact\Client\Model\ActivityImport, HTTP status code, HTTP response headers (array of strings)
      */
     public function contactsCSVImportWithHttpInfo($file, $list_ids, string $contentType = self::contentTypes['contactsCSVImport'][0])
     {
@@ -553,11 +553,11 @@ class BulkActivitiesApi
 
             switch($statusCode) {
                 case 201:
-                    if ('\OpenAPI\Client\Model\ActivityImport' === '\SplFileObject') {
+                    if ('\ConstantContact\Client\Model\ActivityImport' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ActivityImport' !== 'string') {
+                        if ('\ConstantContact\Client\Model\ActivityImport' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -575,13 +575,13 @@ class BulkActivitiesApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ActivityImport', []),
+                        ObjectSerializer::deserialize($content, '\ConstantContact\Client\Model\ActivityImport', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\ActivityImport';
+            $returnType = '\ConstantContact\Client\Model\ActivityImport';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -614,7 +614,7 @@ class BulkActivitiesApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ActivityImport',
+                        '\ConstantContact\Client\Model\ActivityImport',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -660,7 +660,7 @@ class BulkActivitiesApi
      */
     public function contactsCSVImportAsyncWithHttpInfo($file, $list_ids, string $contentType = self::contentTypes['contactsCSVImport'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ActivityImport';
+        $returnType = '\ConstantContact\Client\Model\ActivityImport';
         $request = $this->contactsCSVImportRequest($file, $list_ids, $contentType);
 
         return $this->client
@@ -831,9 +831,9 @@ class BulkActivitiesApi
      * @param  string $activity_id The unique ID of the activity to GET (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getActivity'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\Activity
+     * @return 'ConstantContact\Client\Model\Activity
      */
     public function getActivity($activity_id, string $contentType = self::contentTypes['getActivity'][0])
     {
@@ -849,9 +849,9 @@ class BulkActivitiesApi
      * @param  string $activity_id The unique ID of the activity to GET (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getActivity'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\Activity, HTTP status code, HTTP response headers (array of strings)
+     * @return array of 'ConstantContact\Client\Model\Activity, HTTP status code, HTTP response headers (array of strings)
      */
     public function getActivityWithHttpInfo($activity_id, string $contentType = self::contentTypes['getActivity'][0])
     {
@@ -894,11 +894,11 @@ class BulkActivitiesApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\Activity' === '\SplFileObject') {
+                    if ('\ConstantContact\Client\Model\Activity' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\Activity' !== 'string') {
+                        if ('\ConstantContact\Client\Model\Activity' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -916,13 +916,13 @@ class BulkActivitiesApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Activity', []),
+                        ObjectSerializer::deserialize($content, '\ConstantContact\Client\Model\Activity', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\Activity';
+            $returnType = '\ConstantContact\Client\Model\Activity';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -955,7 +955,7 @@ class BulkActivitiesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Activity',
+                        '\ConstantContact\Client\Model\Activity',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -999,7 +999,7 @@ class BulkActivitiesApi
      */
     public function getActivityAsyncWithHttpInfo($activity_id, string $contentType = self::contentTypes['getActivity'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\Activity';
+        $returnType = '\ConstantContact\Client\Model\Activity';
         $request = $this->getActivityRequest($activity_id, $contentType);
 
         return $this->client
@@ -1152,9 +1152,9 @@ class BulkActivitiesApi
      * @param  string $state Use this parameter to filter the response to include only activities in one of the following states: cancelled, completed, failed, processing, or timed_out. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getActivityStatusCollection'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\Activities
+     * @return 'ConstantContact\Client\Model\Activities
      */
     public function getActivityStatusCollection($limit = 50, $state = null, string $contentType = self::contentTypes['getActivityStatusCollection'][0])
     {
@@ -1171,9 +1171,9 @@ class BulkActivitiesApi
      * @param  string $state Use this parameter to filter the response to include only activities in one of the following states: cancelled, completed, failed, processing, or timed_out. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getActivityStatusCollection'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\Activities, HTTP status code, HTTP response headers (array of strings)
+     * @return array of 'ConstantContact\Client\Model\Activities, HTTP status code, HTTP response headers (array of strings)
      */
     public function getActivityStatusCollectionWithHttpInfo($limit = 50, $state = null, string $contentType = self::contentTypes['getActivityStatusCollection'][0])
     {
@@ -1216,11 +1216,11 @@ class BulkActivitiesApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\Activities' === '\SplFileObject') {
+                    if ('\ConstantContact\Client\Model\Activities' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\Activities' !== 'string') {
+                        if ('\ConstantContact\Client\Model\Activities' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1238,13 +1238,13 @@ class BulkActivitiesApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Activities', []),
+                        ObjectSerializer::deserialize($content, '\ConstantContact\Client\Model\Activities', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\Activities';
+            $returnType = '\ConstantContact\Client\Model\Activities';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1277,7 +1277,7 @@ class BulkActivitiesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Activities',
+                        '\ConstantContact\Client\Model\Activities',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1323,7 +1323,7 @@ class BulkActivitiesApi
      */
     public function getActivityStatusCollectionAsyncWithHttpInfo($limit = 50, $state = null, string $contentType = self::contentTypes['getActivityStatusCollection'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\Activities';
+        $returnType = '\ConstantContact\Client\Model\Activities';
         $request = $this->getActivityStatusCollectionRequest($limit, $state, $contentType);
 
         return $this->client
@@ -1487,7 +1487,7 @@ class BulkActivitiesApi
      * @param  string $file_export_id The unique ID of the exported file provided in the results: section of the export contacts activity response. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getContactsExport'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -1505,7 +1505,7 @@ class BulkActivitiesApi
      * @param  string $file_export_id The unique ID of the exported file provided in the results: section of the export contacts activity response. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getContactsExport'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1804,12 +1804,12 @@ class BulkActivitiesApi
      *
      * Delete Contacts in Bulk
      *
-     * @param  \OpenAPI\Client\Model\ContactDelete $body The request body contains an array of contact_ids &lt;em&gt;or&lt;/em&gt; list_ids. All contact_ids provided are deleted, or all members of each specified list_id are deleted. (required)
+     * @param  'ConstantContact\Client\Model\ContactDelete $body The request body contains an array of contact_ids &lt;em&gt;or&lt;/em&gt; list_ids. All contact_ids provided are deleted, or all members of each specified list_id are deleted. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postContactDelete'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ActivityDeleteStatus
+     * @return 'ConstantContact\Client\Model\ActivityDeleteStatus
      */
     public function postContactDelete($body, string $contentType = self::contentTypes['postContactDelete'][0])
     {
@@ -1822,12 +1822,12 @@ class BulkActivitiesApi
      *
      * Delete Contacts in Bulk
      *
-     * @param  \OpenAPI\Client\Model\ContactDelete $body The request body contains an array of contact_ids &lt;em&gt;or&lt;/em&gt; list_ids. All contact_ids provided are deleted, or all members of each specified list_id are deleted. (required)
+     * @param  'ConstantContact\Client\Model\ContactDelete $body The request body contains an array of contact_ids &lt;em&gt;or&lt;/em&gt; list_ids. All contact_ids provided are deleted, or all members of each specified list_id are deleted. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postContactDelete'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ActivityDeleteStatus, HTTP status code, HTTP response headers (array of strings)
+     * @return array of 'ConstantContact\Client\Model\ActivityDeleteStatus, HTTP status code, HTTP response headers (array of strings)
      */
     public function postContactDeleteWithHttpInfo($body, string $contentType = self::contentTypes['postContactDelete'][0])
     {
@@ -1870,11 +1870,11 @@ class BulkActivitiesApi
 
             switch($statusCode) {
                 case 201:
-                    if ('\OpenAPI\Client\Model\ActivityDeleteStatus' === '\SplFileObject') {
+                    if ('\ConstantContact\Client\Model\ActivityDeleteStatus' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ActivityDeleteStatus' !== 'string') {
+                        if ('\ConstantContact\Client\Model\ActivityDeleteStatus' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1892,13 +1892,13 @@ class BulkActivitiesApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ActivityDeleteStatus', []),
+                        ObjectSerializer::deserialize($content, '\ConstantContact\Client\Model\ActivityDeleteStatus', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\ActivityDeleteStatus';
+            $returnType = '\ConstantContact\Client\Model\ActivityDeleteStatus';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1931,7 +1931,7 @@ class BulkActivitiesApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ActivityDeleteStatus',
+                        '\ConstantContact\Client\Model\ActivityDeleteStatus',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1946,7 +1946,7 @@ class BulkActivitiesApi
      *
      * Delete Contacts in Bulk
      *
-     * @param  \OpenAPI\Client\Model\ContactDelete $body The request body contains an array of contact_ids &lt;em&gt;or&lt;/em&gt; list_ids. All contact_ids provided are deleted, or all members of each specified list_id are deleted. (required)
+     * @param  'ConstantContact\Client\Model\ContactDelete $body The request body contains an array of contact_ids &lt;em&gt;or&lt;/em&gt; list_ids. All contact_ids provided are deleted, or all members of each specified list_id are deleted. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postContactDelete'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1967,7 +1967,7 @@ class BulkActivitiesApi
      *
      * Delete Contacts in Bulk
      *
-     * @param  \OpenAPI\Client\Model\ContactDelete $body The request body contains an array of contact_ids &lt;em&gt;or&lt;/em&gt; list_ids. All contact_ids provided are deleted, or all members of each specified list_id are deleted. (required)
+     * @param  'ConstantContact\Client\Model\ContactDelete $body The request body contains an array of contact_ids &lt;em&gt;or&lt;/em&gt; list_ids. All contact_ids provided are deleted, or all members of each specified list_id are deleted. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postContactDelete'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1975,7 +1975,7 @@ class BulkActivitiesApi
      */
     public function postContactDeleteAsyncWithHttpInfo($body, string $contentType = self::contentTypes['postContactDelete'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ActivityDeleteStatus';
+        $returnType = '\ConstantContact\Client\Model\ActivityDeleteStatus';
         $request = $this->postContactDeleteRequest($body, $contentType);
 
         return $this->client
@@ -2017,7 +2017,7 @@ class BulkActivitiesApi
     /**
      * Create request for operation 'postContactDelete'
      *
-     * @param  \OpenAPI\Client\Model\ContactDelete $body The request body contains an array of contact_ids &lt;em&gt;or&lt;/em&gt; list_ids. All contact_ids provided are deleted, or all members of each specified list_id are deleted. (required)
+     * @param  'ConstantContact\Client\Model\ContactDelete $body The request body contains an array of contact_ids &lt;em&gt;or&lt;/em&gt; list_ids. All contact_ids provided are deleted, or all members of each specified list_id are deleted. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postContactDelete'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2123,12 +2123,12 @@ class BulkActivitiesApi
      *
      * Export Contacts to a File
      *
-     * @param  \OpenAPI\Client\Model\ContactsExport $body A JSON payload that specifies the contacts (rows in the CSV file) and contact properties (columns in the CSV file) you want to export. (required)
+     * @param  'ConstantContact\Client\Model\ContactsExport $body A JSON payload that specifies the contacts (rows in the CSV file) and contact properties (columns in the CSV file) you want to export. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postContactsExport'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ActivityExportStatus
+     * @return 'ConstantContact\Client\Model\ActivityExportStatus
      */
     public function postContactsExport($body, string $contentType = self::contentTypes['postContactsExport'][0])
     {
@@ -2141,12 +2141,12 @@ class BulkActivitiesApi
      *
      * Export Contacts to a File
      *
-     * @param  \OpenAPI\Client\Model\ContactsExport $body A JSON payload that specifies the contacts (rows in the CSV file) and contact properties (columns in the CSV file) you want to export. (required)
+     * @param  'ConstantContact\Client\Model\ContactsExport $body A JSON payload that specifies the contacts (rows in the CSV file) and contact properties (columns in the CSV file) you want to export. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postContactsExport'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ActivityExportStatus, HTTP status code, HTTP response headers (array of strings)
+     * @return array of 'ConstantContact\Client\Model\ActivityExportStatus, HTTP status code, HTTP response headers (array of strings)
      */
     public function postContactsExportWithHttpInfo($body, string $contentType = self::contentTypes['postContactsExport'][0])
     {
@@ -2189,11 +2189,11 @@ class BulkActivitiesApi
 
             switch($statusCode) {
                 case 201:
-                    if ('\OpenAPI\Client\Model\ActivityExportStatus' === '\SplFileObject') {
+                    if ('\ConstantContact\Client\Model\ActivityExportStatus' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ActivityExportStatus' !== 'string') {
+                        if ('\ConstantContact\Client\Model\ActivityExportStatus' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2211,13 +2211,13 @@ class BulkActivitiesApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ActivityExportStatus', []),
+                        ObjectSerializer::deserialize($content, '\ConstantContact\Client\Model\ActivityExportStatus', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\ActivityExportStatus';
+            $returnType = '\ConstantContact\Client\Model\ActivityExportStatus';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -2250,7 +2250,7 @@ class BulkActivitiesApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ActivityExportStatus',
+                        '\ConstantContact\Client\Model\ActivityExportStatus',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2265,7 +2265,7 @@ class BulkActivitiesApi
      *
      * Export Contacts to a File
      *
-     * @param  \OpenAPI\Client\Model\ContactsExport $body A JSON payload that specifies the contacts (rows in the CSV file) and contact properties (columns in the CSV file) you want to export. (required)
+     * @param  'ConstantContact\Client\Model\ContactsExport $body A JSON payload that specifies the contacts (rows in the CSV file) and contact properties (columns in the CSV file) you want to export. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postContactsExport'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2286,7 +2286,7 @@ class BulkActivitiesApi
      *
      * Export Contacts to a File
      *
-     * @param  \OpenAPI\Client\Model\ContactsExport $body A JSON payload that specifies the contacts (rows in the CSV file) and contact properties (columns in the CSV file) you want to export. (required)
+     * @param  'ConstantContact\Client\Model\ContactsExport $body A JSON payload that specifies the contacts (rows in the CSV file) and contact properties (columns in the CSV file) you want to export. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postContactsExport'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2294,7 +2294,7 @@ class BulkActivitiesApi
      */
     public function postContactsExportAsyncWithHttpInfo($body, string $contentType = self::contentTypes['postContactsExport'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ActivityExportStatus';
+        $returnType = '\ConstantContact\Client\Model\ActivityExportStatus';
         $request = $this->postContactsExportRequest($body, $contentType);
 
         return $this->client
@@ -2336,7 +2336,7 @@ class BulkActivitiesApi
     /**
      * Create request for operation 'postContactsExport'
      *
-     * @param  \OpenAPI\Client\Model\ContactsExport $body A JSON payload that specifies the contacts (rows in the CSV file) and contact properties (columns in the CSV file) you want to export. (required)
+     * @param  'ConstantContact\Client\Model\ContactsExport $body A JSON payload that specifies the contacts (rows in the CSV file) and contact properties (columns in the CSV file) you want to export. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postContactsExport'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2442,12 +2442,12 @@ class BulkActivitiesApi
      *
      * Delete Custom Fields
      *
-     * @param  \OpenAPI\Client\Model\CustomFieldId100 $body An array of &#x60;custom_field_id&#x60;&#39;s to delete. (required)
+     * @param  'ConstantContact\Client\Model\CustomFieldId100 $body An array of &#x60;custom_field_id&#x60;&#39;s to delete. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postCustomFieldDelete'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ActivityDeleteCustomFields
+     * @return 'ConstantContact\Client\Model\ActivityDeleteCustomFields
      */
     public function postCustomFieldDelete($body, string $contentType = self::contentTypes['postCustomFieldDelete'][0])
     {
@@ -2460,12 +2460,12 @@ class BulkActivitiesApi
      *
      * Delete Custom Fields
      *
-     * @param  \OpenAPI\Client\Model\CustomFieldId100 $body An array of &#x60;custom_field_id&#x60;&#39;s to delete. (required)
+     * @param  'ConstantContact\Client\Model\CustomFieldId100 $body An array of &#x60;custom_field_id&#x60;&#39;s to delete. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postCustomFieldDelete'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ActivityDeleteCustomFields, HTTP status code, HTTP response headers (array of strings)
+     * @return array of 'ConstantContact\Client\Model\ActivityDeleteCustomFields, HTTP status code, HTTP response headers (array of strings)
      */
     public function postCustomFieldDeleteWithHttpInfo($body, string $contentType = self::contentTypes['postCustomFieldDelete'][0])
     {
@@ -2508,11 +2508,11 @@ class BulkActivitiesApi
 
             switch($statusCode) {
                 case 201:
-                    if ('\OpenAPI\Client\Model\ActivityDeleteCustomFields' === '\SplFileObject') {
+                    if ('\ConstantContact\Client\Model\ActivityDeleteCustomFields' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ActivityDeleteCustomFields' !== 'string') {
+                        if ('\ConstantContact\Client\Model\ActivityDeleteCustomFields' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2530,13 +2530,13 @@ class BulkActivitiesApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ActivityDeleteCustomFields', []),
+                        ObjectSerializer::deserialize($content, '\ConstantContact\Client\Model\ActivityDeleteCustomFields', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\ActivityDeleteCustomFields';
+            $returnType = '\ConstantContact\Client\Model\ActivityDeleteCustomFields';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -2569,7 +2569,7 @@ class BulkActivitiesApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ActivityDeleteCustomFields',
+                        '\ConstantContact\Client\Model\ActivityDeleteCustomFields',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2584,7 +2584,7 @@ class BulkActivitiesApi
      *
      * Delete Custom Fields
      *
-     * @param  \OpenAPI\Client\Model\CustomFieldId100 $body An array of &#x60;custom_field_id&#x60;&#39;s to delete. (required)
+     * @param  'ConstantContact\Client\Model\CustomFieldId100 $body An array of &#x60;custom_field_id&#x60;&#39;s to delete. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postCustomFieldDelete'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2605,7 +2605,7 @@ class BulkActivitiesApi
      *
      * Delete Custom Fields
      *
-     * @param  \OpenAPI\Client\Model\CustomFieldId100 $body An array of &#x60;custom_field_id&#x60;&#39;s to delete. (required)
+     * @param  'ConstantContact\Client\Model\CustomFieldId100 $body An array of &#x60;custom_field_id&#x60;&#39;s to delete. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postCustomFieldDelete'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2613,7 +2613,7 @@ class BulkActivitiesApi
      */
     public function postCustomFieldDeleteAsyncWithHttpInfo($body, string $contentType = self::contentTypes['postCustomFieldDelete'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ActivityDeleteCustomFields';
+        $returnType = '\ConstantContact\Client\Model\ActivityDeleteCustomFields';
         $request = $this->postCustomFieldDeleteRequest($body, $contentType);
 
         return $this->client
@@ -2655,7 +2655,7 @@ class BulkActivitiesApi
     /**
      * Create request for operation 'postCustomFieldDelete'
      *
-     * @param  \OpenAPI\Client\Model\CustomFieldId100 $body An array of &#x60;custom_field_id&#x60;&#39;s to delete. (required)
+     * @param  'ConstantContact\Client\Model\CustomFieldId100 $body An array of &#x60;custom_field_id&#x60;&#39;s to delete. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postCustomFieldDelete'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2756,12 +2756,12 @@ class BulkActivitiesApi
      *
      * Add Contacts to Lists
      *
-     * @param  \OpenAPI\Client\Model\ListActivityAddContacts $body The JSON payload used to create the &#39;add contacts to lists&#39; activity (required)
+     * @param  'ConstantContact\Client\Model\ListActivityAddContacts $body The JSON payload used to create the &#39;add contacts to lists&#39; activity (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postListAddContact'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ActivityListsMembership
+     * @return 'ConstantContact\Client\Model\ActivityListsMembership
      */
     public function postListAddContact($body, string $contentType = self::contentTypes['postListAddContact'][0])
     {
@@ -2774,12 +2774,12 @@ class BulkActivitiesApi
      *
      * Add Contacts to Lists
      *
-     * @param  \OpenAPI\Client\Model\ListActivityAddContacts $body The JSON payload used to create the &#39;add contacts to lists&#39; activity (required)
+     * @param  'ConstantContact\Client\Model\ListActivityAddContacts $body The JSON payload used to create the &#39;add contacts to lists&#39; activity (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postListAddContact'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ActivityListsMembership, HTTP status code, HTTP response headers (array of strings)
+     * @return array of 'ConstantContact\Client\Model\ActivityListsMembership, HTTP status code, HTTP response headers (array of strings)
      */
     public function postListAddContactWithHttpInfo($body, string $contentType = self::contentTypes['postListAddContact'][0])
     {
@@ -2822,11 +2822,11 @@ class BulkActivitiesApi
 
             switch($statusCode) {
                 case 201:
-                    if ('\OpenAPI\Client\Model\ActivityListsMembership' === '\SplFileObject') {
+                    if ('\ConstantContact\Client\Model\ActivityListsMembership' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ActivityListsMembership' !== 'string') {
+                        if ('\ConstantContact\Client\Model\ActivityListsMembership' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2844,13 +2844,13 @@ class BulkActivitiesApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ActivityListsMembership', []),
+                        ObjectSerializer::deserialize($content, '\ConstantContact\Client\Model\ActivityListsMembership', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\ActivityListsMembership';
+            $returnType = '\ConstantContact\Client\Model\ActivityListsMembership';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -2883,7 +2883,7 @@ class BulkActivitiesApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ActivityListsMembership',
+                        '\ConstantContact\Client\Model\ActivityListsMembership',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2898,7 +2898,7 @@ class BulkActivitiesApi
      *
      * Add Contacts to Lists
      *
-     * @param  \OpenAPI\Client\Model\ListActivityAddContacts $body The JSON payload used to create the &#39;add contacts to lists&#39; activity (required)
+     * @param  'ConstantContact\Client\Model\ListActivityAddContacts $body The JSON payload used to create the &#39;add contacts to lists&#39; activity (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postListAddContact'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2919,7 +2919,7 @@ class BulkActivitiesApi
      *
      * Add Contacts to Lists
      *
-     * @param  \OpenAPI\Client\Model\ListActivityAddContacts $body The JSON payload used to create the &#39;add contacts to lists&#39; activity (required)
+     * @param  'ConstantContact\Client\Model\ListActivityAddContacts $body The JSON payload used to create the &#39;add contacts to lists&#39; activity (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postListAddContact'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2927,7 +2927,7 @@ class BulkActivitiesApi
      */
     public function postListAddContactAsyncWithHttpInfo($body, string $contentType = self::contentTypes['postListAddContact'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ActivityListsMembership';
+        $returnType = '\ConstantContact\Client\Model\ActivityListsMembership';
         $request = $this->postListAddContactRequest($body, $contentType);
 
         return $this->client
@@ -2969,7 +2969,7 @@ class BulkActivitiesApi
     /**
      * Create request for operation 'postListAddContact'
      *
-     * @param  \OpenAPI\Client\Model\ListActivityAddContacts $body The JSON payload used to create the &#39;add contacts to lists&#39; activity (required)
+     * @param  'ConstantContact\Client\Model\ListActivityAddContacts $body The JSON payload used to create the &#39;add contacts to lists&#39; activity (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postListAddContact'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3075,12 +3075,12 @@ class BulkActivitiesApi
      *
      * Delete Contact Lists
      *
-     * @param  \OpenAPI\Client\Model\ListIdList100 $body An array of &#x60;list_id&#x60;&#39;s to delete. (required)
+     * @param  'ConstantContact\Client\Model\ListIdList100 $body An array of &#x60;list_id&#x60;&#39;s to delete. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postListDelete'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ActivityDeleteListsResponse
+     * @return 'ConstantContact\Client\Model\ActivityDeleteListsResponse
      */
     public function postListDelete($body, string $contentType = self::contentTypes['postListDelete'][0])
     {
@@ -3093,12 +3093,12 @@ class BulkActivitiesApi
      *
      * Delete Contact Lists
      *
-     * @param  \OpenAPI\Client\Model\ListIdList100 $body An array of &#x60;list_id&#x60;&#39;s to delete. (required)
+     * @param  'ConstantContact\Client\Model\ListIdList100 $body An array of &#x60;list_id&#x60;&#39;s to delete. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postListDelete'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ActivityDeleteListsResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of 'ConstantContact\Client\Model\ActivityDeleteListsResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function postListDeleteWithHttpInfo($body, string $contentType = self::contentTypes['postListDelete'][0])
     {
@@ -3141,11 +3141,11 @@ class BulkActivitiesApi
 
             switch($statusCode) {
                 case 201:
-                    if ('\OpenAPI\Client\Model\ActivityDeleteListsResponse' === '\SplFileObject') {
+                    if ('\ConstantContact\Client\Model\ActivityDeleteListsResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ActivityDeleteListsResponse' !== 'string') {
+                        if ('\ConstantContact\Client\Model\ActivityDeleteListsResponse' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -3163,13 +3163,13 @@ class BulkActivitiesApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ActivityDeleteListsResponse', []),
+                        ObjectSerializer::deserialize($content, '\ConstantContact\Client\Model\ActivityDeleteListsResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\ActivityDeleteListsResponse';
+            $returnType = '\ConstantContact\Client\Model\ActivityDeleteListsResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -3202,7 +3202,7 @@ class BulkActivitiesApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ActivityDeleteListsResponse',
+                        '\ConstantContact\Client\Model\ActivityDeleteListsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3217,7 +3217,7 @@ class BulkActivitiesApi
      *
      * Delete Contact Lists
      *
-     * @param  \OpenAPI\Client\Model\ListIdList100 $body An array of &#x60;list_id&#x60;&#39;s to delete. (required)
+     * @param  'ConstantContact\Client\Model\ListIdList100 $body An array of &#x60;list_id&#x60;&#39;s to delete. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postListDelete'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3238,7 +3238,7 @@ class BulkActivitiesApi
      *
      * Delete Contact Lists
      *
-     * @param  \OpenAPI\Client\Model\ListIdList100 $body An array of &#x60;list_id&#x60;&#39;s to delete. (required)
+     * @param  'ConstantContact\Client\Model\ListIdList100 $body An array of &#x60;list_id&#x60;&#39;s to delete. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postListDelete'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3246,7 +3246,7 @@ class BulkActivitiesApi
      */
     public function postListDeleteAsyncWithHttpInfo($body, string $contentType = self::contentTypes['postListDelete'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ActivityDeleteListsResponse';
+        $returnType = '\ConstantContact\Client\Model\ActivityDeleteListsResponse';
         $request = $this->postListDeleteRequest($body, $contentType);
 
         return $this->client
@@ -3288,7 +3288,7 @@ class BulkActivitiesApi
     /**
      * Create request for operation 'postListDelete'
      *
-     * @param  \OpenAPI\Client\Model\ListIdList100 $body An array of &#x60;list_id&#x60;&#39;s to delete. (required)
+     * @param  'ConstantContact\Client\Model\ListIdList100 $body An array of &#x60;list_id&#x60;&#39;s to delete. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postListDelete'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3394,12 +3394,12 @@ class BulkActivitiesApi
      *
      * Remove Contacts from Lists
      *
-     * @param  \OpenAPI\Client\Model\ListActivityRemoveContacts $body The JSON payload used to create the &#39;remove contacts from lists&#39; activity (required)
+     * @param  'ConstantContact\Client\Model\ListActivityRemoveContacts $body The JSON payload used to create the &#39;remove contacts from lists&#39; activity (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postListRemoveContact'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ActivityListsMembership
+     * @return 'ConstantContact\Client\Model\ActivityListsMembership
      */
     public function postListRemoveContact($body, string $contentType = self::contentTypes['postListRemoveContact'][0])
     {
@@ -3412,12 +3412,12 @@ class BulkActivitiesApi
      *
      * Remove Contacts from Lists
      *
-     * @param  \OpenAPI\Client\Model\ListActivityRemoveContacts $body The JSON payload used to create the &#39;remove contacts from lists&#39; activity (required)
+     * @param  'ConstantContact\Client\Model\ListActivityRemoveContacts $body The JSON payload used to create the &#39;remove contacts from lists&#39; activity (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postListRemoveContact'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ActivityListsMembership, HTTP status code, HTTP response headers (array of strings)
+     * @return array of 'ConstantContact\Client\Model\ActivityListsMembership, HTTP status code, HTTP response headers (array of strings)
      */
     public function postListRemoveContactWithHttpInfo($body, string $contentType = self::contentTypes['postListRemoveContact'][0])
     {
@@ -3460,11 +3460,11 @@ class BulkActivitiesApi
 
             switch($statusCode) {
                 case 201:
-                    if ('\OpenAPI\Client\Model\ActivityListsMembership' === '\SplFileObject') {
+                    if ('\ConstantContact\Client\Model\ActivityListsMembership' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ActivityListsMembership' !== 'string') {
+                        if ('\ConstantContact\Client\Model\ActivityListsMembership' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -3482,13 +3482,13 @@ class BulkActivitiesApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ActivityListsMembership', []),
+                        ObjectSerializer::deserialize($content, '\ConstantContact\Client\Model\ActivityListsMembership', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\ActivityListsMembership';
+            $returnType = '\ConstantContact\Client\Model\ActivityListsMembership';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -3521,7 +3521,7 @@ class BulkActivitiesApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ActivityListsMembership',
+                        '\ConstantContact\Client\Model\ActivityListsMembership',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3536,7 +3536,7 @@ class BulkActivitiesApi
      *
      * Remove Contacts from Lists
      *
-     * @param  \OpenAPI\Client\Model\ListActivityRemoveContacts $body The JSON payload used to create the &#39;remove contacts from lists&#39; activity (required)
+     * @param  'ConstantContact\Client\Model\ListActivityRemoveContacts $body The JSON payload used to create the &#39;remove contacts from lists&#39; activity (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postListRemoveContact'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3557,7 +3557,7 @@ class BulkActivitiesApi
      *
      * Remove Contacts from Lists
      *
-     * @param  \OpenAPI\Client\Model\ListActivityRemoveContacts $body The JSON payload used to create the &#39;remove contacts from lists&#39; activity (required)
+     * @param  'ConstantContact\Client\Model\ListActivityRemoveContacts $body The JSON payload used to create the &#39;remove contacts from lists&#39; activity (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postListRemoveContact'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3565,7 +3565,7 @@ class BulkActivitiesApi
      */
     public function postListRemoveContactAsyncWithHttpInfo($body, string $contentType = self::contentTypes['postListRemoveContact'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ActivityListsMembership';
+        $returnType = '\ConstantContact\Client\Model\ActivityListsMembership';
         $request = $this->postListRemoveContactRequest($body, $contentType);
 
         return $this->client
@@ -3607,7 +3607,7 @@ class BulkActivitiesApi
     /**
      * Create request for operation 'postListRemoveContact'
      *
-     * @param  \OpenAPI\Client\Model\ListActivityRemoveContacts $body The JSON payload used to create the &#39;remove contacts from lists&#39; activity (required)
+     * @param  'ConstantContact\Client\Model\ListActivityRemoveContacts $body The JSON payload used to create the &#39;remove contacts from lists&#39; activity (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postListRemoveContact'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3713,12 +3713,12 @@ class BulkActivitiesApi
      *
      * Add Tags to Contacts
      *
-     * @param  \OpenAPI\Client\Model\TagAddRemoveContacts $body The JSON payload used to create an asynchronous activity that adds tags to contacts that meet your specified contact filtering criteria. (required)
+     * @param  'ConstantContact\Client\Model\TagAddRemoveContacts $body The JSON payload used to create an asynchronous activity that adds tags to contacts that meet your specified contact filtering criteria. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postTagAddContact'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ActivityTagging
+     * @return 'ConstantContact\Client\Model\ActivityTagging
      */
     public function postTagAddContact($body, string $contentType = self::contentTypes['postTagAddContact'][0])
     {
@@ -3731,12 +3731,12 @@ class BulkActivitiesApi
      *
      * Add Tags to Contacts
      *
-     * @param  \OpenAPI\Client\Model\TagAddRemoveContacts $body The JSON payload used to create an asynchronous activity that adds tags to contacts that meet your specified contact filtering criteria. (required)
+     * @param  'ConstantContact\Client\Model\TagAddRemoveContacts $body The JSON payload used to create an asynchronous activity that adds tags to contacts that meet your specified contact filtering criteria. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postTagAddContact'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ActivityTagging, HTTP status code, HTTP response headers (array of strings)
+     * @return array of 'ConstantContact\Client\Model\ActivityTagging, HTTP status code, HTTP response headers (array of strings)
      */
     public function postTagAddContactWithHttpInfo($body, string $contentType = self::contentTypes['postTagAddContact'][0])
     {
@@ -3779,11 +3779,11 @@ class BulkActivitiesApi
 
             switch($statusCode) {
                 case 201:
-                    if ('\OpenAPI\Client\Model\ActivityTagging' === '\SplFileObject') {
+                    if ('\ConstantContact\Client\Model\ActivityTagging' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ActivityTagging' !== 'string') {
+                        if ('\ConstantContact\Client\Model\ActivityTagging' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -3801,13 +3801,13 @@ class BulkActivitiesApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ActivityTagging', []),
+                        ObjectSerializer::deserialize($content, '\ConstantContact\Client\Model\ActivityTagging', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\ActivityTagging';
+            $returnType = '\ConstantContact\Client\Model\ActivityTagging';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -3840,7 +3840,7 @@ class BulkActivitiesApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ActivityTagging',
+                        '\ConstantContact\Client\Model\ActivityTagging',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3855,7 +3855,7 @@ class BulkActivitiesApi
      *
      * Add Tags to Contacts
      *
-     * @param  \OpenAPI\Client\Model\TagAddRemoveContacts $body The JSON payload used to create an asynchronous activity that adds tags to contacts that meet your specified contact filtering criteria. (required)
+     * @param  'ConstantContact\Client\Model\TagAddRemoveContacts $body The JSON payload used to create an asynchronous activity that adds tags to contacts that meet your specified contact filtering criteria. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postTagAddContact'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3876,7 +3876,7 @@ class BulkActivitiesApi
      *
      * Add Tags to Contacts
      *
-     * @param  \OpenAPI\Client\Model\TagAddRemoveContacts $body The JSON payload used to create an asynchronous activity that adds tags to contacts that meet your specified contact filtering criteria. (required)
+     * @param  'ConstantContact\Client\Model\TagAddRemoveContacts $body The JSON payload used to create an asynchronous activity that adds tags to contacts that meet your specified contact filtering criteria. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postTagAddContact'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3884,7 +3884,7 @@ class BulkActivitiesApi
      */
     public function postTagAddContactAsyncWithHttpInfo($body, string $contentType = self::contentTypes['postTagAddContact'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ActivityTagging';
+        $returnType = '\ConstantContact\Client\Model\ActivityTagging';
         $request = $this->postTagAddContactRequest($body, $contentType);
 
         return $this->client
@@ -3926,7 +3926,7 @@ class BulkActivitiesApi
     /**
      * Create request for operation 'postTagAddContact'
      *
-     * @param  \OpenAPI\Client\Model\TagAddRemoveContacts $body The JSON payload used to create an asynchronous activity that adds tags to contacts that meet your specified contact filtering criteria. (required)
+     * @param  'ConstantContact\Client\Model\TagAddRemoveContacts $body The JSON payload used to create an asynchronous activity that adds tags to contacts that meet your specified contact filtering criteria. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postTagAddContact'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -4032,12 +4032,12 @@ class BulkActivitiesApi
      *
      * Delete Tags
      *
-     * @param  \OpenAPI\Client\Model\TagIdList500Limit $body An array of string values (&#x60;tag_id&#x60;s) to delete. (required)
+     * @param  'ConstantContact\Client\Model\TagIdList500Limit $body An array of string values (&#x60;tag_id&#x60;s) to delete. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postTagDelete'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ActivityTagging
+     * @return 'ConstantContact\Client\Model\ActivityTagging
      */
     public function postTagDelete($body, string $contentType = self::contentTypes['postTagDelete'][0])
     {
@@ -4050,12 +4050,12 @@ class BulkActivitiesApi
      *
      * Delete Tags
      *
-     * @param  \OpenAPI\Client\Model\TagIdList500Limit $body An array of string values (&#x60;tag_id&#x60;s) to delete. (required)
+     * @param  'ConstantContact\Client\Model\TagIdList500Limit $body An array of string values (&#x60;tag_id&#x60;s) to delete. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postTagDelete'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ActivityTagging, HTTP status code, HTTP response headers (array of strings)
+     * @return array of 'ConstantContact\Client\Model\ActivityTagging, HTTP status code, HTTP response headers (array of strings)
      */
     public function postTagDeleteWithHttpInfo($body, string $contentType = self::contentTypes['postTagDelete'][0])
     {
@@ -4098,11 +4098,11 @@ class BulkActivitiesApi
 
             switch($statusCode) {
                 case 201:
-                    if ('\OpenAPI\Client\Model\ActivityTagging' === '\SplFileObject') {
+                    if ('\ConstantContact\Client\Model\ActivityTagging' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ActivityTagging' !== 'string') {
+                        if ('\ConstantContact\Client\Model\ActivityTagging' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -4120,13 +4120,13 @@ class BulkActivitiesApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ActivityTagging', []),
+                        ObjectSerializer::deserialize($content, '\ConstantContact\Client\Model\ActivityTagging', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\ActivityTagging';
+            $returnType = '\ConstantContact\Client\Model\ActivityTagging';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -4159,7 +4159,7 @@ class BulkActivitiesApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ActivityTagging',
+                        '\ConstantContact\Client\Model\ActivityTagging',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4174,7 +4174,7 @@ class BulkActivitiesApi
      *
      * Delete Tags
      *
-     * @param  \OpenAPI\Client\Model\TagIdList500Limit $body An array of string values (&#x60;tag_id&#x60;s) to delete. (required)
+     * @param  'ConstantContact\Client\Model\TagIdList500Limit $body An array of string values (&#x60;tag_id&#x60;s) to delete. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postTagDelete'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -4195,7 +4195,7 @@ class BulkActivitiesApi
      *
      * Delete Tags
      *
-     * @param  \OpenAPI\Client\Model\TagIdList500Limit $body An array of string values (&#x60;tag_id&#x60;s) to delete. (required)
+     * @param  'ConstantContact\Client\Model\TagIdList500Limit $body An array of string values (&#x60;tag_id&#x60;s) to delete. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postTagDelete'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -4203,7 +4203,7 @@ class BulkActivitiesApi
      */
     public function postTagDeleteAsyncWithHttpInfo($body, string $contentType = self::contentTypes['postTagDelete'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ActivityTagging';
+        $returnType = '\ConstantContact\Client\Model\ActivityTagging';
         $request = $this->postTagDeleteRequest($body, $contentType);
 
         return $this->client
@@ -4245,7 +4245,7 @@ class BulkActivitiesApi
     /**
      * Create request for operation 'postTagDelete'
      *
-     * @param  \OpenAPI\Client\Model\TagIdList500Limit $body An array of string values (&#x60;tag_id&#x60;s) to delete. (required)
+     * @param  'ConstantContact\Client\Model\TagIdList500Limit $body An array of string values (&#x60;tag_id&#x60;s) to delete. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postTagDelete'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -4351,12 +4351,12 @@ class BulkActivitiesApi
      *
      * Remove Tags from Contacts
      *
-     * @param  \OpenAPI\Client\Model\TagAddRemoveContacts $body The JSON payload used to create an asynchronous activity that removes tags from contacts meeting your specified contact filtering criteria. (required)
+     * @param  'ConstantContact\Client\Model\TagAddRemoveContacts $body The JSON payload used to create an asynchronous activity that removes tags from contacts meeting your specified contact filtering criteria. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postTagRemoveContact'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ActivityTagging
+     * @return 'ConstantContact\Client\Model\ActivityTagging
      */
     public function postTagRemoveContact($body, string $contentType = self::contentTypes['postTagRemoveContact'][0])
     {
@@ -4369,12 +4369,12 @@ class BulkActivitiesApi
      *
      * Remove Tags from Contacts
      *
-     * @param  \OpenAPI\Client\Model\TagAddRemoveContacts $body The JSON payload used to create an asynchronous activity that removes tags from contacts meeting your specified contact filtering criteria. (required)
+     * @param  'ConstantContact\Client\Model\TagAddRemoveContacts $body The JSON payload used to create an asynchronous activity that removes tags from contacts meeting your specified contact filtering criteria. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postTagRemoveContact'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ActivityTagging, HTTP status code, HTTP response headers (array of strings)
+     * @return array of 'ConstantContact\Client\Model\ActivityTagging, HTTP status code, HTTP response headers (array of strings)
      */
     public function postTagRemoveContactWithHttpInfo($body, string $contentType = self::contentTypes['postTagRemoveContact'][0])
     {
@@ -4417,11 +4417,11 @@ class BulkActivitiesApi
 
             switch($statusCode) {
                 case 201:
-                    if ('\OpenAPI\Client\Model\ActivityTagging' === '\SplFileObject') {
+                    if ('\ConstantContact\Client\Model\ActivityTagging' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ActivityTagging' !== 'string') {
+                        if ('\ConstantContact\Client\Model\ActivityTagging' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -4439,13 +4439,13 @@ class BulkActivitiesApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ActivityTagging', []),
+                        ObjectSerializer::deserialize($content, '\ConstantContact\Client\Model\ActivityTagging', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\ActivityTagging';
+            $returnType = '\ConstantContact\Client\Model\ActivityTagging';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -4478,7 +4478,7 @@ class BulkActivitiesApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ActivityTagging',
+                        '\ConstantContact\Client\Model\ActivityTagging',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4493,7 +4493,7 @@ class BulkActivitiesApi
      *
      * Remove Tags from Contacts
      *
-     * @param  \OpenAPI\Client\Model\TagAddRemoveContacts $body The JSON payload used to create an asynchronous activity that removes tags from contacts meeting your specified contact filtering criteria. (required)
+     * @param  'ConstantContact\Client\Model\TagAddRemoveContacts $body The JSON payload used to create an asynchronous activity that removes tags from contacts meeting your specified contact filtering criteria. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postTagRemoveContact'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -4514,7 +4514,7 @@ class BulkActivitiesApi
      *
      * Remove Tags from Contacts
      *
-     * @param  \OpenAPI\Client\Model\TagAddRemoveContacts $body The JSON payload used to create an asynchronous activity that removes tags from contacts meeting your specified contact filtering criteria. (required)
+     * @param  'ConstantContact\Client\Model\TagAddRemoveContacts $body The JSON payload used to create an asynchronous activity that removes tags from contacts meeting your specified contact filtering criteria. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postTagRemoveContact'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -4522,7 +4522,7 @@ class BulkActivitiesApi
      */
     public function postTagRemoveContactAsyncWithHttpInfo($body, string $contentType = self::contentTypes['postTagRemoveContact'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ActivityTagging';
+        $returnType = '\ConstantContact\Client\Model\ActivityTagging';
         $request = $this->postTagRemoveContactRequest($body, $contentType);
 
         return $this->client
@@ -4564,7 +4564,7 @@ class BulkActivitiesApi
     /**
      * Create request for operation 'postTagRemoveContact'
      *
-     * @param  \OpenAPI\Client\Model\TagAddRemoveContacts $body The JSON payload used to create an asynchronous activity that removes tags from contacts meeting your specified contact filtering criteria. (required)
+     * @param  'ConstantContact\Client\Model\TagAddRemoveContacts $body The JSON payload used to create an asynchronous activity that removes tags from contacts meeting your specified contact filtering criteria. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postTagRemoveContact'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

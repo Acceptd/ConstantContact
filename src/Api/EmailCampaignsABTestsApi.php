@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -43,7 +43,7 @@ use ConstantContact\Client\ObjectSerializer;
  * EmailCampaignsABTestsApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -134,12 +134,12 @@ class EmailCampaignsABTestsApi
      * POST (Create) an A/B Test for an Email Campaign Activity
      *
      * @param  string $campaign_activity_id The unique ID for the primary email campaign activity. (required)
-     * @param  \OpenAPI\Client\Model\ABTestData $abtest Specify the &#x60;alternative_subject&#x60; line, &#x60;test_size&#x60; percentage of contacts (value must from &#x60;5&#x60; to &#x60;50&#x60; inclusively), and the &#x60;winner_wait_duration&#x60; (value must be &#x60;6&#x60;, &#x60;12&#x60;, &#x60;24&#x60;, or &#x60;48&#x60; hours). (required)
+     * @param  'ConstantContact\Client\Model\ABTestData $abtest Specify the &#x60;alternative_subject&#x60; line, &#x60;test_size&#x60; percentage of contacts (value must from &#x60;5&#x60; to &#x60;50&#x60; inclusively), and the &#x60;winner_wait_duration&#x60; (value must be &#x60;6&#x60;, &#x60;12&#x60;, &#x60;24&#x60;, or &#x60;48&#x60; hours). (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createEmailCampaignABTestUsingPOST'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ABTestData
+     * @return 'ConstantContact\Client\Model\ABTestData
      */
     public function createEmailCampaignABTestUsingPOST($campaign_activity_id, $abtest, string $contentType = self::contentTypes['createEmailCampaignABTestUsingPOST'][0])
     {
@@ -153,12 +153,12 @@ class EmailCampaignsABTestsApi
      * POST (Create) an A/B Test for an Email Campaign Activity
      *
      * @param  string $campaign_activity_id The unique ID for the primary email campaign activity. (required)
-     * @param  \OpenAPI\Client\Model\ABTestData $abtest Specify the &#x60;alternative_subject&#x60; line, &#x60;test_size&#x60; percentage of contacts (value must from &#x60;5&#x60; to &#x60;50&#x60; inclusively), and the &#x60;winner_wait_duration&#x60; (value must be &#x60;6&#x60;, &#x60;12&#x60;, &#x60;24&#x60;, or &#x60;48&#x60; hours). (required)
+     * @param  'ConstantContact\Client\Model\ABTestData $abtest Specify the &#x60;alternative_subject&#x60; line, &#x60;test_size&#x60; percentage of contacts (value must from &#x60;5&#x60; to &#x60;50&#x60; inclusively), and the &#x60;winner_wait_duration&#x60; (value must be &#x60;6&#x60;, &#x60;12&#x60;, &#x60;24&#x60;, or &#x60;48&#x60; hours). (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createEmailCampaignABTestUsingPOST'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ABTestData, HTTP status code, HTTP response headers (array of strings)
+     * @return array of 'ConstantContact\Client\Model\ABTestData, HTTP status code, HTTP response headers (array of strings)
      */
     public function createEmailCampaignABTestUsingPOSTWithHttpInfo($campaign_activity_id, $abtest, string $contentType = self::contentTypes['createEmailCampaignABTestUsingPOST'][0])
     {
@@ -201,11 +201,11 @@ class EmailCampaignsABTestsApi
 
             switch($statusCode) {
                 case 201:
-                    if ('\OpenAPI\Client\Model\ABTestData' === '\SplFileObject') {
+                    if ('\ConstantContact\Client\Model\ABTestData' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ABTestData' !== 'string') {
+                        if ('\ConstantContact\Client\Model\ABTestData' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -223,13 +223,13 @@ class EmailCampaignsABTestsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ABTestData', []),
+                        ObjectSerializer::deserialize($content, '\ConstantContact\Client\Model\ABTestData', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\ABTestData';
+            $returnType = '\ConstantContact\Client\Model\ABTestData';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -262,7 +262,7 @@ class EmailCampaignsABTestsApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ABTestData',
+                        '\ConstantContact\Client\Model\ABTestData',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -278,7 +278,7 @@ class EmailCampaignsABTestsApi
      * POST (Create) an A/B Test for an Email Campaign Activity
      *
      * @param  string $campaign_activity_id The unique ID for the primary email campaign activity. (required)
-     * @param  \OpenAPI\Client\Model\ABTestData $abtest Specify the &#x60;alternative_subject&#x60; line, &#x60;test_size&#x60; percentage of contacts (value must from &#x60;5&#x60; to &#x60;50&#x60; inclusively), and the &#x60;winner_wait_duration&#x60; (value must be &#x60;6&#x60;, &#x60;12&#x60;, &#x60;24&#x60;, or &#x60;48&#x60; hours). (required)
+     * @param  'ConstantContact\Client\Model\ABTestData $abtest Specify the &#x60;alternative_subject&#x60; line, &#x60;test_size&#x60; percentage of contacts (value must from &#x60;5&#x60; to &#x60;50&#x60; inclusively), and the &#x60;winner_wait_duration&#x60; (value must be &#x60;6&#x60;, &#x60;12&#x60;, &#x60;24&#x60;, or &#x60;48&#x60; hours). (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createEmailCampaignABTestUsingPOST'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -300,7 +300,7 @@ class EmailCampaignsABTestsApi
      * POST (Create) an A/B Test for an Email Campaign Activity
      *
      * @param  string $campaign_activity_id The unique ID for the primary email campaign activity. (required)
-     * @param  \OpenAPI\Client\Model\ABTestData $abtest Specify the &#x60;alternative_subject&#x60; line, &#x60;test_size&#x60; percentage of contacts (value must from &#x60;5&#x60; to &#x60;50&#x60; inclusively), and the &#x60;winner_wait_duration&#x60; (value must be &#x60;6&#x60;, &#x60;12&#x60;, &#x60;24&#x60;, or &#x60;48&#x60; hours). (required)
+     * @param  'ConstantContact\Client\Model\ABTestData $abtest Specify the &#x60;alternative_subject&#x60; line, &#x60;test_size&#x60; percentage of contacts (value must from &#x60;5&#x60; to &#x60;50&#x60; inclusively), and the &#x60;winner_wait_duration&#x60; (value must be &#x60;6&#x60;, &#x60;12&#x60;, &#x60;24&#x60;, or &#x60;48&#x60; hours). (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createEmailCampaignABTestUsingPOST'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -308,7 +308,7 @@ class EmailCampaignsABTestsApi
      */
     public function createEmailCampaignABTestUsingPOSTAsyncWithHttpInfo($campaign_activity_id, $abtest, string $contentType = self::contentTypes['createEmailCampaignABTestUsingPOST'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ABTestData';
+        $returnType = '\ConstantContact\Client\Model\ABTestData';
         $request = $this->createEmailCampaignABTestUsingPOSTRequest($campaign_activity_id, $abtest, $contentType);
 
         return $this->client
@@ -351,7 +351,7 @@ class EmailCampaignsABTestsApi
      * Create request for operation 'createEmailCampaignABTestUsingPOST'
      *
      * @param  string $campaign_activity_id The unique ID for the primary email campaign activity. (required)
-     * @param  \OpenAPI\Client\Model\ABTestData $abtest Specify the &#x60;alternative_subject&#x60; line, &#x60;test_size&#x60; percentage of contacts (value must from &#x60;5&#x60; to &#x60;50&#x60; inclusively), and the &#x60;winner_wait_duration&#x60; (value must be &#x60;6&#x60;, &#x60;12&#x60;, &#x60;24&#x60;, or &#x60;48&#x60; hours). (required)
+     * @param  'ConstantContact\Client\Model\ABTestData $abtest Specify the &#x60;alternative_subject&#x60; line, &#x60;test_size&#x60; percentage of contacts (value must from &#x60;5&#x60; to &#x60;50&#x60; inclusively), and the &#x60;winner_wait_duration&#x60; (value must be &#x60;6&#x60;, &#x60;12&#x60;, &#x60;24&#x60;, or &#x60;48&#x60; hours). (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createEmailCampaignABTestUsingPOST'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -475,7 +475,7 @@ class EmailCampaignsABTestsApi
      * @param  string $campaign_activity_id The unique ID for the primary email campaign activity. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteEmailCampaignABTestUsingDELETE'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -492,7 +492,7 @@ class EmailCampaignsABTestsApi
      * @param  string $campaign_activity_id The unique ID for the primary email campaign activity. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteEmailCampaignABTestUsingDELETE'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -717,9 +717,9 @@ class EmailCampaignsABTestsApi
      * @param  string $campaign_activity_id The unique ID for the primary email campaign activity. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['retrieveEmailCampaignABTestUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ABTestData
+     * @return 'ConstantContact\Client\Model\ABTestData
      */
     public function retrieveEmailCampaignABTestUsingGET($campaign_activity_id, string $contentType = self::contentTypes['retrieveEmailCampaignABTestUsingGET'][0])
     {
@@ -735,9 +735,9 @@ class EmailCampaignsABTestsApi
      * @param  string $campaign_activity_id The unique ID for the primary email campaign activity. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['retrieveEmailCampaignABTestUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ABTestData, HTTP status code, HTTP response headers (array of strings)
+     * @return array of 'ConstantContact\Client\Model\ABTestData, HTTP status code, HTTP response headers (array of strings)
      */
     public function retrieveEmailCampaignABTestUsingGETWithHttpInfo($campaign_activity_id, string $contentType = self::contentTypes['retrieveEmailCampaignABTestUsingGET'][0])
     {
@@ -780,11 +780,11 @@ class EmailCampaignsABTestsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ABTestData' === '\SplFileObject') {
+                    if ('\ConstantContact\Client\Model\ABTestData' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ABTestData' !== 'string') {
+                        if ('\ConstantContact\Client\Model\ABTestData' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -802,13 +802,13 @@ class EmailCampaignsABTestsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ABTestData', []),
+                        ObjectSerializer::deserialize($content, '\ConstantContact\Client\Model\ABTestData', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\ABTestData';
+            $returnType = '\ConstantContact\Client\Model\ABTestData';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -841,7 +841,7 @@ class EmailCampaignsABTestsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ABTestData',
+                        '\ConstantContact\Client\Model\ABTestData',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -885,7 +885,7 @@ class EmailCampaignsABTestsApi
      */
     public function retrieveEmailCampaignABTestUsingGETAsyncWithHttpInfo($campaign_activity_id, string $contentType = self::contentTypes['retrieveEmailCampaignABTestUsingGET'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ABTestData';
+        $returnType = '\ConstantContact\Client\Model\ABTestData';
         $request = $this->retrieveEmailCampaignABTestUsingGETRequest($campaign_activity_id, $contentType);
 
         return $this->client

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace ConstantContact\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use 'ConstantContact\Client\ObjectSerializer;
 
 /**
  * PContactClickTrackingActivity Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -68,7 +68,7 @@ class PContactClickTrackingActivity implements ModelInterface, ArrayAccess, \Jso
         'link_url' => 'string',
         'created_time' => '\DateTime',
         'deleted_at' => '\DateTime',
-        'sms_channel' => '\OpenAPI\Client\Model\TrackingActivitySmsChannelDTO'
+        'sms_channel' => '\ConstantContact\Client\Model\TrackingActivitySmsChannelDTO'
     ];
 
     /**
@@ -684,7 +684,7 @@ class PContactClickTrackingActivity implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets sms_channel
      *
-     * @return \OpenAPI\Client\Model\TrackingActivitySmsChannelDTO|null
+     * @return 'ConstantContact\Client\Model\TrackingActivitySmsChannelDTO|null
      */
     public function getSmsChannel()
     {
@@ -694,7 +694,7 @@ class PContactClickTrackingActivity implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets sms_channel
      *
-     * @param \OpenAPI\Client\Model\TrackingActivitySmsChannelDTO|null $sms_channel sms_channel
+     * @param 'ConstantContact\Client\Model\TrackingActivitySmsChannelDTO|null $sms_channel sms_channel
      *
      * @return self
      */

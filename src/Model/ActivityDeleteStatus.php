@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,14 +29,14 @@
 namespace ConstantContact\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use 'ConstantContact\Client\ObjectSerializer;
 
 /**
  * ActivityDeleteStatus Class Doc Comment
  *
  * @category Class
  * @description Activity status for contact_delete activity
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -66,8 +66,8 @@ class ActivityDeleteStatus implements ModelInterface, ArrayAccess, \JsonSerializ
         'updated_at' => '\DateTime',
         'percent_done' => 'int',
         'activity_errors' => 'string[]',
-        'status' => '\OpenAPI\Client\Model\ActivityDeleteStatusStatus',
-        '_links' => '\OpenAPI\Client\Model\ActivityDeleteStatusLinks'
+        'status' => '\ConstantContact\Client\Model\ActivityDeleteStatusStatus',
+        '_links' => '\ConstantContact\Client\Model\ActivityDeleteStatusLinks'
     ];
 
     /**
@@ -572,7 +572,7 @@ class ActivityDeleteStatus implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Gets status
      *
-     * @return \OpenAPI\Client\Model\ActivityDeleteStatusStatus|null
+     * @return 'ConstantContact\Client\Model\ActivityDeleteStatusStatus|null
      */
     public function getStatus()
     {
@@ -582,7 +582,7 @@ class ActivityDeleteStatus implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets status
      *
-     * @param \OpenAPI\Client\Model\ActivityDeleteStatusStatus|null $status status
+     * @param 'ConstantContact\Client\Model\ActivityDeleteStatusStatus|null $status status
      *
      * @return self
      */
@@ -599,7 +599,7 @@ class ActivityDeleteStatus implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Gets _links
      *
-     * @return \OpenAPI\Client\Model\ActivityDeleteStatusLinks|null
+     * @return 'ConstantContact\Client\Model\ActivityDeleteStatusLinks|null
      */
     public function getLinks()
     {
@@ -609,7 +609,7 @@ class ActivityDeleteStatus implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets _links
      *
-     * @param \OpenAPI\Client\Model\ActivityDeleteStatusLinks|null $_links _links
+     * @param 'ConstantContact\Client\Model\ActivityDeleteStatusLinks|null $_links _links
      *
      * @return self
      */

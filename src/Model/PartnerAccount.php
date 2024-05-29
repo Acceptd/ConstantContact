@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace ConstantContact\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use 'ConstantContact\Client\ObjectSerializer;
 
 /**
  * PartnerAccount Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,8 +57,8 @@ class PartnerAccount implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'site_owner_list' => '\OpenAPI\Client\Model\PartnerAccountSiteOwnerListInner[]',
-        '_links' => '\OpenAPI\Client\Model\PaginationLinks'
+        'site_owner_list' => '\ConstantContact\Client\Model\PartnerAccountSiteOwnerListInner[]',
+        '_links' => '\ConstantContact\Client\Model\PaginationLinks'
     ];
 
     /**
@@ -302,7 +302,7 @@ class PartnerAccount implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets site_owner_list
      *
-     * @return \OpenAPI\Client\Model\PartnerAccountSiteOwnerListInner[]
+     * @return 'ConstantContact\Client\Model\PartnerAccountSiteOwnerListInner[]
      */
     public function getSiteOwnerList()
     {
@@ -312,7 +312,7 @@ class PartnerAccount implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets site_owner_list
      *
-     * @param \OpenAPI\Client\Model\PartnerAccountSiteOwnerListInner[] $site_owner_list Lists all Constant Contact client accounts that are managed under a partner account.
+     * @param 'ConstantContact\Client\Model\PartnerAccountSiteOwnerListInner[] $site_owner_list Lists all Constant Contact client accounts that are managed under a partner account.
      *
      * @return self
      */
@@ -329,7 +329,7 @@ class PartnerAccount implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets _links
      *
-     * @return \OpenAPI\Client\Model\PaginationLinks|null
+     * @return 'ConstantContact\Client\Model\PaginationLinks|null
      */
     public function getLinks()
     {
@@ -339,7 +339,7 @@ class PartnerAccount implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets _links
      *
-     * @param \OpenAPI\Client\Model\PaginationLinks|null $_links _links
+     * @param 'ConstantContact\Client\Model\PaginationLinks|null $_links _links
      *
      * @return self
      */

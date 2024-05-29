@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace ConstantContact\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use 'ConstantContact\Client\ObjectSerializer;
 
 /**
  * EmailCampaign Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class EmailCampaign implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'campaign_activities' => '\OpenAPI\Client\Model\ActivityReference[]',
+        'campaign_activities' => '\ConstantContact\Client\Model\ActivityReference[]',
         'campaign_id' => 'string',
         'created_at' => '\DateTime',
         'current_status' => 'string',
@@ -345,7 +345,7 @@ class EmailCampaign implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets campaign_activities
      *
-     * @return \OpenAPI\Client\Model\ActivityReference[]|null
+     * @return 'ConstantContact\Client\Model\ActivityReference[]|null
      */
     public function getCampaignActivities()
     {
@@ -355,7 +355,7 @@ class EmailCampaign implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets campaign_activities
      *
-     * @param \OpenAPI\Client\Model\ActivityReference[]|null $campaign_activities Lists the role and unique activity ID of each campaign activity that is associated with an Email Campaign.
+     * @param 'ConstantContact\Client\Model\ActivityReference[]|null $campaign_activities Lists the role and unique activity ID of each campaign activity that is associated with an Email Campaign.
      *
      * @return self
      */

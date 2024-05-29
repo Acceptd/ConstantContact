@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace ConstantContact\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use 'ConstantContact\Client\ObjectSerializer;
 
 /**
  * EmailsPagingLinks Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class EmailsPagingLinks implements ModelInterface, ArrayAccess, \JsonSerializabl
       * @var string[]
       */
     protected static $openAPITypes = [
-        'next' => '\OpenAPI\Client\Model\EmailsLink'
+        'next' => '\ConstantContact\Client\Model\EmailsLink'
     ];
 
     /**
@@ -292,7 +292,7 @@ class EmailsPagingLinks implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Gets next
      *
-     * @return \OpenAPI\Client\Model\EmailsLink|null
+     * @return 'ConstantContact\Client\Model\EmailsLink|null
      */
     public function getNext()
     {
@@ -302,7 +302,7 @@ class EmailsPagingLinks implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Sets next
      *
-     * @param \OpenAPI\Client\Model\EmailsLink|null $next next
+     * @param 'ConstantContact\Client\Model\EmailsLink|null $next next
      *
      * @return self
      */

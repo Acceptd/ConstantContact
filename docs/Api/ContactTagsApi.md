@@ -14,7 +14,7 @@ All URIs are relative to https://api.cc.email/v3, except if the operation define
 ## `deleteTag()`
 
 ```php
-deleteTag($tag_id): \OpenAPI\Client\Model\ActivityGeneric
+deleteTag($tag_id): 'ConstantContact\Client\Model\ActivityGeneric
 ```
 
 DELETE a Tag
@@ -82,7 +82,7 @@ try {
 ## `getTag()`
 
 ```php
-getTag($tag_id, $include_count): \OpenAPI\Client\Model\Tag
+getTag($tag_id, $include_count): 'ConstantContact\Client\Model\Tag
 ```
 
 GET Tag Details
@@ -152,7 +152,7 @@ try {
 ## `getTags()`
 
 ```php
-getTags($limit, $include_count): \OpenAPI\Client\Model\Tags
+getTags($limit, $include_count): 'ConstantContact\Client\Model\Tags
 ```
 
 GET Details for All Tags
@@ -222,7 +222,7 @@ try {
 ## `postTag()`
 
 ```php
-postTag($body): \OpenAPI\Client\Model\Tag
+postTag($body): 'ConstantContact\Client\Model\Tag
 ```
 
 POST (Create) a Tag
@@ -254,7 +254,7 @@ $apiInstance = new OpenAPI\Client\Api\ContactTagsApi(
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \OpenAPI\Client\Model\TagPost(); // \OpenAPI\Client\Model\TagPost | The JSON payload to use to create a new tag.
+$body = new 'ConstantContact\Client\Model\TagPost(); // 'ConstantContact\Client\Model\TagPost | The JSON payload to use to create a new tag.
 
 try {
     $result = $apiInstance->postTag($body);
@@ -290,7 +290,7 @@ try {
 ## `putTag()`
 
 ```php
-putTag($tag_id, $body): \OpenAPI\Client\Model\Tag
+putTag($tag_id, $body): 'ConstantContact\Client\Model\Tag
 ```
 
 PUT (Update) a Tag
@@ -323,7 +323,7 @@ $apiInstance = new OpenAPI\Client\Api\ContactTagsApi(
     $config
 );
 $tag_id = 30c97dd0-332e-11eb-923c-fa163e595327; // string | The system generated ID used to uniquely identify the tag that you want to rename (UUID format).
-$body = new \OpenAPI\Client\Model\TagPut(); // \OpenAPI\Client\Model\TagPut | The JSON payload used to update the tag name (`name`).
+$body = new 'ConstantContact\Client\Model\TagPut(); // 'ConstantContact\Client\Model\TagPut | The JSON payload used to update the tag name (`name`).
 
 try {
     $result = $apiInstance->putTag($tag_id, $body);

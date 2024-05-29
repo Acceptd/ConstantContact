@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,14 +29,14 @@
 namespace ConstantContact\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use 'ConstantContact\Client\ObjectSerializer;
 
 /**
  * ActivityDeleteCustomFields Class Doc Comment
  *
  * @category Class
  * @description Activity status for contact_delete activity
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -66,7 +66,7 @@ class ActivityDeleteCustomFields implements ModelInterface, ArrayAccess, \JsonSe
         'updated_at' => '\DateTime',
         'percent_done' => 'int',
         'activity_errors' => 'string[]',
-        '_links' => '\OpenAPI\Client\Model\ActivityDeleteStatusLinks'
+        '_links' => '\ConstantContact\Client\Model\ActivityDeleteStatusLinks'
     ];
 
     /**
@@ -565,7 +565,7 @@ class ActivityDeleteCustomFields implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets _links
      *
-     * @return \OpenAPI\Client\Model\ActivityDeleteStatusLinks|null
+     * @return 'ConstantContact\Client\Model\ActivityDeleteStatusLinks|null
      */
     public function getLinks()
     {
@@ -575,7 +575,7 @@ class ActivityDeleteCustomFields implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets _links
      *
-     * @param \OpenAPI\Client\Model\ActivityDeleteStatusLinks|null $_links _links
+     * @param 'ConstantContact\Client\Model\ActivityDeleteStatusLinks|null $_links _links
      *
      * @return self
      */

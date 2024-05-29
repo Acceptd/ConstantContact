@@ -81,7 +81,7 @@ void (empty response body)
 ## `getCustomField()`
 
 ```php
-getCustomField($custom_field_id): \OpenAPI\Client\Model\CustomFieldResource
+getCustomField($custom_field_id): 'ConstantContact\Client\Model\CustomFieldResource
 ```
 
 GET a custom_field
@@ -149,7 +149,7 @@ try {
 ## `getCustomFields()`
 
 ```php
-getCustomFields($limit): \OpenAPI\Client\Model\CustomFields
+getCustomFields($limit): 'ConstantContact\Client\Model\CustomFields
 ```
 
 GET custom_fields Collection
@@ -217,7 +217,7 @@ try {
 ## `postCustomFields()`
 
 ```php
-postCustomFields($body): \OpenAPI\Client\Model\CustomFieldResource
+postCustomFields($body): 'ConstantContact\Client\Model\CustomFieldResource
 ```
 
 POST (create) a custom_field
@@ -249,7 +249,7 @@ $apiInstance = new OpenAPI\Client\Api\ContactsCustomFieldsApi(
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \OpenAPI\Client\Model\CustomFieldInput(); // \OpenAPI\Client\Model\CustomFieldInput | The JSON payload required to create a new `custom_field`
+$body = new 'ConstantContact\Client\Model\CustomFieldInput(); // 'ConstantContact\Client\Model\CustomFieldInput | The JSON payload required to create a new `custom_field`
 
 try {
     $result = $apiInstance->postCustomFields($body);
@@ -285,7 +285,7 @@ try {
 ## `putCustomField()`
 
 ```php
-putCustomField($custom_field_id, $body): \OpenAPI\Client\Model\CustomFieldResource
+putCustomField($custom_field_id, $body): 'ConstantContact\Client\Model\CustomFieldResource
 ```
 
 PUT (update) a custom_field
@@ -318,7 +318,7 @@ $apiInstance = new OpenAPI\Client\Api\ContactsCustomFieldsApi(
     $config
 );
 $custom_field_id = 04fe9a-a579-43c5-bb1a-58ed29bf0a6a; // string | Unique ID of the `custom_field` on which to operate.
-$body = new \OpenAPI\Client\Model\CustomFieldInput(); // \OpenAPI\Client\Model\CustomFieldInput | The JSON payload used to update an existing custom field. Any properties omitted in the PUT request are overwritten with a null value.
+$body = new 'ConstantContact\Client\Model\CustomFieldInput(); // 'ConstantContact\Client\Model\CustomFieldInput | The JSON payload used to update an existing custom field. Any properties omitted in the PUT request are overwritten with a null value.
 
 try {
     $result = $apiInstance->putCustomField($custom_field_id, $body);

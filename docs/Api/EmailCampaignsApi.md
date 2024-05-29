@@ -20,7 +20,7 @@ All URIs are relative to https://api.cc.email/v3, except if the operation define
 ## `createEmailCampaignUsingPOST()`
 
 ```php
-createEmailCampaignUsingPOST($body): \OpenAPI\Client\Model\EmailCampaign
+createEmailCampaignUsingPOST($body): 'ConstantContact\Client\Model\EmailCampaign
 ```
 
 POST (Create) a New Email Campaign
@@ -52,7 +52,7 @@ $apiInstance = new OpenAPI\Client\Api\EmailCampaignsApi(
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \OpenAPI\Client\Model\EmailCampaignComplete(); // \OpenAPI\Client\Model\EmailCampaignComplete | A JSON request body that contains the email content.
+$body = new 'ConstantContact\Client\Model\EmailCampaignComplete(); // 'ConstantContact\Client\Model\EmailCampaignComplete | A JSON request body that contains the email content.
 
 try {
     $result = $apiInstance->createEmailCampaignUsingPOST($body);
@@ -88,7 +88,7 @@ try {
 ## `createResendToNonOpenersUsingPOST()`
 
 ```php
-createResendToNonOpenersUsingPOST($campaign_activity_id, $resend_schedule): \OpenAPI\Client\Model\ResendToNonOpenersObject
+createResendToNonOpenersUsingPOST($campaign_activity_id, $resend_schedule): 'ConstantContact\Client\Model\ResendToNonOpenersObject
 ```
 
 POST a Resend to Non-openers Campaign Activity
@@ -121,7 +121,7 @@ $apiInstance = new OpenAPI\Client\Api\EmailCampaignsApi(
     $config
 );
 $campaign_activity_id = 91569d46-00e4-4a4d-9a4c-d17d98740d04; // string | The unique ID for the primary email campaign activity.
-$resend_schedule = new \OpenAPI\Client\Model\ResendToNonOpenersInput(); // \OpenAPI\Client\Model\ResendToNonOpenersInput | A JSON request body that specifies when to resend the campaign activity to non-openers.
+$resend_schedule = new 'ConstantContact\Client\Model\ResendToNonOpenersInput(); // 'ConstantContact\Client\Model\ResendToNonOpenersInput | A JSON request body that specifies when to resend the campaign activity to non-openers.
 
 try {
     $result = $apiInstance->createResendToNonOpenersUsingPOST($campaign_activity_id, $resend_schedule);
@@ -294,7 +294,7 @@ void (empty response body)
 ## `renameEmailCampaignUsingPATCH()`
 
 ```php
-renameEmailCampaignUsingPATCH($campaign_id, $body): \OpenAPI\Client\Model\EmailCampaign
+renameEmailCampaignUsingPATCH($campaign_id, $body): 'ConstantContact\Client\Model\EmailCampaign
 ```
 
 PATCH (Update) an Email Campaign Name
@@ -327,7 +327,7 @@ $apiInstance = new OpenAPI\Client\Api\EmailCampaignsApi(
     $config
 );
 $campaign_id = 91569d46-00e4-4a4d-9a4c-d17d98740d04; // string | The unique identifier for an email campaign.
-$body = new \OpenAPI\Client\Model\EmailCampaignName(); // \OpenAPI\Client\Model\EmailCampaignName | A JSON payload that contains the new email campaign name.
+$body = new 'ConstantContact\Client\Model\EmailCampaignName(); // 'ConstantContact\Client\Model\EmailCampaignName | A JSON payload that contains the new email campaign name.
 
 try {
     $result = $apiInstance->renameEmailCampaignUsingPATCH($campaign_id, $body);
@@ -364,7 +364,7 @@ try {
 ## `retrieveEmailCampaignActivityUsingGET()`
 
 ```php
-retrieveEmailCampaignActivityUsingGET($campaign_activity_id, $include): \OpenAPI\Client\Model\EmailCampaignActivity
+retrieveEmailCampaignActivityUsingGET($campaign_activity_id, $include): 'ConstantContact\Client\Model\EmailCampaignActivity
 ```
 
 GET a Single Email Campaign Activity
@@ -434,7 +434,7 @@ try {
 ## `retrieveEmailCampaignUsingGET()`
 
 ```php
-retrieveEmailCampaignUsingGET($campaign_id): \OpenAPI\Client\Model\EmailCampaign
+retrieveEmailCampaignUsingGET($campaign_id): 'ConstantContact\Client\Model\EmailCampaign
 ```
 
 GET Details About a Single Email Campaign
@@ -502,7 +502,7 @@ try {
 ## `retrieveEmailCampaignsUsingGET()`
 
 ```php
-retrieveEmailCampaignsUsingGET($limit, $before_date, $after_date): \OpenAPI\Client\Model\PagedEmailCampaignResponse
+retrieveEmailCampaignsUsingGET($limit, $before_date, $after_date): 'ConstantContact\Client\Model\PagedEmailCampaignResponse
 ```
 
 GET a Collection of Email Campaigns
@@ -574,7 +574,7 @@ try {
 ## `retrieveResendToNonOpenersUsingGET()`
 
 ```php
-retrieveResendToNonOpenersUsingGET($campaign_activity_id): \OpenAPI\Client\Model\ResendToNonOpenersInner[]
+retrieveResendToNonOpenersUsingGET($campaign_activity_id): 'ConstantContact\Client\Model\ResendToNonOpenersInner[]
 ```
 
 GET Details for a Resend to Non-openers Campaign Activity
@@ -642,7 +642,7 @@ try {
 ## `retrieveXrefMappingsUsingGET()`
 
 ```php
-retrieveXrefMappingsUsingGET($v2_email_campaign_ids): \OpenAPI\Client\Model\CrossReferenceResponse
+retrieveXrefMappingsUsingGET($v2_email_campaign_ids): 'ConstantContact\Client\Model\CrossReferenceResponse
 ```
 
 GET a Collection of V2 and V3 API Email Campaign Identifiers
@@ -710,7 +710,7 @@ try {
 ## `updateEmailCampaignActivityUsingPUT()`
 
 ```php
-updateEmailCampaignActivityUsingPUT($campaign_activity_id, $body): \OpenAPI\Client\Model\EmailCampaignActivity
+updateEmailCampaignActivityUsingPUT($campaign_activity_id, $body): 'ConstantContact\Client\Model\EmailCampaignActivity
 ```
 
 PUT (Update) An Email Campaign Activity
@@ -743,7 +743,7 @@ $apiInstance = new OpenAPI\Client\Api\EmailCampaignsApi(
     $config
 );
 $campaign_activity_id = 91569d46-00e4-4a4d-9a4c-d17d98740d04; // string | The unique ID for the email campaign activity you are updating.
-$body = new \OpenAPI\Client\Model\EmailCampaignActivity(); // \OpenAPI\Client\Model\EmailCampaignActivity | A request body payload that contains the complete email campaign activity with your changes.
+$body = new 'ConstantContact\Client\Model\EmailCampaignActivity(); // 'ConstantContact\Client\Model\EmailCampaignActivity | A request body payload that contains the complete email campaign activity with your changes.
 
 try {
     $result = $apiInstance->updateEmailCampaignActivityUsingPUT($campaign_activity_id, $body);

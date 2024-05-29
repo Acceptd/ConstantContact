@@ -10,7 +10,7 @@ All URIs are relative to https://api.cc.email/v3, except if the operation define
 ## `getAllBulkSmsCampaignSummaries()`
 
 ```php
-getAllBulkSmsCampaignSummaries($limit): \OpenAPI\Client\Model\SmsCampaignSummariesPage
+getAllBulkSmsCampaignSummaries($limit): 'ConstantContact\Client\Model\SmsCampaignSummariesPage
 ```
 
 GET an SMS Campaigns Summary Report

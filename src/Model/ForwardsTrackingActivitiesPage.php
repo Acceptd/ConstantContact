@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace ConstantContact\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use 'ConstantContact\Client\ObjectSerializer;
 
 /**
  * ForwardsTrackingActivitiesPage Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,8 +57,8 @@ class ForwardsTrackingActivitiesPage implements ModelInterface, ArrayAccess, \Js
       * @var string[]
       */
     protected static $openAPITypes = [
-        'tracking_activities' => '\OpenAPI\Client\Model\ForwardsTrackingActivity[]',
-        '_links' => '\OpenAPI\Client\Model\ReportingLinks'
+        'tracking_activities' => '\ConstantContact\Client\Model\ForwardsTrackingActivity[]',
+        '_links' => '\ConstantContact\Client\Model\ReportingLinks'
     ];
 
     /**
@@ -302,7 +302,7 @@ class ForwardsTrackingActivitiesPage implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets tracking_activities
      *
-     * @return \OpenAPI\Client\Model\ForwardsTrackingActivity[]
+     * @return 'ConstantContact\Client\Model\ForwardsTrackingActivity[]
      */
     public function getTrackingActivities()
     {
@@ -312,7 +312,7 @@ class ForwardsTrackingActivitiesPage implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets tracking_activities
      *
-     * @param \OpenAPI\Client\Model\ForwardsTrackingActivity[] $tracking_activities The list of contacts that forwarded the specified email campaign activity.
+     * @param 'ConstantContact\Client\Model\ForwardsTrackingActivity[] $tracking_activities The list of contacts that forwarded the specified email campaign activity.
      *
      * @return self
      */
@@ -329,7 +329,7 @@ class ForwardsTrackingActivitiesPage implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets _links
      *
-     * @return \OpenAPI\Client\Model\ReportingLinks|null
+     * @return 'ConstantContact\Client\Model\ReportingLinks|null
      */
     public function getLinks()
     {
@@ -339,7 +339,7 @@ class ForwardsTrackingActivitiesPage implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets _links
      *
-     * @param \OpenAPI\Client\Model\ReportingLinks|null $_links _links
+     * @param 'ConstantContact\Client\Model\ReportingLinks|null $_links _links
      *
      * @return self
      */

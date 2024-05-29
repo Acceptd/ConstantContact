@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -43,7 +43,7 @@ use ConstantContact\Client\ObjectSerializer;
  * SegmentsApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -142,12 +142,12 @@ class SegmentsApi
      *
      * POST (create) a Segment
      *
-     * @param  \OpenAPI\Client\Model\SegmentData $body The segment &#x60;name&#x60; and &#x60;segment_criteria&#x60; (requires single-string escaped JSON). (required)
+     * @param  'ConstantContact\Client\Model\SegmentData $body The segment &#x60;name&#x60; and &#x60;segment_criteria&#x60; (requires single-string escaped JSON). (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createSegment'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\SegmentDetail
+     * @return 'ConstantContact\Client\Model\SegmentDetail
      */
     public function createSegment($body, string $contentType = self::contentTypes['createSegment'][0])
     {
@@ -160,12 +160,12 @@ class SegmentsApi
      *
      * POST (create) a Segment
      *
-     * @param  \OpenAPI\Client\Model\SegmentData $body The segment &#x60;name&#x60; and &#x60;segment_criteria&#x60; (requires single-string escaped JSON). (required)
+     * @param  'ConstantContact\Client\Model\SegmentData $body The segment &#x60;name&#x60; and &#x60;segment_criteria&#x60; (requires single-string escaped JSON). (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createSegment'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\SegmentDetail, HTTP status code, HTTP response headers (array of strings)
+     * @return array of 'ConstantContact\Client\Model\SegmentDetail, HTTP status code, HTTP response headers (array of strings)
      */
     public function createSegmentWithHttpInfo($body, string $contentType = self::contentTypes['createSegment'][0])
     {
@@ -208,11 +208,11 @@ class SegmentsApi
 
             switch($statusCode) {
                 case 201:
-                    if ('\OpenAPI\Client\Model\SegmentDetail' === '\SplFileObject') {
+                    if ('\ConstantContact\Client\Model\SegmentDetail' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\SegmentDetail' !== 'string') {
+                        if ('\ConstantContact\Client\Model\SegmentDetail' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -230,13 +230,13 @@ class SegmentsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\SegmentDetail', []),
+                        ObjectSerializer::deserialize($content, '\ConstantContact\Client\Model\SegmentDetail', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\SegmentDetail';
+            $returnType = '\ConstantContact\Client\Model\SegmentDetail';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -269,7 +269,7 @@ class SegmentsApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\SegmentDetail',
+                        '\ConstantContact\Client\Model\SegmentDetail',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -284,7 +284,7 @@ class SegmentsApi
      *
      * POST (create) a Segment
      *
-     * @param  \OpenAPI\Client\Model\SegmentData $body The segment &#x60;name&#x60; and &#x60;segment_criteria&#x60; (requires single-string escaped JSON). (required)
+     * @param  'ConstantContact\Client\Model\SegmentData $body The segment &#x60;name&#x60; and &#x60;segment_criteria&#x60; (requires single-string escaped JSON). (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createSegment'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -305,7 +305,7 @@ class SegmentsApi
      *
      * POST (create) a Segment
      *
-     * @param  \OpenAPI\Client\Model\SegmentData $body The segment &#x60;name&#x60; and &#x60;segment_criteria&#x60; (requires single-string escaped JSON). (required)
+     * @param  'ConstantContact\Client\Model\SegmentData $body The segment &#x60;name&#x60; and &#x60;segment_criteria&#x60; (requires single-string escaped JSON). (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createSegment'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -313,7 +313,7 @@ class SegmentsApi
      */
     public function createSegmentAsyncWithHttpInfo($body, string $contentType = self::contentTypes['createSegment'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\SegmentDetail';
+        $returnType = '\ConstantContact\Client\Model\SegmentDetail';
         $request = $this->createSegmentRequest($body, $contentType);
 
         return $this->client
@@ -355,7 +355,7 @@ class SegmentsApi
     /**
      * Create request for operation 'createSegment'
      *
-     * @param  \OpenAPI\Client\Model\SegmentData $body The segment &#x60;name&#x60; and &#x60;segment_criteria&#x60; (requires single-string escaped JSON). (required)
+     * @param  'ConstantContact\Client\Model\SegmentData $body The segment &#x60;name&#x60; and &#x60;segment_criteria&#x60; (requires single-string escaped JSON). (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createSegment'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -464,7 +464,7 @@ class SegmentsApi
      * @param  int $segment_id The system generated ID that uniquely identifies the segment. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteSegment'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -481,7 +481,7 @@ class SegmentsApi
      * @param  int $segment_id The system generated ID that uniquely identifies the segment. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteSegment'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -707,9 +707,9 @@ class SegmentsApi
      * @param  string $sort_by Specify the segment sort order to use. Sort by name (&#x60;sort_by&#x3D;name&#x60;) in ascending order, or sort by date (&#x60;sort_by&#x3D;date&#x60;) in descending order with the most recently updated segments listed first. (optional, default to 'date')
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getAccountSegments'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\SegmentsDTO
+     * @return 'ConstantContact\Client\Model\SegmentsDTO
      */
     public function getAccountSegments($limit = '1000', $sort_by = 'date', string $contentType = self::contentTypes['getAccountSegments'][0])
     {
@@ -726,9 +726,9 @@ class SegmentsApi
      * @param  string $sort_by Specify the segment sort order to use. Sort by name (&#x60;sort_by&#x3D;name&#x60;) in ascending order, or sort by date (&#x60;sort_by&#x3D;date&#x60;) in descending order with the most recently updated segments listed first. (optional, default to 'date')
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getAccountSegments'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\SegmentsDTO, HTTP status code, HTTP response headers (array of strings)
+     * @return array of 'ConstantContact\Client\Model\SegmentsDTO, HTTP status code, HTTP response headers (array of strings)
      */
     public function getAccountSegmentsWithHttpInfo($limit = '1000', $sort_by = 'date', string $contentType = self::contentTypes['getAccountSegments'][0])
     {
@@ -771,11 +771,11 @@ class SegmentsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\SegmentsDTO' === '\SplFileObject') {
+                    if ('\ConstantContact\Client\Model\SegmentsDTO' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\SegmentsDTO' !== 'string') {
+                        if ('\ConstantContact\Client\Model\SegmentsDTO' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -793,13 +793,13 @@ class SegmentsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\SegmentsDTO', []),
+                        ObjectSerializer::deserialize($content, '\ConstantContact\Client\Model\SegmentsDTO', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\SegmentsDTO';
+            $returnType = '\ConstantContact\Client\Model\SegmentsDTO';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -832,7 +832,7 @@ class SegmentsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\SegmentsDTO',
+                        '\ConstantContact\Client\Model\SegmentsDTO',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -878,7 +878,7 @@ class SegmentsApi
      */
     public function getAccountSegmentsAsyncWithHttpInfo($limit = '1000', $sort_by = 'date', string $contentType = self::contentTypes['getAccountSegments'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\SegmentsDTO';
+        $returnType = '\ConstantContact\Client\Model\SegmentsDTO';
         $request = $this->getAccountSegmentsRequest($limit, $sort_by, $contentType);
 
         return $this->client
@@ -1036,9 +1036,9 @@ class SegmentsApi
      * @param  int $segment_id The system-generated unique ID that identifies a segment. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getSegmentDetail'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\SegmentDetail
+     * @return 'ConstantContact\Client\Model\SegmentDetail
      */
     public function getSegmentDetail($segment_id, string $contentType = self::contentTypes['getSegmentDetail'][0])
     {
@@ -1054,9 +1054,9 @@ class SegmentsApi
      * @param  int $segment_id The system-generated unique ID that identifies a segment. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getSegmentDetail'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\SegmentDetail, HTTP status code, HTTP response headers (array of strings)
+     * @return array of 'ConstantContact\Client\Model\SegmentDetail, HTTP status code, HTTP response headers (array of strings)
      */
     public function getSegmentDetailWithHttpInfo($segment_id, string $contentType = self::contentTypes['getSegmentDetail'][0])
     {
@@ -1099,11 +1099,11 @@ class SegmentsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\SegmentDetail' === '\SplFileObject') {
+                    if ('\ConstantContact\Client\Model\SegmentDetail' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\SegmentDetail' !== 'string') {
+                        if ('\ConstantContact\Client\Model\SegmentDetail' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1121,13 +1121,13 @@ class SegmentsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\SegmentDetail', []),
+                        ObjectSerializer::deserialize($content, '\ConstantContact\Client\Model\SegmentDetail', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\SegmentDetail';
+            $returnType = '\ConstantContact\Client\Model\SegmentDetail';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1160,7 +1160,7 @@ class SegmentsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\SegmentDetail',
+                        '\ConstantContact\Client\Model\SegmentDetail',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1204,7 +1204,7 @@ class SegmentsApi
      */
     public function getSegmentDetailAsyncWithHttpInfo($segment_id, string $contentType = self::contentTypes['getSegmentDetail'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\SegmentDetail';
+        $returnType = '\ConstantContact\Client\Model\SegmentDetail';
         $request = $this->getSegmentDetailRequest($segment_id, $contentType);
 
         return $this->client
@@ -1354,12 +1354,12 @@ class SegmentsApi
      * PUT (update) a Segment
      *
      * @param  int $segment_id The system generated ID that uniquely identifies the segment that you want to modify. (required)
-     * @param  \OpenAPI\Client\Model\SegmentData $body Include both the &#x60;name&#x60; and &#x60;segment_criteria&#x60; (single-string escaped JSON) in the body request, then make updates to either or both. (required)
+     * @param  'ConstantContact\Client\Model\SegmentData $body Include both the &#x60;name&#x60; and &#x60;segment_criteria&#x60; (single-string escaped JSON) in the body request, then make updates to either or both. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateSegment'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\SegmentDetail
+     * @return 'ConstantContact\Client\Model\SegmentDetail
      */
     public function updateSegment($segment_id, $body, string $contentType = self::contentTypes['updateSegment'][0])
     {
@@ -1373,12 +1373,12 @@ class SegmentsApi
      * PUT (update) a Segment
      *
      * @param  int $segment_id The system generated ID that uniquely identifies the segment that you want to modify. (required)
-     * @param  \OpenAPI\Client\Model\SegmentData $body Include both the &#x60;name&#x60; and &#x60;segment_criteria&#x60; (single-string escaped JSON) in the body request, then make updates to either or both. (required)
+     * @param  'ConstantContact\Client\Model\SegmentData $body Include both the &#x60;name&#x60; and &#x60;segment_criteria&#x60; (single-string escaped JSON) in the body request, then make updates to either or both. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateSegment'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\SegmentDetail, HTTP status code, HTTP response headers (array of strings)
+     * @return array of 'ConstantContact\Client\Model\SegmentDetail, HTTP status code, HTTP response headers (array of strings)
      */
     public function updateSegmentWithHttpInfo($segment_id, $body, string $contentType = self::contentTypes['updateSegment'][0])
     {
@@ -1421,11 +1421,11 @@ class SegmentsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\SegmentDetail' === '\SplFileObject') {
+                    if ('\ConstantContact\Client\Model\SegmentDetail' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\SegmentDetail' !== 'string') {
+                        if ('\ConstantContact\Client\Model\SegmentDetail' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1443,13 +1443,13 @@ class SegmentsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\SegmentDetail', []),
+                        ObjectSerializer::deserialize($content, '\ConstantContact\Client\Model\SegmentDetail', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\SegmentDetail';
+            $returnType = '\ConstantContact\Client\Model\SegmentDetail';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1482,7 +1482,7 @@ class SegmentsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\SegmentDetail',
+                        '\ConstantContact\Client\Model\SegmentDetail',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1498,7 +1498,7 @@ class SegmentsApi
      * PUT (update) a Segment
      *
      * @param  int $segment_id The system generated ID that uniquely identifies the segment that you want to modify. (required)
-     * @param  \OpenAPI\Client\Model\SegmentData $body Include both the &#x60;name&#x60; and &#x60;segment_criteria&#x60; (single-string escaped JSON) in the body request, then make updates to either or both. (required)
+     * @param  'ConstantContact\Client\Model\SegmentData $body Include both the &#x60;name&#x60; and &#x60;segment_criteria&#x60; (single-string escaped JSON) in the body request, then make updates to either or both. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateSegment'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1520,7 +1520,7 @@ class SegmentsApi
      * PUT (update) a Segment
      *
      * @param  int $segment_id The system generated ID that uniquely identifies the segment that you want to modify. (required)
-     * @param  \OpenAPI\Client\Model\SegmentData $body Include both the &#x60;name&#x60; and &#x60;segment_criteria&#x60; (single-string escaped JSON) in the body request, then make updates to either or both. (required)
+     * @param  'ConstantContact\Client\Model\SegmentData $body Include both the &#x60;name&#x60; and &#x60;segment_criteria&#x60; (single-string escaped JSON) in the body request, then make updates to either or both. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateSegment'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1528,7 +1528,7 @@ class SegmentsApi
      */
     public function updateSegmentAsyncWithHttpInfo($segment_id, $body, string $contentType = self::contentTypes['updateSegment'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\SegmentDetail';
+        $returnType = '\ConstantContact\Client\Model\SegmentDetail';
         $request = $this->updateSegmentRequest($segment_id, $body, $contentType);
 
         return $this->client
@@ -1571,7 +1571,7 @@ class SegmentsApi
      * Create request for operation 'updateSegment'
      *
      * @param  int $segment_id The system generated ID that uniquely identifies the segment that you want to modify. (required)
-     * @param  \OpenAPI\Client\Model\SegmentData $body Include both the &#x60;name&#x60; and &#x60;segment_criteria&#x60; (single-string escaped JSON) in the body request, then make updates to either or both. (required)
+     * @param  'ConstantContact\Client\Model\SegmentData $body Include both the &#x60;name&#x60; and &#x60;segment_criteria&#x60; (single-string escaped JSON) in the body request, then make updates to either or both. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateSegment'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1693,12 +1693,12 @@ class SegmentsApi
      * PATCH (rename) a Segment
      *
      * @param  int $segment_id The system generated ID that uniquely identifies the segment that you want to modify. (required)
-     * @param  \OpenAPI\Client\Model\SegmentName $body Include the existing segment &#x60;name&#x60; in the body request, then rename the segment using a unique new name. (required)
+     * @param  'ConstantContact\Client\Model\SegmentName $body Include the existing segment &#x60;name&#x60; in the body request, then rename the segment using a unique new name. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateSegmentName'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\SegmentDetail
+     * @return 'ConstantContact\Client\Model\SegmentDetail
      */
     public function updateSegmentName($segment_id, $body, string $contentType = self::contentTypes['updateSegmentName'][0])
     {
@@ -1712,12 +1712,12 @@ class SegmentsApi
      * PATCH (rename) a Segment
      *
      * @param  int $segment_id The system generated ID that uniquely identifies the segment that you want to modify. (required)
-     * @param  \OpenAPI\Client\Model\SegmentName $body Include the existing segment &#x60;name&#x60; in the body request, then rename the segment using a unique new name. (required)
+     * @param  'ConstantContact\Client\Model\SegmentName $body Include the existing segment &#x60;name&#x60; in the body request, then rename the segment using a unique new name. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateSegmentName'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\SegmentDetail, HTTP status code, HTTP response headers (array of strings)
+     * @return array of 'ConstantContact\Client\Model\SegmentDetail, HTTP status code, HTTP response headers (array of strings)
      */
     public function updateSegmentNameWithHttpInfo($segment_id, $body, string $contentType = self::contentTypes['updateSegmentName'][0])
     {
@@ -1760,11 +1760,11 @@ class SegmentsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\SegmentDetail' === '\SplFileObject') {
+                    if ('\ConstantContact\Client\Model\SegmentDetail' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\SegmentDetail' !== 'string') {
+                        if ('\ConstantContact\Client\Model\SegmentDetail' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1782,13 +1782,13 @@ class SegmentsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\SegmentDetail', []),
+                        ObjectSerializer::deserialize($content, '\ConstantContact\Client\Model\SegmentDetail', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\SegmentDetail';
+            $returnType = '\ConstantContact\Client\Model\SegmentDetail';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1821,7 +1821,7 @@ class SegmentsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\SegmentDetail',
+                        '\ConstantContact\Client\Model\SegmentDetail',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1837,7 +1837,7 @@ class SegmentsApi
      * PATCH (rename) a Segment
      *
      * @param  int $segment_id The system generated ID that uniquely identifies the segment that you want to modify. (required)
-     * @param  \OpenAPI\Client\Model\SegmentName $body Include the existing segment &#x60;name&#x60; in the body request, then rename the segment using a unique new name. (required)
+     * @param  'ConstantContact\Client\Model\SegmentName $body Include the existing segment &#x60;name&#x60; in the body request, then rename the segment using a unique new name. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateSegmentName'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1859,7 +1859,7 @@ class SegmentsApi
      * PATCH (rename) a Segment
      *
      * @param  int $segment_id The system generated ID that uniquely identifies the segment that you want to modify. (required)
-     * @param  \OpenAPI\Client\Model\SegmentName $body Include the existing segment &#x60;name&#x60; in the body request, then rename the segment using a unique new name. (required)
+     * @param  'ConstantContact\Client\Model\SegmentName $body Include the existing segment &#x60;name&#x60; in the body request, then rename the segment using a unique new name. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateSegmentName'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1867,7 +1867,7 @@ class SegmentsApi
      */
     public function updateSegmentNameAsyncWithHttpInfo($segment_id, $body, string $contentType = self::contentTypes['updateSegmentName'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\SegmentDetail';
+        $returnType = '\ConstantContact\Client\Model\SegmentDetail';
         $request = $this->updateSegmentNameRequest($segment_id, $body, $contentType);
 
         return $this->client
@@ -1910,7 +1910,7 @@ class SegmentsApi
      * Create request for operation 'updateSegmentName'
      *
      * @param  int $segment_id The system generated ID that uniquely identifies the segment that you want to modify. (required)
-     * @param  \OpenAPI\Client\Model\SegmentName $body Include the existing segment &#x60;name&#x60; in the body request, then rename the segment using a unique new name. (required)
+     * @param  'ConstantContact\Client\Model\SegmentName $body Include the existing segment &#x60;name&#x60; in the body request, then rename the segment using a unique new name. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateSegmentName'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

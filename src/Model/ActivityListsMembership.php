@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace ConstantContact\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use 'ConstantContact\Client\ObjectSerializer;
 
 /**
  * ActivityListsMembership Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -65,8 +65,8 @@ class ActivityListsMembership implements ModelInterface, ArrayAccess, \JsonSeria
         'updated_at' => '\DateTime',
         'percent_done' => 'int',
         'activity_errors' => 'string[]',
-        'status' => '\OpenAPI\Client\Model\ActivityListsMembershipStatus',
-        '_links' => '\OpenAPI\Client\Model\ActivityStatusLink'
+        'status' => '\ConstantContact\Client\Model\ActivityListsMembershipStatus',
+        '_links' => '\ConstantContact\Client\Model\ActivityStatusLink'
     ];
 
     /**
@@ -571,7 +571,7 @@ class ActivityListsMembership implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Gets status
      *
-     * @return \OpenAPI\Client\Model\ActivityListsMembershipStatus|null
+     * @return 'ConstantContact\Client\Model\ActivityListsMembershipStatus|null
      */
     public function getStatus()
     {
@@ -581,7 +581,7 @@ class ActivityListsMembership implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Sets status
      *
-     * @param \OpenAPI\Client\Model\ActivityListsMembershipStatus|null $status status
+     * @param 'ConstantContact\Client\Model\ActivityListsMembershipStatus|null $status status
      *
      * @return self
      */
@@ -598,7 +598,7 @@ class ActivityListsMembership implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Gets _links
      *
-     * @return \OpenAPI\Client\Model\ActivityStatusLink|null
+     * @return 'ConstantContact\Client\Model\ActivityStatusLink|null
      */
     public function getLinks()
     {
@@ -608,7 +608,7 @@ class ActivityListsMembership implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Sets _links
      *
-     * @param \OpenAPI\Client\Model\ActivityStatusLink|null $_links _links
+     * @param 'ConstantContact\Client\Model\ActivityStatusLink|null $_links _links
      *
      * @return self
      */

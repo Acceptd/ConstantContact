@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,14 +29,14 @@
 namespace ConstantContact\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use 'ConstantContact\Client\ObjectSerializer;
 
 /**
  * ContactTrackingActivitiesPage Class Doc Comment
  *
  * @category Class
  * @description A page of tracking activities for a contact that can include sends, opens, clicks, bounces, opt-outs and forwards to a friend. If it exists, a link to the next page of tracking activities is provided.
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,8 +58,8 @@ class ContactTrackingActivitiesPage implements ModelInterface, ArrayAccess, \Jso
       * @var string[]
       */
     protected static $openAPITypes = [
-        'tracking_activities' => '\OpenAPI\Client\Model\ContactTrackingActivity[]',
-        '_links' => '\OpenAPI\Client\Model\ReportingLinks'
+        'tracking_activities' => '\ConstantContact\Client\Model\ContactTrackingActivity[]',
+        '_links' => '\ConstantContact\Client\Model\ReportingLinks'
     ];
 
     /**
@@ -300,7 +300,7 @@ class ContactTrackingActivitiesPage implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets tracking_activities
      *
-     * @return \OpenAPI\Client\Model\ContactTrackingActivity[]|null
+     * @return 'ConstantContact\Client\Model\ContactTrackingActivity[]|null
      */
     public function getTrackingActivities()
     {
@@ -310,7 +310,7 @@ class ContactTrackingActivitiesPage implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets tracking_activities
      *
-     * @param \OpenAPI\Client\Model\ContactTrackingActivity[]|null $tracking_activities The list of contact tracking activities in descending date order.
+     * @param 'ConstantContact\Client\Model\ContactTrackingActivity[]|null $tracking_activities The list of contact tracking activities in descending date order.
      *
      * @return self
      */
@@ -327,7 +327,7 @@ class ContactTrackingActivitiesPage implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets _links
      *
-     * @return \OpenAPI\Client\Model\ReportingLinks|null
+     * @return 'ConstantContact\Client\Model\ReportingLinks|null
      */
     public function getLinks()
     {
@@ -337,7 +337,7 @@ class ContactTrackingActivitiesPage implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets _links
      *
-     * @param \OpenAPI\Client\Model\ReportingLinks|null $_links _links
+     * @param 'ConstantContact\Client\Model\ReportingLinks|null $_links _links
      *
      * @return self
      */

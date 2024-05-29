@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -43,7 +43,7 @@ use ConstantContact\Client\ObjectSerializer;
  * TechnologyPartnersApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -146,12 +146,12 @@ class TechnologyPartnersApi
      * PUT Cancel the Billing Plan for a Client Account
      *
      * @param  string $encoded_account_id The system generated ID that uniquely identifies the client account. (required)
-     * @param  \OpenAPI\Client\Model\AccountCancellation $body By default, the current date and time is automatically used as the cancellation date. However, you can specify a future date and time to cancel the account (&#x60;effective_date&#x60;) in the request body in ISO format. You can also enter the client&#39;s cancellation reason (&#x60;reason_id&#x60;). (optional)
+     * @param  'ConstantContact\Client\Model\AccountCancellation $body By default, the current date and time is automatically used as the cancellation date. However, you can specify a future date and time to cancel the account (&#x60;effective_date&#x60;) in the request body in ISO format. You can also enter the client&#39;s cancellation reason (&#x60;reason_id&#x60;). (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['cancelAccount'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\AccountCancellation
+     * @return 'ConstantContact\Client\Model\AccountCancellation
      */
     public function cancelAccount($encoded_account_id, $body = null, string $contentType = self::contentTypes['cancelAccount'][0])
     {
@@ -165,12 +165,12 @@ class TechnologyPartnersApi
      * PUT Cancel the Billing Plan for a Client Account
      *
      * @param  string $encoded_account_id The system generated ID that uniquely identifies the client account. (required)
-     * @param  \OpenAPI\Client\Model\AccountCancellation $body By default, the current date and time is automatically used as the cancellation date. However, you can specify a future date and time to cancel the account (&#x60;effective_date&#x60;) in the request body in ISO format. You can also enter the client&#39;s cancellation reason (&#x60;reason_id&#x60;). (optional)
+     * @param  'ConstantContact\Client\Model\AccountCancellation $body By default, the current date and time is automatically used as the cancellation date. However, you can specify a future date and time to cancel the account (&#x60;effective_date&#x60;) in the request body in ISO format. You can also enter the client&#39;s cancellation reason (&#x60;reason_id&#x60;). (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['cancelAccount'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\AccountCancellation, HTTP status code, HTTP response headers (array of strings)
+     * @return array of 'ConstantContact\Client\Model\AccountCancellation, HTTP status code, HTTP response headers (array of strings)
      */
     public function cancelAccountWithHttpInfo($encoded_account_id, $body = null, string $contentType = self::contentTypes['cancelAccount'][0])
     {
@@ -213,11 +213,11 @@ class TechnologyPartnersApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\AccountCancellation' === '\SplFileObject') {
+                    if ('\ConstantContact\Client\Model\AccountCancellation' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\AccountCancellation' !== 'string') {
+                        if ('\ConstantContact\Client\Model\AccountCancellation' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -235,13 +235,13 @@ class TechnologyPartnersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\AccountCancellation', []),
+                        ObjectSerializer::deserialize($content, '\ConstantContact\Client\Model\AccountCancellation', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\AccountCancellation';
+            $returnType = '\ConstantContact\Client\Model\AccountCancellation';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -274,7 +274,7 @@ class TechnologyPartnersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\AccountCancellation',
+                        '\ConstantContact\Client\Model\AccountCancellation',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -290,7 +290,7 @@ class TechnologyPartnersApi
      * PUT Cancel the Billing Plan for a Client Account
      *
      * @param  string $encoded_account_id The system generated ID that uniquely identifies the client account. (required)
-     * @param  \OpenAPI\Client\Model\AccountCancellation $body By default, the current date and time is automatically used as the cancellation date. However, you can specify a future date and time to cancel the account (&#x60;effective_date&#x60;) in the request body in ISO format. You can also enter the client&#39;s cancellation reason (&#x60;reason_id&#x60;). (optional)
+     * @param  'ConstantContact\Client\Model\AccountCancellation $body By default, the current date and time is automatically used as the cancellation date. However, you can specify a future date and time to cancel the account (&#x60;effective_date&#x60;) in the request body in ISO format. You can also enter the client&#39;s cancellation reason (&#x60;reason_id&#x60;). (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['cancelAccount'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -312,7 +312,7 @@ class TechnologyPartnersApi
      * PUT Cancel the Billing Plan for a Client Account
      *
      * @param  string $encoded_account_id The system generated ID that uniquely identifies the client account. (required)
-     * @param  \OpenAPI\Client\Model\AccountCancellation $body By default, the current date and time is automatically used as the cancellation date. However, you can specify a future date and time to cancel the account (&#x60;effective_date&#x60;) in the request body in ISO format. You can also enter the client&#39;s cancellation reason (&#x60;reason_id&#x60;). (optional)
+     * @param  'ConstantContact\Client\Model\AccountCancellation $body By default, the current date and time is automatically used as the cancellation date. However, you can specify a future date and time to cancel the account (&#x60;effective_date&#x60;) in the request body in ISO format. You can also enter the client&#39;s cancellation reason (&#x60;reason_id&#x60;). (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['cancelAccount'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -320,7 +320,7 @@ class TechnologyPartnersApi
      */
     public function cancelAccountAsyncWithHttpInfo($encoded_account_id, $body = null, string $contentType = self::contentTypes['cancelAccount'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\AccountCancellation';
+        $returnType = '\ConstantContact\Client\Model\AccountCancellation';
         $request = $this->cancelAccountRequest($encoded_account_id, $body, $contentType);
 
         return $this->client
@@ -363,7 +363,7 @@ class TechnologyPartnersApi
      * Create request for operation 'cancelAccount'
      *
      * @param  string $encoded_account_id The system generated ID that uniquely identifies the client account. (required)
-     * @param  \OpenAPI\Client\Model\AccountCancellation $body By default, the current date and time is automatically used as the cancellation date. However, you can specify a future date and time to cancel the account (&#x60;effective_date&#x60;) in the request body in ISO format. You can also enter the client&#39;s cancellation reason (&#x60;reason_id&#x60;). (optional)
+     * @param  'ConstantContact\Client\Model\AccountCancellation $body By default, the current date and time is automatically used as the cancellation date. However, you can specify a future date and time to cancel the account (&#x60;effective_date&#x60;) in the request body in ISO format. You can also enter the client&#39;s cancellation reason (&#x60;reason_id&#x60;). (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['cancelAccount'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -476,10 +476,10 @@ class TechnologyPartnersApi
      * POST a User Under a Partner&#39;s SSO-Enabled Client Account
      *
      * @param  string $encoded_account_id The encoded account ID that identifies the partner&#39;s client account to which to add the new user. (required)
-     * @param  \OpenAPI\Client\Model\SSOUser $sso_user The JSON payload used to create a new user under the specified partner&#39;s client account. All request body properties are required (&#x60;first_name&#x60;, &#x60;last_name&#x60;, &#x60;role_name&#x60;, &#x60;contact_email&#x60;, &#x60;login_name&#x60;, &#x60;external_id&#x60;, &#x60;external_provider&#x60;). (required)
+     * @param  'ConstantContact\Client\Model\SSOUser $sso_user The JSON payload used to create a new user under the specified partner&#39;s client account. All request body properties are required (&#x60;first_name&#x60;, &#x60;last_name&#x60;, &#x60;role_name&#x60;, &#x60;contact_email&#x60;, &#x60;login_name&#x60;, &#x60;external_id&#x60;, &#x60;external_provider&#x60;). (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createSSOUser'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -494,10 +494,10 @@ class TechnologyPartnersApi
      * POST a User Under a Partner&#39;s SSO-Enabled Client Account
      *
      * @param  string $encoded_account_id The encoded account ID that identifies the partner&#39;s client account to which to add the new user. (required)
-     * @param  \OpenAPI\Client\Model\SSOUser $sso_user The JSON payload used to create a new user under the specified partner&#39;s client account. All request body properties are required (&#x60;first_name&#x60;, &#x60;last_name&#x60;, &#x60;role_name&#x60;, &#x60;contact_email&#x60;, &#x60;login_name&#x60;, &#x60;external_id&#x60;, &#x60;external_provider&#x60;). (required)
+     * @param  'ConstantContact\Client\Model\SSOUser $sso_user The JSON payload used to create a new user under the specified partner&#39;s client account. All request body properties are required (&#x60;first_name&#x60;, &#x60;last_name&#x60;, &#x60;role_name&#x60;, &#x60;contact_email&#x60;, &#x60;login_name&#x60;, &#x60;external_id&#x60;, &#x60;external_provider&#x60;). (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createSSOUser'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -555,7 +555,7 @@ class TechnologyPartnersApi
      * POST a User Under a Partner&#39;s SSO-Enabled Client Account
      *
      * @param  string $encoded_account_id The encoded account ID that identifies the partner&#39;s client account to which to add the new user. (required)
-     * @param  \OpenAPI\Client\Model\SSOUser $sso_user The JSON payload used to create a new user under the specified partner&#39;s client account. All request body properties are required (&#x60;first_name&#x60;, &#x60;last_name&#x60;, &#x60;role_name&#x60;, &#x60;contact_email&#x60;, &#x60;login_name&#x60;, &#x60;external_id&#x60;, &#x60;external_provider&#x60;). (required)
+     * @param  'ConstantContact\Client\Model\SSOUser $sso_user The JSON payload used to create a new user under the specified partner&#39;s client account. All request body properties are required (&#x60;first_name&#x60;, &#x60;last_name&#x60;, &#x60;role_name&#x60;, &#x60;contact_email&#x60;, &#x60;login_name&#x60;, &#x60;external_id&#x60;, &#x60;external_provider&#x60;). (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createSSOUser'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -577,7 +577,7 @@ class TechnologyPartnersApi
      * POST a User Under a Partner&#39;s SSO-Enabled Client Account
      *
      * @param  string $encoded_account_id The encoded account ID that identifies the partner&#39;s client account to which to add the new user. (required)
-     * @param  \OpenAPI\Client\Model\SSOUser $sso_user The JSON payload used to create a new user under the specified partner&#39;s client account. All request body properties are required (&#x60;first_name&#x60;, &#x60;last_name&#x60;, &#x60;role_name&#x60;, &#x60;contact_email&#x60;, &#x60;login_name&#x60;, &#x60;external_id&#x60;, &#x60;external_provider&#x60;). (required)
+     * @param  'ConstantContact\Client\Model\SSOUser $sso_user The JSON payload used to create a new user under the specified partner&#39;s client account. All request body properties are required (&#x60;first_name&#x60;, &#x60;last_name&#x60;, &#x60;role_name&#x60;, &#x60;contact_email&#x60;, &#x60;login_name&#x60;, &#x60;external_id&#x60;, &#x60;external_provider&#x60;). (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createSSOUser'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -615,7 +615,7 @@ class TechnologyPartnersApi
      * Create request for operation 'createSSOUser'
      *
      * @param  string $encoded_account_id The encoded account ID that identifies the partner&#39;s client account to which to add the new user. (required)
-     * @param  \OpenAPI\Client\Model\SSOUser $sso_user The JSON payload used to create a new user under the specified partner&#39;s client account. All request body properties are required (&#x60;first_name&#x60;, &#x60;last_name&#x60;, &#x60;role_name&#x60;, &#x60;contact_email&#x60;, &#x60;login_name&#x60;, &#x60;external_id&#x60;, &#x60;external_provider&#x60;). (required)
+     * @param  'ConstantContact\Client\Model\SSOUser $sso_user The JSON payload used to create a new user under the specified partner&#39;s client account. All request body properties are required (&#x60;first_name&#x60;, &#x60;last_name&#x60;, &#x60;role_name&#x60;, &#x60;contact_email&#x60;, &#x60;login_name&#x60;, &#x60;external_id&#x60;, &#x60;external_provider&#x60;). (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createSSOUser'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -738,9 +738,9 @@ class TechnologyPartnersApi
      * @param  string $account_type Filters client account results by account type: &#x60;all&#x60; (default), &#x60;managed&#x60;, or &#x60;unmanaged&#x60;. Excluding the &#x60;account_type&#x60; query parameter returns all client accounts for the partner. (optional, default to 'all')
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getPartnerSiteOwners'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\PartnerAccount
+     * @return 'ConstantContact\Client\Model\PartnerAccount
      */
     public function getPartnerSiteOwners($offset = null, $limit = '50', $account_type = 'all', string $contentType = self::contentTypes['getPartnerSiteOwners'][0])
     {
@@ -758,9 +758,9 @@ class TechnologyPartnersApi
      * @param  string $account_type Filters client account results by account type: &#x60;all&#x60; (default), &#x60;managed&#x60;, or &#x60;unmanaged&#x60;. Excluding the &#x60;account_type&#x60; query parameter returns all client accounts for the partner. (optional, default to 'all')
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getPartnerSiteOwners'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\PartnerAccount, HTTP status code, HTTP response headers (array of strings)
+     * @return array of 'ConstantContact\Client\Model\PartnerAccount, HTTP status code, HTTP response headers (array of strings)
      */
     public function getPartnerSiteOwnersWithHttpInfo($offset = null, $limit = '50', $account_type = 'all', string $contentType = self::contentTypes['getPartnerSiteOwners'][0])
     {
@@ -803,11 +803,11 @@ class TechnologyPartnersApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\PartnerAccount' === '\SplFileObject') {
+                    if ('\ConstantContact\Client\Model\PartnerAccount' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\PartnerAccount' !== 'string') {
+                        if ('\ConstantContact\Client\Model\PartnerAccount' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -825,13 +825,13 @@ class TechnologyPartnersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\PartnerAccount', []),
+                        ObjectSerializer::deserialize($content, '\ConstantContact\Client\Model\PartnerAccount', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\PartnerAccount';
+            $returnType = '\ConstantContact\Client\Model\PartnerAccount';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -864,7 +864,7 @@ class TechnologyPartnersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\PartnerAccount',
+                        '\ConstantContact\Client\Model\PartnerAccount',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -912,7 +912,7 @@ class TechnologyPartnersApi
      */
     public function getPartnerSiteOwnersAsyncWithHttpInfo($offset = null, $limit = '50', $account_type = 'all', string $contentType = self::contentTypes['getPartnerSiteOwners'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\PartnerAccount';
+        $returnType = '\ConstantContact\Client\Model\PartnerAccount';
         $request = $this->getPartnerSiteOwnersRequest($offset, $limit, $account_type, $contentType);
 
         return $this->client
@@ -1078,9 +1078,9 @@ class TechnologyPartnersApi
      * @param  string $encoded_account_id Specify the client&#39;s unique &#x60;encoded_account_id&#x60;. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getPlan'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\PlanTiersObject
+     * @return 'ConstantContact\Client\Model\PlanTiersObject
      */
     public function getPlan($encoded_account_id, string $contentType = self::contentTypes['getPlan'][0])
     {
@@ -1096,9 +1096,9 @@ class TechnologyPartnersApi
      * @param  string $encoded_account_id Specify the client&#39;s unique &#x60;encoded_account_id&#x60;. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getPlan'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\PlanTiersObject, HTTP status code, HTTP response headers (array of strings)
+     * @return array of 'ConstantContact\Client\Model\PlanTiersObject, HTTP status code, HTTP response headers (array of strings)
      */
     public function getPlanWithHttpInfo($encoded_account_id, string $contentType = self::contentTypes['getPlan'][0])
     {
@@ -1141,11 +1141,11 @@ class TechnologyPartnersApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\PlanTiersObject' === '\SplFileObject') {
+                    if ('\ConstantContact\Client\Model\PlanTiersObject' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\PlanTiersObject' !== 'string') {
+                        if ('\ConstantContact\Client\Model\PlanTiersObject' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1163,13 +1163,13 @@ class TechnologyPartnersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\PlanTiersObject', []),
+                        ObjectSerializer::deserialize($content, '\ConstantContact\Client\Model\PlanTiersObject', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\PlanTiersObject';
+            $returnType = '\ConstantContact\Client\Model\PlanTiersObject';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1202,7 +1202,7 @@ class TechnologyPartnersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\PlanTiersObject',
+                        '\ConstantContact\Client\Model\PlanTiersObject',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1246,7 +1246,7 @@ class TechnologyPartnersApi
      */
     public function getPlanAsyncWithHttpInfo($encoded_account_id, string $contentType = self::contentTypes['getPlan'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\PlanTiersObject';
+        $returnType = '\ConstantContact\Client\Model\PlanTiersObject';
         $request = $this->getPlanRequest($encoded_account_id, $contentType);
 
         return $this->client
@@ -1393,10 +1393,10 @@ class TechnologyPartnersApi
      * POST Send an API request on Behalf of a Client Account
      *
      * @param  string $encoded_account_id An encoded account id for a managed account in your partnership. (required)
-     * @param  \OpenAPI\Client\Model\PartnerAccountOperationsRequest $body A JSON request body that contains the structure of the HTTP request you are instructing Constant Contact to send on behalf of specific managed account in your partnership. (optional)
+     * @param  'ConstantContact\Client\Model\PartnerAccountOperationsRequest $body A JSON request body that contains the structure of the HTTP request you are instructing Constant Contact to send on behalf of specific managed account in your partnership. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['partnerAccountOperationsPostSync'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -1411,10 +1411,10 @@ class TechnologyPartnersApi
      * POST Send an API request on Behalf of a Client Account
      *
      * @param  string $encoded_account_id An encoded account id for a managed account in your partnership. (required)
-     * @param  \OpenAPI\Client\Model\PartnerAccountOperationsRequest $body A JSON request body that contains the structure of the HTTP request you are instructing Constant Contact to send on behalf of specific managed account in your partnership. (optional)
+     * @param  'ConstantContact\Client\Model\PartnerAccountOperationsRequest $body A JSON request body that contains the structure of the HTTP request you are instructing Constant Contact to send on behalf of specific managed account in your partnership. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['partnerAccountOperationsPostSync'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1472,7 +1472,7 @@ class TechnologyPartnersApi
      * POST Send an API request on Behalf of a Client Account
      *
      * @param  string $encoded_account_id An encoded account id for a managed account in your partnership. (required)
-     * @param  \OpenAPI\Client\Model\PartnerAccountOperationsRequest $body A JSON request body that contains the structure of the HTTP request you are instructing Constant Contact to send on behalf of specific managed account in your partnership. (optional)
+     * @param  'ConstantContact\Client\Model\PartnerAccountOperationsRequest $body A JSON request body that contains the structure of the HTTP request you are instructing Constant Contact to send on behalf of specific managed account in your partnership. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['partnerAccountOperationsPostSync'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1494,7 +1494,7 @@ class TechnologyPartnersApi
      * POST Send an API request on Behalf of a Client Account
      *
      * @param  string $encoded_account_id An encoded account id for a managed account in your partnership. (required)
-     * @param  \OpenAPI\Client\Model\PartnerAccountOperationsRequest $body A JSON request body that contains the structure of the HTTP request you are instructing Constant Contact to send on behalf of specific managed account in your partnership. (optional)
+     * @param  'ConstantContact\Client\Model\PartnerAccountOperationsRequest $body A JSON request body that contains the structure of the HTTP request you are instructing Constant Contact to send on behalf of specific managed account in your partnership. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['partnerAccountOperationsPostSync'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1532,7 +1532,7 @@ class TechnologyPartnersApi
      * Create request for operation 'partnerAccountOperationsPostSync'
      *
      * @param  string $encoded_account_id An encoded account id for a managed account in your partnership. (required)
-     * @param  \OpenAPI\Client\Model\PartnerAccountOperationsRequest $body A JSON request body that contains the structure of the HTTP request you are instructing Constant Contact to send on behalf of specific managed account in your partnership. (optional)
+     * @param  'ConstantContact\Client\Model\PartnerAccountOperationsRequest $body A JSON request body that contains the structure of the HTTP request you are instructing Constant Contact to send on behalf of specific managed account in your partnership. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['partnerAccountOperationsPostSync'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1644,12 +1644,12 @@ class TechnologyPartnersApi
      *
      * POST (create) a Partner Client Account
      *
-     * @param  \OpenAPI\Client\Model\Provision $provision Create a new Constant Contact client account under your partner account. All required properties must be included in the JSON payload request. (required)
+     * @param  'ConstantContact\Client\Model\Provision $provision Create a new Constant Contact client account under your partner account. All required properties must be included in the JSON payload request. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['provision'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ProvisionResponse
+     * @return 'ConstantContact\Client\Model\ProvisionResponse
      */
     public function provision($provision, string $contentType = self::contentTypes['provision'][0])
     {
@@ -1662,12 +1662,12 @@ class TechnologyPartnersApi
      *
      * POST (create) a Partner Client Account
      *
-     * @param  \OpenAPI\Client\Model\Provision $provision Create a new Constant Contact client account under your partner account. All required properties must be included in the JSON payload request. (required)
+     * @param  'ConstantContact\Client\Model\Provision $provision Create a new Constant Contact client account under your partner account. All required properties must be included in the JSON payload request. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['provision'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ProvisionResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of 'ConstantContact\Client\Model\ProvisionResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function provisionWithHttpInfo($provision, string $contentType = self::contentTypes['provision'][0])
     {
@@ -1710,11 +1710,11 @@ class TechnologyPartnersApi
 
             switch($statusCode) {
                 case 201:
-                    if ('\OpenAPI\Client\Model\ProvisionResponse' === '\SplFileObject') {
+                    if ('\ConstantContact\Client\Model\ProvisionResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ProvisionResponse' !== 'string') {
+                        if ('\ConstantContact\Client\Model\ProvisionResponse' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1732,13 +1732,13 @@ class TechnologyPartnersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ProvisionResponse', []),
+                        ObjectSerializer::deserialize($content, '\ConstantContact\Client\Model\ProvisionResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\ProvisionResponse';
+            $returnType = '\ConstantContact\Client\Model\ProvisionResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1771,7 +1771,7 @@ class TechnologyPartnersApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ProvisionResponse',
+                        '\ConstantContact\Client\Model\ProvisionResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1786,7 +1786,7 @@ class TechnologyPartnersApi
      *
      * POST (create) a Partner Client Account
      *
-     * @param  \OpenAPI\Client\Model\Provision $provision Create a new Constant Contact client account under your partner account. All required properties must be included in the JSON payload request. (required)
+     * @param  'ConstantContact\Client\Model\Provision $provision Create a new Constant Contact client account under your partner account. All required properties must be included in the JSON payload request. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['provision'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1807,7 +1807,7 @@ class TechnologyPartnersApi
      *
      * POST (create) a Partner Client Account
      *
-     * @param  \OpenAPI\Client\Model\Provision $provision Create a new Constant Contact client account under your partner account. All required properties must be included in the JSON payload request. (required)
+     * @param  'ConstantContact\Client\Model\Provision $provision Create a new Constant Contact client account under your partner account. All required properties must be included in the JSON payload request. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['provision'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1815,7 +1815,7 @@ class TechnologyPartnersApi
      */
     public function provisionAsyncWithHttpInfo($provision, string $contentType = self::contentTypes['provision'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ProvisionResponse';
+        $returnType = '\ConstantContact\Client\Model\ProvisionResponse';
         $request = $this->provisionRequest($provision, $contentType);
 
         return $this->client
@@ -1857,7 +1857,7 @@ class TechnologyPartnersApi
     /**
      * Create request for operation 'provision'
      *
-     * @param  \OpenAPI\Client\Model\Provision $provision Create a new Constant Contact client account under your partner account. All required properties must be included in the JSON payload request. (required)
+     * @param  'ConstantContact\Client\Model\Provision $provision Create a new Constant Contact client account under your partner account. All required properties must be included in the JSON payload request. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['provision'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1961,12 +1961,12 @@ class TechnologyPartnersApi
      * PUT (update) Billing Plan Details for a Client Account
      *
      * @param  string $encoded_account_id Specify the client&#39;s unique &#x60;encoded_account_id&#x60;. (required)
-     * @param  \OpenAPI\Client\Model\PlanInfo $body Update the billing plan (&#x60;plan_type&#x60;) for an existing Constant Contact client account. Options include:   - &#x60;TRIAL&#x60;: A non-billed account with an expiration date that allows clients to try Constant Contact product features.    - &#x60;GOLD&#x60;: A billable plan that provides all available product features.    - &#x60;SILVER&#x60;: A billable plan that provides all features available in the &lt;code&gt;BRONZE&lt;/code&gt; plan, and adds some additional email campaign feature such as contact segmentation and social media advertisements.    - &#x60;BRONZE&#x60;: A billable plan that provides basic email and marketing tools.   If updating from a &#x60;TRIAL&#x60; plan (&#x60;plan_type&#x60;) to another type of billing plan, you have the option to update the day of month (&#x60;billing_day_of_month&#x60;) in which to bill the client account. Valid values include &#x60;1&#x60; through to and including &#x60;31&#x60;. Any additional billing plan properties and values that you include in the request body are ignored. If you are not on the latest billing plan, contact the Constant Contact Partner Team. However, older billing plans and &#x60;plan_type&#x60; enum values will continue to be supported. (optional)
+     * @param  'ConstantContact\Client\Model\PlanInfo $body Update the billing plan (&#x60;plan_type&#x60;) for an existing Constant Contact client account. Options include:   - &#x60;TRIAL&#x60;: A non-billed account with an expiration date that allows clients to try Constant Contact product features.    - &#x60;GOLD&#x60;: A billable plan that provides all available product features.    - &#x60;SILVER&#x60;: A billable plan that provides all features available in the &lt;code&gt;BRONZE&lt;/code&gt; plan, and adds some additional email campaign feature such as contact segmentation and social media advertisements.    - &#x60;BRONZE&#x60;: A billable plan that provides basic email and marketing tools.   If updating from a &#x60;TRIAL&#x60; plan (&#x60;plan_type&#x60;) to another type of billing plan, you have the option to update the day of month (&#x60;billing_day_of_month&#x60;) in which to bill the client account. Valid values include &#x60;1&#x60; through to and including &#x60;31&#x60;. Any additional billing plan properties and values that you include in the request body are ignored. If you are not on the latest billing plan, contact the Constant Contact Partner Team. However, older billing plans and &#x60;plan_type&#x60; enum values will continue to be supported. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['setPlan'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\PlanTiersObject
+     * @return 'ConstantContact\Client\Model\PlanTiersObject
      */
     public function setPlan($encoded_account_id, $body = null, string $contentType = self::contentTypes['setPlan'][0])
     {
@@ -1980,12 +1980,12 @@ class TechnologyPartnersApi
      * PUT (update) Billing Plan Details for a Client Account
      *
      * @param  string $encoded_account_id Specify the client&#39;s unique &#x60;encoded_account_id&#x60;. (required)
-     * @param  \OpenAPI\Client\Model\PlanInfo $body Update the billing plan (&#x60;plan_type&#x60;) for an existing Constant Contact client account. Options include:   - &#x60;TRIAL&#x60;: A non-billed account with an expiration date that allows clients to try Constant Contact product features.    - &#x60;GOLD&#x60;: A billable plan that provides all available product features.    - &#x60;SILVER&#x60;: A billable plan that provides all features available in the &lt;code&gt;BRONZE&lt;/code&gt; plan, and adds some additional email campaign feature such as contact segmentation and social media advertisements.    - &#x60;BRONZE&#x60;: A billable plan that provides basic email and marketing tools.   If updating from a &#x60;TRIAL&#x60; plan (&#x60;plan_type&#x60;) to another type of billing plan, you have the option to update the day of month (&#x60;billing_day_of_month&#x60;) in which to bill the client account. Valid values include &#x60;1&#x60; through to and including &#x60;31&#x60;. Any additional billing plan properties and values that you include in the request body are ignored. If you are not on the latest billing plan, contact the Constant Contact Partner Team. However, older billing plans and &#x60;plan_type&#x60; enum values will continue to be supported. (optional)
+     * @param  'ConstantContact\Client\Model\PlanInfo $body Update the billing plan (&#x60;plan_type&#x60;) for an existing Constant Contact client account. Options include:   - &#x60;TRIAL&#x60;: A non-billed account with an expiration date that allows clients to try Constant Contact product features.    - &#x60;GOLD&#x60;: A billable plan that provides all available product features.    - &#x60;SILVER&#x60;: A billable plan that provides all features available in the &lt;code&gt;BRONZE&lt;/code&gt; plan, and adds some additional email campaign feature such as contact segmentation and social media advertisements.    - &#x60;BRONZE&#x60;: A billable plan that provides basic email and marketing tools.   If updating from a &#x60;TRIAL&#x60; plan (&#x60;plan_type&#x60;) to another type of billing plan, you have the option to update the day of month (&#x60;billing_day_of_month&#x60;) in which to bill the client account. Valid values include &#x60;1&#x60; through to and including &#x60;31&#x60;. Any additional billing plan properties and values that you include in the request body are ignored. If you are not on the latest billing plan, contact the Constant Contact Partner Team. However, older billing plans and &#x60;plan_type&#x60; enum values will continue to be supported. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['setPlan'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\PlanTiersObject, HTTP status code, HTTP response headers (array of strings)
+     * @return array of 'ConstantContact\Client\Model\PlanTiersObject, HTTP status code, HTTP response headers (array of strings)
      */
     public function setPlanWithHttpInfo($encoded_account_id, $body = null, string $contentType = self::contentTypes['setPlan'][0])
     {
@@ -2028,11 +2028,11 @@ class TechnologyPartnersApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\PlanTiersObject' === '\SplFileObject') {
+                    if ('\ConstantContact\Client\Model\PlanTiersObject' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\PlanTiersObject' !== 'string') {
+                        if ('\ConstantContact\Client\Model\PlanTiersObject' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2050,13 +2050,13 @@ class TechnologyPartnersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\PlanTiersObject', []),
+                        ObjectSerializer::deserialize($content, '\ConstantContact\Client\Model\PlanTiersObject', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\PlanTiersObject';
+            $returnType = '\ConstantContact\Client\Model\PlanTiersObject';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -2089,7 +2089,7 @@ class TechnologyPartnersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\PlanTiersObject',
+                        '\ConstantContact\Client\Model\PlanTiersObject',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2105,7 +2105,7 @@ class TechnologyPartnersApi
      * PUT (update) Billing Plan Details for a Client Account
      *
      * @param  string $encoded_account_id Specify the client&#39;s unique &#x60;encoded_account_id&#x60;. (required)
-     * @param  \OpenAPI\Client\Model\PlanInfo $body Update the billing plan (&#x60;plan_type&#x60;) for an existing Constant Contact client account. Options include:   - &#x60;TRIAL&#x60;: A non-billed account with an expiration date that allows clients to try Constant Contact product features.    - &#x60;GOLD&#x60;: A billable plan that provides all available product features.    - &#x60;SILVER&#x60;: A billable plan that provides all features available in the &lt;code&gt;BRONZE&lt;/code&gt; plan, and adds some additional email campaign feature such as contact segmentation and social media advertisements.    - &#x60;BRONZE&#x60;: A billable plan that provides basic email and marketing tools.   If updating from a &#x60;TRIAL&#x60; plan (&#x60;plan_type&#x60;) to another type of billing plan, you have the option to update the day of month (&#x60;billing_day_of_month&#x60;) in which to bill the client account. Valid values include &#x60;1&#x60; through to and including &#x60;31&#x60;. Any additional billing plan properties and values that you include in the request body are ignored. If you are not on the latest billing plan, contact the Constant Contact Partner Team. However, older billing plans and &#x60;plan_type&#x60; enum values will continue to be supported. (optional)
+     * @param  'ConstantContact\Client\Model\PlanInfo $body Update the billing plan (&#x60;plan_type&#x60;) for an existing Constant Contact client account. Options include:   - &#x60;TRIAL&#x60;: A non-billed account with an expiration date that allows clients to try Constant Contact product features.    - &#x60;GOLD&#x60;: A billable plan that provides all available product features.    - &#x60;SILVER&#x60;: A billable plan that provides all features available in the &lt;code&gt;BRONZE&lt;/code&gt; plan, and adds some additional email campaign feature such as contact segmentation and social media advertisements.    - &#x60;BRONZE&#x60;: A billable plan that provides basic email and marketing tools.   If updating from a &#x60;TRIAL&#x60; plan (&#x60;plan_type&#x60;) to another type of billing plan, you have the option to update the day of month (&#x60;billing_day_of_month&#x60;) in which to bill the client account. Valid values include &#x60;1&#x60; through to and including &#x60;31&#x60;. Any additional billing plan properties and values that you include in the request body are ignored. If you are not on the latest billing plan, contact the Constant Contact Partner Team. However, older billing plans and &#x60;plan_type&#x60; enum values will continue to be supported. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['setPlan'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2127,7 +2127,7 @@ class TechnologyPartnersApi
      * PUT (update) Billing Plan Details for a Client Account
      *
      * @param  string $encoded_account_id Specify the client&#39;s unique &#x60;encoded_account_id&#x60;. (required)
-     * @param  \OpenAPI\Client\Model\PlanInfo $body Update the billing plan (&#x60;plan_type&#x60;) for an existing Constant Contact client account. Options include:   - &#x60;TRIAL&#x60;: A non-billed account with an expiration date that allows clients to try Constant Contact product features.    - &#x60;GOLD&#x60;: A billable plan that provides all available product features.    - &#x60;SILVER&#x60;: A billable plan that provides all features available in the &lt;code&gt;BRONZE&lt;/code&gt; plan, and adds some additional email campaign feature such as contact segmentation and social media advertisements.    - &#x60;BRONZE&#x60;: A billable plan that provides basic email and marketing tools.   If updating from a &#x60;TRIAL&#x60; plan (&#x60;plan_type&#x60;) to another type of billing plan, you have the option to update the day of month (&#x60;billing_day_of_month&#x60;) in which to bill the client account. Valid values include &#x60;1&#x60; through to and including &#x60;31&#x60;. Any additional billing plan properties and values that you include in the request body are ignored. If you are not on the latest billing plan, contact the Constant Contact Partner Team. However, older billing plans and &#x60;plan_type&#x60; enum values will continue to be supported. (optional)
+     * @param  'ConstantContact\Client\Model\PlanInfo $body Update the billing plan (&#x60;plan_type&#x60;) for an existing Constant Contact client account. Options include:   - &#x60;TRIAL&#x60;: A non-billed account with an expiration date that allows clients to try Constant Contact product features.    - &#x60;GOLD&#x60;: A billable plan that provides all available product features.    - &#x60;SILVER&#x60;: A billable plan that provides all features available in the &lt;code&gt;BRONZE&lt;/code&gt; plan, and adds some additional email campaign feature such as contact segmentation and social media advertisements.    - &#x60;BRONZE&#x60;: A billable plan that provides basic email and marketing tools.   If updating from a &#x60;TRIAL&#x60; plan (&#x60;plan_type&#x60;) to another type of billing plan, you have the option to update the day of month (&#x60;billing_day_of_month&#x60;) in which to bill the client account. Valid values include &#x60;1&#x60; through to and including &#x60;31&#x60;. Any additional billing plan properties and values that you include in the request body are ignored. If you are not on the latest billing plan, contact the Constant Contact Partner Team. However, older billing plans and &#x60;plan_type&#x60; enum values will continue to be supported. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['setPlan'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2135,7 +2135,7 @@ class TechnologyPartnersApi
      */
     public function setPlanAsyncWithHttpInfo($encoded_account_id, $body = null, string $contentType = self::contentTypes['setPlan'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\PlanTiersObject';
+        $returnType = '\ConstantContact\Client\Model\PlanTiersObject';
         $request = $this->setPlanRequest($encoded_account_id, $body, $contentType);
 
         return $this->client
@@ -2178,7 +2178,7 @@ class TechnologyPartnersApi
      * Create request for operation 'setPlan'
      *
      * @param  string $encoded_account_id Specify the client&#39;s unique &#x60;encoded_account_id&#x60;. (required)
-     * @param  \OpenAPI\Client\Model\PlanInfo $body Update the billing plan (&#x60;plan_type&#x60;) for an existing Constant Contact client account. Options include:   - &#x60;TRIAL&#x60;: A non-billed account with an expiration date that allows clients to try Constant Contact product features.    - &#x60;GOLD&#x60;: A billable plan that provides all available product features.    - &#x60;SILVER&#x60;: A billable plan that provides all features available in the &lt;code&gt;BRONZE&lt;/code&gt; plan, and adds some additional email campaign feature such as contact segmentation and social media advertisements.    - &#x60;BRONZE&#x60;: A billable plan that provides basic email and marketing tools.   If updating from a &#x60;TRIAL&#x60; plan (&#x60;plan_type&#x60;) to another type of billing plan, you have the option to update the day of month (&#x60;billing_day_of_month&#x60;) in which to bill the client account. Valid values include &#x60;1&#x60; through to and including &#x60;31&#x60;. Any additional billing plan properties and values that you include in the request body are ignored. If you are not on the latest billing plan, contact the Constant Contact Partner Team. However, older billing plans and &#x60;plan_type&#x60; enum values will continue to be supported. (optional)
+     * @param  'ConstantContact\Client\Model\PlanInfo $body Update the billing plan (&#x60;plan_type&#x60;) for an existing Constant Contact client account. Options include:   - &#x60;TRIAL&#x60;: A non-billed account with an expiration date that allows clients to try Constant Contact product features.    - &#x60;GOLD&#x60;: A billable plan that provides all available product features.    - &#x60;SILVER&#x60;: A billable plan that provides all features available in the &lt;code&gt;BRONZE&lt;/code&gt; plan, and adds some additional email campaign feature such as contact segmentation and social media advertisements.    - &#x60;BRONZE&#x60;: A billable plan that provides basic email and marketing tools.   If updating from a &#x60;TRIAL&#x60; plan (&#x60;plan_type&#x60;) to another type of billing plan, you have the option to update the day of month (&#x60;billing_day_of_month&#x60;) in which to bill the client account. Valid values include &#x60;1&#x60; through to and including &#x60;31&#x60;. Any additional billing plan properties and values that you include in the request body are ignored. If you are not on the latest billing plan, contact the Constant Contact Partner Team. However, older billing plans and &#x60;plan_type&#x60; enum values will continue to be supported. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['setPlan'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

@@ -18,7 +18,7 @@ All URIs are relative to https://api.cc.email/v3, except if the operation define
 ## `countContact()`
 
 ```php
-countContact($include): \OpenAPI\Client\Model\ContactsCounts
+countContact($include): 'ConstantContact\Client\Model\ContactsCounts
 ```
 
 GET Contact Consent Counts
@@ -86,7 +86,7 @@ try {
 ## `createContact()`
 
 ```php
-createContact($body): \OpenAPI\Client\Model\ContactResource
+createContact($body): 'ConstantContact\Client\Model\ContactResource
 ```
 
 POST (create) a Contact
@@ -118,7 +118,7 @@ $apiInstance = new OpenAPI\Client\Api\ContactsApi(
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \OpenAPI\Client\Model\ContactPostRequest(); // \OpenAPI\Client\Model\ContactPostRequest | The JSON payload defining the contact
+$body = new 'ConstantContact\Client\Model\ContactPostRequest(); // 'ConstantContact\Client\Model\ContactPostRequest | The JSON payload defining the contact
 
 try {
     $result = $apiInstance->createContact($body);
@@ -154,7 +154,7 @@ try {
 ## `createOrUpdateContact()`
 
 ```php
-createOrUpdateContact($body): \OpenAPI\Client\Model\ContactCreateOrUpdateResponse
+createOrUpdateContact($body): 'ConstantContact\Client\Model\ContactCreateOrUpdateResponse
 ```
 
 Create or Update a Contact
@@ -186,7 +186,7 @@ $apiInstance = new OpenAPI\Client\Api\ContactsApi(
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \OpenAPI\Client\Model\ContactCreateOrUpdateInput(); // \OpenAPI\Client\Model\ContactCreateOrUpdateInput | A JSON request body payload that contains the contact resource you are creating or updating. The request body must contain the `email_address` property and the `list_memberships` array.
+$body = new 'ConstantContact\Client\Model\ContactCreateOrUpdateInput(); // 'ConstantContact\Client\Model\ContactCreateOrUpdateInput | A JSON request body payload that contains the contact resource you are creating or updating. The request body must contain the `email_address` property and the `list_memberships` array.
 
 try {
     $result = $apiInstance->createOrUpdateContact($body);
@@ -289,7 +289,7 @@ void (empty response body)
 ## `getContact()`
 
 ```php
-getContact($contact_id, $include): \OpenAPI\Client\Model\ContactResource
+getContact($contact_id, $include): 'ConstantContact\Client\Model\ContactResource
 ```
 
 GET a Contact
@@ -359,7 +359,7 @@ try {
 ## `getContactIdXrefs()`
 
 ```php
-getContactIdXrefs($sequence_ids): \OpenAPI\Client\Model\ContactXrefs
+getContactIdXrefs($sequence_ids): 'ConstantContact\Client\Model\ContactXrefs
 ```
 
 GET a collection of V2 and V3 API contact IDs
@@ -427,7 +427,7 @@ try {
 ## `getContacts()`
 
 ```php
-getContacts($status, $email, $lists, $segment_id, $tags, $updated_after, $updated_before, $created_after, $created_before, $optout_after, $optout_before, $include, $sms_status, $include_count, $limit): \OpenAPI\Client\Model\Contacts
+getContacts($status, $email, $lists, $segment_id, $tags, $updated_after, $updated_before, $created_after, $created_before, $optout_after, $optout_before, $include, $sms_status, $include_count, $limit): 'ConstantContact\Client\Model\Contacts
 ```
 
 GET Contacts Collection
@@ -523,7 +523,7 @@ try {
 ## `getSmsEngagementHistory()`
 
 ```php
-getSmsEngagementHistory($contact_id): \OpenAPI\Client\Model\SmsEngagementHistoryInner[]
+getSmsEngagementHistory($contact_id): 'ConstantContact\Client\Model\SmsEngagementHistoryInner[]
 ```
 
 GET SMS Engagement History for a Contact
@@ -591,7 +591,7 @@ try {
 ## `putContact()`
 
 ```php
-putContact($contact_id, $body): \OpenAPI\Client\Model\ContactResource
+putContact($contact_id, $body): 'ConstantContact\Client\Model\ContactResource
 ```
 
 PUT (update) a Contact
@@ -624,7 +624,7 @@ $apiInstance = new OpenAPI\Client\Api\ContactsApi(
     $config
 );
 $contact_id = 04fe9a-a579-43c5-bb1a-58ed29bf0a6a; // string | Unique ID of contact to update
-$body = new \OpenAPI\Client\Model\ContactPutRequest(); // \OpenAPI\Client\Model\ContactPutRequest | JSON payload defining the contact object, with updates. Any properties left blank or not included in the PUT payload are overwritten with null value - does not apply to contact subresources.
+$body = new 'ConstantContact\Client\Model\ContactPutRequest(); // 'ConstantContact\Client\Model\ContactPutRequest | JSON payload defining the contact object, with updates. Any properties left blank or not included in the PUT payload are overwritten with null value - does not apply to contact subresources.
 
 try {
     $result = $apiInstance->putContact($contact_id, $body);

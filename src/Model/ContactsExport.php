@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,14 +29,14 @@
 namespace ConstantContact\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use 'ConstantContact\Client\ObjectSerializer;
 
 /**
  * ContactsExport Class Doc Comment
  *
  * @category Class
  * @description You can export contact objects to a CSV file. By default, all contacts in the user&#39;s account are exported if none of the following properties are included: &lt;br/&gt;&lt;li&gt; By contact_id - you can specify up to 500 specific contacts. &lt;li&gt;list_id - you can specify up to 50 lists. You can use the status parameter with list_id&lt;li&gt;status - you can export contacts by status (unsubscribed, active, removed); this property can be used with list_ids.
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>

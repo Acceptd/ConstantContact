@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace ConstantContact\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use 'ConstantContact\Client\ObjectSerializer;
 
 /**
  * ContactListArray Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,9 +57,9 @@ class ContactListArray implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'lists' => '\OpenAPI\Client\Model\ContactList[]',
+        'lists' => '\ConstantContact\Client\Model\ContactList[]',
         'lists_count' => 'int',
-        '_links' => '\OpenAPI\Client\Model\PagingLinks'
+        '_links' => '\ConstantContact\Client\Model\PagingLinks'
     ];
 
     /**
@@ -306,7 +306,7 @@ class ContactListArray implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets lists
      *
-     * @return \OpenAPI\Client\Model\ContactList[]|null
+     * @return 'ConstantContact\Client\Model\ContactList[]|null
      */
     public function getLists()
     {
@@ -316,7 +316,7 @@ class ContactListArray implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets lists
      *
-     * @param \OpenAPI\Client\Model\ContactList[]|null $lists lists
+     * @param 'ConstantContact\Client\Model\ContactList[]|null $lists lists
      *
      * @return self
      */
@@ -360,7 +360,7 @@ class ContactListArray implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets _links
      *
-     * @return \OpenAPI\Client\Model\PagingLinks|null
+     * @return 'ConstantContact\Client\Model\PagingLinks|null
      */
     public function getLinks()
     {
@@ -370,7 +370,7 @@ class ContactListArray implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets _links
      *
-     * @param \OpenAPI\Client\Model\PagingLinks|null $_links _links
+     * @param 'ConstantContact\Client\Model\PagingLinks|null $_links _links
      *
      * @return self
      */

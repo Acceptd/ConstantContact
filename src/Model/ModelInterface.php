@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client\Model
+ * @package  ConstantContact\Client\Model
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */

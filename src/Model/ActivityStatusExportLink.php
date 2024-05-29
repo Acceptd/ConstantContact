@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace ConstantContact\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use 'ConstantContact\Client\ObjectSerializer;
 
 /**
  * ActivityStatusExportLink Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,8 +57,8 @@ class ActivityStatusExportLink implements ModelInterface, ArrayAccess, \JsonSeri
       * @var string[]
       */
     protected static $openAPITypes = [
-        'self' => '\OpenAPI\Client\Model\ActivityStatusExportLinkSelf',
-        'results' => '\OpenAPI\Client\Model\ActivityStatusExportLinkResults'
+        'self' => '\ConstantContact\Client\Model\ActivityStatusExportLinkSelf',
+        'results' => '\ConstantContact\Client\Model\ActivityStatusExportLinkResults'
     ];
 
     /**
@@ -299,7 +299,7 @@ class ActivityStatusExportLink implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets self
      *
-     * @return \OpenAPI\Client\Model\ActivityStatusExportLinkSelf|null
+     * @return 'ConstantContact\Client\Model\ActivityStatusExportLinkSelf|null
      */
     public function getSelf()
     {
@@ -309,7 +309,7 @@ class ActivityStatusExportLink implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets self
      *
-     * @param \OpenAPI\Client\Model\ActivityStatusExportLinkSelf|null $self self
+     * @param 'ConstantContact\Client\Model\ActivityStatusExportLinkSelf|null $self self
      *
      * @return self
      */
@@ -326,7 +326,7 @@ class ActivityStatusExportLink implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets results
      *
-     * @return \OpenAPI\Client\Model\ActivityStatusExportLinkResults|null
+     * @return 'ConstantContact\Client\Model\ActivityStatusExportLinkResults|null
      */
     public function getResults()
     {
@@ -336,7 +336,7 @@ class ActivityStatusExportLink implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets results
      *
-     * @param \OpenAPI\Client\Model\ActivityStatusExportLinkResults|null $results results
+     * @param 'ConstantContact\Client\Model\ActivityStatusExportLinkResults|null $results results
      *
      * @return self
      */

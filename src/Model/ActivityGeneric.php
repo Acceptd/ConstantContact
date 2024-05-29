@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace ConstantContact\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use 'ConstantContact\Client\ObjectSerializer;
 
 /**
  * ActivityGeneric Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -62,9 +62,9 @@ class ActivityGeneric implements ModelInterface, ArrayAccess, \JsonSerializable
         'created_at' => '\DateTime',
         'updated_at' => '\DateTime',
         'percent_done' => 'int',
-        'activity_errors' => '\OpenAPI\Client\Model\ActivityErrors[]',
-        'status' => '\OpenAPI\Client\Model\ActivityGenericStatus',
-        '_links' => '\OpenAPI\Client\Model\TagsActivityLinks'
+        'activity_errors' => '\ConstantContact\Client\Model\ActivityErrors[]',
+        'status' => '\ConstantContact\Client\Model\ActivityGenericStatus',
+        '_links' => '\ConstantContact\Client\Model\TagsActivityLinks'
     ];
 
     /**
@@ -482,7 +482,7 @@ class ActivityGeneric implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets activity_errors
      *
-     * @return \OpenAPI\Client\Model\ActivityErrors[]|null
+     * @return 'ConstantContact\Client\Model\ActivityErrors[]|null
      */
     public function getActivityErrors()
     {
@@ -492,7 +492,7 @@ class ActivityGeneric implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets activity_errors
      *
-     * @param \OpenAPI\Client\Model\ActivityErrors[]|null $activity_errors An array of error messages if errors occurred for a specified activity. The system returns an empty array if no errors occur.
+     * @param 'ConstantContact\Client\Model\ActivityErrors[]|null $activity_errors An array of error messages if errors occurred for a specified activity. The system returns an empty array if no errors occur.
      *
      * @return self
      */
@@ -509,7 +509,7 @@ class ActivityGeneric implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets status
      *
-     * @return \OpenAPI\Client\Model\ActivityGenericStatus|null
+     * @return 'ConstantContact\Client\Model\ActivityGenericStatus|null
      */
     public function getStatus()
     {
@@ -519,7 +519,7 @@ class ActivityGeneric implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets status
      *
-     * @param \OpenAPI\Client\Model\ActivityGenericStatus|null $status status
+     * @param 'ConstantContact\Client\Model\ActivityGenericStatus|null $status status
      *
      * @return self
      */
@@ -536,7 +536,7 @@ class ActivityGeneric implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets _links
      *
-     * @return \OpenAPI\Client\Model\TagsActivityLinks|null
+     * @return 'ConstantContact\Client\Model\TagsActivityLinks|null
      */
     public function getLinks()
     {
@@ -546,7 +546,7 @@ class ActivityGeneric implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets _links
      *
-     * @param \OpenAPI\Client\Model\TagsActivityLinks|null $_links _links
+     * @param 'ConstantContact\Client\Model\TagsActivityLinks|null $_links _links
      *
      * @return self
      */

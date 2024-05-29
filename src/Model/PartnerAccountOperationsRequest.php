@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,14 +29,14 @@
 namespace ConstantContact\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use 'ConstantContact\Client\ObjectSerializer;
 
 /**
  * PartnerAccountOperationsRequest Class Doc Comment
  *
  * @category Class
  * @description JSON object that contains the fields Constant Contact uses to construct the HTTP request you are sending on behalf of a managed account.
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -61,9 +61,9 @@ class PartnerAccountOperationsRequest implements ModelInterface, ArrayAccess, \J
         'account_operation_url' => 'string',
         'account_operation_method' => 'string',
         'account_operation_payload' => 'string',
-        'account_operation_query_parameters' => '\OpenAPI\Client\Model\QueryParamObject[]',
-        'account_operation_path_parameters' => '\OpenAPI\Client\Model\PathParamObject[]',
-        'account_operation_headers' => '\OpenAPI\Client\Model\HeadersObject[]'
+        'account_operation_query_parameters' => '\ConstantContact\Client\Model\QueryParamObject[]',
+        'account_operation_path_parameters' => '\ConstantContact\Client\Model\PathParamObject[]',
+        'account_operation_headers' => '\ConstantContact\Client\Model\HeadersObject[]'
     ];
 
     /**
@@ -415,7 +415,7 @@ class PartnerAccountOperationsRequest implements ModelInterface, ArrayAccess, \J
     /**
      * Gets account_operation_query_parameters
      *
-     * @return \OpenAPI\Client\Model\QueryParamObject[]|null
+     * @return 'ConstantContact\Client\Model\QueryParamObject[]|null
      */
     public function getAccountOperationQueryParameters()
     {
@@ -425,7 +425,7 @@ class PartnerAccountOperationsRequest implements ModelInterface, ArrayAccess, \J
     /**
      * Sets account_operation_query_parameters
      *
-     * @param \OpenAPI\Client\Model\QueryParamObject[]|null $account_operation_query_parameters An array containing the query parameters for the request you are sending on behalf of a managed child account.
+     * @param 'ConstantContact\Client\Model\QueryParamObject[]|null $account_operation_query_parameters An array containing the query parameters for the request you are sending on behalf of a managed child account.
      *
      * @return self
      */
@@ -442,7 +442,7 @@ class PartnerAccountOperationsRequest implements ModelInterface, ArrayAccess, \J
     /**
      * Gets account_operation_path_parameters
      *
-     * @return \OpenAPI\Client\Model\PathParamObject[]|null
+     * @return 'ConstantContact\Client\Model\PathParamObject[]|null
      */
     public function getAccountOperationPathParameters()
     {
@@ -452,7 +452,7 @@ class PartnerAccountOperationsRequest implements ModelInterface, ArrayAccess, \J
     /**
      * Sets account_operation_path_parameters
      *
-     * @param \OpenAPI\Client\Model\PathParamObject[]|null $account_operation_path_parameters An array containing the path parameters for the request you are sending on behalf of a managed child account.
+     * @param 'ConstantContact\Client\Model\PathParamObject[]|null $account_operation_path_parameters An array containing the path parameters for the request you are sending on behalf of a managed child account.
      *
      * @return self
      */
@@ -469,7 +469,7 @@ class PartnerAccountOperationsRequest implements ModelInterface, ArrayAccess, \J
     /**
      * Gets account_operation_headers
      *
-     * @return \OpenAPI\Client\Model\HeadersObject[]|null
+     * @return 'ConstantContact\Client\Model\HeadersObject[]|null
      */
     public function getAccountOperationHeaders()
     {
@@ -479,7 +479,7 @@ class PartnerAccountOperationsRequest implements ModelInterface, ArrayAccess, \J
     /**
      * Sets account_operation_headers
      *
-     * @param \OpenAPI\Client\Model\HeadersObject[]|null $account_operation_headers An array containing the headers for the request you are sending on behalf of a managed child account.
+     * @param 'ConstantContact\Client\Model\HeadersObject[]|null $account_operation_headers An array containing the headers for the request you are sending on behalf of a managed child account.
      *
      * @return self
      */

@@ -12,7 +12,7 @@ All URIs are relative to https://api.cc.email/v3, except if the operation define
 ## `getContactOpenClickRate()`
 
 ```php
-getContactOpenClickRate($contact_id, $start, $end): \OpenAPI\Client\Model\ContactOpenAndClickRates
+getContactOpenClickRate($contact_id, $start, $end): 'ConstantContact\Client\Model\ContactOpenAndClickRates
 ```
 
 GET Average Open and Click Rates
@@ -84,7 +84,7 @@ try {
 ## `getContactTracking()`
 
 ```php
-getContactTracking($contact_id, $tracking_activities_list, $tracking_activity_type, $include_campaign_activity_names, $limit): \OpenAPI\Client\Model\ContactTrackingActivitiesPage
+getContactTracking($contact_id, $tracking_activities_list, $tracking_activity_type, $include_campaign_activity_names, $limit): 'ConstantContact\Client\Model\ContactTrackingActivitiesPage
 ```
 
 GET Contact Activity Details
@@ -160,7 +160,7 @@ try {
 ## `getContactTrackingCount()`
 
 ```php
-getContactTrackingCount($contact_id, $start, $end): \OpenAPI\Client\Model\ContactCampaignActivitiesSummary
+getContactTrackingCount($contact_id, $start, $end): 'ConstantContact\Client\Model\ContactCampaignActivitiesSummary
 ```
 
 GET Contact Action Summary

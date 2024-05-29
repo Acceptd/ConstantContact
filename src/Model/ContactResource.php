@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,14 +29,14 @@
 namespace ConstantContact\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use 'ConstantContact\Client\ObjectSerializer;
 
 /**
  * ContactResource Class Doc Comment
  *
  * @category Class
  * @description Use this endpoint to retrieve (GET), update (PUT), or DELETE an existing contact resource specified using the &lt;code&gt;contact_id&lt;/code&gt; path parameter.
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,7 +59,7 @@ class ContactResource implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'contact_id' => 'string',
-        'email_address' => '\OpenAPI\Client\Model\EmailAddress',
+        'email_address' => '\ConstantContact\Client\Model\EmailAddress',
         'first_name' => 'string',
         'last_name' => 'string',
         'job_title' => 'string',
@@ -72,13 +72,13 @@ class ContactResource implements ModelInterface, ArrayAccess, \JsonSerializable
         'created_at' => '\DateTime',
         'updated_at' => '\DateTime',
         'deleted_at' => '\DateTime',
-        'custom_fields' => '\OpenAPI\Client\Model\ContactCustomField[]',
-        'phone_numbers' => '\OpenAPI\Client\Model\PhoneNumber[]',
-        'street_addresses' => '\OpenAPI\Client\Model\StreetAddress[]',
+        'custom_fields' => '\ConstantContact\Client\Model\ContactCustomField[]',
+        'phone_numbers' => '\ConstantContact\Client\Model\PhoneNumber[]',
+        'street_addresses' => '\ConstantContact\Client\Model\StreetAddress[]',
         'list_memberships' => 'string[]',
         'taggings' => 'string[]',
-        'notes' => '\OpenAPI\Client\Model\Note[]',
-        'sms_channel' => '\OpenAPI\Client\Model\ContactResourceSmsChannel'
+        'notes' => '\ConstantContact\Client\Model\Note[]',
+        'sms_channel' => '\ConstantContact\Client\Model\ContactResourceSmsChannel'
     ];
 
     /**
@@ -504,7 +504,7 @@ class ContactResource implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets email_address
      *
-     * @return \OpenAPI\Client\Model\EmailAddress|null
+     * @return 'ConstantContact\Client\Model\EmailAddress|null
      */
     public function getEmailAddress()
     {
@@ -514,7 +514,7 @@ class ContactResource implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets email_address
      *
-     * @param \OpenAPI\Client\Model\EmailAddress|null $email_address email_address
+     * @param 'ConstantContact\Client\Model\EmailAddress|null $email_address email_address
      *
      * @return self
      */
@@ -875,7 +875,7 @@ class ContactResource implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets custom_fields
      *
-     * @return \OpenAPI\Client\Model\ContactCustomField[]|null
+     * @return 'ConstantContact\Client\Model\ContactCustomField[]|null
      */
     public function getCustomFields()
     {
@@ -885,7 +885,7 @@ class ContactResource implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets custom_fields
      *
-     * @param \OpenAPI\Client\Model\ContactCustomField[]|null $custom_fields Array of up to 25 <code>custom_field</code> subresources.
+     * @param 'ConstantContact\Client\Model\ContactCustomField[]|null $custom_fields Array of up to 25 <code>custom_field</code> subresources.
      *
      * @return self
      */
@@ -906,7 +906,7 @@ class ContactResource implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets phone_numbers
      *
-     * @return \OpenAPI\Client\Model\PhoneNumber[]|null
+     * @return 'ConstantContact\Client\Model\PhoneNumber[]|null
      */
     public function getPhoneNumbers()
     {
@@ -916,7 +916,7 @@ class ContactResource implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets phone_numbers
      *
-     * @param \OpenAPI\Client\Model\PhoneNumber[]|null $phone_numbers Array of up to 3 <code>phone_numbers</code> subresources.
+     * @param 'ConstantContact\Client\Model\PhoneNumber[]|null $phone_numbers Array of up to 3 <code>phone_numbers</code> subresources.
      *
      * @return self
      */
@@ -937,7 +937,7 @@ class ContactResource implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets street_addresses
      *
-     * @return \OpenAPI\Client\Model\StreetAddress[]|null
+     * @return 'ConstantContact\Client\Model\StreetAddress[]|null
      */
     public function getStreetAddresses()
     {
@@ -947,7 +947,7 @@ class ContactResource implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets street_addresses
      *
-     * @param \OpenAPI\Client\Model\StreetAddress[]|null $street_addresses Array of up to 3 <code>street_addresses</code> subresources.
+     * @param 'ConstantContact\Client\Model\StreetAddress[]|null $street_addresses Array of up to 3 <code>street_addresses</code> subresources.
      *
      * @return self
      */
@@ -1030,7 +1030,7 @@ class ContactResource implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets notes
      *
-     * @return \OpenAPI\Client\Model\Note[]|null
+     * @return 'ConstantContact\Client\Model\Note[]|null
      */
     public function getNotes()
     {
@@ -1040,7 +1040,7 @@ class ContactResource implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets notes
      *
-     * @param \OpenAPI\Client\Model\Note[]|null $notes An array of notes about the contact listed by most recent note first.
+     * @param 'ConstantContact\Client\Model\Note[]|null $notes An array of notes about the contact listed by most recent note first.
      *
      * @return self
      */
@@ -1061,7 +1061,7 @@ class ContactResource implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets sms_channel
      *
-     * @return \OpenAPI\Client\Model\ContactResourceSmsChannel|null
+     * @return 'ConstantContact\Client\Model\ContactResourceSmsChannel|null
      */
     public function getSmsChannel()
     {
@@ -1071,7 +1071,7 @@ class ContactResource implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets sms_channel
      *
-     * @param \OpenAPI\Client\Model\ContactResourceSmsChannel|null $sms_channel sms_channel
+     * @param 'ConstantContact\Client\Model\ContactResourceSmsChannel|null $sms_channel sms_channel
      *
      * @return self
      */

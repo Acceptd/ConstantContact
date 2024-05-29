@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -43,7 +43,7 @@ use ConstantContact\Client\ObjectSerializer;
  * EmailCampaignsApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -157,12 +157,12 @@ class EmailCampaignsApi
      *
      * POST (Create) a New Email Campaign
      *
-     * @param  \OpenAPI\Client\Model\EmailCampaignComplete $body A JSON request body that contains the email content. (required)
+     * @param  'ConstantContact\Client\Model\EmailCampaignComplete $body A JSON request body that contains the email content. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createEmailCampaignUsingPOST'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\EmailCampaign
+     * @return 'ConstantContact\Client\Model\EmailCampaign
      */
     public function createEmailCampaignUsingPOST($body, string $contentType = self::contentTypes['createEmailCampaignUsingPOST'][0])
     {
@@ -175,12 +175,12 @@ class EmailCampaignsApi
      *
      * POST (Create) a New Email Campaign
      *
-     * @param  \OpenAPI\Client\Model\EmailCampaignComplete $body A JSON request body that contains the email content. (required)
+     * @param  'ConstantContact\Client\Model\EmailCampaignComplete $body A JSON request body that contains the email content. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createEmailCampaignUsingPOST'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\EmailCampaign, HTTP status code, HTTP response headers (array of strings)
+     * @return array of 'ConstantContact\Client\Model\EmailCampaign, HTTP status code, HTTP response headers (array of strings)
      */
     public function createEmailCampaignUsingPOSTWithHttpInfo($body, string $contentType = self::contentTypes['createEmailCampaignUsingPOST'][0])
     {
@@ -223,11 +223,11 @@ class EmailCampaignsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\EmailCampaign' === '\SplFileObject') {
+                    if ('\ConstantContact\Client\Model\EmailCampaign' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\EmailCampaign' !== 'string') {
+                        if ('\ConstantContact\Client\Model\EmailCampaign' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -245,13 +245,13 @@ class EmailCampaignsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\EmailCampaign', []),
+                        ObjectSerializer::deserialize($content, '\ConstantContact\Client\Model\EmailCampaign', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\EmailCampaign';
+            $returnType = '\ConstantContact\Client\Model\EmailCampaign';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -284,7 +284,7 @@ class EmailCampaignsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\EmailCampaign',
+                        '\ConstantContact\Client\Model\EmailCampaign',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -299,7 +299,7 @@ class EmailCampaignsApi
      *
      * POST (Create) a New Email Campaign
      *
-     * @param  \OpenAPI\Client\Model\EmailCampaignComplete $body A JSON request body that contains the email content. (required)
+     * @param  'ConstantContact\Client\Model\EmailCampaignComplete $body A JSON request body that contains the email content. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createEmailCampaignUsingPOST'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -320,7 +320,7 @@ class EmailCampaignsApi
      *
      * POST (Create) a New Email Campaign
      *
-     * @param  \OpenAPI\Client\Model\EmailCampaignComplete $body A JSON request body that contains the email content. (required)
+     * @param  'ConstantContact\Client\Model\EmailCampaignComplete $body A JSON request body that contains the email content. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createEmailCampaignUsingPOST'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -328,7 +328,7 @@ class EmailCampaignsApi
      */
     public function createEmailCampaignUsingPOSTAsyncWithHttpInfo($body, string $contentType = self::contentTypes['createEmailCampaignUsingPOST'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\EmailCampaign';
+        $returnType = '\ConstantContact\Client\Model\EmailCampaign';
         $request = $this->createEmailCampaignUsingPOSTRequest($body, $contentType);
 
         return $this->client
@@ -370,7 +370,7 @@ class EmailCampaignsApi
     /**
      * Create request for operation 'createEmailCampaignUsingPOST'
      *
-     * @param  \OpenAPI\Client\Model\EmailCampaignComplete $body A JSON request body that contains the email content. (required)
+     * @param  'ConstantContact\Client\Model\EmailCampaignComplete $body A JSON request body that contains the email content. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createEmailCampaignUsingPOST'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -477,12 +477,12 @@ class EmailCampaignsApi
      * POST a Resend to Non-openers Campaign Activity
      *
      * @param  string $campaign_activity_id The unique ID for the primary email campaign activity. (required)
-     * @param  \OpenAPI\Client\Model\ResendToNonOpenersInput $resend_schedule A JSON request body that specifies when to resend the campaign activity to non-openers. (required)
+     * @param  'ConstantContact\Client\Model\ResendToNonOpenersInput $resend_schedule A JSON request body that specifies when to resend the campaign activity to non-openers. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createResendToNonOpenersUsingPOST'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ResendToNonOpenersObject
+     * @return 'ConstantContact\Client\Model\ResendToNonOpenersObject
      */
     public function createResendToNonOpenersUsingPOST($campaign_activity_id, $resend_schedule, string $contentType = self::contentTypes['createResendToNonOpenersUsingPOST'][0])
     {
@@ -496,12 +496,12 @@ class EmailCampaignsApi
      * POST a Resend to Non-openers Campaign Activity
      *
      * @param  string $campaign_activity_id The unique ID for the primary email campaign activity. (required)
-     * @param  \OpenAPI\Client\Model\ResendToNonOpenersInput $resend_schedule A JSON request body that specifies when to resend the campaign activity to non-openers. (required)
+     * @param  'ConstantContact\Client\Model\ResendToNonOpenersInput $resend_schedule A JSON request body that specifies when to resend the campaign activity to non-openers. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createResendToNonOpenersUsingPOST'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ResendToNonOpenersObject, HTTP status code, HTTP response headers (array of strings)
+     * @return array of 'ConstantContact\Client\Model\ResendToNonOpenersObject, HTTP status code, HTTP response headers (array of strings)
      */
     public function createResendToNonOpenersUsingPOSTWithHttpInfo($campaign_activity_id, $resend_schedule, string $contentType = self::contentTypes['createResendToNonOpenersUsingPOST'][0])
     {
@@ -544,11 +544,11 @@ class EmailCampaignsApi
 
             switch($statusCode) {
                 case 201:
-                    if ('\OpenAPI\Client\Model\ResendToNonOpenersObject' === '\SplFileObject') {
+                    if ('\ConstantContact\Client\Model\ResendToNonOpenersObject' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ResendToNonOpenersObject' !== 'string') {
+                        if ('\ConstantContact\Client\Model\ResendToNonOpenersObject' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -566,13 +566,13 @@ class EmailCampaignsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ResendToNonOpenersObject', []),
+                        ObjectSerializer::deserialize($content, '\ConstantContact\Client\Model\ResendToNonOpenersObject', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\ResendToNonOpenersObject';
+            $returnType = '\ConstantContact\Client\Model\ResendToNonOpenersObject';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -605,7 +605,7 @@ class EmailCampaignsApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ResendToNonOpenersObject',
+                        '\ConstantContact\Client\Model\ResendToNonOpenersObject',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -621,7 +621,7 @@ class EmailCampaignsApi
      * POST a Resend to Non-openers Campaign Activity
      *
      * @param  string $campaign_activity_id The unique ID for the primary email campaign activity. (required)
-     * @param  \OpenAPI\Client\Model\ResendToNonOpenersInput $resend_schedule A JSON request body that specifies when to resend the campaign activity to non-openers. (required)
+     * @param  'ConstantContact\Client\Model\ResendToNonOpenersInput $resend_schedule A JSON request body that specifies when to resend the campaign activity to non-openers. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createResendToNonOpenersUsingPOST'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -643,7 +643,7 @@ class EmailCampaignsApi
      * POST a Resend to Non-openers Campaign Activity
      *
      * @param  string $campaign_activity_id The unique ID for the primary email campaign activity. (required)
-     * @param  \OpenAPI\Client\Model\ResendToNonOpenersInput $resend_schedule A JSON request body that specifies when to resend the campaign activity to non-openers. (required)
+     * @param  'ConstantContact\Client\Model\ResendToNonOpenersInput $resend_schedule A JSON request body that specifies when to resend the campaign activity to non-openers. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createResendToNonOpenersUsingPOST'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -651,7 +651,7 @@ class EmailCampaignsApi
      */
     public function createResendToNonOpenersUsingPOSTAsyncWithHttpInfo($campaign_activity_id, $resend_schedule, string $contentType = self::contentTypes['createResendToNonOpenersUsingPOST'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ResendToNonOpenersObject';
+        $returnType = '\ConstantContact\Client\Model\ResendToNonOpenersObject';
         $request = $this->createResendToNonOpenersUsingPOSTRequest($campaign_activity_id, $resend_schedule, $contentType);
 
         return $this->client
@@ -694,7 +694,7 @@ class EmailCampaignsApi
      * Create request for operation 'createResendToNonOpenersUsingPOST'
      *
      * @param  string $campaign_activity_id The unique ID for the primary email campaign activity. (required)
-     * @param  \OpenAPI\Client\Model\ResendToNonOpenersInput $resend_schedule A JSON request body that specifies when to resend the campaign activity to non-openers. (required)
+     * @param  'ConstantContact\Client\Model\ResendToNonOpenersInput $resend_schedule A JSON request body that specifies when to resend the campaign activity to non-openers. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createResendToNonOpenersUsingPOST'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -819,7 +819,7 @@ class EmailCampaignsApi
      * @param  string $resend_request_id The unique ID associated with the resend for the email campaign activity (for example: &#x60;389093&#x60;). If the email campaign activity is currently in draft status, specify &#x60;DRAFT&#x60; as the ID. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteResendToNonOpenersUsingDELETE'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -837,7 +837,7 @@ class EmailCampaignsApi
      * @param  string $resend_request_id The unique ID associated with the resend for the email campaign activity (for example: &#x60;389093&#x60;). If the email campaign activity is currently in draft status, specify &#x60;DRAFT&#x60; as the ID. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteResendToNonOpenersUsingDELETE'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1080,7 +1080,7 @@ class EmailCampaignsApi
      * @param  string $campaign_id The unique ID for the email campaign you are deleting. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['removeEmailCampaignUsingDELETE'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -1097,7 +1097,7 @@ class EmailCampaignsApi
      * @param  string $campaign_id The unique ID for the email campaign you are deleting. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['removeEmailCampaignUsingDELETE'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1320,12 +1320,12 @@ class EmailCampaignsApi
      * PATCH (Update) an Email Campaign Name
      *
      * @param  string $campaign_id The unique identifier for an email campaign. (required)
-     * @param  \OpenAPI\Client\Model\EmailCampaignName $body A JSON payload that contains the new email campaign name. (required)
+     * @param  'ConstantContact\Client\Model\EmailCampaignName $body A JSON payload that contains the new email campaign name. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['renameEmailCampaignUsingPATCH'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\EmailCampaign
+     * @return 'ConstantContact\Client\Model\EmailCampaign
      */
     public function renameEmailCampaignUsingPATCH($campaign_id, $body, string $contentType = self::contentTypes['renameEmailCampaignUsingPATCH'][0])
     {
@@ -1339,12 +1339,12 @@ class EmailCampaignsApi
      * PATCH (Update) an Email Campaign Name
      *
      * @param  string $campaign_id The unique identifier for an email campaign. (required)
-     * @param  \OpenAPI\Client\Model\EmailCampaignName $body A JSON payload that contains the new email campaign name. (required)
+     * @param  'ConstantContact\Client\Model\EmailCampaignName $body A JSON payload that contains the new email campaign name. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['renameEmailCampaignUsingPATCH'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\EmailCampaign, HTTP status code, HTTP response headers (array of strings)
+     * @return array of 'ConstantContact\Client\Model\EmailCampaign, HTTP status code, HTTP response headers (array of strings)
      */
     public function renameEmailCampaignUsingPATCHWithHttpInfo($campaign_id, $body, string $contentType = self::contentTypes['renameEmailCampaignUsingPATCH'][0])
     {
@@ -1387,11 +1387,11 @@ class EmailCampaignsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\EmailCampaign' === '\SplFileObject') {
+                    if ('\ConstantContact\Client\Model\EmailCampaign' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\EmailCampaign' !== 'string') {
+                        if ('\ConstantContact\Client\Model\EmailCampaign' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1409,13 +1409,13 @@ class EmailCampaignsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\EmailCampaign', []),
+                        ObjectSerializer::deserialize($content, '\ConstantContact\Client\Model\EmailCampaign', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\EmailCampaign';
+            $returnType = '\ConstantContact\Client\Model\EmailCampaign';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1448,7 +1448,7 @@ class EmailCampaignsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\EmailCampaign',
+                        '\ConstantContact\Client\Model\EmailCampaign',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1464,7 +1464,7 @@ class EmailCampaignsApi
      * PATCH (Update) an Email Campaign Name
      *
      * @param  string $campaign_id The unique identifier for an email campaign. (required)
-     * @param  \OpenAPI\Client\Model\EmailCampaignName $body A JSON payload that contains the new email campaign name. (required)
+     * @param  'ConstantContact\Client\Model\EmailCampaignName $body A JSON payload that contains the new email campaign name. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['renameEmailCampaignUsingPATCH'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1486,7 +1486,7 @@ class EmailCampaignsApi
      * PATCH (Update) an Email Campaign Name
      *
      * @param  string $campaign_id The unique identifier for an email campaign. (required)
-     * @param  \OpenAPI\Client\Model\EmailCampaignName $body A JSON payload that contains the new email campaign name. (required)
+     * @param  'ConstantContact\Client\Model\EmailCampaignName $body A JSON payload that contains the new email campaign name. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['renameEmailCampaignUsingPATCH'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1494,7 +1494,7 @@ class EmailCampaignsApi
      */
     public function renameEmailCampaignUsingPATCHAsyncWithHttpInfo($campaign_id, $body, string $contentType = self::contentTypes['renameEmailCampaignUsingPATCH'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\EmailCampaign';
+        $returnType = '\ConstantContact\Client\Model\EmailCampaign';
         $request = $this->renameEmailCampaignUsingPATCHRequest($campaign_id, $body, $contentType);
 
         return $this->client
@@ -1537,7 +1537,7 @@ class EmailCampaignsApi
      * Create request for operation 'renameEmailCampaignUsingPATCH'
      *
      * @param  string $campaign_id The unique identifier for an email campaign. (required)
-     * @param  \OpenAPI\Client\Model\EmailCampaignName $body A JSON payload that contains the new email campaign name. (required)
+     * @param  'ConstantContact\Client\Model\EmailCampaignName $body A JSON payload that contains the new email campaign name. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['renameEmailCampaignUsingPATCH'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1662,9 +1662,9 @@ class EmailCampaignsApi
      * @param  string $include Use the &#x60;include&#x60; query parameter to enter a comma separated list of additional email campaign activity properties for the V3 API to return. Valid values are &#x60;physical_address_in_footer&#x60;, &#x60;permalink_url&#x60;, &#x60;html_content&#x60;, and &#x60;document_properties&#x60;. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['retrieveEmailCampaignActivityUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\EmailCampaignActivity
+     * @return 'ConstantContact\Client\Model\EmailCampaignActivity
      */
     public function retrieveEmailCampaignActivityUsingGET($campaign_activity_id, $include = null, string $contentType = self::contentTypes['retrieveEmailCampaignActivityUsingGET'][0])
     {
@@ -1681,9 +1681,9 @@ class EmailCampaignsApi
      * @param  string $include Use the &#x60;include&#x60; query parameter to enter a comma separated list of additional email campaign activity properties for the V3 API to return. Valid values are &#x60;physical_address_in_footer&#x60;, &#x60;permalink_url&#x60;, &#x60;html_content&#x60;, and &#x60;document_properties&#x60;. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['retrieveEmailCampaignActivityUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\EmailCampaignActivity, HTTP status code, HTTP response headers (array of strings)
+     * @return array of 'ConstantContact\Client\Model\EmailCampaignActivity, HTTP status code, HTTP response headers (array of strings)
      */
     public function retrieveEmailCampaignActivityUsingGETWithHttpInfo($campaign_activity_id, $include = null, string $contentType = self::contentTypes['retrieveEmailCampaignActivityUsingGET'][0])
     {
@@ -1726,11 +1726,11 @@ class EmailCampaignsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\EmailCampaignActivity' === '\SplFileObject') {
+                    if ('\ConstantContact\Client\Model\EmailCampaignActivity' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\EmailCampaignActivity' !== 'string') {
+                        if ('\ConstantContact\Client\Model\EmailCampaignActivity' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1748,13 +1748,13 @@ class EmailCampaignsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\EmailCampaignActivity', []),
+                        ObjectSerializer::deserialize($content, '\ConstantContact\Client\Model\EmailCampaignActivity', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\EmailCampaignActivity';
+            $returnType = '\ConstantContact\Client\Model\EmailCampaignActivity';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1787,7 +1787,7 @@ class EmailCampaignsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\EmailCampaignActivity',
+                        '\ConstantContact\Client\Model\EmailCampaignActivity',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1833,7 +1833,7 @@ class EmailCampaignsApi
      */
     public function retrieveEmailCampaignActivityUsingGETAsyncWithHttpInfo($campaign_activity_id, $include = null, string $contentType = self::contentTypes['retrieveEmailCampaignActivityUsingGET'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\EmailCampaignActivity';
+        $returnType = '\ConstantContact\Client\Model\EmailCampaignActivity';
         $request = $this->retrieveEmailCampaignActivityUsingGETRequest($campaign_activity_id, $include, $contentType);
 
         return $this->client
@@ -1996,9 +1996,9 @@ class EmailCampaignsApi
      * @param  string $campaign_id The ID (UUID format) that uniquely identifies this email campaign. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['retrieveEmailCampaignUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\EmailCampaign
+     * @return 'ConstantContact\Client\Model\EmailCampaign
      */
     public function retrieveEmailCampaignUsingGET($campaign_id, string $contentType = self::contentTypes['retrieveEmailCampaignUsingGET'][0])
     {
@@ -2014,9 +2014,9 @@ class EmailCampaignsApi
      * @param  string $campaign_id The ID (UUID format) that uniquely identifies this email campaign. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['retrieveEmailCampaignUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\EmailCampaign, HTTP status code, HTTP response headers (array of strings)
+     * @return array of 'ConstantContact\Client\Model\EmailCampaign, HTTP status code, HTTP response headers (array of strings)
      */
     public function retrieveEmailCampaignUsingGETWithHttpInfo($campaign_id, string $contentType = self::contentTypes['retrieveEmailCampaignUsingGET'][0])
     {
@@ -2059,11 +2059,11 @@ class EmailCampaignsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\EmailCampaign' === '\SplFileObject') {
+                    if ('\ConstantContact\Client\Model\EmailCampaign' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\EmailCampaign' !== 'string') {
+                        if ('\ConstantContact\Client\Model\EmailCampaign' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2081,13 +2081,13 @@ class EmailCampaignsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\EmailCampaign', []),
+                        ObjectSerializer::deserialize($content, '\ConstantContact\Client\Model\EmailCampaign', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\EmailCampaign';
+            $returnType = '\ConstantContact\Client\Model\EmailCampaign';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -2120,7 +2120,7 @@ class EmailCampaignsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\EmailCampaign',
+                        '\ConstantContact\Client\Model\EmailCampaign',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2164,7 +2164,7 @@ class EmailCampaignsApi
      */
     public function retrieveEmailCampaignUsingGETAsyncWithHttpInfo($campaign_id, string $contentType = self::contentTypes['retrieveEmailCampaignUsingGET'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\EmailCampaign';
+        $returnType = '\ConstantContact\Client\Model\EmailCampaign';
         $request = $this->retrieveEmailCampaignUsingGETRequest($campaign_id, $contentType);
 
         return $this->client
@@ -2318,9 +2318,9 @@ class EmailCampaignsApi
      * @param  \DateTime $after_date Use to return email campaigns with last &#x60;updated_at&#x60; timestamps that are after a specific date and time (in ISO-8601 format). Use with the &#x60;before_date&#x60; query parameter to get email campaigns sent within a specific date range. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['retrieveEmailCampaignsUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\PagedEmailCampaignResponse
+     * @return 'ConstantContact\Client\Model\PagedEmailCampaignResponse
      */
     public function retrieveEmailCampaignsUsingGET($limit = 50, $before_date = null, $after_date = null, string $contentType = self::contentTypes['retrieveEmailCampaignsUsingGET'][0])
     {
@@ -2338,9 +2338,9 @@ class EmailCampaignsApi
      * @param  \DateTime $after_date Use to return email campaigns with last &#x60;updated_at&#x60; timestamps that are after a specific date and time (in ISO-8601 format). Use with the &#x60;before_date&#x60; query parameter to get email campaigns sent within a specific date range. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['retrieveEmailCampaignsUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\PagedEmailCampaignResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of 'ConstantContact\Client\Model\PagedEmailCampaignResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function retrieveEmailCampaignsUsingGETWithHttpInfo($limit = 50, $before_date = null, $after_date = null, string $contentType = self::contentTypes['retrieveEmailCampaignsUsingGET'][0])
     {
@@ -2383,11 +2383,11 @@ class EmailCampaignsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\PagedEmailCampaignResponse' === '\SplFileObject') {
+                    if ('\ConstantContact\Client\Model\PagedEmailCampaignResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\PagedEmailCampaignResponse' !== 'string') {
+                        if ('\ConstantContact\Client\Model\PagedEmailCampaignResponse' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2405,13 +2405,13 @@ class EmailCampaignsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\PagedEmailCampaignResponse', []),
+                        ObjectSerializer::deserialize($content, '\ConstantContact\Client\Model\PagedEmailCampaignResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\PagedEmailCampaignResponse';
+            $returnType = '\ConstantContact\Client\Model\PagedEmailCampaignResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -2444,7 +2444,7 @@ class EmailCampaignsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\PagedEmailCampaignResponse',
+                        '\ConstantContact\Client\Model\PagedEmailCampaignResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2492,7 +2492,7 @@ class EmailCampaignsApi
      */
     public function retrieveEmailCampaignsUsingGETAsyncWithHttpInfo($limit = 50, $before_date = null, $after_date = null, string $contentType = self::contentTypes['retrieveEmailCampaignsUsingGET'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\PagedEmailCampaignResponse';
+        $returnType = '\ConstantContact\Client\Model\PagedEmailCampaignResponse';
         $request = $this->retrieveEmailCampaignsUsingGETRequest($limit, $before_date, $after_date, $contentType);
 
         return $this->client
@@ -2661,9 +2661,9 @@ class EmailCampaignsApi
      * @param  string $campaign_activity_id The unique ID for the primary email campaign activity. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['retrieveResendToNonOpenersUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ResendToNonOpenersInner[]
+     * @return 'ConstantContact\Client\Model\ResendToNonOpenersInner[]
      */
     public function retrieveResendToNonOpenersUsingGET($campaign_activity_id, string $contentType = self::contentTypes['retrieveResendToNonOpenersUsingGET'][0])
     {
@@ -2679,9 +2679,9 @@ class EmailCampaignsApi
      * @param  string $campaign_activity_id The unique ID for the primary email campaign activity. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['retrieveResendToNonOpenersUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ResendToNonOpenersInner[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of 'ConstantContact\Client\Model\ResendToNonOpenersInner[], HTTP status code, HTTP response headers (array of strings)
      */
     public function retrieveResendToNonOpenersUsingGETWithHttpInfo($campaign_activity_id, string $contentType = self::contentTypes['retrieveResendToNonOpenersUsingGET'][0])
     {
@@ -2724,11 +2724,11 @@ class EmailCampaignsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ResendToNonOpenersInner[]' === '\SplFileObject') {
+                    if ('\ConstantContact\Client\Model\ResendToNonOpenersInner[]' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ResendToNonOpenersInner[]' !== 'string') {
+                        if ('\ConstantContact\Client\Model\ResendToNonOpenersInner[]' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2746,13 +2746,13 @@ class EmailCampaignsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ResendToNonOpenersInner[]', []),
+                        ObjectSerializer::deserialize($content, '\ConstantContact\Client\Model\ResendToNonOpenersInner[]', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\ResendToNonOpenersInner[]';
+            $returnType = '\ConstantContact\Client\Model\ResendToNonOpenersInner[]';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -2785,7 +2785,7 @@ class EmailCampaignsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ResendToNonOpenersInner[]',
+                        '\ConstantContact\Client\Model\ResendToNonOpenersInner[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2829,7 +2829,7 @@ class EmailCampaignsApi
      */
     public function retrieveResendToNonOpenersUsingGETAsyncWithHttpInfo($campaign_activity_id, string $contentType = self::contentTypes['retrieveResendToNonOpenersUsingGET'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ResendToNonOpenersInner[]';
+        $returnType = '\ConstantContact\Client\Model\ResendToNonOpenersInner[]';
         $request = $this->retrieveResendToNonOpenersUsingGETRequest($campaign_activity_id, $contentType);
 
         return $this->client
@@ -2981,9 +2981,9 @@ class EmailCampaignsApi
      * @param  string $v2_email_campaign_ids Comma separated list of V2 API &#x60;campaignId&#x60; values. You can enter up to 50 V2 &#x60;campaignId&#x60; values in each request. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['retrieveXrefMappingsUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\CrossReferenceResponse
+     * @return 'ConstantContact\Client\Model\CrossReferenceResponse
      */
     public function retrieveXrefMappingsUsingGET($v2_email_campaign_ids, string $contentType = self::contentTypes['retrieveXrefMappingsUsingGET'][0])
     {
@@ -2999,9 +2999,9 @@ class EmailCampaignsApi
      * @param  string $v2_email_campaign_ids Comma separated list of V2 API &#x60;campaignId&#x60; values. You can enter up to 50 V2 &#x60;campaignId&#x60; values in each request. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['retrieveXrefMappingsUsingGET'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\CrossReferenceResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of 'ConstantContact\Client\Model\CrossReferenceResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function retrieveXrefMappingsUsingGETWithHttpInfo($v2_email_campaign_ids, string $contentType = self::contentTypes['retrieveXrefMappingsUsingGET'][0])
     {
@@ -3044,11 +3044,11 @@ class EmailCampaignsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\CrossReferenceResponse' === '\SplFileObject') {
+                    if ('\ConstantContact\Client\Model\CrossReferenceResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\CrossReferenceResponse' !== 'string') {
+                        if ('\ConstantContact\Client\Model\CrossReferenceResponse' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -3066,13 +3066,13 @@ class EmailCampaignsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\CrossReferenceResponse', []),
+                        ObjectSerializer::deserialize($content, '\ConstantContact\Client\Model\CrossReferenceResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\CrossReferenceResponse';
+            $returnType = '\ConstantContact\Client\Model\CrossReferenceResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -3105,7 +3105,7 @@ class EmailCampaignsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\CrossReferenceResponse',
+                        '\ConstantContact\Client\Model\CrossReferenceResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3149,7 +3149,7 @@ class EmailCampaignsApi
      */
     public function retrieveXrefMappingsUsingGETAsyncWithHttpInfo($v2_email_campaign_ids, string $contentType = self::contentTypes['retrieveXrefMappingsUsingGET'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\CrossReferenceResponse';
+        $returnType = '\ConstantContact\Client\Model\CrossReferenceResponse';
         $request = $this->retrieveXrefMappingsUsingGETRequest($v2_email_campaign_ids, $contentType);
 
         return $this->client
@@ -3300,12 +3300,12 @@ class EmailCampaignsApi
      * PUT (Update) An Email Campaign Activity
      *
      * @param  string $campaign_activity_id The unique ID for the email campaign activity you are updating. (required)
-     * @param  \OpenAPI\Client\Model\EmailCampaignActivity $body A request body payload that contains the complete email campaign activity with your changes. (required)
+     * @param  'ConstantContact\Client\Model\EmailCampaignActivity $body A request body payload that contains the complete email campaign activity with your changes. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateEmailCampaignActivityUsingPUT'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\EmailCampaignActivity
+     * @return 'ConstantContact\Client\Model\EmailCampaignActivity
      */
     public function updateEmailCampaignActivityUsingPUT($campaign_activity_id, $body, string $contentType = self::contentTypes['updateEmailCampaignActivityUsingPUT'][0])
     {
@@ -3319,12 +3319,12 @@ class EmailCampaignsApi
      * PUT (Update) An Email Campaign Activity
      *
      * @param  string $campaign_activity_id The unique ID for the email campaign activity you are updating. (required)
-     * @param  \OpenAPI\Client\Model\EmailCampaignActivity $body A request body payload that contains the complete email campaign activity with your changes. (required)
+     * @param  'ConstantContact\Client\Model\EmailCampaignActivity $body A request body payload that contains the complete email campaign activity with your changes. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateEmailCampaignActivityUsingPUT'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\EmailCampaignActivity, HTTP status code, HTTP response headers (array of strings)
+     * @return array of 'ConstantContact\Client\Model\EmailCampaignActivity, HTTP status code, HTTP response headers (array of strings)
      */
     public function updateEmailCampaignActivityUsingPUTWithHttpInfo($campaign_activity_id, $body, string $contentType = self::contentTypes['updateEmailCampaignActivityUsingPUT'][0])
     {
@@ -3367,11 +3367,11 @@ class EmailCampaignsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\EmailCampaignActivity' === '\SplFileObject') {
+                    if ('\ConstantContact\Client\Model\EmailCampaignActivity' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\EmailCampaignActivity' !== 'string') {
+                        if ('\ConstantContact\Client\Model\EmailCampaignActivity' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -3389,13 +3389,13 @@ class EmailCampaignsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\EmailCampaignActivity', []),
+                        ObjectSerializer::deserialize($content, '\ConstantContact\Client\Model\EmailCampaignActivity', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\EmailCampaignActivity';
+            $returnType = '\ConstantContact\Client\Model\EmailCampaignActivity';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -3428,7 +3428,7 @@ class EmailCampaignsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\EmailCampaignActivity',
+                        '\ConstantContact\Client\Model\EmailCampaignActivity',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3444,7 +3444,7 @@ class EmailCampaignsApi
      * PUT (Update) An Email Campaign Activity
      *
      * @param  string $campaign_activity_id The unique ID for the email campaign activity you are updating. (required)
-     * @param  \OpenAPI\Client\Model\EmailCampaignActivity $body A request body payload that contains the complete email campaign activity with your changes. (required)
+     * @param  'ConstantContact\Client\Model\EmailCampaignActivity $body A request body payload that contains the complete email campaign activity with your changes. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateEmailCampaignActivityUsingPUT'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3466,7 +3466,7 @@ class EmailCampaignsApi
      * PUT (Update) An Email Campaign Activity
      *
      * @param  string $campaign_activity_id The unique ID for the email campaign activity you are updating. (required)
-     * @param  \OpenAPI\Client\Model\EmailCampaignActivity $body A request body payload that contains the complete email campaign activity with your changes. (required)
+     * @param  'ConstantContact\Client\Model\EmailCampaignActivity $body A request body payload that contains the complete email campaign activity with your changes. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateEmailCampaignActivityUsingPUT'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3474,7 +3474,7 @@ class EmailCampaignsApi
      */
     public function updateEmailCampaignActivityUsingPUTAsyncWithHttpInfo($campaign_activity_id, $body, string $contentType = self::contentTypes['updateEmailCampaignActivityUsingPUT'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\EmailCampaignActivity';
+        $returnType = '\ConstantContact\Client\Model\EmailCampaignActivity';
         $request = $this->updateEmailCampaignActivityUsingPUTRequest($campaign_activity_id, $body, $contentType);
 
         return $this->client
@@ -3517,7 +3517,7 @@ class EmailCampaignsApi
      * Create request for operation 'updateEmailCampaignActivityUsingPUT'
      *
      * @param  string $campaign_activity_id The unique ID for the email campaign activity you are updating. (required)
-     * @param  \OpenAPI\Client\Model\EmailCampaignActivity $body A request body payload that contains the complete email campaign activity with your changes. (required)
+     * @param  'ConstantContact\Client\Model\EmailCampaignActivity $body A request body payload that contains the complete email campaign activity with your changes. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateEmailCampaignActivityUsingPUT'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

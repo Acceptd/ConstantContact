@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace ConstantContact\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use 'ConstantContact\Client\ObjectSerializer;
 
 /**
  * ListXrefs Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class ListXrefs implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'xrefs' => '\OpenAPI\Client\Model\ListXref[]'
+        'xrefs' => '\ConstantContact\Client\Model\ListXref[]'
     ];
 
     /**
@@ -296,7 +296,7 @@ class ListXrefs implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets xrefs
      *
-     * @return \OpenAPI\Client\Model\ListXref[]|null
+     * @return 'ConstantContact\Client\Model\ListXref[]|null
      */
     public function getXrefs()
     {
@@ -306,7 +306,7 @@ class ListXrefs implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets xrefs
      *
-     * @param \OpenAPI\Client\Model\ListXref[]|null $xrefs An array of cross-referenced V3 API <code>list_id</code> and V2 API <code>sequence_id</code> properties. Response is sorted ascending by <code>sequence_id</code>.
+     * @param 'ConstantContact\Client\Model\ListXref[]|null $xrefs An array of cross-referenced V3 API <code>list_id</code> and V2 API <code>sequence_id</code> properties. Response is sorted ascending by <code>sequence_id</code>.
      *
      * @return self
      */

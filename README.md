@@ -63,7 +63,7 @@ $apiInstance = new OpenAPI\Client\Api\AccountServicesApi(
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \OpenAPI\Client\Model\AccountEmailInput(); // \OpenAPI\Client\Model\AccountEmailInput | A JSON request payload containing the new email address you want to add to the Constant Contact account.
+$body = new 'ConstantContact\Client\Model\AccountEmailInput(); // 'ConstantContact\Client\Model\AccountEmailInput | A JSON request payload containing the new email address you want to add to the Constant Contact account.
 
 try {
     $result = $apiInstance->addAccountEmailAddress($body);

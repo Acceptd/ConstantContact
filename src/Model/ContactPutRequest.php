@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace ConstantContact\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use 'ConstantContact\Client\ObjectSerializer;
 
 /**
  * ContactPutRequest Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class ContactPutRequest implements ModelInterface, ArrayAccess, \JsonSerializabl
       * @var string[]
       */
     protected static $openAPITypes = [
-        'email_address' => '\OpenAPI\Client\Model\EmailAddressPut',
+        'email_address' => '\ConstantContact\Client\Model\EmailAddressPut',
         'first_name' => 'string',
         'last_name' => 'string',
         'job_title' => 'string',
@@ -66,12 +66,12 @@ class ContactPutRequest implements ModelInterface, ArrayAccess, \JsonSerializabl
         'birthday_day' => 'int',
         'anniversary' => 'string',
         'update_source' => 'string',
-        'custom_fields' => '\OpenAPI\Client\Model\ContactCustomField[]',
-        'phone_numbers' => '\OpenAPI\Client\Model\PhoneNumberPut[]',
-        'street_addresses' => '\OpenAPI\Client\Model\StreetAddressPut[]',
+        'custom_fields' => '\ConstantContact\Client\Model\ContactCustomField[]',
+        'phone_numbers' => '\ConstantContact\Client\Model\PhoneNumberPut[]',
+        'street_addresses' => '\ConstantContact\Client\Model\StreetAddressPut[]',
         'list_memberships' => 'string[]',
         'taggings' => 'string[]',
-        'notes' => '\OpenAPI\Client\Model\Note[]'
+        'notes' => '\ConstantContact\Client\Model\Note[]'
     ];
 
     /**
@@ -437,7 +437,7 @@ class ContactPutRequest implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Gets email_address
      *
-     * @return \OpenAPI\Client\Model\EmailAddressPut|null
+     * @return 'ConstantContact\Client\Model\EmailAddressPut|null
      */
     public function getEmailAddress()
     {
@@ -447,7 +447,7 @@ class ContactPutRequest implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Sets email_address
      *
-     * @param \OpenAPI\Client\Model\EmailAddressPut|null $email_address email_address
+     * @param 'ConstantContact\Client\Model\EmailAddressPut|null $email_address email_address
      *
      * @return self
      */
@@ -700,7 +700,7 @@ class ContactPutRequest implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Gets custom_fields
      *
-     * @return \OpenAPI\Client\Model\ContactCustomField[]|null
+     * @return 'ConstantContact\Client\Model\ContactCustomField[]|null
      */
     public function getCustomFields()
     {
@@ -710,7 +710,7 @@ class ContactPutRequest implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Sets custom_fields
      *
-     * @param \OpenAPI\Client\Model\ContactCustomField[]|null $custom_fields Array of up to 25 <code>custom_field</code> subresources.
+     * @param 'ConstantContact\Client\Model\ContactCustomField[]|null $custom_fields Array of up to 25 <code>custom_field</code> subresources.
      *
      * @return self
      */
@@ -731,7 +731,7 @@ class ContactPutRequest implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Gets phone_numbers
      *
-     * @return \OpenAPI\Client\Model\PhoneNumberPut[]|null
+     * @return 'ConstantContact\Client\Model\PhoneNumberPut[]|null
      */
     public function getPhoneNumbers()
     {
@@ -741,7 +741,7 @@ class ContactPutRequest implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Sets phone_numbers
      *
-     * @param \OpenAPI\Client\Model\PhoneNumberPut[]|null $phone_numbers Array of up to 3 <code>phone_numbers</code> subresources.
+     * @param 'ConstantContact\Client\Model\PhoneNumberPut[]|null $phone_numbers Array of up to 3 <code>phone_numbers</code> subresources.
      *
      * @return self
      */
@@ -762,7 +762,7 @@ class ContactPutRequest implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Gets street_addresses
      *
-     * @return \OpenAPI\Client\Model\StreetAddressPut[]|null
+     * @return 'ConstantContact\Client\Model\StreetAddressPut[]|null
      */
     public function getStreetAddresses()
     {
@@ -772,7 +772,7 @@ class ContactPutRequest implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Sets street_addresses
      *
-     * @param \OpenAPI\Client\Model\StreetAddressPut[]|null $street_addresses Array of up to 3 <code>street_addresses</code> subresources.
+     * @param 'ConstantContact\Client\Model\StreetAddressPut[]|null $street_addresses Array of up to 3 <code>street_addresses</code> subresources.
      *
      * @return self
      */
@@ -855,7 +855,7 @@ class ContactPutRequest implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Gets notes
      *
-     * @return \OpenAPI\Client\Model\Note[]|null
+     * @return 'ConstantContact\Client\Model\Note[]|null
      */
     public function getNotes()
     {
@@ -865,7 +865,7 @@ class ContactPutRequest implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Sets notes
      *
-     * @param \OpenAPI\Client\Model\Note[]|null $notes An array of notes about the contact listed by most recent note first.
+     * @param 'ConstantContact\Client\Model\Note[]|null $notes An array of notes about the contact listed by most recent note first.
      *
      * @return self
      */

@@ -16,7 +16,7 @@ All URIs are relative to https://api.cc.email/v3, except if the operation define
 ## `addAccountEmailAddress()`
 
 ```php
-addAccountEmailAddress($body): \OpenAPI\Client\Model\AccountEmailCreateResponse
+addAccountEmailAddress($body): 'ConstantContact\Client\Model\AccountEmailCreateResponse
 ```
 
 POST Add an Account Email Address
@@ -48,7 +48,7 @@ $apiInstance = new OpenAPI\Client\Api\AccountServicesApi(
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \OpenAPI\Client\Model\AccountEmailInput(); // \OpenAPI\Client\Model\AccountEmailInput | A JSON request payload containing the new email address you want to add to the Constant Contact account.
+$body = new 'ConstantContact\Client\Model\AccountEmailInput(); // 'ConstantContact\Client\Model\AccountEmailInput | A JSON request payload containing the new email address you want to add to the Constant Contact account.
 
 try {
     $result = $apiInstance->addAccountEmailAddress($body);
@@ -84,7 +84,7 @@ try {
 ## `getAccountById()`
 
 ```php
-getAccountById($extra_fields): \OpenAPI\Client\Model\Customer
+getAccountById($extra_fields): 'ConstantContact\Client\Model\Customer
 ```
 
 GET a Summary of Account Details
@@ -152,7 +152,7 @@ try {
 ## `getPhysicalAddress()`
 
 ```php
-getPhysicalAddress(): \OpenAPI\Client\Model\AccountPhysicalAddress
+getPhysicalAddress(): 'ConstantContact\Client\Model\AccountPhysicalAddress
 ```
 
 GET the Physical Address for the Account
@@ -217,7 +217,7 @@ This endpoint does not need any parameter.
 ## `getUserPrivileges()`
 
 ```php
-getUserPrivileges(): \OpenAPI\Client\Model\UserPrivilegesResourceInner[]
+getUserPrivileges(): 'ConstantContact\Client\Model\UserPrivilegesResourceInner[]
 ```
 
 GET User Privileges
@@ -282,7 +282,7 @@ This endpoint does not need any parameter.
 ## `putCustomerById()`
 
 ```php
-putCustomerById($body): \OpenAPI\Client\Model\CustomerPut
+putCustomerById($body): 'ConstantContact\Client\Model\CustomerPut
 ```
 
 PUT (update) Account Details
@@ -314,7 +314,7 @@ $apiInstance = new OpenAPI\Client\Api\AccountServicesApi(
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \OpenAPI\Client\Model\CustomerPut(); // \OpenAPI\Client\Model\CustomerPut | In the request body, specify changes to account details by including and modifying all or select `CustomerPut` properties. Changes to read-only fields (`encoded_account_id`) are ignored.
+$body = new 'ConstantContact\Client\Model\CustomerPut(); // 'ConstantContact\Client\Model\CustomerPut | In the request body, specify changes to account details by including and modifying all or select `CustomerPut` properties. Changes to read-only fields (`encoded_account_id`) are ignored.
 
 try {
     $result = $apiInstance->putCustomerById($body);
@@ -350,7 +350,7 @@ try {
 ## `putPhysicalAddress()`
 
 ```php
-putPhysicalAddress($body): \OpenAPI\Client\Model\AccountPhysicalAddress
+putPhysicalAddress($body): 'ConstantContact\Client\Model\AccountPhysicalAddress
 ```
 
 PUT (update) the Physical Address for an Account
@@ -382,7 +382,7 @@ $apiInstance = new OpenAPI\Client\Api\AccountServicesApi(
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \OpenAPI\Client\Model\AccountPhysicalAddress(); // \OpenAPI\Client\Model\AccountPhysicalAddress | Include all `AccountPhysicalAddress` properties required for the specified `country_code` and then update only those properties that you want to change. Excluding a non-read only field from the request body removes it from the physical address.
+$body = new 'ConstantContact\Client\Model\AccountPhysicalAddress(); // 'ConstantContact\Client\Model\AccountPhysicalAddress | Include all `AccountPhysicalAddress` properties required for the specified `country_code` and then update only those properties that you want to change. Excluding a non-read only field from the request body removes it from the physical address.
 
 try {
     $result = $apiInstance->putPhysicalAddress($body);
@@ -418,7 +418,7 @@ try {
 ## `retrieveEmailAddresses()`
 
 ```php
-retrieveEmailAddresses($confirm_status, $role_code, $email_address): \OpenAPI\Client\Model\AccountEmailsInner[]
+retrieveEmailAddresses($confirm_status, $role_code, $email_address): 'ConstantContact\Client\Model\AccountEmailsInner[]
 ```
 
 GET a Collection of Account Email Addresses

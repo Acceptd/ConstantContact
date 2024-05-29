@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace ConstantContact\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use 'ConstantContact\Client\ObjectSerializer;
 
 /**
  * ReportingsmsLinks Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class ReportingsmsLinks implements ModelInterface, ArrayAccess, \JsonSerializabl
       * @var string[]
       */
     protected static $openAPITypes = [
-        'next' => '\OpenAPI\Client\Model\ReportingsmsNext'
+        'next' => '\ConstantContact\Client\Model\ReportingsmsNext'
     ];
 
     /**
@@ -295,7 +295,7 @@ class ReportingsmsLinks implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Gets next
      *
-     * @return \OpenAPI\Client\Model\ReportingsmsNext
+     * @return 'ConstantContact\Client\Model\ReportingsmsNext
      */
     public function getNext()
     {
@@ -305,7 +305,7 @@ class ReportingsmsLinks implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Sets next
      *
-     * @param \OpenAPI\Client\Model\ReportingsmsNext $next next
+     * @param 'ConstantContact\Client\Model\ReportingsmsNext $next next
      *
      * @return self
      */

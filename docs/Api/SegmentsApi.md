@@ -15,7 +15,7 @@ All URIs are relative to https://api.cc.email/v3, except if the operation define
 ## `createSegment()`
 
 ```php
-createSegment($body): \OpenAPI\Client\Model\SegmentDetail
+createSegment($body): 'ConstantContact\Client\Model\SegmentDetail
 ```
 
 POST (create) a Segment
@@ -47,7 +47,7 @@ $apiInstance = new OpenAPI\Client\Api\SegmentsApi(
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \OpenAPI\Client\Model\SegmentData(); // \OpenAPI\Client\Model\SegmentData | The segment `name` and `segment_criteria` (requires single-string escaped JSON).
+$body = new 'ConstantContact\Client\Model\SegmentData(); // 'ConstantContact\Client\Model\SegmentData | The segment `name` and `segment_criteria` (requires single-string escaped JSON).
 
 try {
     $result = $apiInstance->createSegment($body);
@@ -150,7 +150,7 @@ void (empty response body)
 ## `getAccountSegments()`
 
 ```php
-getAccountSegments($limit, $sort_by): \OpenAPI\Client\Model\SegmentsDTO
+getAccountSegments($limit, $sort_by): 'ConstantContact\Client\Model\SegmentsDTO
 ```
 
 GET all Segments
@@ -220,7 +220,7 @@ try {
 ## `getSegmentDetail()`
 
 ```php
-getSegmentDetail($segment_id): \OpenAPI\Client\Model\SegmentDetail
+getSegmentDetail($segment_id): 'ConstantContact\Client\Model\SegmentDetail
 ```
 
 GET a Segment's Details
@@ -288,7 +288,7 @@ try {
 ## `updateSegment()`
 
 ```php
-updateSegment($segment_id, $body): \OpenAPI\Client\Model\SegmentDetail
+updateSegment($segment_id, $body): 'ConstantContact\Client\Model\SegmentDetail
 ```
 
 PUT (update) a Segment
@@ -321,7 +321,7 @@ $apiInstance = new OpenAPI\Client\Api\SegmentsApi(
     $config
 );
 $segment_id = 14; // int | The system generated ID that uniquely identifies the segment that you want to modify.
-$body = new \OpenAPI\Client\Model\SegmentData(); // \OpenAPI\Client\Model\SegmentData | Include both the `name` and `segment_criteria` (single-string escaped JSON) in the body request, then make updates to either or both.
+$body = new 'ConstantContact\Client\Model\SegmentData(); // 'ConstantContact\Client\Model\SegmentData | Include both the `name` and `segment_criteria` (single-string escaped JSON) in the body request, then make updates to either or both.
 
 try {
     $result = $apiInstance->updateSegment($segment_id, $body);
@@ -358,7 +358,7 @@ try {
 ## `updateSegmentName()`
 
 ```php
-updateSegmentName($segment_id, $body): \OpenAPI\Client\Model\SegmentDetail
+updateSegmentName($segment_id, $body): 'ConstantContact\Client\Model\SegmentDetail
 ```
 
 PATCH (rename) a Segment
@@ -391,7 +391,7 @@ $apiInstance = new OpenAPI\Client\Api\SegmentsApi(
     $config
 );
 $segment_id = 14; // int | The system generated ID that uniquely identifies the segment that you want to modify.
-$body = new \OpenAPI\Client\Model\SegmentName(); // \OpenAPI\Client\Model\SegmentName | Include the existing segment `name` in the body request, then rename the segment using a unique new name.
+$body = new 'ConstantContact\Client\Model\SegmentName(); // 'ConstantContact\Client\Model\SegmentName | Include the existing segment `name` in the body request, then rename the segment using a unique new name.
 
 try {
     $result = $apiInstance->updateSegmentName($segment_id, $body);

@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
 
 namespace ConstantContact\Client\Test\Api;
 
-use \OpenAPI\Client\Configuration;
-use \OpenAPI\Client\ApiException;
-use \OpenAPI\Client\ObjectSerializer;
+use 'ConstantContact\Client\Configuration;
+use 'ConstantContact\Client\ApiException;
+use 'ConstantContact\Client\ObjectSerializer;
 use PHPUnit\Framework\TestCase;
 
 /**
  * SMSReportingApiTest Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */

@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -43,7 +43,7 @@ use ConstantContact\Client\ObjectSerializer;
  * ContactsReportingApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -138,9 +138,9 @@ class ContactsReportingApi
      * @param  string $end The ending date, in ISO 8601 format, to use to get campaigns. For example: 2019-12-01T00:00:00-0500. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getContactOpenClickRate'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ContactOpenAndClickRates
+     * @return 'ConstantContact\Client\Model\ContactOpenAndClickRates
      */
     public function getContactOpenClickRate($contact_id, $start, $end, string $contentType = self::contentTypes['getContactOpenClickRate'][0])
     {
@@ -158,9 +158,9 @@ class ContactsReportingApi
      * @param  string $end The ending date, in ISO 8601 format, to use to get campaigns. For example: 2019-12-01T00:00:00-0500. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getContactOpenClickRate'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ContactOpenAndClickRates, HTTP status code, HTTP response headers (array of strings)
+     * @return array of 'ConstantContact\Client\Model\ContactOpenAndClickRates, HTTP status code, HTTP response headers (array of strings)
      */
     public function getContactOpenClickRateWithHttpInfo($contact_id, $start, $end, string $contentType = self::contentTypes['getContactOpenClickRate'][0])
     {
@@ -203,11 +203,11 @@ class ContactsReportingApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ContactOpenAndClickRates' === '\SplFileObject') {
+                    if ('\ConstantContact\Client\Model\ContactOpenAndClickRates' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ContactOpenAndClickRates' !== 'string') {
+                        if ('\ConstantContact\Client\Model\ContactOpenAndClickRates' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -225,13 +225,13 @@ class ContactsReportingApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ContactOpenAndClickRates', []),
+                        ObjectSerializer::deserialize($content, '\ConstantContact\Client\Model\ContactOpenAndClickRates', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\ContactOpenAndClickRates';
+            $returnType = '\ConstantContact\Client\Model\ContactOpenAndClickRates';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -264,7 +264,7 @@ class ContactsReportingApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ContactOpenAndClickRates',
+                        '\ConstantContact\Client\Model\ContactOpenAndClickRates',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -312,7 +312,7 @@ class ContactsReportingApi
      */
     public function getContactOpenClickRateAsyncWithHttpInfo($contact_id, $start, $end, string $contentType = self::contentTypes['getContactOpenClickRate'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ContactOpenAndClickRates';
+        $returnType = '\ConstantContact\Client\Model\ContactOpenAndClickRates';
         $request = $this->getContactOpenClickRateRequest($contact_id, $start, $end, $contentType);
 
         return $this->client
@@ -502,9 +502,9 @@ class ContactsReportingApi
      * @param  string $limit The number of tracking activities to return in a single page. Valid values are 1 to 100. Default is 100. (optional, default to '100')
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getContactTracking'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ContactTrackingActivitiesPage
+     * @return 'ConstantContact\Client\Model\ContactTrackingActivitiesPage
      */
     public function getContactTracking($contact_id, $tracking_activities_list = null, $tracking_activity_type = null, $include_campaign_activity_names = true, $limit = '100', string $contentType = self::contentTypes['getContactTracking'][0])
     {
@@ -524,9 +524,9 @@ class ContactsReportingApi
      * @param  string $limit The number of tracking activities to return in a single page. Valid values are 1 to 100. Default is 100. (optional, default to '100')
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getContactTracking'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ContactTrackingActivitiesPage, HTTP status code, HTTP response headers (array of strings)
+     * @return array of 'ConstantContact\Client\Model\ContactTrackingActivitiesPage, HTTP status code, HTTP response headers (array of strings)
      */
     public function getContactTrackingWithHttpInfo($contact_id, $tracking_activities_list = null, $tracking_activity_type = null, $include_campaign_activity_names = true, $limit = '100', string $contentType = self::contentTypes['getContactTracking'][0])
     {
@@ -569,11 +569,11 @@ class ContactsReportingApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ContactTrackingActivitiesPage' === '\SplFileObject') {
+                    if ('\ConstantContact\Client\Model\ContactTrackingActivitiesPage' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ContactTrackingActivitiesPage' !== 'string') {
+                        if ('\ConstantContact\Client\Model\ContactTrackingActivitiesPage' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -591,13 +591,13 @@ class ContactsReportingApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ContactTrackingActivitiesPage', []),
+                        ObjectSerializer::deserialize($content, '\ConstantContact\Client\Model\ContactTrackingActivitiesPage', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\ContactTrackingActivitiesPage';
+            $returnType = '\ConstantContact\Client\Model\ContactTrackingActivitiesPage';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -630,7 +630,7 @@ class ContactsReportingApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ContactTrackingActivitiesPage',
+                        '\ConstantContact\Client\Model\ContactTrackingActivitiesPage',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -682,7 +682,7 @@ class ContactsReportingApi
      */
     public function getContactTrackingAsyncWithHttpInfo($contact_id, $tracking_activities_list = null, $tracking_activity_type = null, $include_campaign_activity_names = true, $limit = '100', string $contentType = self::contentTypes['getContactTracking'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ContactTrackingActivitiesPage';
+        $returnType = '\ConstantContact\Client\Model\ContactTrackingActivitiesPage';
         $request = $this->getContactTrackingRequest($contact_id, $tracking_activities_list, $tracking_activity_type, $include_campaign_activity_names, $limit, $contentType);
 
         return $this->client
@@ -880,9 +880,9 @@ class ContactsReportingApi
      * @param  string $end The ending date, in ISO 8601 format, to use to get campaigns. For example: 2019-12-01T00:00:00-0500. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getContactTrackingCount'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ContactCampaignActivitiesSummary
+     * @return 'ConstantContact\Client\Model\ContactCampaignActivitiesSummary
      */
     public function getContactTrackingCount($contact_id, $start, $end, string $contentType = self::contentTypes['getContactTrackingCount'][0])
     {
@@ -900,9 +900,9 @@ class ContactsReportingApi
      * @param  string $end The ending date, in ISO 8601 format, to use to get campaigns. For example: 2019-12-01T00:00:00-0500. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getContactTrackingCount'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ContactCampaignActivitiesSummary, HTTP status code, HTTP response headers (array of strings)
+     * @return array of 'ConstantContact\Client\Model\ContactCampaignActivitiesSummary, HTTP status code, HTTP response headers (array of strings)
      */
     public function getContactTrackingCountWithHttpInfo($contact_id, $start, $end, string $contentType = self::contentTypes['getContactTrackingCount'][0])
     {
@@ -945,11 +945,11 @@ class ContactsReportingApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ContactCampaignActivitiesSummary' === '\SplFileObject') {
+                    if ('\ConstantContact\Client\Model\ContactCampaignActivitiesSummary' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ContactCampaignActivitiesSummary' !== 'string') {
+                        if ('\ConstantContact\Client\Model\ContactCampaignActivitiesSummary' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -967,13 +967,13 @@ class ContactsReportingApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ContactCampaignActivitiesSummary', []),
+                        ObjectSerializer::deserialize($content, '\ConstantContact\Client\Model\ContactCampaignActivitiesSummary', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\ContactCampaignActivitiesSummary';
+            $returnType = '\ConstantContact\Client\Model\ContactCampaignActivitiesSummary';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1006,7 +1006,7 @@ class ContactsReportingApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ContactCampaignActivitiesSummary',
+                        '\ConstantContact\Client\Model\ContactCampaignActivitiesSummary',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1054,7 +1054,7 @@ class ContactsReportingApi
      */
     public function getContactTrackingCountAsyncWithHttpInfo($contact_id, $start, $end, string $contentType = self::contentTypes['getContactTrackingCount'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ContactCampaignActivitiesSummary';
+        $returnType = '\ConstantContact\Client\Model\ContactCampaignActivitiesSummary';
         $request = $this->getContactTrackingCountRequest($contact_id, $start, $end, $contentType);
 
         return $this->client

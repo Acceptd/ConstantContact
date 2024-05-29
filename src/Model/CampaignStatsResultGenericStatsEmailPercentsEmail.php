@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace ConstantContact\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use 'ConstantContact\Client\ObjectSerializer;
 
 /**
  * CampaignStatsResultGenericStatsEmailPercentsEmail Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,8 +58,8 @@ class CampaignStatsResultGenericStatsEmailPercentsEmail implements ModelInterfac
       */
     protected static $openAPITypes = [
         'campaign_id' => 'string',
-        'stats' => '\OpenAPI\Client\Model\StatsEmail',
-        'percents' => '\OpenAPI\Client\Model\PercentsEmail',
+        'stats' => '\ConstantContact\Client\Model\StatsEmail',
+        'percents' => '\ConstantContact\Client\Model\PercentsEmail',
         'last_refresh_time' => '\DateTime'
     ];
 
@@ -340,7 +340,7 @@ class CampaignStatsResultGenericStatsEmailPercentsEmail implements ModelInterfac
     /**
      * Gets stats
      *
-     * @return \OpenAPI\Client\Model\StatsEmail|null
+     * @return 'ConstantContact\Client\Model\StatsEmail|null
      */
     public function getStats()
     {
@@ -350,7 +350,7 @@ class CampaignStatsResultGenericStatsEmailPercentsEmail implements ModelInterfac
     /**
      * Sets stats
      *
-     * @param \OpenAPI\Client\Model\StatsEmail|null $stats stats
+     * @param 'ConstantContact\Client\Model\StatsEmail|null $stats stats
      *
      * @return self
      */
@@ -367,7 +367,7 @@ class CampaignStatsResultGenericStatsEmailPercentsEmail implements ModelInterfac
     /**
      * Gets percents
      *
-     * @return \OpenAPI\Client\Model\PercentsEmail|null
+     * @return 'ConstantContact\Client\Model\PercentsEmail|null
      */
     public function getPercents()
     {
@@ -377,7 +377,7 @@ class CampaignStatsResultGenericStatsEmailPercentsEmail implements ModelInterfac
     /**
      * Sets percents
      *
-     * @param \OpenAPI\Client\Model\PercentsEmail|null $percents percents
+     * @param 'ConstantContact\Client\Model\PercentsEmail|null $percents percents
      *
      * @return self
      */

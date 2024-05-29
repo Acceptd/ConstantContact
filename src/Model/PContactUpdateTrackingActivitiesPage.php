@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace ConstantContact\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use 'ConstantContact\Client\ObjectSerializer;
 
 /**
  * PContactUpdateTrackingActivitiesPage Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,8 +57,8 @@ class PContactUpdateTrackingActivitiesPage implements ModelInterface, ArrayAcces
       * @var string[]
       */
     protected static $openAPITypes = [
-        'tracking_activities' => '\OpenAPI\Client\Model\PContactUpdateTrackingActivity[]',
-        '_links' => '\OpenAPI\Client\Model\LpreportingLinks'
+        'tracking_activities' => '\ConstantContact\Client\Model\PContactUpdateTrackingActivity[]',
+        '_links' => '\ConstantContact\Client\Model\LpreportingLinks'
     ];
 
     /**
@@ -305,7 +305,7 @@ class PContactUpdateTrackingActivitiesPage implements ModelInterface, ArrayAcces
     /**
      * Gets tracking_activities
      *
-     * @return \OpenAPI\Client\Model\PContactUpdateTrackingActivity[]
+     * @return 'ConstantContact\Client\Model\PContactUpdateTrackingActivity[]
      */
     public function getTrackingActivities()
     {
@@ -315,7 +315,7 @@ class PContactUpdateTrackingActivitiesPage implements ModelInterface, ArrayAcces
     /**
      * Sets tracking_activities
      *
-     * @param \OpenAPI\Client\Model\PContactUpdateTrackingActivity[] $tracking_activities The list of landing page contact update tracking activities.
+     * @param 'ConstantContact\Client\Model\PContactUpdateTrackingActivity[] $tracking_activities The list of landing page contact update tracking activities.
      *
      * @return self
      */
@@ -332,7 +332,7 @@ class PContactUpdateTrackingActivitiesPage implements ModelInterface, ArrayAcces
     /**
      * Gets _links
      *
-     * @return \OpenAPI\Client\Model\LpreportingLinks
+     * @return 'ConstantContact\Client\Model\LpreportingLinks
      */
     public function getLinks()
     {
@@ -342,7 +342,7 @@ class PContactUpdateTrackingActivitiesPage implements ModelInterface, ArrayAcces
     /**
      * Sets _links
      *
-     * @param \OpenAPI\Client\Model\LpreportingLinks $_links _links
+     * @param 'ConstantContact\Client\Model\LpreportingLinks $_links _links
      *
      * @return self
      */

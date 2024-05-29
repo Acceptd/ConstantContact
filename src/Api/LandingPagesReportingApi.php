@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -43,7 +43,7 @@ use ConstantContact\Client\ObjectSerializer;
  * LandingPagesReportingApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -147,9 +147,9 @@ class LandingPagesReportingApi
      * @param  string $contacts_filter Use to filter the results to only include contacts that contain a certain value. This parameter does full and partial matches and applies to the contact first name, last name, and email fields. For example: Josie or Jo. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getContactAdds'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\PContactAddTrackingActivitiesPage
+     * @return 'ConstantContact\Client\Model\PContactAddTrackingActivitiesPage
      */
     public function getContactAdds($campaign_activity_id, $limit = '50', $contacts_filter = null, string $contentType = self::contentTypes['getContactAdds'][0])
     {
@@ -167,9 +167,9 @@ class LandingPagesReportingApi
      * @param  string $contacts_filter Use to filter the results to only include contacts that contain a certain value. This parameter does full and partial matches and applies to the contact first name, last name, and email fields. For example: Josie or Jo. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getContactAdds'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\PContactAddTrackingActivitiesPage, HTTP status code, HTTP response headers (array of strings)
+     * @return array of 'ConstantContact\Client\Model\PContactAddTrackingActivitiesPage, HTTP status code, HTTP response headers (array of strings)
      */
     public function getContactAddsWithHttpInfo($campaign_activity_id, $limit = '50', $contacts_filter = null, string $contentType = self::contentTypes['getContactAdds'][0])
     {
@@ -212,11 +212,11 @@ class LandingPagesReportingApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\PContactAddTrackingActivitiesPage' === '\SplFileObject') {
+                    if ('\ConstantContact\Client\Model\PContactAddTrackingActivitiesPage' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\PContactAddTrackingActivitiesPage' !== 'string') {
+                        if ('\ConstantContact\Client\Model\PContactAddTrackingActivitiesPage' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -234,13 +234,13 @@ class LandingPagesReportingApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\PContactAddTrackingActivitiesPage', []),
+                        ObjectSerializer::deserialize($content, '\ConstantContact\Client\Model\PContactAddTrackingActivitiesPage', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\PContactAddTrackingActivitiesPage';
+            $returnType = '\ConstantContact\Client\Model\PContactAddTrackingActivitiesPage';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -273,7 +273,7 @@ class LandingPagesReportingApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\PContactAddTrackingActivitiesPage',
+                        '\ConstantContact\Client\Model\PContactAddTrackingActivitiesPage',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -321,7 +321,7 @@ class LandingPagesReportingApi
      */
     public function getContactAddsAsyncWithHttpInfo($campaign_activity_id, $limit = '50', $contacts_filter = null, string $contentType = self::contentTypes['getContactAdds'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\PContactAddTrackingActivitiesPage';
+        $returnType = '\ConstantContact\Client\Model\PContactAddTrackingActivitiesPage';
         $request = $this->getContactAddsRequest($campaign_activity_id, $limit, $contacts_filter, $contentType);
 
         return $this->client
@@ -497,9 +497,9 @@ class LandingPagesReportingApi
      * @param  string $contacts_filter Use to filter the results to only include contacts that contain a certain value. This parameter does full and partial matches and applies to the contact first name, last name, and email fields. For example: Josie or Jo. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getContactOpens'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\PContactOpensTrackingActivitiesPage
+     * @return 'ConstantContact\Client\Model\PContactOpensTrackingActivitiesPage
      */
     public function getContactOpens($campaign_activity_id, $limit = '50', $contacts_filter = null, string $contentType = self::contentTypes['getContactOpens'][0])
     {
@@ -517,9 +517,9 @@ class LandingPagesReportingApi
      * @param  string $contacts_filter Use to filter the results to only include contacts that contain a certain value. This parameter does full and partial matches and applies to the contact first name, last name, and email fields. For example: Josie or Jo. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getContactOpens'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\PContactOpensTrackingActivitiesPage, HTTP status code, HTTP response headers (array of strings)
+     * @return array of 'ConstantContact\Client\Model\PContactOpensTrackingActivitiesPage, HTTP status code, HTTP response headers (array of strings)
      */
     public function getContactOpensWithHttpInfo($campaign_activity_id, $limit = '50', $contacts_filter = null, string $contentType = self::contentTypes['getContactOpens'][0])
     {
@@ -562,11 +562,11 @@ class LandingPagesReportingApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\PContactOpensTrackingActivitiesPage' === '\SplFileObject') {
+                    if ('\ConstantContact\Client\Model\PContactOpensTrackingActivitiesPage' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\PContactOpensTrackingActivitiesPage' !== 'string') {
+                        if ('\ConstantContact\Client\Model\PContactOpensTrackingActivitiesPage' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -584,13 +584,13 @@ class LandingPagesReportingApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\PContactOpensTrackingActivitiesPage', []),
+                        ObjectSerializer::deserialize($content, '\ConstantContact\Client\Model\PContactOpensTrackingActivitiesPage', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\PContactOpensTrackingActivitiesPage';
+            $returnType = '\ConstantContact\Client\Model\PContactOpensTrackingActivitiesPage';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -623,7 +623,7 @@ class LandingPagesReportingApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\PContactOpensTrackingActivitiesPage',
+                        '\ConstantContact\Client\Model\PContactOpensTrackingActivitiesPage',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -671,7 +671,7 @@ class LandingPagesReportingApi
      */
     public function getContactOpensAsyncWithHttpInfo($campaign_activity_id, $limit = '50', $contacts_filter = null, string $contentType = self::contentTypes['getContactOpens'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\PContactOpensTrackingActivitiesPage';
+        $returnType = '\ConstantContact\Client\Model\PContactOpensTrackingActivitiesPage';
         $request = $this->getContactOpensRequest($campaign_activity_id, $limit, $contacts_filter, $contentType);
 
         return $this->client
@@ -847,9 +847,9 @@ class LandingPagesReportingApi
      * @param  string $contacts_filter Use to filter the results to return only contacts that match a contacts full or partial first or last name, or email. For example: Josie or Jo. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getUniqueContactClicks'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\PContactClickTrackingActivitiesPage
+     * @return 'ConstantContact\Client\Model\PContactClickTrackingActivitiesPage
      */
     public function getUniqueContactClicks($campaign_activity_id, $limit = '50', $contacts_filter = null, string $contentType = self::contentTypes['getUniqueContactClicks'][0])
     {
@@ -867,9 +867,9 @@ class LandingPagesReportingApi
      * @param  string $contacts_filter Use to filter the results to return only contacts that match a contacts full or partial first or last name, or email. For example: Josie or Jo. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getUniqueContactClicks'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\PContactClickTrackingActivitiesPage, HTTP status code, HTTP response headers (array of strings)
+     * @return array of 'ConstantContact\Client\Model\PContactClickTrackingActivitiesPage, HTTP status code, HTTP response headers (array of strings)
      */
     public function getUniqueContactClicksWithHttpInfo($campaign_activity_id, $limit = '50', $contacts_filter = null, string $contentType = self::contentTypes['getUniqueContactClicks'][0])
     {
@@ -912,11 +912,11 @@ class LandingPagesReportingApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\PContactClickTrackingActivitiesPage' === '\SplFileObject') {
+                    if ('\ConstantContact\Client\Model\PContactClickTrackingActivitiesPage' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\PContactClickTrackingActivitiesPage' !== 'string') {
+                        if ('\ConstantContact\Client\Model\PContactClickTrackingActivitiesPage' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -934,13 +934,13 @@ class LandingPagesReportingApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\PContactClickTrackingActivitiesPage', []),
+                        ObjectSerializer::deserialize($content, '\ConstantContact\Client\Model\PContactClickTrackingActivitiesPage', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\PContactClickTrackingActivitiesPage';
+            $returnType = '\ConstantContact\Client\Model\PContactClickTrackingActivitiesPage';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -973,7 +973,7 @@ class LandingPagesReportingApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\PContactClickTrackingActivitiesPage',
+                        '\ConstantContact\Client\Model\PContactClickTrackingActivitiesPage',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1021,7 +1021,7 @@ class LandingPagesReportingApi
      */
     public function getUniqueContactClicksAsyncWithHttpInfo($campaign_activity_id, $limit = '50', $contacts_filter = null, string $contentType = self::contentTypes['getUniqueContactClicks'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\PContactClickTrackingActivitiesPage';
+        $returnType = '\ConstantContact\Client\Model\PContactClickTrackingActivitiesPage';
         $request = $this->getUniqueContactClicksRequest($campaign_activity_id, $limit, $contacts_filter, $contentType);
 
         return $this->client
@@ -1197,9 +1197,9 @@ class LandingPagesReportingApi
      * @param  string $contacts_filter Use to filter the results to only include contacts that contain a certain value. This parameter does full and partial matches and applies to the contact first name, last name, and email fields. For example: Josie or Jo. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getUniqueContactOpens'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\PContactOpensTrackingActivitiesPage
+     * @return 'ConstantContact\Client\Model\PContactOpensTrackingActivitiesPage
      */
     public function getUniqueContactOpens($campaign_activity_id, $limit = '50', $contacts_filter = null, string $contentType = self::contentTypes['getUniqueContactOpens'][0])
     {
@@ -1217,9 +1217,9 @@ class LandingPagesReportingApi
      * @param  string $contacts_filter Use to filter the results to only include contacts that contain a certain value. This parameter does full and partial matches and applies to the contact first name, last name, and email fields. For example: Josie or Jo. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getUniqueContactOpens'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\PContactOpensTrackingActivitiesPage, HTTP status code, HTTP response headers (array of strings)
+     * @return array of 'ConstantContact\Client\Model\PContactOpensTrackingActivitiesPage, HTTP status code, HTTP response headers (array of strings)
      */
     public function getUniqueContactOpensWithHttpInfo($campaign_activity_id, $limit = '50', $contacts_filter = null, string $contentType = self::contentTypes['getUniqueContactOpens'][0])
     {
@@ -1262,11 +1262,11 @@ class LandingPagesReportingApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\PContactOpensTrackingActivitiesPage' === '\SplFileObject') {
+                    if ('\ConstantContact\Client\Model\PContactOpensTrackingActivitiesPage' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\PContactOpensTrackingActivitiesPage' !== 'string') {
+                        if ('\ConstantContact\Client\Model\PContactOpensTrackingActivitiesPage' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1284,13 +1284,13 @@ class LandingPagesReportingApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\PContactOpensTrackingActivitiesPage', []),
+                        ObjectSerializer::deserialize($content, '\ConstantContact\Client\Model\PContactOpensTrackingActivitiesPage', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\PContactOpensTrackingActivitiesPage';
+            $returnType = '\ConstantContact\Client\Model\PContactOpensTrackingActivitiesPage';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1323,7 +1323,7 @@ class LandingPagesReportingApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\PContactOpensTrackingActivitiesPage',
+                        '\ConstantContact\Client\Model\PContactOpensTrackingActivitiesPage',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1371,7 +1371,7 @@ class LandingPagesReportingApi
      */
     public function getUniqueContactOpensAsyncWithHttpInfo($campaign_activity_id, $limit = '50', $contacts_filter = null, string $contentType = self::contentTypes['getUniqueContactOpens'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\PContactOpensTrackingActivitiesPage';
+        $returnType = '\ConstantContact\Client\Model\PContactOpensTrackingActivitiesPage';
         $request = $this->getUniqueContactOpensRequest($campaign_activity_id, $limit, $contacts_filter, $contentType);
 
         return $this->client
@@ -1547,9 +1547,9 @@ class LandingPagesReportingApi
      * @param  string $contacts_filter Use to filter the results to return only contacts that match a contacts full or partial first or last name, or email. For example: Josie or Jo. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getUniqueContactSMSOptIns'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\PContactSMSOptInTrackingActivitiesPage
+     * @return 'ConstantContact\Client\Model\PContactSMSOptInTrackingActivitiesPage
      */
     public function getUniqueContactSMSOptIns($campaign_activity_id, $limit = '50', $contacts_filter = null, string $contentType = self::contentTypes['getUniqueContactSMSOptIns'][0])
     {
@@ -1567,9 +1567,9 @@ class LandingPagesReportingApi
      * @param  string $contacts_filter Use to filter the results to return only contacts that match a contacts full or partial first or last name, or email. For example: Josie or Jo. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getUniqueContactSMSOptIns'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\PContactSMSOptInTrackingActivitiesPage, HTTP status code, HTTP response headers (array of strings)
+     * @return array of 'ConstantContact\Client\Model\PContactSMSOptInTrackingActivitiesPage, HTTP status code, HTTP response headers (array of strings)
      */
     public function getUniqueContactSMSOptInsWithHttpInfo($campaign_activity_id, $limit = '50', $contacts_filter = null, string $contentType = self::contentTypes['getUniqueContactSMSOptIns'][0])
     {
@@ -1612,11 +1612,11 @@ class LandingPagesReportingApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\PContactSMSOptInTrackingActivitiesPage' === '\SplFileObject') {
+                    if ('\ConstantContact\Client\Model\PContactSMSOptInTrackingActivitiesPage' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\PContactSMSOptInTrackingActivitiesPage' !== 'string') {
+                        if ('\ConstantContact\Client\Model\PContactSMSOptInTrackingActivitiesPage' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1634,13 +1634,13 @@ class LandingPagesReportingApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\PContactSMSOptInTrackingActivitiesPage', []),
+                        ObjectSerializer::deserialize($content, '\ConstantContact\Client\Model\PContactSMSOptInTrackingActivitiesPage', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\PContactSMSOptInTrackingActivitiesPage';
+            $returnType = '\ConstantContact\Client\Model\PContactSMSOptInTrackingActivitiesPage';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1673,7 +1673,7 @@ class LandingPagesReportingApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\PContactSMSOptInTrackingActivitiesPage',
+                        '\ConstantContact\Client\Model\PContactSMSOptInTrackingActivitiesPage',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1721,7 +1721,7 @@ class LandingPagesReportingApi
      */
     public function getUniqueContactSMSOptInsAsyncWithHttpInfo($campaign_activity_id, $limit = '50', $contacts_filter = null, string $contentType = self::contentTypes['getUniqueContactSMSOptIns'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\PContactSMSOptInTrackingActivitiesPage';
+        $returnType = '\ConstantContact\Client\Model\PContactSMSOptInTrackingActivitiesPage';
         $request = $this->getUniqueContactSMSOptInsRequest($campaign_activity_id, $limit, $contacts_filter, $contentType);
 
         return $this->client
@@ -1897,9 +1897,9 @@ class LandingPagesReportingApi
      * @param  string $contacts_filter Use to filter the results to only include contacts that contain a certain value. This parameter does full and partial matches and applies to the contact first name, last name, and email fields. For example: Josie or Jo. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getUniqueContactUpdates'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\PContactUpdateTrackingActivitiesPage
+     * @return 'ConstantContact\Client\Model\PContactUpdateTrackingActivitiesPage
      */
     public function getUniqueContactUpdates($campaign_activity_id, $limit = '50', $contacts_filter = null, string $contentType = self::contentTypes['getUniqueContactUpdates'][0])
     {
@@ -1917,9 +1917,9 @@ class LandingPagesReportingApi
      * @param  string $contacts_filter Use to filter the results to only include contacts that contain a certain value. This parameter does full and partial matches and applies to the contact first name, last name, and email fields. For example: Josie or Jo. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getUniqueContactUpdates'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\PContactUpdateTrackingActivitiesPage, HTTP status code, HTTP response headers (array of strings)
+     * @return array of 'ConstantContact\Client\Model\PContactUpdateTrackingActivitiesPage, HTTP status code, HTTP response headers (array of strings)
      */
     public function getUniqueContactUpdatesWithHttpInfo($campaign_activity_id, $limit = '50', $contacts_filter = null, string $contentType = self::contentTypes['getUniqueContactUpdates'][0])
     {
@@ -1962,11 +1962,11 @@ class LandingPagesReportingApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\PContactUpdateTrackingActivitiesPage' === '\SplFileObject') {
+                    if ('\ConstantContact\Client\Model\PContactUpdateTrackingActivitiesPage' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\PContactUpdateTrackingActivitiesPage' !== 'string') {
+                        if ('\ConstantContact\Client\Model\PContactUpdateTrackingActivitiesPage' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1984,13 +1984,13 @@ class LandingPagesReportingApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\PContactUpdateTrackingActivitiesPage', []),
+                        ObjectSerializer::deserialize($content, '\ConstantContact\Client\Model\PContactUpdateTrackingActivitiesPage', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\PContactUpdateTrackingActivitiesPage';
+            $returnType = '\ConstantContact\Client\Model\PContactUpdateTrackingActivitiesPage';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -2023,7 +2023,7 @@ class LandingPagesReportingApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\PContactUpdateTrackingActivitiesPage',
+                        '\ConstantContact\Client\Model\PContactUpdateTrackingActivitiesPage',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2071,7 +2071,7 @@ class LandingPagesReportingApi
      */
     public function getUniqueContactUpdatesAsyncWithHttpInfo($campaign_activity_id, $limit = '50', $contacts_filter = null, string $contentType = self::contentTypes['getUniqueContactUpdates'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\PContactUpdateTrackingActivitiesPage';
+        $returnType = '\ConstantContact\Client\Model\PContactUpdateTrackingActivitiesPage';
         $request = $this->getUniqueContactUpdatesRequest($campaign_activity_id, $limit, $contacts_filter, $contentType);
 
         return $this->client

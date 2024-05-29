@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace ConstantContact\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use 'ConstantContact\Client\ObjectSerializer;
 
 /**
  * EmailCampaignComplete Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class EmailCampaignComplete implements ModelInterface, ArrayAccess, \JsonSeriali
       */
     protected static $openAPITypes = [
         'name' => 'string',
-        'email_campaign_activities' => '\OpenAPI\Client\Model\EmailCampaignActivityInput[]'
+        'email_campaign_activities' => '\ConstantContact\Client\Model\EmailCampaignActivityInput[]'
     ];
 
     /**
@@ -340,7 +340,7 @@ class EmailCampaignComplete implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Gets email_campaign_activities
      *
-     * @return \OpenAPI\Client\Model\EmailCampaignActivityInput[]
+     * @return 'ConstantContact\Client\Model\EmailCampaignActivityInput[]
      */
     public function getEmailCampaignActivities()
     {
@@ -350,7 +350,7 @@ class EmailCampaignComplete implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Sets email_campaign_activities
      *
-     * @param \OpenAPI\Client\Model\EmailCampaignActivityInput[] $email_campaign_activities The content of the email campaign as an array that contains a single email campaign activity object.
+     * @param 'ConstantContact\Client\Model\EmailCampaignActivityInput[] $email_campaign_activities The content of the email campaign as an array that contains a single email campaign activity object.
      *
      * @return self
      */

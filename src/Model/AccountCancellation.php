@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,14 +29,14 @@
 namespace ConstantContact\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use 'ConstantContact\Client\ObjectSerializer;
 
 /**
  * AccountCancellation Class Doc Comment
  *
  * @category Class
  * @description Specifies the date and time a client requests to cancel their Constant Contact account and changes the account &#x60;billing_status&#x60; to &#x60;Canceled&#x60;. By default, this is the current date and time in ISO format. In the request body, you can optionally specify a future cancellation date (in ISO format) and a reason (&#x60;reason_code&#x60;) that the client wants to cancel their account.
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>

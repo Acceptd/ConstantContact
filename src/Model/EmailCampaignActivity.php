@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace ConstantContact\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use 'ConstantContact\Client\ObjectSerializer;
 
 /**
  * EmailCampaignActivity Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -72,8 +72,8 @@ class EmailCampaignActivity implements ModelInterface, ArrayAccess, \JsonSeriali
         'template_id' => 'string',
         'permalink_url' => 'string',
         'preheader' => 'string',
-        'physical_address_in_footer' => '\OpenAPI\Client\Model\EmailPhysicalAddress',
-        'document_properties' => '\OpenAPI\Client\Model\EmailCampaignActivityDocumentProperties'
+        'physical_address_in_footer' => '\ConstantContact\Client\Model\EmailPhysicalAddress',
+        'document_properties' => '\ConstantContact\Client\Model\EmailCampaignActivityDocumentProperties'
     ];
 
     /**
@@ -821,7 +821,7 @@ class EmailCampaignActivity implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Gets physical_address_in_footer
      *
-     * @return \OpenAPI\Client\Model\EmailPhysicalAddress|null
+     * @return 'ConstantContact\Client\Model\EmailPhysicalAddress|null
      */
     public function getPhysicalAddressInFooter()
     {
@@ -831,7 +831,7 @@ class EmailCampaignActivity implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Sets physical_address_in_footer
      *
-     * @param \OpenAPI\Client\Model\EmailPhysicalAddress|null $physical_address_in_footer physical_address_in_footer
+     * @param 'ConstantContact\Client\Model\EmailPhysicalAddress|null $physical_address_in_footer physical_address_in_footer
      *
      * @return self
      */
@@ -848,7 +848,7 @@ class EmailCampaignActivity implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Gets document_properties
      *
-     * @return \OpenAPI\Client\Model\EmailCampaignActivityDocumentProperties|null
+     * @return 'ConstantContact\Client\Model\EmailCampaignActivityDocumentProperties|null
      */
     public function getDocumentProperties()
     {
@@ -858,7 +858,7 @@ class EmailCampaignActivity implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Sets document_properties
      *
-     * @param \OpenAPI\Client\Model\EmailCampaignActivityDocumentProperties|null $document_properties document_properties
+     * @param 'ConstantContact\Client\Model\EmailCampaignActivityDocumentProperties|null $document_properties document_properties
      *
      * @return self
      */

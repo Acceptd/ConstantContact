@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace ConstantContact\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use 'ConstantContact\Client\ObjectSerializer;
 
 /**
  * SmsCampaignSummariesPage Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,9 +57,9 @@ class SmsCampaignSummariesPage implements ModelInterface, ArrayAccess, \JsonSeri
       * @var string[]
       */
     protected static $openAPITypes = [
-        'bulk_sms_campaign_summaries' => '\OpenAPI\Client\Model\BulkCampaignSummary[]',
-        'aggregate_percents' => '\OpenAPI\Client\Model\BulkSmsCampaignSummariesPercents',
-        '_links' => '\OpenAPI\Client\Model\ReportingsmsLinks'
+        'bulk_sms_campaign_summaries' => '\ConstantContact\Client\Model\BulkCampaignSummary[]',
+        'aggregate_percents' => '\ConstantContact\Client\Model\BulkSmsCampaignSummariesPercents',
+        '_links' => '\ConstantContact\Client\Model\ReportingsmsLinks'
     ];
 
     /**
@@ -306,7 +306,7 @@ class SmsCampaignSummariesPage implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets bulk_sms_campaign_summaries
      *
-     * @return \OpenAPI\Client\Model\BulkCampaignSummary[]|null
+     * @return 'ConstantContact\Client\Model\BulkCampaignSummary[]|null
      */
     public function getBulkSmsCampaignSummaries()
     {
@@ -316,7 +316,7 @@ class SmsCampaignSummariesPage implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets bulk_sms_campaign_summaries
      *
-     * @param \OpenAPI\Client\Model\BulkCampaignSummary[]|null $bulk_sms_campaign_summaries Provides details about each SMS campaign, including the total unique counts for each tracked campaign activity.
+     * @param 'ConstantContact\Client\Model\BulkCampaignSummary[]|null $bulk_sms_campaign_summaries Provides details about each SMS campaign, including the total unique counts for each tracked campaign activity.
      *
      * @return self
      */
@@ -333,7 +333,7 @@ class SmsCampaignSummariesPage implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets aggregate_percents
      *
-     * @return \OpenAPI\Client\Model\BulkSmsCampaignSummariesPercents|null
+     * @return 'ConstantContact\Client\Model\BulkSmsCampaignSummariesPercents|null
      */
     public function getAggregatePercents()
     {
@@ -343,7 +343,7 @@ class SmsCampaignSummariesPage implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets aggregate_percents
      *
-     * @param \OpenAPI\Client\Model\BulkSmsCampaignSummariesPercents|null $aggregate_percents aggregate_percents
+     * @param 'ConstantContact\Client\Model\BulkSmsCampaignSummariesPercents|null $aggregate_percents aggregate_percents
      *
      * @return self
      */
@@ -360,7 +360,7 @@ class SmsCampaignSummariesPage implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets _links
      *
-     * @return \OpenAPI\Client\Model\ReportingsmsLinks|null
+     * @return 'ConstantContact\Client\Model\ReportingsmsLinks|null
      */
     public function getLinks()
     {
@@ -370,7 +370,7 @@ class SmsCampaignSummariesPage implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets _links
      *
-     * @param \OpenAPI\Client\Model\ReportingsmsLinks|null $_links _links
+     * @param 'ConstantContact\Client\Model\ReportingsmsLinks|null $_links _links
      *
      * @return self
      */

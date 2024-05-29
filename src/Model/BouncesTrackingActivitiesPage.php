@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace ConstantContact\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use 'ConstantContact\Client\ObjectSerializer;
 
 /**
  * BouncesTrackingActivitiesPage Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,8 +57,8 @@ class BouncesTrackingActivitiesPage implements ModelInterface, ArrayAccess, \Jso
       * @var string[]
       */
     protected static $openAPITypes = [
-        'tracking_activities' => '\OpenAPI\Client\Model\BouncesTrackingActivity[]',
-        '_links' => '\OpenAPI\Client\Model\ReportingLinks'
+        'tracking_activities' => '\ConstantContact\Client\Model\BouncesTrackingActivity[]',
+        '_links' => '\ConstantContact\Client\Model\ReportingLinks'
     ];
 
     /**
@@ -305,7 +305,7 @@ class BouncesTrackingActivitiesPage implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets tracking_activities
      *
-     * @return \OpenAPI\Client\Model\BouncesTrackingActivity[]
+     * @return 'ConstantContact\Client\Model\BouncesTrackingActivity[]
      */
     public function getTrackingActivities()
     {
@@ -315,7 +315,7 @@ class BouncesTrackingActivitiesPage implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets tracking_activities
      *
-     * @param \OpenAPI\Client\Model\BouncesTrackingActivity[] $tracking_activities The list of email bounce tracking activities associated with a given `campaign_activity_id'.
+     * @param 'ConstantContact\Client\Model\BouncesTrackingActivity[] $tracking_activities The list of email bounce tracking activities associated with a given `campaign_activity_id'.
      *
      * @return self
      */
@@ -332,7 +332,7 @@ class BouncesTrackingActivitiesPage implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets _links
      *
-     * @return \OpenAPI\Client\Model\ReportingLinks
+     * @return 'ConstantContact\Client\Model\ReportingLinks
      */
     public function getLinks()
     {
@@ -342,7 +342,7 @@ class BouncesTrackingActivitiesPage implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets _links
      *
-     * @param \OpenAPI\Client\Model\ReportingLinks $_links _links
+     * @param 'ConstantContact\Client\Model\ReportingLinks $_links _links
      *
      * @return self
      */

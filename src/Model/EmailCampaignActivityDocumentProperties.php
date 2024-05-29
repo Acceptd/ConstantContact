@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,14 +29,14 @@
 namespace ConstantContact\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use 'ConstantContact\Client\ObjectSerializer;
 
 /**
  * EmailCampaignActivityDocumentProperties Class Doc Comment
  *
  * @category Class
  * @description An object that contains optional properties for legacy format type emails (&lt;code&gt;format_type&lt;/code&gt; 1 and 2). If you attempt to add a property that does apply to the email &lt;code&gt;format_type&lt;/code&gt;, the API will ignore the property.
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>

@@ -16,7 +16,7 @@ All URIs are relative to https://api.cc.email/v3, except if the operation define
 ## `cancelAccount()`
 
 ```php
-cancelAccount($encoded_account_id, $body): \OpenAPI\Client\Model\AccountCancellation
+cancelAccount($encoded_account_id, $body): 'ConstantContact\Client\Model\AccountCancellation
 ```
 
 PUT Cancel the Billing Plan for a Client Account
@@ -48,7 +48,7 @@ $apiInstance = new OpenAPI\Client\Api\TechnologyPartnersApi(
     $config
 );
 $encoded_account_id = a07e1lxqqqo0; // string | The system generated ID that uniquely identifies the client account.
-$body = new \OpenAPI\Client\Model\AccountCancellation(); // \OpenAPI\Client\Model\AccountCancellation | By default, the current date and time is automatically used as the cancellation date. However, you can specify a future date and time to cancel the account (`effective_date`) in the request body in ISO format. You can also enter the client's cancellation reason (`reason_id`).
+$body = new 'ConstantContact\Client\Model\AccountCancellation(); // 'ConstantContact\Client\Model\AccountCancellation | By default, the current date and time is automatically used as the cancellation date. However, you can specify a future date and time to cancel the account (`effective_date`) in the request body in ISO format. You can also enter the client's cancellation reason (`reason_id`).
 
 try {
     $result = $apiInstance->cancelAccount($encoded_account_id, $body);
@@ -117,7 +117,7 @@ $apiInstance = new OpenAPI\Client\Api\TechnologyPartnersApi(
     $config
 );
 $encoded_account_id = a07e1lxqqqo0; // string | The encoded account ID that identifies the partner's client account to which to add the new user.
-$sso_user = new \OpenAPI\Client\Model\SSOUser(); // \OpenAPI\Client\Model\SSOUser | The JSON payload used to create a new user under the specified partner's client account. All request body properties are required (`first_name`, `last_name`, `role_name`, `contact_email`, `login_name`, `external_id`, `external_provider`).
+$sso_user = new 'ConstantContact\Client\Model\SSOUser(); // 'ConstantContact\Client\Model\SSOUser | The JSON payload used to create a new user under the specified partner's client account. All request body properties are required (`first_name`, `last_name`, `role_name`, `contact_email`, `login_name`, `external_id`, `external_provider`).
 
 try {
     $apiInstance->createSSOUser($encoded_account_id, $sso_user);
@@ -153,7 +153,7 @@ void (empty response body)
 ## `getPartnerSiteOwners()`
 
 ```php
-getPartnerSiteOwners($offset, $limit, $account_type): \OpenAPI\Client\Model\PartnerAccount
+getPartnerSiteOwners($offset, $limit, $account_type): 'ConstantContact\Client\Model\PartnerAccount
 ```
 
 GET Partner Client Accounts
@@ -224,7 +224,7 @@ try {
 ## `getPlan()`
 
 ```php
-getPlan($encoded_account_id): \OpenAPI\Client\Model\PlanTiersObject
+getPlan($encoded_account_id): 'ConstantContact\Client\Model\PlanTiersObject
 ```
 
 GET Billing Plan Details for a Client Account
@@ -323,7 +323,7 @@ $apiInstance = new OpenAPI\Client\Api\TechnologyPartnersApi(
     $config
 );
 $encoded_account_id = a07e1lxqqqo0; // string | An encoded account id for a managed account in your partnership.
-$body = new \OpenAPI\Client\Model\PartnerAccountOperationsRequest(); // \OpenAPI\Client\Model\PartnerAccountOperationsRequest | A JSON request body that contains the structure of the HTTP request you are instructing Constant Contact to send on behalf of specific managed account in your partnership.
+$body = new 'ConstantContact\Client\Model\PartnerAccountOperationsRequest(); // 'ConstantContact\Client\Model\PartnerAccountOperationsRequest | A JSON request body that contains the structure of the HTTP request you are instructing Constant Contact to send on behalf of specific managed account in your partnership.
 
 try {
     $apiInstance->partnerAccountOperationsPostSync($encoded_account_id, $body);
@@ -359,7 +359,7 @@ void (empty response body)
 ## `provision()`
 
 ```php
-provision($provision): \OpenAPI\Client\Model\ProvisionResponse
+provision($provision): 'ConstantContact\Client\Model\ProvisionResponse
 ```
 
 POST (create) a Partner Client Account
@@ -390,7 +390,7 @@ $apiInstance = new OpenAPI\Client\Api\TechnologyPartnersApi(
     new GuzzleHttp\Client(),
     $config
 );
-$provision = new \OpenAPI\Client\Model\Provision(); // \OpenAPI\Client\Model\Provision | Create a new Constant Contact client account under your partner account. All required properties must be included in the JSON payload request.
+$provision = new 'ConstantContact\Client\Model\Provision(); // 'ConstantContact\Client\Model\Provision | Create a new Constant Contact client account under your partner account. All required properties must be included in the JSON payload request.
 
 try {
     $result = $apiInstance->provision($provision);
@@ -426,7 +426,7 @@ try {
 ## `setPlan()`
 
 ```php
-setPlan($encoded_account_id, $body): \OpenAPI\Client\Model\PlanTiersObject
+setPlan($encoded_account_id, $body): 'ConstantContact\Client\Model\PlanTiersObject
 ```
 
 PUT (update) Billing Plan Details for a Client Account
@@ -458,7 +458,7 @@ $apiInstance = new OpenAPI\Client\Api\TechnologyPartnersApi(
     $config
 );
 $encoded_account_id = a07e1lxqqqo0; // string | Specify the client's unique `encoded_account_id`.
-$body = new \OpenAPI\Client\Model\PlanInfo(); // \OpenAPI\Client\Model\PlanInfo | Update the billing plan (`plan_type`) for an existing Constant Contact client account. Options include:   - `TRIAL`: A non-billed account with an expiration date that allows clients to try Constant Contact product features.    - `GOLD`: A billable plan that provides all available product features.    - `SILVER`: A billable plan that provides all features available in the <code>BRONZE</code> plan, and adds some additional email campaign feature such as contact segmentation and social media advertisements.    - `BRONZE`: A billable plan that provides basic email and marketing tools.   If updating from a `TRIAL` plan (`plan_type`) to another type of billing plan, you have the option to update the day of month (`billing_day_of_month`) in which to bill the client account. Valid values include `1` through to and including `31`. Any additional billing plan properties and values that you include in the request body are ignored. If you are not on the latest billing plan, contact the Constant Contact Partner Team. However, older billing plans and `plan_type` enum values will continue to be supported.
+$body = new 'ConstantContact\Client\Model\PlanInfo(); // 'ConstantContact\Client\Model\PlanInfo | Update the billing plan (`plan_type`) for an existing Constant Contact client account. Options include:   - `TRIAL`: A non-billed account with an expiration date that allows clients to try Constant Contact product features.    - `GOLD`: A billable plan that provides all available product features.    - `SILVER`: A billable plan that provides all features available in the <code>BRONZE</code> plan, and adds some additional email campaign feature such as contact segmentation and social media advertisements.    - `BRONZE`: A billable plan that provides basic email and marketing tools.   If updating from a `TRIAL` plan (`plan_type`) to another type of billing plan, you have the option to update the day of month (`billing_day_of_month`) in which to bill the client account. Valid values include `1` through to and including `31`. Any additional billing plan properties and values that you include in the request body are ignored. If you are not on the latest billing plan, contact the Constant Contact Partner Team. However, older billing plans and `plan_type` enum values will continue to be supported.
 
 try {
     $result = $apiInstance->setPlan($encoded_account_id, $body);

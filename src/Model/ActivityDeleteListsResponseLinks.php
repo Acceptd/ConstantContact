@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace ConstantContact\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use 'ConstantContact\Client\ObjectSerializer;
 
 /**
  * ActivityDeleteListsResponseLinks Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class ActivityDeleteListsResponseLinks implements ModelInterface, ArrayAccess, \
       * @var string[]
       */
     protected static $openAPITypes = [
-        'self' => '\OpenAPI\Client\Model\ActivityDeleteListsResponseLinksSelf'
+        'self' => '\ConstantContact\Client\Model\ActivityDeleteListsResponseLinksSelf'
     ];
 
     /**
@@ -292,7 +292,7 @@ class ActivityDeleteListsResponseLinks implements ModelInterface, ArrayAccess, \
     /**
      * Gets self
      *
-     * @return \OpenAPI\Client\Model\ActivityDeleteListsResponseLinksSelf|null
+     * @return 'ConstantContact\Client\Model\ActivityDeleteListsResponseLinksSelf|null
      */
     public function getSelf()
     {
@@ -302,7 +302,7 @@ class ActivityDeleteListsResponseLinks implements ModelInterface, ArrayAccess, \
     /**
      * Sets self
      *
-     * @param \OpenAPI\Client\Model\ActivityDeleteListsResponseLinksSelf|null $self self
+     * @param 'ConstantContact\Client\Model\ActivityDeleteListsResponseLinksSelf|null $self self
      *
      * @return self
      */

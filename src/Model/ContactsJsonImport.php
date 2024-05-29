@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace ConstantContact\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use 'ConstantContact\Client\ObjectSerializer;
 
 /**
  * ContactsJsonImport Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class ContactsJsonImport implements ModelInterface, ArrayAccess, \JsonSerializab
       * @var string[]
       */
     protected static $openAPITypes = [
-        'import_data' => '\OpenAPI\Client\Model\JsonImportContact[]',
+        'import_data' => '\ConstantContact\Client\Model\JsonImportContact[]',
         'list_ids' => 'string[]'
     ];
 
@@ -313,7 +313,7 @@ class ContactsJsonImport implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets import_data
      *
-     * @return \OpenAPI\Client\Model\JsonImportContact[]
+     * @return 'ConstantContact\Client\Model\JsonImportContact[]
      */
     public function getImportData()
     {
@@ -323,7 +323,7 @@ class ContactsJsonImport implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets import_data
      *
-     * @param \OpenAPI\Client\Model\JsonImportContact[] $import_data An array containing the contacts to import.
+     * @param 'ConstantContact\Client\Model\JsonImportContact[] $import_data An array containing the contacts to import.
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace ConstantContact\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use 'ConstantContact\Client\ObjectSerializer;
 
 /**
  * TagAddRemoveContacts Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,8 +57,8 @@ class TagAddRemoveContacts implements ModelInterface, ArrayAccess, \JsonSerializ
       * @var string[]
       */
     protected static $openAPITypes = [
-        'source' => '\OpenAPI\Client\Model\TagAddRemoveContactsSource',
-        'exclude' => '\OpenAPI\Client\Model\TagAddRemoveContactsExclude',
+        'source' => '\ConstantContact\Client\Model\TagAddRemoveContactsSource',
+        'exclude' => '\ConstantContact\Client\Model\TagAddRemoveContactsExclude',
         'tag_ids' => 'string[]'
     ];
 
@@ -316,7 +316,7 @@ class TagAddRemoveContacts implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Gets source
      *
-     * @return \OpenAPI\Client\Model\TagAddRemoveContactsSource
+     * @return 'ConstantContact\Client\Model\TagAddRemoveContactsSource
      */
     public function getSource()
     {
@@ -326,7 +326,7 @@ class TagAddRemoveContacts implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets source
      *
-     * @param \OpenAPI\Client\Model\TagAddRemoveContactsSource $source source
+     * @param 'ConstantContact\Client\Model\TagAddRemoveContactsSource $source source
      *
      * @return self
      */
@@ -343,7 +343,7 @@ class TagAddRemoveContacts implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Gets exclude
      *
-     * @return \OpenAPI\Client\Model\TagAddRemoveContactsExclude|null
+     * @return 'ConstantContact\Client\Model\TagAddRemoveContactsExclude|null
      */
     public function getExclude()
     {
@@ -353,7 +353,7 @@ class TagAddRemoveContacts implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets exclude
      *
-     * @param \OpenAPI\Client\Model\TagAddRemoveContactsExclude|null $exclude exclude
+     * @param 'ConstantContact\Client\Model\TagAddRemoveContactsExclude|null $exclude exclude
      *
      * @return self
      */

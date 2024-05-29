@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,14 +29,14 @@
 namespace ConstantContact\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use 'ConstantContact\Client\ObjectSerializer;
 
 /**
  * SmsEngagementHistoryInner Class Doc Comment
  *
  * @category Class
  * @description Provides a contact&#39;s SMS engagement history details. The properties returned depend on the type of SMS consent granted by the contact.
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -62,7 +62,7 @@ class SmsEngagementHistoryInner implements ModelInterface, ArrayAccess, \JsonSer
         'sms_channel_id' => 'string',
         'sms_channel_history_id' => 'string',
         'insert_time' => '\DateTime',
-        'history_details' => '\OpenAPI\Client\Model\HistoryDetails'
+        'history_details' => '\ConstantContact\Client\Model\HistoryDetails'
     ];
 
     /**
@@ -429,7 +429,7 @@ class SmsEngagementHistoryInner implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets history_details
      *
-     * @return \OpenAPI\Client\Model\HistoryDetails|null
+     * @return 'ConstantContact\Client\Model\HistoryDetails|null
      */
     public function getHistoryDetails()
     {
@@ -439,7 +439,7 @@ class SmsEngagementHistoryInner implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets history_details
      *
-     * @param \OpenAPI\Client\Model\HistoryDetails|null $history_details history_details
+     * @param 'ConstantContact\Client\Model\HistoryDetails|null $history_details history_details
      *
      * @return self
      */

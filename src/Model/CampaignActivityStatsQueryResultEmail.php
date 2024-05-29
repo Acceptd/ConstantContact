@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace ConstantContact\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use 'ConstantContact\Client\ObjectSerializer;
 
 /**
  * CampaignActivityStatsQueryResultEmail Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,8 +57,8 @@ class CampaignActivityStatsQueryResultEmail implements ModelInterface, ArrayAcce
       * @var string[]
       */
     protected static $openAPITypes = [
-        'errors' => '\OpenAPI\Client\Model\StatsError[]',
-        'results' => '\OpenAPI\Client\Model\CampaignActivityStatsResultGenericStatsEmailActivity[]'
+        'errors' => '\ConstantContact\Client\Model\StatsError[]',
+        'results' => '\ConstantContact\Client\Model\CampaignActivityStatsResultGenericStatsEmailActivity[]'
     ];
 
     /**
@@ -299,7 +299,7 @@ class CampaignActivityStatsQueryResultEmail implements ModelInterface, ArrayAcce
     /**
      * Gets errors
      *
-     * @return \OpenAPI\Client\Model\StatsError[]|null
+     * @return 'ConstantContact\Client\Model\StatsError[]|null
      */
     public function getErrors()
     {
@@ -309,7 +309,7 @@ class CampaignActivityStatsQueryResultEmail implements ModelInterface, ArrayAcce
     /**
      * Sets errors
      *
-     * @param \OpenAPI\Client\Model\StatsError[]|null $errors Array of errors indicating any partial failures in the query
+     * @param 'ConstantContact\Client\Model\StatsError[]|null $errors Array of errors indicating any partial failures in the query
      *
      * @return self
      */
@@ -326,7 +326,7 @@ class CampaignActivityStatsQueryResultEmail implements ModelInterface, ArrayAcce
     /**
      * Gets results
      *
-     * @return \OpenAPI\Client\Model\CampaignActivityStatsResultGenericStatsEmailActivity[]|null
+     * @return 'ConstantContact\Client\Model\CampaignActivityStatsResultGenericStatsEmailActivity[]|null
      */
     public function getResults()
     {
@@ -336,7 +336,7 @@ class CampaignActivityStatsQueryResultEmail implements ModelInterface, ArrayAcce
     /**
      * Sets results
      *
-     * @param \OpenAPI\Client\Model\CampaignActivityStatsResultGenericStatsEmailActivity[]|null $results An array of results containing statistics for each requested campaign activity
+     * @param 'ConstantContact\Client\Model\CampaignActivityStatsResultGenericStatsEmailActivity[]|null $results An array of results containing statistics for each requested campaign activity
      *
      * @return self
      */

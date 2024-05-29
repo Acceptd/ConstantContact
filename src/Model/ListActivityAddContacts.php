@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace ConstantContact\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use 'ConstantContact\Client\ObjectSerializer;
 
 /**
  * ListActivityAddContacts Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class ListActivityAddContacts implements ModelInterface, ArrayAccess, \JsonSeria
       * @var string[]
       */
     protected static $openAPITypes = [
-        'source' => '\OpenAPI\Client\Model\ListActivityAddContactsSource',
+        'source' => '\ConstantContact\Client\Model\ListActivityAddContactsSource',
         'list_ids' => 'string[]'
     ];
 
@@ -309,7 +309,7 @@ class ListActivityAddContacts implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Gets source
      *
-     * @return \OpenAPI\Client\Model\ListActivityAddContactsSource
+     * @return 'ConstantContact\Client\Model\ListActivityAddContactsSource
      */
     public function getSource()
     {
@@ -319,7 +319,7 @@ class ListActivityAddContacts implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Sets source
      *
-     * @param \OpenAPI\Client\Model\ListActivityAddContactsSource $source source
+     * @param 'ConstantContact\Client\Model\ListActivityAddContactsSource $source source
      *
      * @return self
      */

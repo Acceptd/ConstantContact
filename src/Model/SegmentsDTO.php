@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace ConstantContact\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use 'ConstantContact\Client\ObjectSerializer;
 
 /**
  * SegmentsDTO Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,8 +57,8 @@ class SegmentsDTO implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'segments' => '\OpenAPI\Client\Model\SegmentMaster[]',
-        '_links' => '\OpenAPI\Client\Model\Links'
+        'segments' => '\ConstantContact\Client\Model\SegmentMaster[]',
+        '_links' => '\ConstantContact\Client\Model\Links'
     ];
 
     /**
@@ -302,7 +302,7 @@ class SegmentsDTO implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets segments
      *
-     * @return \OpenAPI\Client\Model\SegmentMaster[]
+     * @return 'ConstantContact\Client\Model\SegmentMaster[]
      */
     public function getSegments()
     {
@@ -312,7 +312,7 @@ class SegmentsDTO implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets segments
      *
-     * @param \OpenAPI\Client\Model\SegmentMaster[] $segments Lists all segments for the account.
+     * @param 'ConstantContact\Client\Model\SegmentMaster[] $segments Lists all segments for the account.
      *
      * @return self
      */
@@ -329,7 +329,7 @@ class SegmentsDTO implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets _links
      *
-     * @return \OpenAPI\Client\Model\Links|null
+     * @return 'ConstantContact\Client\Model\Links|null
      */
     public function getLinks()
     {
@@ -339,7 +339,7 @@ class SegmentsDTO implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets _links
      *
-     * @param \OpenAPI\Client\Model\Links|null $_links _links
+     * @param 'ConstantContact\Client\Model\Links|null $_links _links
      *
      * @return self
      */

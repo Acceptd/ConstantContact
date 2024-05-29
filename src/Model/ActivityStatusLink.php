@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace ConstantContact\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use 'ConstantContact\Client\ObjectSerializer;
 
 /**
  * ActivityStatusLink Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class ActivityStatusLink implements ModelInterface, ArrayAccess, \JsonSerializab
       * @var string[]
       */
     protected static $openAPITypes = [
-        'self' => '\OpenAPI\Client\Model\ActivityStatusExportLinkSelf'
+        'self' => '\ConstantContact\Client\Model\ActivityStatusExportLinkSelf'
     ];
 
     /**
@@ -292,7 +292,7 @@ class ActivityStatusLink implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets self
      *
-     * @return \OpenAPI\Client\Model\ActivityStatusExportLinkSelf|null
+     * @return 'ConstantContact\Client\Model\ActivityStatusExportLinkSelf|null
      */
     public function getSelf()
     {
@@ -302,7 +302,7 @@ class ActivityStatusLink implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets self
      *
-     * @param \OpenAPI\Client\Model\ActivityStatusExportLinkSelf|null $self self
+     * @param 'ConstantContact\Client\Model\ActivityStatusExportLinkSelf|null $self self
      *
      * @return self
      */

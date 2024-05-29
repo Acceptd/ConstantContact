@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace ConstantContact\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use 'ConstantContact\Client\ObjectSerializer;
 
 /**
  * Tags Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,8 +57,8 @@ class Tags implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'tags' => '\OpenAPI\Client\Model\Tag[]',
-        '_links' => '\OpenAPI\Client\Model\TagsPagingLinks'
+        'tags' => '\ConstantContact\Client\Model\Tag[]',
+        '_links' => '\ConstantContact\Client\Model\TagsPagingLinks'
     ];
 
     /**
@@ -299,7 +299,7 @@ class Tags implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets tags
      *
-     * @return \OpenAPI\Client\Model\Tag[]|null
+     * @return 'ConstantContact\Client\Model\Tag[]|null
      */
     public function getTags()
     {
@@ -309,7 +309,7 @@ class Tags implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets tags
      *
-     * @param \OpenAPI\Client\Model\Tag[]|null $tags Lists all tags and provides tag details.
+     * @param 'ConstantContact\Client\Model\Tag[]|null $tags Lists all tags and provides tag details.
      *
      * @return self
      */
@@ -326,7 +326,7 @@ class Tags implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets _links
      *
-     * @return \OpenAPI\Client\Model\TagsPagingLinks|null
+     * @return 'ConstantContact\Client\Model\TagsPagingLinks|null
      */
     public function getLinks()
     {
@@ -336,7 +336,7 @@ class Tags implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets _links
      *
-     * @param \OpenAPI\Client\Model\TagsPagingLinks|null $_links _links
+     * @param 'ConstantContact\Client\Model\TagsPagingLinks|null $_links _links
      *
      * @return self
      */

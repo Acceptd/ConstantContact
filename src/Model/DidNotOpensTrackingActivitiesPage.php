@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace ConstantContact\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use 'ConstantContact\Client\ObjectSerializer;
 
 /**
  * DidNotOpensTrackingActivitiesPage Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,8 +57,8 @@ class DidNotOpensTrackingActivitiesPage implements ModelInterface, ArrayAccess, 
       * @var string[]
       */
     protected static $openAPITypes = [
-        'tracking_activities' => '\OpenAPI\Client\Model\DidNotOpensTrackingActivity[]',
-        '_links' => '\OpenAPI\Client\Model\ReportingLinks'
+        'tracking_activities' => '\ConstantContact\Client\Model\DidNotOpensTrackingActivity[]',
+        '_links' => '\ConstantContact\Client\Model\ReportingLinks'
     ];
 
     /**
@@ -302,7 +302,7 @@ class DidNotOpensTrackingActivitiesPage implements ModelInterface, ArrayAccess, 
     /**
      * Gets tracking_activities
      *
-     * @return \OpenAPI\Client\Model\DidNotOpensTrackingActivity[]
+     * @return 'ConstantContact\Client\Model\DidNotOpensTrackingActivity[]
      */
     public function getTrackingActivities()
     {
@@ -312,7 +312,7 @@ class DidNotOpensTrackingActivitiesPage implements ModelInterface, ArrayAccess, 
     /**
      * Sets tracking_activities
      *
-     * @param \OpenAPI\Client\Model\DidNotOpensTrackingActivity[] $tracking_activities Lists contacts that did not open the specified <code>campaign_activity_id</code>.
+     * @param 'ConstantContact\Client\Model\DidNotOpensTrackingActivity[] $tracking_activities Lists contacts that did not open the specified <code>campaign_activity_id</code>.
      *
      * @return self
      */
@@ -329,7 +329,7 @@ class DidNotOpensTrackingActivitiesPage implements ModelInterface, ArrayAccess, 
     /**
      * Gets _links
      *
-     * @return \OpenAPI\Client\Model\ReportingLinks|null
+     * @return 'ConstantContact\Client\Model\ReportingLinks|null
      */
     public function getLinks()
     {
@@ -339,7 +339,7 @@ class DidNotOpensTrackingActivitiesPage implements ModelInterface, ArrayAccess, 
     /**
      * Sets _links
      *
-     * @param \OpenAPI\Client\Model\ReportingLinks|null $_links _links
+     * @param 'ConstantContact\Client\Model\ReportingLinks|null $_links _links
      *
      * @return self
      */

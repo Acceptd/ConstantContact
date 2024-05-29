@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace ConstantContact\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use 'ConstantContact\Client\ObjectSerializer;
 
 /**
  * BulkEmailCampaignSummary Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -60,7 +60,7 @@ class BulkEmailCampaignSummary implements ModelInterface, ArrayAccess, \JsonSeri
         'campaign_id' => 'string',
         'campaign_type' => 'string',
         'last_sent_date' => '\DateTime',
-        'unique_counts' => '\OpenAPI\Client\Model\UniqueEmailCounts'
+        'unique_counts' => '\ConstantContact\Client\Model\UniqueEmailCounts'
     ];
 
     /**
@@ -406,7 +406,7 @@ class BulkEmailCampaignSummary implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets unique_counts
      *
-     * @return \OpenAPI\Client\Model\UniqueEmailCounts
+     * @return 'ConstantContact\Client\Model\UniqueEmailCounts
      */
     public function getUniqueCounts()
     {
@@ -416,7 +416,7 @@ class BulkEmailCampaignSummary implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets unique_counts
      *
-     * @param \OpenAPI\Client\Model\UniqueEmailCounts $unique_counts unique_counts
+     * @param 'ConstantContact\Client\Model\UniqueEmailCounts $unique_counts unique_counts
      *
      * @return self
      */

@@ -23,7 +23,7 @@ All URIs are relative to https://api.cc.email/v3, except if the operation define
 ## `bulkImportContactsJSON()`
 
 ```php
-bulkImportContactsJSON($body): \OpenAPI\Client\Model\ActivityImport
+bulkImportContactsJSON($body): 'ConstantContact\Client\Model\ActivityImport
 ```
 
 Import Contacts using a JSON Payload
@@ -55,7 +55,7 @@ $apiInstance = new OpenAPI\Client\Api\BulkActivitiesApi(
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \OpenAPI\Client\Model\ContactsJsonImport(); // \OpenAPI\Client\Model\ContactsJsonImport | The JSON request payload that contains the contact data and contact lists for the import.
+$body = new 'ConstantContact\Client\Model\ContactsJsonImport(); // 'ConstantContact\Client\Model\ContactsJsonImport | The JSON request payload that contains the contact data and contact lists for the import.
 
 try {
     $result = $apiInstance->bulkImportContactsJSON($body);
@@ -91,7 +91,7 @@ try {
 ## `contactsCSVImport()`
 
 ```php
-contactsCSVImport($file, $list_ids): \OpenAPI\Client\Model\ActivityImport
+contactsCSVImport($file, $list_ids): 'ConstantContact\Client\Model\ActivityImport
 ```
 
 Import Contacts using a CSV File
@@ -161,7 +161,7 @@ try {
 ## `getActivity()`
 
 ```php
-getActivity($activity_id): \OpenAPI\Client\Model\Activity
+getActivity($activity_id): 'ConstantContact\Client\Model\Activity
 ```
 
 GET an Activity Status
@@ -229,7 +229,7 @@ try {
 ## `getActivityStatusCollection()`
 
 ```php
-getActivityStatusCollection($limit, $state): \OpenAPI\Client\Model\Activities
+getActivityStatusCollection($limit, $state): 'ConstantContact\Client\Model\Activities
 ```
 
 GET Activity Status Collection
@@ -367,7 +367,7 @@ try {
 ## `postContactDelete()`
 
 ```php
-postContactDelete($body): \OpenAPI\Client\Model\ActivityDeleteStatus
+postContactDelete($body): 'ConstantContact\Client\Model\ActivityDeleteStatus
 ```
 
 Delete Contacts in Bulk
@@ -399,7 +399,7 @@ $apiInstance = new OpenAPI\Client\Api\BulkActivitiesApi(
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \OpenAPI\Client\Model\ContactDelete(); // \OpenAPI\Client\Model\ContactDelete | The request body contains an array of contact_ids <em>or</em> list_ids. All contact_ids provided are deleted, or all members of each specified list_id are deleted.
+$body = new 'ConstantContact\Client\Model\ContactDelete(); // 'ConstantContact\Client\Model\ContactDelete | The request body contains an array of contact_ids <em>or</em> list_ids. All contact_ids provided are deleted, or all members of each specified list_id are deleted.
 
 try {
     $result = $apiInstance->postContactDelete($body);
@@ -435,7 +435,7 @@ try {
 ## `postContactsExport()`
 
 ```php
-postContactsExport($body): \OpenAPI\Client\Model\ActivityExportStatus
+postContactsExport($body): 'ConstantContact\Client\Model\ActivityExportStatus
 ```
 
 Export Contacts to a File
@@ -467,7 +467,7 @@ $apiInstance = new OpenAPI\Client\Api\BulkActivitiesApi(
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \OpenAPI\Client\Model\ContactsExport(); // \OpenAPI\Client\Model\ContactsExport | A JSON payload that specifies the contacts (rows in the CSV file) and contact properties (columns in the CSV file) you want to export.
+$body = new 'ConstantContact\Client\Model\ContactsExport(); // 'ConstantContact\Client\Model\ContactsExport | A JSON payload that specifies the contacts (rows in the CSV file) and contact properties (columns in the CSV file) you want to export.
 
 try {
     $result = $apiInstance->postContactsExport($body);
@@ -503,7 +503,7 @@ try {
 ## `postCustomFieldDelete()`
 
 ```php
-postCustomFieldDelete($body): \OpenAPI\Client\Model\ActivityDeleteCustomFields
+postCustomFieldDelete($body): 'ConstantContact\Client\Model\ActivityDeleteCustomFields
 ```
 
 Delete Custom Fields
@@ -530,7 +530,7 @@ $apiInstance = new OpenAPI\Client\Api\BulkActivitiesApi(
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \OpenAPI\Client\Model\CustomFieldId100(); // \OpenAPI\Client\Model\CustomFieldId100 | An array of `custom_field_id`'s to delete.
+$body = new 'ConstantContact\Client\Model\CustomFieldId100(); // 'ConstantContact\Client\Model\CustomFieldId100 | An array of `custom_field_id`'s to delete.
 
 try {
     $result = $apiInstance->postCustomFieldDelete($body);
@@ -566,7 +566,7 @@ try {
 ## `postListAddContact()`
 
 ```php
-postListAddContact($body): \OpenAPI\Client\Model\ActivityListsMembership
+postListAddContact($body): 'ConstantContact\Client\Model\ActivityListsMembership
 ```
 
 Add Contacts to Lists
@@ -598,7 +598,7 @@ $apiInstance = new OpenAPI\Client\Api\BulkActivitiesApi(
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \OpenAPI\Client\Model\ListActivityAddContacts(); // \OpenAPI\Client\Model\ListActivityAddContacts | The JSON payload used to create the 'add contacts to lists' activity
+$body = new 'ConstantContact\Client\Model\ListActivityAddContacts(); // 'ConstantContact\Client\Model\ListActivityAddContacts | The JSON payload used to create the 'add contacts to lists' activity
 
 try {
     $result = $apiInstance->postListAddContact($body);
@@ -634,7 +634,7 @@ try {
 ## `postListDelete()`
 
 ```php
-postListDelete($body): \OpenAPI\Client\Model\ActivityDeleteListsResponse
+postListDelete($body): 'ConstantContact\Client\Model\ActivityDeleteListsResponse
 ```
 
 Delete Contact Lists
@@ -666,7 +666,7 @@ $apiInstance = new OpenAPI\Client\Api\BulkActivitiesApi(
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \OpenAPI\Client\Model\ListIdList100(); // \OpenAPI\Client\Model\ListIdList100 | An array of `list_id`'s to delete.
+$body = new 'ConstantContact\Client\Model\ListIdList100(); // 'ConstantContact\Client\Model\ListIdList100 | An array of `list_id`'s to delete.
 
 try {
     $result = $apiInstance->postListDelete($body);
@@ -702,7 +702,7 @@ try {
 ## `postListRemoveContact()`
 
 ```php
-postListRemoveContact($body): \OpenAPI\Client\Model\ActivityListsMembership
+postListRemoveContact($body): 'ConstantContact\Client\Model\ActivityListsMembership
 ```
 
 Remove Contacts from Lists
@@ -734,7 +734,7 @@ $apiInstance = new OpenAPI\Client\Api\BulkActivitiesApi(
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \OpenAPI\Client\Model\ListActivityRemoveContacts(); // \OpenAPI\Client\Model\ListActivityRemoveContacts | The JSON payload used to create the 'remove contacts from lists' activity
+$body = new 'ConstantContact\Client\Model\ListActivityRemoveContacts(); // 'ConstantContact\Client\Model\ListActivityRemoveContacts | The JSON payload used to create the 'remove contacts from lists' activity
 
 try {
     $result = $apiInstance->postListRemoveContact($body);
@@ -770,7 +770,7 @@ try {
 ## `postTagAddContact()`
 
 ```php
-postTagAddContact($body): \OpenAPI\Client\Model\ActivityTagging
+postTagAddContact($body): 'ConstantContact\Client\Model\ActivityTagging
 ```
 
 Add Tags to Contacts
@@ -802,7 +802,7 @@ $apiInstance = new OpenAPI\Client\Api\BulkActivitiesApi(
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \OpenAPI\Client\Model\TagAddRemoveContacts(); // \OpenAPI\Client\Model\TagAddRemoveContacts | The JSON payload used to create an asynchronous activity that adds tags to contacts that meet your specified contact filtering criteria.
+$body = new 'ConstantContact\Client\Model\TagAddRemoveContacts(); // 'ConstantContact\Client\Model\TagAddRemoveContacts | The JSON payload used to create an asynchronous activity that adds tags to contacts that meet your specified contact filtering criteria.
 
 try {
     $result = $apiInstance->postTagAddContact($body);
@@ -838,7 +838,7 @@ try {
 ## `postTagDelete()`
 
 ```php
-postTagDelete($body): \OpenAPI\Client\Model\ActivityTagging
+postTagDelete($body): 'ConstantContact\Client\Model\ActivityTagging
 ```
 
 Delete Tags
@@ -870,7 +870,7 @@ $apiInstance = new OpenAPI\Client\Api\BulkActivitiesApi(
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \OpenAPI\Client\Model\TagIdList500Limit(); // \OpenAPI\Client\Model\TagIdList500Limit | An array of string values (`tag_id`s) to delete.
+$body = new 'ConstantContact\Client\Model\TagIdList500Limit(); // 'ConstantContact\Client\Model\TagIdList500Limit | An array of string values (`tag_id`s) to delete.
 
 try {
     $result = $apiInstance->postTagDelete($body);
@@ -906,7 +906,7 @@ try {
 ## `postTagRemoveContact()`
 
 ```php
-postTagRemoveContact($body): \OpenAPI\Client\Model\ActivityTagging
+postTagRemoveContact($body): 'ConstantContact\Client\Model\ActivityTagging
 ```
 
 Remove Tags from Contacts
@@ -938,7 +938,7 @@ $apiInstance = new OpenAPI\Client\Api\BulkActivitiesApi(
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \OpenAPI\Client\Model\TagAddRemoveContacts(); // \OpenAPI\Client\Model\TagAddRemoveContacts | The JSON payload used to create an asynchronous activity that removes tags from contacts meeting your specified contact filtering criteria.
+$body = new 'ConstantContact\Client\Model\TagAddRemoveContacts(); // 'ConstantContact\Client\Model\TagAddRemoveContacts | The JSON payload used to create an asynchronous activity that removes tags from contacts meeting your specified contact filtering criteria.
 
 try {
     $result = $apiInstance->postTagRemoveContact($body);

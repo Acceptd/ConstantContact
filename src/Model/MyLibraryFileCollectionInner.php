@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace ConstantContact\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use 'ConstantContact\Client\ObjectSerializer;
 
 /**
  * MyLibraryFileCollectionInner Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -68,7 +68,7 @@ class MyLibraryFileCollectionInner implements ModelInterface, ArrayAccess, \Json
         'source' => 'string',
         'type' => 'string',
         'status' => 'string',
-        'thumbnail' => '\OpenAPI\Client\Model\MyLibraryFileCollectionInnerThumbnail',
+        'thumbnail' => '\ConstantContact\Client\Model\MyLibraryFileCollectionInnerThumbnail',
         'image' => 'bool',
         'folder_id' => 'int',
         'external_url' => 'string',
@@ -708,7 +708,7 @@ class MyLibraryFileCollectionInner implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets thumbnail
      *
-     * @return \OpenAPI\Client\Model\MyLibraryFileCollectionInnerThumbnail|null
+     * @return 'ConstantContact\Client\Model\MyLibraryFileCollectionInnerThumbnail|null
      */
     public function getThumbnail()
     {
@@ -718,7 +718,7 @@ class MyLibraryFileCollectionInner implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets thumbnail
      *
-     * @param \OpenAPI\Client\Model\MyLibraryFileCollectionInnerThumbnail|null $thumbnail thumbnail
+     * @param 'ConstantContact\Client\Model\MyLibraryFileCollectionInnerThumbnail|null $thumbnail thumbnail
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,14 +29,14 @@
 namespace ConstantContact\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use 'ConstantContact\Client\ObjectSerializer;
 
 /**
  * CustomFields Class Doc Comment
  *
  * @category Class
  * @description Use this endpoint to retrieve (GET) all custom_fields in the user&#39;s account, or to create (POST) a new custom_field.
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,8 +58,8 @@ class CustomFields implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'custom_fields' => '\OpenAPI\Client\Model\CustomFieldResource[]',
-        '_links' => '\OpenAPI\Client\Model\PagingLinks'
+        'custom_fields' => '\ConstantContact\Client\Model\CustomFieldResource[]',
+        '_links' => '\ConstantContact\Client\Model\PagingLinks'
     ];
 
     /**
@@ -304,7 +304,7 @@ class CustomFields implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets custom_fields
      *
-     * @return \OpenAPI\Client\Model\CustomFieldResource[]|null
+     * @return 'ConstantContact\Client\Model\CustomFieldResource[]|null
      */
     public function getCustomFields()
     {
@@ -314,7 +314,7 @@ class CustomFields implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets custom_fields
      *
-     * @param \OpenAPI\Client\Model\CustomFieldResource[]|null $custom_fields custom_fields
+     * @param 'ConstantContact\Client\Model\CustomFieldResource[]|null $custom_fields custom_fields
      *
      * @return self
      */
@@ -335,7 +335,7 @@ class CustomFields implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets _links
      *
-     * @return \OpenAPI\Client\Model\PagingLinks|null
+     * @return 'ConstantContact\Client\Model\PagingLinks|null
      */
     public function getLinks()
     {
@@ -345,7 +345,7 @@ class CustomFields implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets _links
      *
-     * @param \OpenAPI\Client\Model\PagingLinks|null $_links _links
+     * @param 'ConstantContact\Client\Model\PagingLinks|null $_links _links
      *
      * @return self
      */

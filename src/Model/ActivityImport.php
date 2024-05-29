@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,14 +29,14 @@
 namespace ConstantContact\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use 'ConstantContact\Client\ObjectSerializer;
 
 /**
  * ActivityImport Class Doc Comment
  *
  * @category Class
  * @description Activity status for contacts_json_import and contacts_file_import activities
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -67,8 +67,8 @@ class ActivityImport implements ModelInterface, ArrayAccess, \JsonSerializable
         'source_file_name' => 'string',
         'percent_done' => 'int',
         'activity_errors' => 'string[]',
-        'status' => '\OpenAPI\Client\Model\ActivityImportStatus',
-        '_links' => '\OpenAPI\Client\Model\ActivityStatusLink'
+        'status' => '\ConstantContact\Client\Model\ActivityImportStatus',
+        '_links' => '\ConstantContact\Client\Model\ActivityStatusLink'
     ];
 
     /**
@@ -606,7 +606,7 @@ class ActivityImport implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets status
      *
-     * @return \OpenAPI\Client\Model\ActivityImportStatus|null
+     * @return 'ConstantContact\Client\Model\ActivityImportStatus|null
      */
     public function getStatus()
     {
@@ -616,7 +616,7 @@ class ActivityImport implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets status
      *
-     * @param \OpenAPI\Client\Model\ActivityImportStatus|null $status status
+     * @param 'ConstantContact\Client\Model\ActivityImportStatus|null $status status
      *
      * @return self
      */
@@ -633,7 +633,7 @@ class ActivityImport implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets _links
      *
-     * @return \OpenAPI\Client\Model\ActivityStatusLink|null
+     * @return 'ConstantContact\Client\Model\ActivityStatusLink|null
      */
     public function getLinks()
     {
@@ -643,7 +643,7 @@ class ActivityImport implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets _links
      *
-     * @param \OpenAPI\Client\Model\ActivityStatusLink|null $_links _links
+     * @param 'ConstantContact\Client\Model\ActivityStatusLink|null $_links _links
      *
      * @return self
      */

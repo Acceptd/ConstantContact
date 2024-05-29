@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace ConstantContact\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use 'ConstantContact\Client\ObjectSerializer;
 
 /**
  * ClicksTrackingActivitiesPage Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,8 +57,8 @@ class ClicksTrackingActivitiesPage implements ModelInterface, ArrayAccess, \Json
       * @var string[]
       */
     protected static $openAPITypes = [
-        'tracking_activities' => '\OpenAPI\Client\Model\ClicksTrackingActivity[]',
-        '_links' => '\OpenAPI\Client\Model\ReportingLinks'
+        'tracking_activities' => '\ConstantContact\Client\Model\ClicksTrackingActivity[]',
+        '_links' => '\ConstantContact\Client\Model\ReportingLinks'
     ];
 
     /**
@@ -302,7 +302,7 @@ class ClicksTrackingActivitiesPage implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets tracking_activities
      *
-     * @return \OpenAPI\Client\Model\ClicksTrackingActivity[]
+     * @return 'ConstantContact\Client\Model\ClicksTrackingActivity[]
      */
     public function getTrackingActivities()
     {
@@ -312,7 +312,7 @@ class ClicksTrackingActivitiesPage implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets tracking_activities
      *
-     * @param \OpenAPI\Client\Model\ClicksTrackingActivity[] $tracking_activities The list of click tracking activities
+     * @param 'ConstantContact\Client\Model\ClicksTrackingActivity[] $tracking_activities The list of click tracking activities
      *
      * @return self
      */
@@ -329,7 +329,7 @@ class ClicksTrackingActivitiesPage implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets _links
      *
-     * @return \OpenAPI\Client\Model\ReportingLinks|null
+     * @return 'ConstantContact\Client\Model\ReportingLinks|null
      */
     public function getLinks()
     {
@@ -339,7 +339,7 @@ class ClicksTrackingActivitiesPage implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets _links
      *
-     * @param \OpenAPI\Client\Model\ReportingLinks|null $_links _links
+     * @param 'ConstantContact\Client\Model\ReportingLinks|null $_links _links
      *
      * @return self
      */

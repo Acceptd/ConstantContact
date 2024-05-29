@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace ConstantContact\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use 'ConstantContact\Client\ObjectSerializer;
 
 /**
  * Activities Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,8 +57,8 @@ class Activities implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'activities' => '\OpenAPI\Client\Model\ActivitiesActivitiesInner[]',
-        '_links' => '\OpenAPI\Client\Model\PagingLinks'
+        'activities' => '\ConstantContact\Client\Model\ActivitiesActivitiesInner[]',
+        '_links' => '\ConstantContact\Client\Model\PagingLinks'
     ];
 
     /**
@@ -299,7 +299,7 @@ class Activities implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets activities
      *
-     * @return \OpenAPI\Client\Model\ActivitiesActivitiesInner[]|null
+     * @return 'ConstantContact\Client\Model\ActivitiesActivitiesInner[]|null
      */
     public function getActivities()
     {
@@ -309,7 +309,7 @@ class Activities implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets activities
      *
-     * @param \OpenAPI\Client\Model\ActivitiesActivitiesInner[]|null $activities A list of bulk activity jobs and status submitted by the account over the past 10 days.
+     * @param 'ConstantContact\Client\Model\ActivitiesActivitiesInner[]|null $activities A list of bulk activity jobs and status submitted by the account over the past 10 days.
      *
      * @return self
      */
@@ -326,7 +326,7 @@ class Activities implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets _links
      *
-     * @return \OpenAPI\Client\Model\PagingLinks|null
+     * @return 'ConstantContact\Client\Model\PagingLinks|null
      */
     public function getLinks()
     {
@@ -336,7 +336,7 @@ class Activities implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets _links
      *
-     * @param \OpenAPI\Client\Model\PagingLinks|null $_links _links
+     * @param 'ConstantContact\Client\Model\PagingLinks|null $_links _links
      *
      * @return self
      */

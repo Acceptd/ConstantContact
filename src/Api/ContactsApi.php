@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -43,7 +43,7 @@ use ConstantContact\Client\ObjectSerializer;
  * ContactsApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -154,9 +154,9 @@ class ContactsApi
      * @param  string $include Use to return the total number of new contact subscribers in the results. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['countContact'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ContactsCounts
+     * @return 'ConstantContact\Client\Model\ContactsCounts
      */
     public function countContact($include = null, string $contentType = self::contentTypes['countContact'][0])
     {
@@ -172,9 +172,9 @@ class ContactsApi
      * @param  string $include Use to return the total number of new contact subscribers in the results. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['countContact'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ContactsCounts, HTTP status code, HTTP response headers (array of strings)
+     * @return array of 'ConstantContact\Client\Model\ContactsCounts, HTTP status code, HTTP response headers (array of strings)
      */
     public function countContactWithHttpInfo($include = null, string $contentType = self::contentTypes['countContact'][0])
     {
@@ -217,11 +217,11 @@ class ContactsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ContactsCounts' === '\SplFileObject') {
+                    if ('\ConstantContact\Client\Model\ContactsCounts' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ContactsCounts' !== 'string') {
+                        if ('\ConstantContact\Client\Model\ContactsCounts' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -239,13 +239,13 @@ class ContactsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ContactsCounts', []),
+                        ObjectSerializer::deserialize($content, '\ConstantContact\Client\Model\ContactsCounts', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\ContactsCounts';
+            $returnType = '\ConstantContact\Client\Model\ContactsCounts';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -278,7 +278,7 @@ class ContactsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ContactsCounts',
+                        '\ConstantContact\Client\Model\ContactsCounts',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -322,7 +322,7 @@ class ContactsApi
      */
     public function countContactAsyncWithHttpInfo($include = null, string $contentType = self::contentTypes['countContact'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ContactsCounts';
+        $returnType = '\ConstantContact\Client\Model\ContactsCounts';
         $request = $this->countContactRequest($include, $contentType);
 
         return $this->client
@@ -466,12 +466,12 @@ class ContactsApi
      *
      * POST (create) a Contact
      *
-     * @param  \OpenAPI\Client\Model\ContactPostRequest $body The JSON payload defining the contact (required)
+     * @param  'ConstantContact\Client\Model\ContactPostRequest $body The JSON payload defining the contact (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createContact'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ContactResource
+     * @return 'ConstantContact\Client\Model\ContactResource
      */
     public function createContact($body, string $contentType = self::contentTypes['createContact'][0])
     {
@@ -484,12 +484,12 @@ class ContactsApi
      *
      * POST (create) a Contact
      *
-     * @param  \OpenAPI\Client\Model\ContactPostRequest $body The JSON payload defining the contact (required)
+     * @param  'ConstantContact\Client\Model\ContactPostRequest $body The JSON payload defining the contact (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createContact'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ContactResource, HTTP status code, HTTP response headers (array of strings)
+     * @return array of 'ConstantContact\Client\Model\ContactResource, HTTP status code, HTTP response headers (array of strings)
      */
     public function createContactWithHttpInfo($body, string $contentType = self::contentTypes['createContact'][0])
     {
@@ -532,11 +532,11 @@ class ContactsApi
 
             switch($statusCode) {
                 case 201:
-                    if ('\OpenAPI\Client\Model\ContactResource' === '\SplFileObject') {
+                    if ('\ConstantContact\Client\Model\ContactResource' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ContactResource' !== 'string') {
+                        if ('\ConstantContact\Client\Model\ContactResource' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -554,13 +554,13 @@ class ContactsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ContactResource', []),
+                        ObjectSerializer::deserialize($content, '\ConstantContact\Client\Model\ContactResource', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\ContactResource';
+            $returnType = '\ConstantContact\Client\Model\ContactResource';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -593,7 +593,7 @@ class ContactsApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ContactResource',
+                        '\ConstantContact\Client\Model\ContactResource',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -608,7 +608,7 @@ class ContactsApi
      *
      * POST (create) a Contact
      *
-     * @param  \OpenAPI\Client\Model\ContactPostRequest $body The JSON payload defining the contact (required)
+     * @param  'ConstantContact\Client\Model\ContactPostRequest $body The JSON payload defining the contact (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createContact'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -629,7 +629,7 @@ class ContactsApi
      *
      * POST (create) a Contact
      *
-     * @param  \OpenAPI\Client\Model\ContactPostRequest $body The JSON payload defining the contact (required)
+     * @param  'ConstantContact\Client\Model\ContactPostRequest $body The JSON payload defining the contact (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createContact'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -637,7 +637,7 @@ class ContactsApi
      */
     public function createContactAsyncWithHttpInfo($body, string $contentType = self::contentTypes['createContact'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ContactResource';
+        $returnType = '\ConstantContact\Client\Model\ContactResource';
         $request = $this->createContactRequest($body, $contentType);
 
         return $this->client
@@ -679,7 +679,7 @@ class ContactsApi
     /**
      * Create request for operation 'createContact'
      *
-     * @param  \OpenAPI\Client\Model\ContactPostRequest $body The JSON payload defining the contact (required)
+     * @param  'ConstantContact\Client\Model\ContactPostRequest $body The JSON payload defining the contact (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createContact'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -785,12 +785,12 @@ class ContactsApi
      *
      * Create or Update a Contact
      *
-     * @param  \OpenAPI\Client\Model\ContactCreateOrUpdateInput $body A JSON request body payload that contains the contact resource you are creating or updating. The request body must contain the &#x60;email_address&#x60; property and the &#x60;list_memberships&#x60; array. (required)
+     * @param  'ConstantContact\Client\Model\ContactCreateOrUpdateInput $body A JSON request body payload that contains the contact resource you are creating or updating. The request body must contain the &#x60;email_address&#x60; property and the &#x60;list_memberships&#x60; array. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createOrUpdateContact'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ContactCreateOrUpdateResponse|\OpenAPI\Client\Model\ContactCreateOrUpdateResponse
+     * @return 'ConstantContact\Client\Model\ContactCreateOrUpdateResponse|\OpenAPI\Client\Model\ContactCreateOrUpdateResponse
      */
     public function createOrUpdateContact($body, string $contentType = self::contentTypes['createOrUpdateContact'][0])
     {
@@ -803,12 +803,12 @@ class ContactsApi
      *
      * Create or Update a Contact
      *
-     * @param  \OpenAPI\Client\Model\ContactCreateOrUpdateInput $body A JSON request body payload that contains the contact resource you are creating or updating. The request body must contain the &#x60;email_address&#x60; property and the &#x60;list_memberships&#x60; array. (required)
+     * @param  'ConstantContact\Client\Model\ContactCreateOrUpdateInput $body A JSON request body payload that contains the contact resource you are creating or updating. The request body must contain the &#x60;email_address&#x60; property and the &#x60;list_memberships&#x60; array. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createOrUpdateContact'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ContactCreateOrUpdateResponse|\OpenAPI\Client\Model\ContactCreateOrUpdateResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of 'ConstantContact\Client\Model\ContactCreateOrUpdateResponse|\OpenAPI\Client\Model\ContactCreateOrUpdateResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function createOrUpdateContactWithHttpInfo($body, string $contentType = self::contentTypes['createOrUpdateContact'][0])
     {
@@ -851,11 +851,11 @@ class ContactsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ContactCreateOrUpdateResponse' === '\SplFileObject') {
+                    if ('\ConstantContact\Client\Model\ContactCreateOrUpdateResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ContactCreateOrUpdateResponse' !== 'string') {
+                        if ('\ConstantContact\Client\Model\ContactCreateOrUpdateResponse' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -873,16 +873,16 @@ class ContactsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ContactCreateOrUpdateResponse', []),
+                        ObjectSerializer::deserialize($content, '\ConstantContact\Client\Model\ContactCreateOrUpdateResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 201:
-                    if ('\OpenAPI\Client\Model\ContactCreateOrUpdateResponse' === '\SplFileObject') {
+                    if ('\ConstantContact\Client\Model\ContactCreateOrUpdateResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ContactCreateOrUpdateResponse' !== 'string') {
+                        if ('\ConstantContact\Client\Model\ContactCreateOrUpdateResponse' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -900,13 +900,13 @@ class ContactsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ContactCreateOrUpdateResponse', []),
+                        ObjectSerializer::deserialize($content, '\ConstantContact\Client\Model\ContactCreateOrUpdateResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\ContactCreateOrUpdateResponse';
+            $returnType = '\ConstantContact\Client\Model\ContactCreateOrUpdateResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -939,7 +939,7 @@ class ContactsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ContactCreateOrUpdateResponse',
+                        '\ConstantContact\Client\Model\ContactCreateOrUpdateResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -947,7 +947,7 @@ class ContactsApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ContactCreateOrUpdateResponse',
+                        '\ConstantContact\Client\Model\ContactCreateOrUpdateResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -962,7 +962,7 @@ class ContactsApi
      *
      * Create or Update a Contact
      *
-     * @param  \OpenAPI\Client\Model\ContactCreateOrUpdateInput $body A JSON request body payload that contains the contact resource you are creating or updating. The request body must contain the &#x60;email_address&#x60; property and the &#x60;list_memberships&#x60; array. (required)
+     * @param  'ConstantContact\Client\Model\ContactCreateOrUpdateInput $body A JSON request body payload that contains the contact resource you are creating or updating. The request body must contain the &#x60;email_address&#x60; property and the &#x60;list_memberships&#x60; array. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createOrUpdateContact'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -983,7 +983,7 @@ class ContactsApi
      *
      * Create or Update a Contact
      *
-     * @param  \OpenAPI\Client\Model\ContactCreateOrUpdateInput $body A JSON request body payload that contains the contact resource you are creating or updating. The request body must contain the &#x60;email_address&#x60; property and the &#x60;list_memberships&#x60; array. (required)
+     * @param  'ConstantContact\Client\Model\ContactCreateOrUpdateInput $body A JSON request body payload that contains the contact resource you are creating or updating. The request body must contain the &#x60;email_address&#x60; property and the &#x60;list_memberships&#x60; array. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createOrUpdateContact'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -991,7 +991,7 @@ class ContactsApi
      */
     public function createOrUpdateContactAsyncWithHttpInfo($body, string $contentType = self::contentTypes['createOrUpdateContact'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ContactCreateOrUpdateResponse';
+        $returnType = '\ConstantContact\Client\Model\ContactCreateOrUpdateResponse';
         $request = $this->createOrUpdateContactRequest($body, $contentType);
 
         return $this->client
@@ -1033,7 +1033,7 @@ class ContactsApi
     /**
      * Create request for operation 'createOrUpdateContact'
      *
-     * @param  \OpenAPI\Client\Model\ContactCreateOrUpdateInput $body A JSON request body payload that contains the contact resource you are creating or updating. The request body must contain the &#x60;email_address&#x60; property and the &#x60;list_memberships&#x60; array. (required)
+     * @param  'ConstantContact\Client\Model\ContactCreateOrUpdateInput $body A JSON request body payload that contains the contact resource you are creating or updating. The request body must contain the &#x60;email_address&#x60; property and the &#x60;list_memberships&#x60; array. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createOrUpdateContact'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1142,7 +1142,7 @@ class ContactsApi
      * @param  string $contact_id Unique ID of contact to DELETE (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteContact'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -1159,7 +1159,7 @@ class ContactsApi
      * @param  string $contact_id Unique ID of contact to DELETE (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteContact'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1385,9 +1385,9 @@ class ContactsApi
      * @param  string $include Use &#x60;include&#x60; to specify which contact sub-resources to include in the response. Use a comma to separate multiple sub-resources. Valid values: &#x60;custom_fields&#x60;, &#x60;list_memberships&#x60;, &#x60;phone_numbers&#x60;, &#x60;street_addresses&#x60;, &#x60;notes&#x60;, &#x60;sms_channel&#x60;, and &#x60;taggings&#x60;. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getContact'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ContactResource
+     * @return 'ConstantContact\Client\Model\ContactResource
      */
     public function getContact($contact_id, $include = null, string $contentType = self::contentTypes['getContact'][0])
     {
@@ -1404,9 +1404,9 @@ class ContactsApi
      * @param  string $include Use &#x60;include&#x60; to specify which contact sub-resources to include in the response. Use a comma to separate multiple sub-resources. Valid values: &#x60;custom_fields&#x60;, &#x60;list_memberships&#x60;, &#x60;phone_numbers&#x60;, &#x60;street_addresses&#x60;, &#x60;notes&#x60;, &#x60;sms_channel&#x60;, and &#x60;taggings&#x60;. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getContact'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ContactResource, HTTP status code, HTTP response headers (array of strings)
+     * @return array of 'ConstantContact\Client\Model\ContactResource, HTTP status code, HTTP response headers (array of strings)
      */
     public function getContactWithHttpInfo($contact_id, $include = null, string $contentType = self::contentTypes['getContact'][0])
     {
@@ -1449,11 +1449,11 @@ class ContactsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ContactResource' === '\SplFileObject') {
+                    if ('\ConstantContact\Client\Model\ContactResource' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ContactResource' !== 'string') {
+                        if ('\ConstantContact\Client\Model\ContactResource' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1471,13 +1471,13 @@ class ContactsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ContactResource', []),
+                        ObjectSerializer::deserialize($content, '\ConstantContact\Client\Model\ContactResource', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\ContactResource';
+            $returnType = '\ConstantContact\Client\Model\ContactResource';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1510,7 +1510,7 @@ class ContactsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ContactResource',
+                        '\ConstantContact\Client\Model\ContactResource',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1556,7 +1556,7 @@ class ContactsApi
      */
     public function getContactAsyncWithHttpInfo($contact_id, $include = null, string $contentType = self::contentTypes['getContact'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ContactResource';
+        $returnType = '\ConstantContact\Client\Model\ContactResource';
         $request = $this->getContactRequest($contact_id, $include, $contentType);
 
         return $this->client
@@ -1719,9 +1719,9 @@ class ContactsApi
      * @param  string $sequence_ids Comma delimited list of V2 API contact &#x60;ids&#x60; to cross-reference with the V3 API &#x60;contact_id&#x60; value. Endpoint accepts a maximum of 500 ids at a time. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getContactIdXrefs'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ContactXrefs
+     * @return 'ConstantContact\Client\Model\ContactXrefs
      */
     public function getContactIdXrefs($sequence_ids, string $contentType = self::contentTypes['getContactIdXrefs'][0])
     {
@@ -1737,9 +1737,9 @@ class ContactsApi
      * @param  string $sequence_ids Comma delimited list of V2 API contact &#x60;ids&#x60; to cross-reference with the V3 API &#x60;contact_id&#x60; value. Endpoint accepts a maximum of 500 ids at a time. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getContactIdXrefs'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ContactXrefs, HTTP status code, HTTP response headers (array of strings)
+     * @return array of 'ConstantContact\Client\Model\ContactXrefs, HTTP status code, HTTP response headers (array of strings)
      */
     public function getContactIdXrefsWithHttpInfo($sequence_ids, string $contentType = self::contentTypes['getContactIdXrefs'][0])
     {
@@ -1782,11 +1782,11 @@ class ContactsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ContactXrefs' === '\SplFileObject') {
+                    if ('\ConstantContact\Client\Model\ContactXrefs' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ContactXrefs' !== 'string') {
+                        if ('\ConstantContact\Client\Model\ContactXrefs' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1804,13 +1804,13 @@ class ContactsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ContactXrefs', []),
+                        ObjectSerializer::deserialize($content, '\ConstantContact\Client\Model\ContactXrefs', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\ContactXrefs';
+            $returnType = '\ConstantContact\Client\Model\ContactXrefs';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1843,7 +1843,7 @@ class ContactsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ContactXrefs',
+                        '\ConstantContact\Client\Model\ContactXrefs',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1887,7 +1887,7 @@ class ContactsApi
      */
     public function getContactIdXrefsAsyncWithHttpInfo($sequence_ids, string $contentType = self::contentTypes['getContactIdXrefs'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ContactXrefs';
+        $returnType = '\ConstantContact\Client\Model\ContactXrefs';
         $request = $this->getContactIdXrefsRequest($sequence_ids, $contentType);
 
         return $this->client
@@ -2054,9 +2054,9 @@ class ContactsApi
      * @param  int $limit Specifies the number of results displayed per page of output in the response, from 1 - 500, default &#x3D; 50. (optional, default to 50)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getContacts'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\Contacts|\OpenAPI\Client\Model\Contacts
+     * @return 'ConstantContact\Client\Model\Contacts|\OpenAPI\Client\Model\Contacts
      */
     public function getContacts($status = null, $email = null, $lists = null, $segment_id = null, $tags = null, $updated_after = null, $updated_before = null, $created_after = null, $created_before = null, $optout_after = null, $optout_before = null, $include = null, $sms_status = null, $include_count = null, $limit = 50, string $contentType = self::contentTypes['getContacts'][0])
     {
@@ -2086,9 +2086,9 @@ class ContactsApi
      * @param  int $limit Specifies the number of results displayed per page of output in the response, from 1 - 500, default &#x3D; 50. (optional, default to 50)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getContacts'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\Contacts|\OpenAPI\Client\Model\Contacts, HTTP status code, HTTP response headers (array of strings)
+     * @return array of 'ConstantContact\Client\Model\Contacts|\OpenAPI\Client\Model\Contacts, HTTP status code, HTTP response headers (array of strings)
      */
     public function getContactsWithHttpInfo($status = null, $email = null, $lists = null, $segment_id = null, $tags = null, $updated_after = null, $updated_before = null, $created_after = null, $created_before = null, $optout_after = null, $optout_before = null, $include = null, $sms_status = null, $include_count = null, $limit = 50, string $contentType = self::contentTypes['getContacts'][0])
     {
@@ -2131,11 +2131,11 @@ class ContactsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\Contacts' === '\SplFileObject') {
+                    if ('\ConstantContact\Client\Model\Contacts' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\Contacts' !== 'string') {
+                        if ('\ConstantContact\Client\Model\Contacts' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2153,16 +2153,16 @@ class ContactsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Contacts', []),
+                        ObjectSerializer::deserialize($content, '\ConstantContact\Client\Model\Contacts', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 202:
-                    if ('\OpenAPI\Client\Model\Contacts' === '\SplFileObject') {
+                    if ('\ConstantContact\Client\Model\Contacts' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\Contacts' !== 'string') {
+                        if ('\ConstantContact\Client\Model\Contacts' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2180,13 +2180,13 @@ class ContactsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Contacts', []),
+                        ObjectSerializer::deserialize($content, '\ConstantContact\Client\Model\Contacts', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\Contacts';
+            $returnType = '\ConstantContact\Client\Model\Contacts';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -2219,7 +2219,7 @@ class ContactsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Contacts',
+                        '\ConstantContact\Client\Model\Contacts',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2227,7 +2227,7 @@ class ContactsApi
                 case 202:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Contacts',
+                        '\ConstantContact\Client\Model\Contacts',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2299,7 +2299,7 @@ class ContactsApi
      */
     public function getContactsAsyncWithHttpInfo($status = null, $email = null, $lists = null, $segment_id = null, $tags = null, $updated_after = null, $updated_before = null, $created_after = null, $created_before = null, $optout_after = null, $optout_before = null, $include = null, $sms_status = null, $include_count = null, $limit = 50, string $contentType = self::contentTypes['getContacts'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\Contacts';
+        $returnType = '\ConstantContact\Client\Model\Contacts';
         $request = $this->getContactsRequest($status, $email, $lists, $segment_id, $tags, $updated_after, $updated_before, $created_after, $created_before, $optout_after, $optout_before, $include, $sms_status, $include_count, $limit, $contentType);
 
         return $this->client
@@ -2606,9 +2606,9 @@ class ContactsApi
      * @param  string $contact_id The contact&#39;s unique ID. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getSmsEngagementHistory'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\SmsEngagementHistoryInner[]
+     * @return 'ConstantContact\Client\Model\SmsEngagementHistoryInner[]
      */
     public function getSmsEngagementHistory($contact_id, string $contentType = self::contentTypes['getSmsEngagementHistory'][0])
     {
@@ -2624,9 +2624,9 @@ class ContactsApi
      * @param  string $contact_id The contact&#39;s unique ID. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getSmsEngagementHistory'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\SmsEngagementHistoryInner[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of 'ConstantContact\Client\Model\SmsEngagementHistoryInner[], HTTP status code, HTTP response headers (array of strings)
      */
     public function getSmsEngagementHistoryWithHttpInfo($contact_id, string $contentType = self::contentTypes['getSmsEngagementHistory'][0])
     {
@@ -2669,11 +2669,11 @@ class ContactsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\SmsEngagementHistoryInner[]' === '\SplFileObject') {
+                    if ('\ConstantContact\Client\Model\SmsEngagementHistoryInner[]' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\SmsEngagementHistoryInner[]' !== 'string') {
+                        if ('\ConstantContact\Client\Model\SmsEngagementHistoryInner[]' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2691,13 +2691,13 @@ class ContactsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\SmsEngagementHistoryInner[]', []),
+                        ObjectSerializer::deserialize($content, '\ConstantContact\Client\Model\SmsEngagementHistoryInner[]', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\SmsEngagementHistoryInner[]';
+            $returnType = '\ConstantContact\Client\Model\SmsEngagementHistoryInner[]';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -2730,7 +2730,7 @@ class ContactsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\SmsEngagementHistoryInner[]',
+                        '\ConstantContact\Client\Model\SmsEngagementHistoryInner[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2774,7 +2774,7 @@ class ContactsApi
      */
     public function getSmsEngagementHistoryAsyncWithHttpInfo($contact_id, string $contentType = self::contentTypes['getSmsEngagementHistory'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\SmsEngagementHistoryInner[]';
+        $returnType = '\ConstantContact\Client\Model\SmsEngagementHistoryInner[]';
         $request = $this->getSmsEngagementHistoryRequest($contact_id, $contentType);
 
         return $this->client
@@ -2924,12 +2924,12 @@ class ContactsApi
      * PUT (update) a Contact
      *
      * @param  string $contact_id Unique ID of contact to update (required)
-     * @param  \OpenAPI\Client\Model\ContactPutRequest $body JSON payload defining the contact object, with updates. Any properties left blank or not included in the PUT payload are overwritten with null value - does not apply to contact subresources. (required)
+     * @param  'ConstantContact\Client\Model\ContactPutRequest $body JSON payload defining the contact object, with updates. Any properties left blank or not included in the PUT payload are overwritten with null value - does not apply to contact subresources. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putContact'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ContactResource
+     * @return 'ConstantContact\Client\Model\ContactResource
      */
     public function putContact($contact_id, $body, string $contentType = self::contentTypes['putContact'][0])
     {
@@ -2943,12 +2943,12 @@ class ContactsApi
      * PUT (update) a Contact
      *
      * @param  string $contact_id Unique ID of contact to update (required)
-     * @param  \OpenAPI\Client\Model\ContactPutRequest $body JSON payload defining the contact object, with updates. Any properties left blank or not included in the PUT payload are overwritten with null value - does not apply to contact subresources. (required)
+     * @param  'ConstantContact\Client\Model\ContactPutRequest $body JSON payload defining the contact object, with updates. Any properties left blank or not included in the PUT payload are overwritten with null value - does not apply to contact subresources. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putContact'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ContactResource, HTTP status code, HTTP response headers (array of strings)
+     * @return array of 'ConstantContact\Client\Model\ContactResource, HTTP status code, HTTP response headers (array of strings)
      */
     public function putContactWithHttpInfo($contact_id, $body, string $contentType = self::contentTypes['putContact'][0])
     {
@@ -2991,11 +2991,11 @@ class ContactsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ContactResource' === '\SplFileObject') {
+                    if ('\ConstantContact\Client\Model\ContactResource' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ContactResource' !== 'string') {
+                        if ('\ConstantContact\Client\Model\ContactResource' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -3013,13 +3013,13 @@ class ContactsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ContactResource', []),
+                        ObjectSerializer::deserialize($content, '\ConstantContact\Client\Model\ContactResource', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\ContactResource';
+            $returnType = '\ConstantContact\Client\Model\ContactResource';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -3052,7 +3052,7 @@ class ContactsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ContactResource',
+                        '\ConstantContact\Client\Model\ContactResource',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3068,7 +3068,7 @@ class ContactsApi
      * PUT (update) a Contact
      *
      * @param  string $contact_id Unique ID of contact to update (required)
-     * @param  \OpenAPI\Client\Model\ContactPutRequest $body JSON payload defining the contact object, with updates. Any properties left blank or not included in the PUT payload are overwritten with null value - does not apply to contact subresources. (required)
+     * @param  'ConstantContact\Client\Model\ContactPutRequest $body JSON payload defining the contact object, with updates. Any properties left blank or not included in the PUT payload are overwritten with null value - does not apply to contact subresources. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putContact'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3090,7 +3090,7 @@ class ContactsApi
      * PUT (update) a Contact
      *
      * @param  string $contact_id Unique ID of contact to update (required)
-     * @param  \OpenAPI\Client\Model\ContactPutRequest $body JSON payload defining the contact object, with updates. Any properties left blank or not included in the PUT payload are overwritten with null value - does not apply to contact subresources. (required)
+     * @param  'ConstantContact\Client\Model\ContactPutRequest $body JSON payload defining the contact object, with updates. Any properties left blank or not included in the PUT payload are overwritten with null value - does not apply to contact subresources. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putContact'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3098,7 +3098,7 @@ class ContactsApi
      */
     public function putContactAsyncWithHttpInfo($contact_id, $body, string $contentType = self::contentTypes['putContact'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ContactResource';
+        $returnType = '\ConstantContact\Client\Model\ContactResource';
         $request = $this->putContactRequest($contact_id, $body, $contentType);
 
         return $this->client
@@ -3141,7 +3141,7 @@ class ContactsApi
      * Create request for operation 'putContact'
      *
      * @param  string $contact_id Unique ID of contact to update (required)
-     * @param  \OpenAPI\Client\Model\ContactPutRequest $body JSON payload defining the contact object, with updates. Any properties left blank or not included in the PUT payload are overwritten with null value - does not apply to contact subresources. (required)
+     * @param  'ConstantContact\Client\Model\ContactPutRequest $body JSON payload defining the contact object, with updates. Any properties left blank or not included in the PUT payload are overwritten with null value - does not apply to contact subresources. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putContact'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

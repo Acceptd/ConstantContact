@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace ConstantContact\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use 'ConstantContact\Client\ObjectSerializer;
 
 /**
  * OptoutsTrackingActivitiesPage Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,8 +57,8 @@ class OptoutsTrackingActivitiesPage implements ModelInterface, ArrayAccess, \Jso
       * @var string[]
       */
     protected static $openAPITypes = [
-        'tracking_activities' => '\OpenAPI\Client\Model\OptoutsTrackingActivity[]',
-        '_links' => '\OpenAPI\Client\Model\ReportingLinks'
+        'tracking_activities' => '\ConstantContact\Client\Model\OptoutsTrackingActivity[]',
+        '_links' => '\ConstantContact\Client\Model\ReportingLinks'
     ];
 
     /**
@@ -305,7 +305,7 @@ class OptoutsTrackingActivitiesPage implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets tracking_activities
      *
-     * @return \OpenAPI\Client\Model\OptoutsTrackingActivity[]
+     * @return 'ConstantContact\Client\Model\OptoutsTrackingActivity[]
      */
     public function getTrackingActivities()
     {
@@ -315,7 +315,7 @@ class OptoutsTrackingActivitiesPage implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets tracking_activities
      *
-     * @param \OpenAPI\Client\Model\OptoutsTrackingActivity[] $tracking_activities The list of opt-out tracking activities
+     * @param 'ConstantContact\Client\Model\OptoutsTrackingActivity[] $tracking_activities The list of opt-out tracking activities
      *
      * @return self
      */
@@ -332,7 +332,7 @@ class OptoutsTrackingActivitiesPage implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets _links
      *
-     * @return \OpenAPI\Client\Model\ReportingLinks
+     * @return 'ConstantContact\Client\Model\ReportingLinks
      */
     public function getLinks()
     {
@@ -342,7 +342,7 @@ class OptoutsTrackingActivitiesPage implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets _links
      *
-     * @param \OpenAPI\Client\Model\ReportingLinks $_links _links
+     * @param 'ConstantContact\Client\Model\ReportingLinks $_links _links
      *
      * @return self
      */

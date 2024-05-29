@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -43,7 +43,7 @@ use ConstantContact\Client\ObjectSerializer;
  * SMSReportingApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -130,9 +130,9 @@ class SMSReportingApi
      * @param  string $limit Use to limit the number of results to return on a single page. The default is &#x60;50&#x60; and the maximum is &#x60;500&#x60; per page. (optional, default to '50')
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getAllBulkSmsCampaignSummaries'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\SmsCampaignSummariesPage
+     * @return 'ConstantContact\Client\Model\SmsCampaignSummariesPage
      */
     public function getAllBulkSmsCampaignSummaries($limit = '50', string $contentType = self::contentTypes['getAllBulkSmsCampaignSummaries'][0])
     {
@@ -148,9 +148,9 @@ class SMSReportingApi
      * @param  string $limit Use to limit the number of results to return on a single page. The default is &#x60;50&#x60; and the maximum is &#x60;500&#x60; per page. (optional, default to '50')
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getAllBulkSmsCampaignSummaries'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\SmsCampaignSummariesPage, HTTP status code, HTTP response headers (array of strings)
+     * @return array of 'ConstantContact\Client\Model\SmsCampaignSummariesPage, HTTP status code, HTTP response headers (array of strings)
      */
     public function getAllBulkSmsCampaignSummariesWithHttpInfo($limit = '50', string $contentType = self::contentTypes['getAllBulkSmsCampaignSummaries'][0])
     {
@@ -193,11 +193,11 @@ class SMSReportingApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\SmsCampaignSummariesPage' === '\SplFileObject') {
+                    if ('\ConstantContact\Client\Model\SmsCampaignSummariesPage' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\SmsCampaignSummariesPage' !== 'string') {
+                        if ('\ConstantContact\Client\Model\SmsCampaignSummariesPage' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -215,13 +215,13 @@ class SMSReportingApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\SmsCampaignSummariesPage', []),
+                        ObjectSerializer::deserialize($content, '\ConstantContact\Client\Model\SmsCampaignSummariesPage', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\SmsCampaignSummariesPage';
+            $returnType = '\ConstantContact\Client\Model\SmsCampaignSummariesPage';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -254,7 +254,7 @@ class SMSReportingApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\SmsCampaignSummariesPage',
+                        '\ConstantContact\Client\Model\SmsCampaignSummariesPage',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -298,7 +298,7 @@ class SMSReportingApi
      */
     public function getAllBulkSmsCampaignSummariesAsyncWithHttpInfo($limit = '50', string $contentType = self::contentTypes['getAllBulkSmsCampaignSummaries'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\SmsCampaignSummariesPage';
+        $returnType = '\ConstantContact\Client\Model\SmsCampaignSummariesPage';
         $request = $this->getAllBulkSmsCampaignSummariesRequest($limit, $contentType);
 
         return $this->client

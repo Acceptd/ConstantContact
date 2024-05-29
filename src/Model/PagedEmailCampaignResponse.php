@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace ConstantContact\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use 'ConstantContact\Client\ObjectSerializer;
 
 /**
  * PagedEmailCampaignResponse Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,8 +57,8 @@ class PagedEmailCampaignResponse implements ModelInterface, ArrayAccess, \JsonSe
       * @var string[]
       */
     protected static $openAPITypes = [
-        '_links' => '\OpenAPI\Client\Model\EmailsPagingLinks',
-        'campaigns' => '\OpenAPI\Client\Model\EmailCampaigns[]'
+        '_links' => '\ConstantContact\Client\Model\EmailsPagingLinks',
+        'campaigns' => '\ConstantContact\Client\Model\EmailCampaigns[]'
     ];
 
     /**
@@ -299,7 +299,7 @@ class PagedEmailCampaignResponse implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets _links
      *
-     * @return \OpenAPI\Client\Model\EmailsPagingLinks|null
+     * @return 'ConstantContact\Client\Model\EmailsPagingLinks|null
      */
     public function getLinks()
     {
@@ -309,7 +309,7 @@ class PagedEmailCampaignResponse implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets _links
      *
-     * @param \OpenAPI\Client\Model\EmailsPagingLinks|null $_links _links
+     * @param 'ConstantContact\Client\Model\EmailsPagingLinks|null $_links _links
      *
      * @return self
      */
@@ -326,7 +326,7 @@ class PagedEmailCampaignResponse implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets campaigns
      *
-     * @return \OpenAPI\Client\Model\EmailCampaigns[]|null
+     * @return 'ConstantContact\Client\Model\EmailCampaigns[]|null
      */
     public function getCampaigns()
     {
@@ -336,7 +336,7 @@ class PagedEmailCampaignResponse implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets campaigns
      *
-     * @param \OpenAPI\Client\Model\EmailCampaigns[]|null $campaigns campaigns
+     * @param 'ConstantContact\Client\Model\EmailCampaigns[]|null $campaigns campaigns
      *
      * @return self
      */

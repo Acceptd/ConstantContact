@@ -15,7 +15,7 @@ All URIs are relative to https://api.cc.email/v3, except if the operation define
 ## `createList()`
 
 ```php
-createList($body): \OpenAPI\Client\Model\ContactListPutPost
+createList($body): 'ConstantContact\Client\Model\ContactListPutPost
 ```
 
 POST (create) a List
@@ -47,7 +47,7 @@ $apiInstance = new OpenAPI\Client\Api\ContactListsApi(
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \OpenAPI\Client\Model\ListInput(); // \OpenAPI\Client\Model\ListInput | JSON payload defining the new contact list
+$body = new 'ConstantContact\Client\Model\ListInput(); // 'ConstantContact\Client\Model\ListInput | JSON payload defining the new contact list
 
 try {
     $result = $apiInstance->createList($body);
@@ -83,7 +83,7 @@ try {
 ## `deleteListActivity()`
 
 ```php
-deleteListActivity($list_id): \OpenAPI\Client\Model\ActivityDeleteListResponse
+deleteListActivity($list_id): 'ConstantContact\Client\Model\ActivityDeleteListResponse
 ```
 
 DELETE a List
@@ -151,7 +151,7 @@ try {
 ## `getList()`
 
 ```php
-getList($list_id, $include_membership_count): \OpenAPI\Client\Model\ContactList
+getList($list_id, $include_membership_count): 'ConstantContact\Client\Model\ContactList
 ```
 
 GET a List
@@ -221,7 +221,7 @@ try {
 ## `getListIdXrefs()`
 
 ```php
-getListIdXrefs($sequence_ids): \OpenAPI\Client\Model\ListXrefs
+getListIdXrefs($sequence_ids): 'ConstantContact\Client\Model\ListXrefs
 ```
 
 GET a collection of V2 and V3 API List IDs
@@ -289,7 +289,7 @@ try {
 ## `getLists()`
 
 ```php
-getLists($limit, $include_count, $include_membership_count, $name, $status): \OpenAPI\Client\Model\ContactListArray
+getLists($limit, $include_count, $include_membership_count, $name, $status): 'ConstantContact\Client\Model\ContactListArray
 ```
 
 GET Lists Collection
@@ -365,7 +365,7 @@ try {
 ## `putList()`
 
 ```php
-putList($list_id, $json_put_body): \OpenAPI\Client\Model\ContactListPutPost
+putList($list_id, $json_put_body): 'ConstantContact\Client\Model\ContactListPutPost
 ```
 
 PUT (update) a List
@@ -398,7 +398,7 @@ $apiInstance = new OpenAPI\Client\Api\ContactListsApi(
     $config
 );
 $list_id = cbc05bac-6a41-46fa-a063-79961763bf4b; // string | Unique ID of the contact list to update
-$json_put_body = new \OpenAPI\Client\Model\ListInput(); // \OpenAPI\Client\Model\ListInput | JSON payload containing updates to the specified contact list
+$json_put_body = new 'ConstantContact\Client\Model\ListInput(); // 'ConstantContact\Client\Model\ListInput | JSON payload containing updates to the specified contact list
 
 try {
     $result = $apiInstance->putList($list_id, $json_put_body);

@@ -15,7 +15,7 @@ All URIs are relative to https://api.cc.email/v3, except if the operation define
 ## `getContactAdds()`
 
 ```php
-getContactAdds($campaign_activity_id, $limit, $contacts_filter): \OpenAPI\Client\Model\PContactAddTrackingActivitiesPage
+getContactAdds($campaign_activity_id, $limit, $contacts_filter): 'ConstantContact\Client\Model\PContactAddTrackingActivitiesPage
 ```
 
 GET a Unique Contacts Adds Landing Page Report
@@ -87,7 +87,7 @@ try {
 ## `getContactOpens()`
 
 ```php
-getContactOpens($campaign_activity_id, $limit, $contacts_filter): \OpenAPI\Client\Model\PContactOpensTrackingActivitiesPage
+getContactOpens($campaign_activity_id, $limit, $contacts_filter): 'ConstantContact\Client\Model\PContactOpensTrackingActivitiesPage
 ```
 
 GET a Contacts Opens Landing Page Report
@@ -159,7 +159,7 @@ try {
 ## `getUniqueContactClicks()`
 
 ```php
-getUniqueContactClicks($campaign_activity_id, $limit, $contacts_filter): \OpenAPI\Client\Model\PContactClickTrackingActivitiesPage
+getUniqueContactClicks($campaign_activity_id, $limit, $contacts_filter): 'ConstantContact\Client\Model\PContactClickTrackingActivitiesPage
 ```
 
 GET a Unique Contacts Clicks Landing Page Report
@@ -231,7 +231,7 @@ try {
 ## `getUniqueContactOpens()`
 
 ```php
-getUniqueContactOpens($campaign_activity_id, $limit, $contacts_filter): \OpenAPI\Client\Model\PContactOpensTrackingActivitiesPage
+getUniqueContactOpens($campaign_activity_id, $limit, $contacts_filter): 'ConstantContact\Client\Model\PContactOpensTrackingActivitiesPage
 ```
 
 GET a Unique Contacts Opens Landing Page Report
@@ -303,7 +303,7 @@ try {
 ## `getUniqueContactSMSOptIns()`
 
 ```php
-getUniqueContactSMSOptIns($campaign_activity_id, $limit, $contacts_filter): \OpenAPI\Client\Model\PContactSMSOptInTrackingActivitiesPage
+getUniqueContactSMSOptIns($campaign_activity_id, $limit, $contacts_filter): 'ConstantContact\Client\Model\PContactSMSOptInTrackingActivitiesPage
 ```
 
 GET a Unique Contacts SMS Opt-In Landing Page Report
@@ -375,7 +375,7 @@ try {
 ## `getUniqueContactUpdates()`
 
 ```php
-getUniqueContactUpdates($campaign_activity_id, $limit, $contacts_filter): \OpenAPI\Client\Model\PContactUpdateTrackingActivitiesPage
+getUniqueContactUpdates($campaign_activity_id, $limit, $contacts_filter): 'ConstantContact\Client\Model\PContactUpdateTrackingActivitiesPage
 ```
 
 GET a Unique Contacts Updates Landing Page Report

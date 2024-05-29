@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace ConstantContact\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use 'ConstantContact\Client\ObjectSerializer;
 
 /**
  * Customer Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -68,8 +68,8 @@ class Customer implements ModelInterface, ArrayAccess, \JsonSerializable
         'state_code' => 'string',
         'time_zone_id' => 'string',
         'website' => 'string',
-        'physical_address' => '\OpenAPI\Client\Model\CustomerPhysicalAddress',
-        'company_logo' => '\OpenAPI\Client\Model\CompanyLogo'
+        'physical_address' => '\ConstantContact\Client\Model\CustomerPhysicalAddress',
+        'company_logo' => '\ConstantContact\Client\Model\CompanyLogo'
     ];
 
     /**
@@ -681,7 +681,7 @@ class Customer implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets physical_address
      *
-     * @return \OpenAPI\Client\Model\CustomerPhysicalAddress|null
+     * @return 'ConstantContact\Client\Model\CustomerPhysicalAddress|null
      */
     public function getPhysicalAddress()
     {
@@ -691,7 +691,7 @@ class Customer implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets physical_address
      *
-     * @param \OpenAPI\Client\Model\CustomerPhysicalAddress|null $physical_address physical_address
+     * @param 'ConstantContact\Client\Model\CustomerPhysicalAddress|null $physical_address physical_address
      *
      * @return self
      */
@@ -708,7 +708,7 @@ class Customer implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets company_logo
      *
-     * @return \OpenAPI\Client\Model\CompanyLogo|null
+     * @return 'ConstantContact\Client\Model\CompanyLogo|null
      */
     public function getCompanyLogo()
     {
@@ -718,7 +718,7 @@ class Customer implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets company_logo
      *
-     * @param \OpenAPI\Client\Model\CompanyLogo|null $company_logo company_logo
+     * @param 'ConstantContact\Client\Model\CompanyLogo|null $company_logo company_logo
      *
      * @return self
      */

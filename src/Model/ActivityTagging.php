@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -29,13 +29,13 @@
 namespace ConstantContact\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use 'ConstantContact\Client\ObjectSerializer;
 
 /**
  * ActivityTagging Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -65,8 +65,8 @@ class ActivityTagging implements ModelInterface, ArrayAccess, \JsonSerializable
         'updated_at' => '\DateTime',
         'percent_done' => 'int',
         'activity_errors' => 'string[]',
-        'status' => '\OpenAPI\Client\Model\ActivityTaggingStatus',
-        '_links' => '\OpenAPI\Client\Model\ActivityLinks'
+        'status' => '\ConstantContact\Client\Model\ActivityTaggingStatus',
+        '_links' => '\ConstantContact\Client\Model\ActivityLinks'
     ];
 
     /**
@@ -577,7 +577,7 @@ class ActivityTagging implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets status
      *
-     * @return \OpenAPI\Client\Model\ActivityTaggingStatus|null
+     * @return 'ConstantContact\Client\Model\ActivityTaggingStatus|null
      */
     public function getStatus()
     {
@@ -587,7 +587,7 @@ class ActivityTagging implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets status
      *
-     * @param \OpenAPI\Client\Model\ActivityTaggingStatus|null $status status
+     * @param 'ConstantContact\Client\Model\ActivityTaggingStatus|null $status status
      *
      * @return self
      */
@@ -604,7 +604,7 @@ class ActivityTagging implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets _links
      *
-     * @return \OpenAPI\Client\Model\ActivityLinks|null
+     * @return 'ConstantContact\Client\Model\ActivityLinks|null
      */
     public function getLinks()
     {
@@ -614,7 +614,7 @@ class ActivityTagging implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets _links
      *
-     * @param \OpenAPI\Client\Model\ActivityLinks|null $_links _links
+     * @param 'ConstantContact\Client\Model\ActivityLinks|null $_links _links
      *
      * @return self
      */

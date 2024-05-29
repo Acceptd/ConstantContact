@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -43,7 +43,7 @@ use ConstantContact\Client\ObjectSerializer;
  * ContactTagsApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  ConstantContact\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -142,9 +142,9 @@ class ContactTagsApi
      * @param  string $tag_id The ID that uniquely identifies a tag in UUID format. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteTag'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ActivityGeneric
+     * @return 'ConstantContact\Client\Model\ActivityGeneric
      */
     public function deleteTag($tag_id, string $contentType = self::contentTypes['deleteTag'][0])
     {
@@ -160,9 +160,9 @@ class ContactTagsApi
      * @param  string $tag_id The ID that uniquely identifies a tag in UUID format. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteTag'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ActivityGeneric, HTTP status code, HTTP response headers (array of strings)
+     * @return array of 'ConstantContact\Client\Model\ActivityGeneric, HTTP status code, HTTP response headers (array of strings)
      */
     public function deleteTagWithHttpInfo($tag_id, string $contentType = self::contentTypes['deleteTag'][0])
     {
@@ -205,11 +205,11 @@ class ContactTagsApi
 
             switch($statusCode) {
                 case 202:
-                    if ('\OpenAPI\Client\Model\ActivityGeneric' === '\SplFileObject') {
+                    if ('\ConstantContact\Client\Model\ActivityGeneric' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ActivityGeneric' !== 'string') {
+                        if ('\ConstantContact\Client\Model\ActivityGeneric' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -227,13 +227,13 @@ class ContactTagsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ActivityGeneric', []),
+                        ObjectSerializer::deserialize($content, '\ConstantContact\Client\Model\ActivityGeneric', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\ActivityGeneric';
+            $returnType = '\ConstantContact\Client\Model\ActivityGeneric';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -266,7 +266,7 @@ class ContactTagsApi
                 case 202:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ActivityGeneric',
+                        '\ConstantContact\Client\Model\ActivityGeneric',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -310,7 +310,7 @@ class ContactTagsApi
      */
     public function deleteTagAsyncWithHttpInfo($tag_id, string $contentType = self::contentTypes['deleteTag'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ActivityGeneric';
+        $returnType = '\ConstantContact\Client\Model\ActivityGeneric';
         $request = $this->deleteTagRequest($tag_id, $contentType);
 
         return $this->client
@@ -463,9 +463,9 @@ class ContactTagsApi
      * @param  bool $include_count Use to include (&#x60;true&#x60;) or exclude (&#x60;false&#x60;) the total number of tagged contacts (&#x60;contacts_count&#x60;) from the results. (optional, default to false)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getTag'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\Tag
+     * @return 'ConstantContact\Client\Model\Tag
      */
     public function getTag($tag_id, $include_count = false, string $contentType = self::contentTypes['getTag'][0])
     {
@@ -482,9 +482,9 @@ class ContactTagsApi
      * @param  bool $include_count Use to include (&#x60;true&#x60;) or exclude (&#x60;false&#x60;) the total number of tagged contacts (&#x60;contacts_count&#x60;) from the results. (optional, default to false)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getTag'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\Tag, HTTP status code, HTTP response headers (array of strings)
+     * @return array of 'ConstantContact\Client\Model\Tag, HTTP status code, HTTP response headers (array of strings)
      */
     public function getTagWithHttpInfo($tag_id, $include_count = false, string $contentType = self::contentTypes['getTag'][0])
     {
@@ -527,11 +527,11 @@ class ContactTagsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\Tag' === '\SplFileObject') {
+                    if ('\ConstantContact\Client\Model\Tag' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\Tag' !== 'string') {
+                        if ('\ConstantContact\Client\Model\Tag' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -549,13 +549,13 @@ class ContactTagsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Tag', []),
+                        ObjectSerializer::deserialize($content, '\ConstantContact\Client\Model\Tag', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\Tag';
+            $returnType = '\ConstantContact\Client\Model\Tag';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -588,7 +588,7 @@ class ContactTagsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Tag',
+                        '\ConstantContact\Client\Model\Tag',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -634,7 +634,7 @@ class ContactTagsApi
      */
     public function getTagAsyncWithHttpInfo($tag_id, $include_count = false, string $contentType = self::contentTypes['getTag'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\Tag';
+        $returnType = '\ConstantContact\Client\Model\Tag';
         $request = $this->getTagRequest($tag_id, $include_count, $contentType);
 
         return $this->client
@@ -798,9 +798,9 @@ class ContactTagsApi
      * @param  bool $include_count Returns the total number of contacts (&#x60;contacts_count&#x60;) to which a tag applies. (optional, default to false)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getTags'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\Tags
+     * @return 'ConstantContact\Client\Model\Tags
      */
     public function getTags($limit = 50, $include_count = false, string $contentType = self::contentTypes['getTags'][0])
     {
@@ -817,9 +817,9 @@ class ContactTagsApi
      * @param  bool $include_count Returns the total number of contacts (&#x60;contacts_count&#x60;) to which a tag applies. (optional, default to false)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getTags'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\Tags, HTTP status code, HTTP response headers (array of strings)
+     * @return array of 'ConstantContact\Client\Model\Tags, HTTP status code, HTTP response headers (array of strings)
      */
     public function getTagsWithHttpInfo($limit = 50, $include_count = false, string $contentType = self::contentTypes['getTags'][0])
     {
@@ -862,11 +862,11 @@ class ContactTagsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\Tags' === '\SplFileObject') {
+                    if ('\ConstantContact\Client\Model\Tags' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\Tags' !== 'string') {
+                        if ('\ConstantContact\Client\Model\Tags' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -884,13 +884,13 @@ class ContactTagsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Tags', []),
+                        ObjectSerializer::deserialize($content, '\ConstantContact\Client\Model\Tags', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\Tags';
+            $returnType = '\ConstantContact\Client\Model\Tags';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -923,7 +923,7 @@ class ContactTagsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Tags',
+                        '\ConstantContact\Client\Model\Tags',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -969,7 +969,7 @@ class ContactTagsApi
      */
     public function getTagsAsyncWithHttpInfo($limit = 50, $include_count = false, string $contentType = self::contentTypes['getTags'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\Tags';
+        $returnType = '\ConstantContact\Client\Model\Tags';
         $request = $this->getTagsRequest($limit, $include_count, $contentType);
 
         return $this->client
@@ -1124,12 +1124,12 @@ class ContactTagsApi
      *
      * POST (Create) a Tag
      *
-     * @param  \OpenAPI\Client\Model\TagPost $body The JSON payload to use to create a new tag. (required)
+     * @param  'ConstantContact\Client\Model\TagPost $body The JSON payload to use to create a new tag. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postTag'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\Tag
+     * @return 'ConstantContact\Client\Model\Tag
      */
     public function postTag($body, string $contentType = self::contentTypes['postTag'][0])
     {
@@ -1142,12 +1142,12 @@ class ContactTagsApi
      *
      * POST (Create) a Tag
      *
-     * @param  \OpenAPI\Client\Model\TagPost $body The JSON payload to use to create a new tag. (required)
+     * @param  'ConstantContact\Client\Model\TagPost $body The JSON payload to use to create a new tag. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postTag'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\Tag, HTTP status code, HTTP response headers (array of strings)
+     * @return array of 'ConstantContact\Client\Model\Tag, HTTP status code, HTTP response headers (array of strings)
      */
     public function postTagWithHttpInfo($body, string $contentType = self::contentTypes['postTag'][0])
     {
@@ -1190,11 +1190,11 @@ class ContactTagsApi
 
             switch($statusCode) {
                 case 201:
-                    if ('\OpenAPI\Client\Model\Tag' === '\SplFileObject') {
+                    if ('\ConstantContact\Client\Model\Tag' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\Tag' !== 'string') {
+                        if ('\ConstantContact\Client\Model\Tag' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1212,13 +1212,13 @@ class ContactTagsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Tag', []),
+                        ObjectSerializer::deserialize($content, '\ConstantContact\Client\Model\Tag', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\Tag';
+            $returnType = '\ConstantContact\Client\Model\Tag';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1251,7 +1251,7 @@ class ContactTagsApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Tag',
+                        '\ConstantContact\Client\Model\Tag',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1266,7 +1266,7 @@ class ContactTagsApi
      *
      * POST (Create) a Tag
      *
-     * @param  \OpenAPI\Client\Model\TagPost $body The JSON payload to use to create a new tag. (required)
+     * @param  'ConstantContact\Client\Model\TagPost $body The JSON payload to use to create a new tag. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postTag'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1287,7 +1287,7 @@ class ContactTagsApi
      *
      * POST (Create) a Tag
      *
-     * @param  \OpenAPI\Client\Model\TagPost $body The JSON payload to use to create a new tag. (required)
+     * @param  'ConstantContact\Client\Model\TagPost $body The JSON payload to use to create a new tag. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postTag'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1295,7 +1295,7 @@ class ContactTagsApi
      */
     public function postTagAsyncWithHttpInfo($body, string $contentType = self::contentTypes['postTag'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\Tag';
+        $returnType = '\ConstantContact\Client\Model\Tag';
         $request = $this->postTagRequest($body, $contentType);
 
         return $this->client
@@ -1337,7 +1337,7 @@ class ContactTagsApi
     /**
      * Create request for operation 'postTag'
      *
-     * @param  \OpenAPI\Client\Model\TagPost $body The JSON payload to use to create a new tag. (required)
+     * @param  'ConstantContact\Client\Model\TagPost $body The JSON payload to use to create a new tag. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postTag'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1444,12 +1444,12 @@ class ContactTagsApi
      * PUT (Update) a Tag
      *
      * @param  string $tag_id The system generated ID used to uniquely identify the tag that you want to rename (UUID format). (required)
-     * @param  \OpenAPI\Client\Model\TagPut $body The JSON payload used to update the tag name (&#x60;name&#x60;). (required)
+     * @param  'ConstantContact\Client\Model\TagPut $body The JSON payload used to update the tag name (&#x60;name&#x60;). (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putTag'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\Tag
+     * @return 'ConstantContact\Client\Model\Tag
      */
     public function putTag($tag_id, $body, string $contentType = self::contentTypes['putTag'][0])
     {
@@ -1463,12 +1463,12 @@ class ContactTagsApi
      * PUT (Update) a Tag
      *
      * @param  string $tag_id The system generated ID used to uniquely identify the tag that you want to rename (UUID format). (required)
-     * @param  \OpenAPI\Client\Model\TagPut $body The JSON payload used to update the tag name (&#x60;name&#x60;). (required)
+     * @param  'ConstantContact\Client\Model\TagPut $body The JSON payload used to update the tag name (&#x60;name&#x60;). (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putTag'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws 'ConstantContact\Client\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\Tag, HTTP status code, HTTP response headers (array of strings)
+     * @return array of 'ConstantContact\Client\Model\Tag, HTTP status code, HTTP response headers (array of strings)
      */
     public function putTagWithHttpInfo($tag_id, $body, string $contentType = self::contentTypes['putTag'][0])
     {
@@ -1511,11 +1511,11 @@ class ContactTagsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\Tag' === '\SplFileObject') {
+                    if ('\ConstantContact\Client\Model\Tag' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\Tag' !== 'string') {
+                        if ('\ConstantContact\Client\Model\Tag' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1533,13 +1533,13 @@ class ContactTagsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Tag', []),
+                        ObjectSerializer::deserialize($content, '\ConstantContact\Client\Model\Tag', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\Tag';
+            $returnType = '\ConstantContact\Client\Model\Tag';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1572,7 +1572,7 @@ class ContactTagsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Tag',
+                        '\ConstantContact\Client\Model\Tag',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1588,7 +1588,7 @@ class ContactTagsApi
      * PUT (Update) a Tag
      *
      * @param  string $tag_id The system generated ID used to uniquely identify the tag that you want to rename (UUID format). (required)
-     * @param  \OpenAPI\Client\Model\TagPut $body The JSON payload used to update the tag name (&#x60;name&#x60;). (required)
+     * @param  'ConstantContact\Client\Model\TagPut $body The JSON payload used to update the tag name (&#x60;name&#x60;). (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putTag'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1610,7 +1610,7 @@ class ContactTagsApi
      * PUT (Update) a Tag
      *
      * @param  string $tag_id The system generated ID used to uniquely identify the tag that you want to rename (UUID format). (required)
-     * @param  \OpenAPI\Client\Model\TagPut $body The JSON payload used to update the tag name (&#x60;name&#x60;). (required)
+     * @param  'ConstantContact\Client\Model\TagPut $body The JSON payload used to update the tag name (&#x60;name&#x60;). (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putTag'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1618,7 +1618,7 @@ class ContactTagsApi
      */
     public function putTagAsyncWithHttpInfo($tag_id, $body, string $contentType = self::contentTypes['putTag'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\Tag';
+        $returnType = '\ConstantContact\Client\Model\Tag';
         $request = $this->putTagRequest($tag_id, $body, $contentType);
 
         return $this->client
@@ -1661,7 +1661,7 @@ class ContactTagsApi
      * Create request for operation 'putTag'
      *
      * @param  string $tag_id The system generated ID used to uniquely identify the tag that you want to rename (UUID format). (required)
-     * @param  \OpenAPI\Client\Model\TagPut $body The JSON payload used to update the tag name (&#x60;name&#x60;). (required)
+     * @param  'ConstantContact\Client\Model\TagPut $body The JSON payload used to update the tag name (&#x60;name&#x60;). (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['putTag'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
