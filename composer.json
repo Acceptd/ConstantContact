@@ -1,4 +1,5 @@
 {
+    "name": "acceptd/constant-contact",
     "description": "Constant Contact SDK",
     "keywords": [
         "php",
