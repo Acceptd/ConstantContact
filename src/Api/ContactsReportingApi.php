@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace ConstantContact\Client\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;

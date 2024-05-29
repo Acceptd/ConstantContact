@@ -26,7 +26,7 @@
  * Please update the test case below to test the model.
  */
 
-namespace OpenAPI\Client\Test\Model;
+namespace ConstantContact\Client\Test\Model;
 
 use PHPUnit\Framework\TestCase;
 

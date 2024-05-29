@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace ConstantContact\Client\Model;
 
 /**
  * Interface abstracting model access.

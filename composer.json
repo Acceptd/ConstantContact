@@ -28,9 +28,9 @@
         "friendsofphp/php-cs-fixer": "^3.5"
     },
     "autoload": {
-        "psr-4": { "OpenAPI\\Client\\" : "src/" }
+        "psr-4": { "ConstantContact\\Client\\" : "src/" }
     },
     "autoload-dev": {
-        "psr-4": { "OpenAPI\\Client\\Test\\" : "test/" }
+        "psr-4": { "ConstantContact\\Client\\Test\\" : "test/" }
     }
 }
